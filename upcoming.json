@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "updatedOn": "2026-09-26",
+  "sport": "BADMINTON",
+  "events": [
+    {
+      "id": "bwf-upcoming:world-junior-championships-2026",
+      "name": "BWF World Junior Championships 2026",
+      "shortName": "World Junior Championships",
+      "sport": "BADMINTON",
+      "ageCategory": "JUNIOR",
+      "level": null,
+      "officialTierName": "BWF World Junior Championships",
+      "location": "Cairo, Egypt",
+      "start": "2026-10-05",
+      "end": "2026-10-17",
+      "entriesPublished": true,
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Nishchal Chand"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Dev Ruparelia"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Jagsher Singh Khangurra"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Akhil Reddy Bobba"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Parul Choudhary"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Reddy Andluri"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Shaina Manimuthu"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Patri"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Aathish Sreenivas PV",
+            "Yogansh Singh"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Pavan Suresh",
+            "Punith Suresh"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Aanya Bisht",
+            "Angel Punera"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Diya Bheemaiah B",
+            "Baruni Parshwal"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Divyansh Agrawal",
+            "Varna Prabhuanand"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Yogansh Singh",
+            "Aanya Bisht"
+          ],
+          "seed": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026 BWF World Junior Championships (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships",
+          "readOn": "2026-09-26"
+        },
+        {
+          "label": "BWF World Junior C'ships 2026: India's complete squad - The Bridge",
+          "url": "https://thebridge.in/badminton/world-junior-cships-2026-india-complete-squad-tanvi-patri-57727",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Team event (Suhandinata Cup) runs 5-10 Oct; individual event runs 11-17 Oct. India's 18-member travelling squad is listed here across disciplines; some athletes (e.g. Yogansh Singh, Aanya Bisht) appear in more than one discipline, which is why the discipline entry count exceeds 18. No Singapore squad announcement was found as of the read date, so no SGP entries are recorded; level is left null per the juniors rule even though this is BWF's top junior championship."
+    },
+    {
+      "id": "bwf-upcoming:arctic-open-2026",
+      "name": "Arctic Open 2026",
+      "shortName": "Arctic Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 500",
+      "location": "Vantaa, Finland",
+      "start": "2026-10-06",
+      "end": "2026-10-11",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified, not 'not yet open': a WebSearch summary of the official prospectus (PDF not read directly) gave an entry deadline of 25 Aug 2026, already passed, so an accepted-entries list likely exists. BWF's own tournament pages (bwfworldtour.bwfbadminton.com) returned HTTP 403 to automated fetches, and the tournament's own site (arcticopen.fi) only links out to that same BWF page rather than listing players itself, so no entries could be confirmed as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:denmark-open-2026",
+      "name": "Denmark Open 2026",
+      "shortName": "Denmark Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 750",
+      "location": "Odense, Denmark",
+      "start": "2026-10-13",
+      "end": "2026-10-18",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified, not confirmed 'not yet open': BWF Tour entry deadlines are typically several weeks before the event, so an accepted-entries list plausibly exists by now, but BWF's own tournament pages returned HTTP 403 to automated fetches and the tournament's own site (denmarkopen.dk) only links out to that same BWF page rather than listing players itself. No BAI squad announcement specific to this 2026 edition was found via search either."
+    },
+    {
+      "id": "bwf-upcoming:french-open-2026",
+      "name": "French Open 2026",
+      "shortName": "French Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 750",
+      "location": "Tremblay-en-France, France",
+      "start": "2026-10-20",
+      "end": "2026-10-25",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified: BWF's own tournament pages returned HTTP 403 to automated fetches, and no BAI squad announcement specific to this 2026 edition was found via search, so entries could not be confirmed either way as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:indonesia-masters-super-100-ii-2026",
+      "name": "Indonesia Masters Super 100 II 2026",
+      "shortName": "Indonesia Masters II",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 100",
+      "location": "Kudus, Indonesia",
+      "start": "2026-10-20",
+      "end": "2026-10-25",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified: dates and level confirmed from the Wikipedia schedule, but BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:hylo-open-2026",
+      "name": "Hylo Open 2026",
+      "shortName": "Hylo Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 500",
+      "location": "Saarbrücken, Germany",
+      "start": "2026-10-27",
+      "end": "2026-11-01",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified: BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:korea-open-2026",
+      "name": "Korea Open 2026",
+      "shortName": "Korea Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 500",
+      "location": "Yeosu, South Korea",
+      "start": "2026-11-03",
+      "end": "2026-11-08",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified: BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:japan-masters-2026",
+      "name": "Japan Masters 2026",
+      "shortName": "Japan Masters",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 500",
+      "location": "Kumamoto, Japan",
+      "start": "2026-11-10",
+      "end": "2026-11-15",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified: BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date. Singapore's Loh Kean Yew and Yeo Jia Min are active on tour this season but no entry for this specific event was confirmed."
+    },
+    {
+      "id": "bwf-upcoming:kaohsiung-masters-2026",
+      "name": "Kaohsiung Masters 2026",
+      "shortName": "Kaohsiung Masters",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 100",
+      "location": "Kaohsiung, Taiwan",
+      "start": "2026-11-10",
+      "end": "2026-11-15",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified: dates and level confirmed from the Wikipedia schedule, but BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:hong-kong-open-2026",
+      "name": "Hong Kong Open 2026",
+      "shortName": "Hong Kong Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 500",
+      "location": "Hong Kong",
+      "start": "2026-11-17",
+      "end": "2026-11-22",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified: BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:syed-modi-international-2026",
+      "name": "Syed Modi India International 2026",
+      "shortName": "Syed Modi International",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 300",
+      "location": "Lucknow, India",
+      "start": "2026-11-24",
+      "end": "2026-11-29",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified: India's home tournament, so entries are expected to include a large Indian contingent, but BWF's tournament pages returned HTTP 403 and no BAI squad announcement for the 2026 edition was found, so entries could not be confirmed as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:guwahati-masters-2026",
+      "name": "Guwahati Masters 2026",
+      "shortName": "Guwahati Masters",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 100",
+      "location": "Guwahati, India",
+      "start": "2026-12-01",
+      "end": "2026-12-06",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified: India's home tournament, so entries are expected to include a large Indian contingent, but BWF's tournament pages returned HTTP 403 and no confirmed entry list was found elsewhere as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:odisha-masters-2026",
+      "name": "Odisha Masters 2026",
+      "shortName": "Odisha Masters",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 100",
+      "location": "Cuttack, India",
+      "start": "2026-12-08",
+      "end": "2026-12-13",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Access blocked, unverified: India's home tournament, so entries are expected to include a large Indian contingent, but BWF's tournament pages returned HTTP 403 and no confirmed entry list was found elsewhere as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:world-tour-finals-2026",
+      "name": "BWF World Tour Finals 2026",
+      "shortName": "World Tour Finals",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "MAJOR",
+      "officialTierName": "HSBC BWF World Tour Finals",
+      "location": "Hangzhou, China",
+      "start": "2026-12-09",
+      "end": "2026-12-13",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Qualification is by season ranking points and is not finalised until late in the season (the 2025 edition's field was confirmed in the weeks before that December event). India's Satwiksairaj Rankireddy and Chirag Shetty qualified for the 2025 edition, but no 2026 qualification has been confirmed as of the read date, so no entries are recorded."
+    },
+    {
+      "id": "bwf-upcoming:singapore-junior-international-series-2026",
+      "name": "Singapore Junior International Series 2026",
+      "shortName": "Singapore Junior Intl Series",
+      "sport": "BADMINTON",
+      "ageCategory": "JUNIOR",
+      "level": "DEVELOPMENT",
+      "officialTierName": "BWF Junior International Series",
+      "location": "Singapore",
+      "start": "2026-12-07",
+      "end": "2026-12-13",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "Singapore Junior International Series 2026 - Badminton Asia calendar",
+          "url": "https://badmintonasia.org/calendar/singapore-junior-international-series-2026/",
+          "readOn": "2026-09-26"
+        }
+      ],
+      "notes": "Hosted in Singapore, so Singaporean entries are expected, but the calendar page only shows administrative details (entry deadlines, prize money); no player entry list was published as of the read date."
+    }
+  ]
+}
