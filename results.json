@@ -5238,9 +5238,14 @@
           "label": "Table tennis at the 2026 Asian Games - Women's team (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Table_tennis_at_the_2026_Asian_Games_%E2%80%93_Women%27s_team",
           "readOn": "2026-09-27"
+        },
+        {
+          "label": "India lose 0-3 to South Korea in men's team R16 (The Tribune, ANI)",
+          "url": "https://www.tribuneindia.com/news/asian-games/asian-games-2026-india-suffer-0-3-defeat-to-south-korea-in-mens-table-tennis-round-of-16",
+          "readOn": "2026-09-27"
         }
       ],
-      "notes": "Round labels G1-G3 follow the chronological order of each team's group-stage ties as listed on the source page. India men's team finished 2nd in Group F (advanced) but its Round of 16 tie is shown as a blank template on the Wikipedia page (no opponent or score filled in) as of the read date, so that match is left out rather than guessed; India's men's team is not known to have reached the quarterfinals (not listed among the 8 quarterfinalists). Singapore's men's team (Group G) box scores are all blank on the source page as of the read date, so no Singapore men's team entry is recorded this run; access blocked/not yet filled in, not evidence Singapore did not compete. India's women's team Round of 16 tie (3-2 win over Thailand) has only the aggregate tie score published, no rubber detail, so no rubbers array is included for that match. Singapore's women's team received a bye directly to the quarterfinals.",
+      "notes": "Round labels G1-G3 follow the chronological order of each team's group-stage ties as listed on the source page. India men's team finished 2nd in Group F (advanced) but its Round of 16 tie is shown as a blank template on the Wikipedia page (no opponent or score filled in) as of the read date, so that match is left out rather than guessed; India's men's team is not known to have reached the quarterfinals (not listed among the 8 quarterfinalists). Singapore's men's team (Group G) box scores are all blank on the source page as of the read date, so no Singapore men's team entry is recorded this run; access blocked/not yet filled in, not evidence Singapore did not compete. India's women's team Round of 16 tie (3-2 win over Thailand) has only the aggregate tie score published, no rubber detail, so no rubbers array is included for that match. Singapore's women's team received a bye directly to the quarterfinals. India men's team R16 vs South Korea (22 Sep) from The Tribune (ANI): Wikipedia's knockout section was still empty. Manush Shah lost 2-3 to Oh Junsung; the report's game scores for that rubber contradict each other, so they are left out.",
       "entries": [
         {
           "country": "IND",
@@ -5532,6 +5537,92 @@
                     [
                       11,
                       7
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  0,
+                  3
+                ]
+              ],
+              "date": "2026-09-22",
+              "time": null,
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Harmeet Desai"
+                  ],
+                  "opponent": [
+                    "Jang Woojin"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      7,
+                      11
+                    ],
+                    [
+                      9,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Manush Shah"
+                  ],
+                  "opponent": [
+                    "Oh Junsung"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": []
+                },
+                {
+                  "order": 3,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Manav Thakkar"
+                  ],
+                  "opponent": [
+                    "An Jaehyun"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      10,
+                      12
+                    ],
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      10,
+                      12
                     ]
                   ]
                 }
