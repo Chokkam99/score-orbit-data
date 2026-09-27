@@ -145,6 +145,10 @@ def check_rubber(path, ctx, rubber, rules, errors):
     if not isinstance(rubber, dict):
         errors.add(f"{path}: {ctx} is not an object")
         return None
+    # The app requires an integer `order` on every rubber; a missing one rejects the whole file.
+    order = rubber.get("order")
+    if not isinstance(order, int) or isinstance(order, bool) or order < 1:
+        errors.add(f"{path}: {ctx} order must be an integer >= 1 (the app requires it), got {order!r}")
     rdisc = rubber.get("discipline")
     if rdisc not in individual_disciplines:
         errors.add(
