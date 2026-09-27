@@ -1,0 +1,27 @@
+{
+  "BADMINTON": {
+    "disciplines": ["MS", "WS", "MD", "WD", "XD"],
+    "maxAthletesByDiscipline": {
+      "MS": 1,
+      "WS": 1,
+      "MD": 2,
+      "WD": 2,
+      "XD": 2
+    },
+    "rounds": ["Q1", "Q2", "R128", "R64", "R32", "R16", "QF", "SF", "F"],
+    "levels": ["MAJOR", "TOUR", "DEVELOPMENT", null],
+    "ageCategories": ["SENIOR", "JUNIOR"],
+    "statuses": ["IN_PROGRESS", "FINISHED"],
+    "outcomes": [
+      "WIN",
+      "LOSS",
+      "WALKOVER_WIN",
+      "WALKOVER_LOSS",
+      "RETIRED_WIN",
+      "RETIRED_LOSS",
+      "BYE",
+      "SCHEDULED"
+    ],
+    "scoreFormat": "games"
+  }
+}
