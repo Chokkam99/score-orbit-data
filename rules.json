@@ -1,14 +1,18 @@
 {
   "BADMINTON": {
-    "disciplines": ["MS", "WS", "MD", "WD", "XD"],
+    "disciplines": ["MS", "WS", "MD", "WD", "XD", "MT", "WT", "XT"],
+    "teamDisciplines": ["MT", "WT", "XT"],
     "maxAthletesByDiscipline": {
       "MS": 1,
       "WS": 1,
       "MD": 2,
       "WD": 2,
-      "XD": 2
+      "XD": 2,
+      "MT": 0,
+      "WT": 0,
+      "XT": 0
     },
-    "rounds": ["Q1", "Q2", "R128", "R64", "R32", "R16", "QF", "SF", "F"],
+    "rounds": ["Q1", "Q2", "R128", "R64", "R32", "R16", "QF", "SF", "F", "G1", "G2", "G3", "3P"],
     "levels": ["MAJOR", "TOUR", "DEVELOPMENT", null],
     "ageCategories": ["SENIOR", "JUNIOR"],
     "statuses": ["IN_PROGRESS", "FINISHED"],
@@ -22,6 +26,20 @@
       "BYE",
       "SCHEDULED"
     ],
-    "scoreFormat": "games"
+    "rubberOutcomes": [
+      "WIN",
+      "LOSS",
+      "RETIRED_WIN",
+      "RETIRED_LOSS",
+      "WALKOVER_WIN",
+      "WALKOVER_LOSS",
+      "NOT_PLAYED"
+    ],
+    "scoreFormat": "games",
+    "scoreFormatByDiscipline": {
+      "MT": "ties",
+      "WT": "ties",
+      "XT": "ties"
+    }
   }
 }

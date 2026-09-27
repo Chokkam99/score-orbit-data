@@ -3926,454 +3926,586 @@
           "readOn": "2026-09-27"
         }
       ],
-      "notes": "Level set to MAJOR by analogy with the Olympics/World Championships tier in rules.json; the Asian Games isn't a BWF Tour event so it has no official tier name of its own. Men's team: India beat Bangladesh (R16) and Japan (QF), lost to China (SF) and won bronze; per this format semifinal losers are awarded bronze directly, with no separate third-place match (none is shown in the source). Women's team: India beat Kazakhstan (R16), lost to Japan (QF) and were eliminated without a medal (only semifinal losers medal in this format). Un-played rubbers after a tie was already decided are omitted, same convention as bye handling elsewhere in this file.",
+      "notes": "Level set to MAJOR by analogy with the Olympics/World Championships tier in rules.json; the Asian Games isn't a BWF Tour event so it has no official tier name of its own. Team entries (MT/WT) replace the earlier per-discipline entries; rubbers are recorded inside each tie, not as separate entries. Men's team: India beat Bangladesh (R16) and Japan (QF), lost to China (SF) and won bronze; per this bracket format (byes=yes, no third-place match shown) semifinal losers are awarded bronze directly. Women's team: India beat Kazakhstan (R16), lost to Japan (QF) and were eliminated without a medal (only semifinal losers medal in this format). Neither bracket used a group stage; both were straight knockout with byes for the top 4 seeds, so no G1/G2/G3 ties apply this edition. Un-played rubbers after a tie was already decided are marked NOT_PLAYED, matching the 'np' cells on the source scoreboards. Singapore did not enter either squad list, confirming the team event has no Singaporean entries.",
       "entries": [
         {
           "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Lakshya Sen"
-          ],
+          "discipline": "MT",
+          "athletes": [],
           "seed": null,
           "matches": [
             {
               "round": "R16",
               "outcome": "WIN",
-              "opponent": [
-                "Ayman Ibn Jaman"
-              ],
+              "opponent": [],
               "opponentCountry": "BAN",
               "scores": [
                 [
-                  21,
-                  4
-                ],
-                [
-                  21,
-                  12
+                  3,
+                  0
                 ]
               ],
               "date": "2026-09-21",
-              "time": null
+              "time": null,
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Lakshya Sen"
+                  ],
+                  "opponent": [
+                    "Ayman Ibn Jaman"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      21,
+                      4
+                    ],
+                    [
+                      21,
+                      12
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Ayush Shetty"
+                  ],
+                  "opponent": [
+                    "Gourab Singha"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      21,
+                      4
+                    ],
+                    [
+                      21,
+                      13
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Srikanth Kidambi"
+                  ],
+                  "opponent": [
+                    "Al-Amin Jumar"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      21,
+                      15
+                    ],
+                    [
+                      21,
+                      9
+                    ]
+                  ]
+                },
+                {
+                  "order": 4,
+                  "discipline": "MD",
+                  "athletes": [
+                    "Hariharan Amsakarunan",
+                    "Arjun M. R."
+                  ],
+                  "opponent": [
+                    "Ayman Ibn Jaman",
+                    "Al-Amin Jumar"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                },
+                {
+                  "order": 5,
+                  "discipline": "MD",
+                  "athletes": [
+                    "Satwiksairaj Rankireddy",
+                    "Chirag Shetty"
+                  ],
+                  "opponent": [
+                    "Al-Amin Jumar",
+                    "Moajjam Hossain Ohidul"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                }
+              ]
             },
             {
               "round": "QF",
               "outcome": "WIN",
-              "opponent": [
-                "Kodai Naraoka"
-              ],
+              "opponent": [],
               "opponentCountry": "JPN",
               "scores": [
                 [
-                  11,
-                  21
-                ],
-                [
-                  21,
-                  5
-                ],
-                [
-                  21,
-                  19
+                  3,
+                  0
                 ]
               ],
               "date": "2026-09-22",
-              "time": null
+              "time": null,
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Lakshya Sen"
+                  ],
+                  "opponent": [
+                    "Kodai Naraoka"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      21
+                    ],
+                    [
+                      21,
+                      5
+                    ],
+                    [
+                      21,
+                      19
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "MD",
+                  "athletes": [
+                    "Satwiksairaj Rankireddy",
+                    "Chirag Shetty"
+                  ],
+                  "opponent": [
+                    "Takuro Hoki",
+                    "Yugo Kobayashi"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      21,
+                      18
+                    ],
+                    [
+                      24,
+                      22
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Ayush Shetty"
+                  ],
+                  "opponent": [
+                    "Koki Watanabe"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      21,
+                      10
+                    ],
+                    [
+                      21,
+                      19
+                    ]
+                  ]
+                },
+                {
+                  "order": 4,
+                  "discipline": "MD",
+                  "athletes": [
+                    "Hariharan Amsakarunan",
+                    "Arjun M. R."
+                  ],
+                  "opponent": [
+                    "Kakeru Kumagai",
+                    "Hiroki Nishi"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                },
+                {
+                  "order": 5,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Srikanth Kidambi"
+                  ],
+                  "opponent": [
+                    "Yushi Tanaka"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                }
+              ]
             },
             {
               "round": "SF",
               "outcome": "LOSS",
-              "opponent": [
-                "Shi Yuqi"
-              ],
+              "opponent": [],
               "opponentCountry": "CHN",
               "scores": [
                 [
-                  16,
-                  21
-                ],
-                [
-                  18,
-                  21
+                  1,
+                  3
                 ]
               ],
               "date": "2026-09-23",
-              "time": null
+              "time": null,
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Lakshya Sen"
+                  ],
+                  "opponent": [
+                    "Shi Yuqi"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      16,
+                      21
+                    ],
+                    [
+                      18,
+                      21
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "MD",
+                  "athletes": [
+                    "Satwiksairaj Rankireddy",
+                    "Chirag Shetty"
+                  ],
+                  "opponent": [
+                    "Liang Weikeng",
+                    "Wang Chang"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      21,
+                      11
+                    ],
+                    [
+                      22,
+                      20
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Ayush Shetty"
+                  ],
+                  "opponent": [
+                    "Li Shifeng"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      19,
+                      21
+                    ],
+                    [
+                      13,
+                      21
+                    ]
+                  ]
+                },
+                {
+                  "order": 4,
+                  "discipline": "MD",
+                  "athletes": [
+                    "Hariharan Amsakarunan",
+                    "Arjun M. R."
+                  ],
+                  "opponent": [
+                    "He Jiting",
+                    "Liu Yi"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      16,
+                      21
+                    ],
+                    [
+                      21,
+                      17
+                    ],
+                    [
+                      9,
+                      21
+                    ]
+                  ]
+                },
+                {
+                  "order": 5,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Srikanth Kidambi"
+                  ],
+                  "opponent": [
+                    "Weng Hongyang"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                }
+              ]
             }
           ]
         },
         {
           "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Ayush Shetty"
-          ],
+          "discipline": "WT",
+          "athletes": [],
           "seed": null,
           "matches": [
             {
               "round": "R16",
               "outcome": "WIN",
-              "opponent": [
-                "Gourab Singha"
-              ],
-              "opponentCountry": "BAN",
-              "scores": [
-                [
-                  21,
-                  4
-                ],
-                [
-                  21,
-                  13
-                ]
-              ],
-              "date": "2026-09-21",
-              "time": null
-            },
-            {
-              "round": "QF",
-              "outcome": "WIN",
-              "opponent": [
-                "Koki Watanabe"
-              ],
-              "opponentCountry": "JPN",
-              "scores": [
-                [
-                  21,
-                  10
-                ],
-                [
-                  21,
-                  19
-                ]
-              ],
-              "date": "2026-09-22",
-              "time": null
-            },
-            {
-              "round": "SF",
-              "outcome": "LOSS",
-              "opponent": [
-                "Li Shifeng"
-              ],
-              "opponentCountry": "CHN",
-              "scores": [
-                [
-                  19,
-                  21
-                ],
-                [
-                  13,
-                  21
-                ]
-              ],
-              "date": "2026-09-23",
-              "time": null
-            }
-          ]
-        },
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Srikanth Kidambi"
-          ],
-          "seed": null,
-          "matches": [
-            {
-              "round": "R16",
-              "outcome": "WIN",
-              "opponent": [
-                "Al-Amin Jumar"
-              ],
-              "opponentCountry": "BAN",
-              "scores": [
-                [
-                  21,
-                  15
-                ],
-                [
-                  21,
-                  9
-                ]
-              ],
-              "date": "2026-09-21",
-              "time": null
-            }
-          ]
-        },
-        {
-          "country": "IND",
-          "discipline": "MD",
-          "athletes": [
-            "Satwiksairaj Rankireddy",
-            "Chirag Shetty"
-          ],
-          "seed": 4,
-          "matches": [
-            {
-              "round": "QF",
-              "outcome": "WIN",
-              "opponent": [
-                "Takuro Hoki",
-                "Yugo Kobayashi"
-              ],
-              "opponentCountry": "JPN",
-              "scores": [
-                [
-                  21,
-                  18
-                ],
-                [
-                  24,
-                  22
-                ]
-              ],
-              "date": "2026-09-22",
-              "time": null
-            },
-            {
-              "round": "SF",
-              "outcome": "WIN",
-              "opponent": [
-                "Liang Weikeng",
-                "Wang Chang"
-              ],
-              "opponentCountry": "CHN",
-              "scores": [
-                [
-                  21,
-                  11
-                ],
-                [
-                  22,
-                  20
-                ]
-              ],
-              "date": "2026-09-23",
-              "time": null
-            }
-          ]
-        },
-        {
-          "country": "IND",
-          "discipline": "MD",
-          "athletes": [
-            "Hariharan Amsakarunan",
-            "Arjun M. R."
-          ],
-          "seed": null,
-          "matches": [
-            {
-              "round": "SF",
-              "outcome": "LOSS",
-              "opponent": [
-                "He Jiting",
-                "Liu Yi"
-              ],
-              "opponentCountry": "CHN",
-              "scores": [
-                [
-                  16,
-                  21
-                ],
-                [
-                  21,
-                  17
-                ],
-                [
-                  9,
-                  21
-                ]
-              ],
-              "date": "2026-09-23",
-              "time": null
-            }
-          ]
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "P. V. Sindhu"
-          ],
-          "seed": null,
-          "matches": [
-            {
-              "round": "R16",
-              "outcome": "WIN",
-              "opponent": [
-                "Kamila Smagulova"
-              ],
+              "opponent": [],
               "opponentCountry": "KAZ",
               "scores": [
                 [
-                  21,
-                  7
-                ],
-                [
-                  21,
-                  9
+                  3,
+                  0
                 ]
               ],
               "date": "2026-09-20",
-              "time": null
+              "time": null,
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "WS",
+                  "athletes": [
+                    "P. V. Sindhu"
+                  ],
+                  "opponent": [
+                    "Kamila Smagulova"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      21,
+                      7
+                    ],
+                    [
+                      21,
+                      9
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Unnati Hooda"
+                  ],
+                  "opponent": [
+                    "Alissa Kuleshova"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      21,
+                      7
+                    ],
+                    [
+                      21,
+                      10
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Tanvi Sharma"
+                  ],
+                  "opponent": [
+                    "Diana Namenova"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      21,
+                      5
+                    ],
+                    [
+                      21,
+                      10
+                    ]
+                  ]
+                },
+                {
+                  "order": 4,
+                  "discipline": "WD",
+                  "athletes": [
+                    "Kavipriya Selvam",
+                    "Simran Singhi"
+                  ],
+                  "opponent": [
+                    "Nargiza Rakhmetullayeva",
+                    "Aisha Zhumabek"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                },
+                {
+                  "order": 5,
+                  "discipline": "WD",
+                  "athletes": [
+                    "Treesa Jolly",
+                    "Gayatri Gopichand"
+                  ],
+                  "opponent": [
+                    "Alissa Kuleshova",
+                    "Diana Namenova"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                }
+              ]
             },
             {
               "round": "QF",
               "outcome": "LOSS",
-              "opponent": [
-                "Akane Yamaguchi"
-              ],
+              "opponent": [],
               "opponentCountry": "JPN",
               "scores": [
                 [
-                  23,
-                  21
-                ],
-                [
-                  18,
-                  21
-                ],
-                [
-                  11,
-                  21
+                  1,
+                  3
                 ]
               ],
               "date": "2026-09-22",
-              "time": null
-            }
-          ]
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Unnati Hooda"
-          ],
-          "seed": null,
-          "matches": [
-            {
-              "round": "R16",
-              "outcome": "WIN",
-              "opponent": [
-                "Alissa Kuleshova"
-              ],
-              "opponentCountry": "KAZ",
-              "scores": [
-                [
-                  21,
-                  7
-                ],
-                [
-                  21,
-                  10
-                ]
-              ],
-              "date": "2026-09-20",
-              "time": null
-            },
-            {
-              "round": "QF",
-              "outcome": "LOSS",
-              "opponent": [
-                "Tomoka Miyazaki"
-              ],
-              "opponentCountry": "JPN",
-              "scores": [
-                [
-                  16,
-                  21
-                ],
-                [
-                  18,
-                  21
-                ]
-              ],
-              "date": "2026-09-22",
-              "time": null
-            }
-          ]
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Tanvi Sharma"
-          ],
-          "seed": null,
-          "matches": [
-            {
-              "round": "R16",
-              "outcome": "WIN",
-              "opponent": [
-                "Diana Namenova"
-              ],
-              "opponentCountry": "KAZ",
-              "scores": [
-                [
-                  21,
-                  5
-                ],
-                [
-                  21,
-                  10
-                ]
-              ],
-              "date": "2026-09-20",
-              "time": null
-            },
-            {
-              "round": "QF",
-              "outcome": "LOSS",
-              "opponent": [
-                "Nozomi Okuhara"
-              ],
-              "opponentCountry": "JPN",
-              "scores": [
-                [
-                  12,
-                  21
-                ],
-                [
-                  10,
-                  21
-                ]
-              ],
-              "date": "2026-09-22",
-              "time": null
-            }
-          ]
-        },
-        {
-          "country": "IND",
-          "discipline": "WD",
-          "athletes": [
-            "Treesa Jolly",
-            "Gayatri Gopichand"
-          ],
-          "seed": null,
-          "matches": [
-            {
-              "round": "QF",
-              "outcome": "WIN",
-              "opponent": [
-                "Yuki Fukushima",
-                "Mayu Matsumoto"
-              ],
-              "opponentCountry": "JPN",
-              "scores": [
-                [
-                  21,
-                  17
-                ],
-                [
-                  21,
-                  16
-                ]
-              ],
-              "date": "2026-09-22",
-              "time": null
+              "time": null,
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "WS",
+                  "athletes": [
+                    "P. V. Sindhu"
+                  ],
+                  "opponent": [
+                    "Akane Yamaguchi"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      23,
+                      21
+                    ],
+                    [
+                      18,
+                      21
+                    ],
+                    [
+                      11,
+                      21
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Unnati Hooda"
+                  ],
+                  "opponent": [
+                    "Tomoka Miyazaki"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      16,
+                      21
+                    ],
+                    [
+                      18,
+                      21
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "WD",
+                  "athletes": [
+                    "Treesa Jolly",
+                    "Gayatri Gopichand"
+                  ],
+                  "opponent": [
+                    "Yuki Fukushima",
+                    "Mayu Matsumoto"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      21,
+                      17
+                    ],
+                    [
+                      21,
+                      16
+                    ]
+                  ]
+                },
+                {
+                  "order": 4,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Tanvi Sharma"
+                  ],
+                  "opponent": [
+                    "Nozomi Okuhara"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      12,
+                      21
+                    ],
+                    [
+                      10,
+                      21
+                    ]
+                  ]
+                },
+                {
+                  "order": 5,
+                  "discipline": "WD",
+                  "athletes": [
+                    "Tanisha Crasto",
+                    "P. V. Sindhu"
+                  ],
+                  "opponent": [
+                    "Rin Uesaka",
+                    "Kie Nakanishi"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                }
+              ]
             }
           ]
         }

@@ -138,24 +138,149 @@ def check_country(path, ctx, value, errors, allow_none=False):
         errors.add(f"{path}: {ctx} country {value!r} must be exactly 3 uppercase letters")
 
 
-def check_entry(path, ctx, entry, rules, errors, is_results):
+def check_rubber(path, ctx, rubber, rules, errors):
+    individual_disciplines = [
+        d for d in rules["disciplines"] if d not in set(rules.get("teamDisciplines", []))
+    ]
+    if not isinstance(rubber, dict):
+        errors.add(f"{path}: {ctx} is not an object")
+        return None
+    rdisc = rubber.get("discipline")
+    if rdisc not in individual_disciplines:
+        errors.add(
+            f"{path}: {ctx} discipline {rdisc!r} not in individual disciplines {individual_disciplines}"
+        )
+    r_athletes = rubber.get("athletes")
+    if not isinstance(r_athletes, list) or not r_athletes:
+        errors.add(f"{path}: {ctx} athletes must be a non-empty list")
+    elif rdisc in rules["maxAthletesByDiscipline"]:
+        expected = rules["maxAthletesByDiscipline"][rdisc]
+        if len(r_athletes) != expected:
+            errors.add(
+                f"{path}: {ctx} discipline {rdisc} expects {expected} athlete(s), "
+                f"got {len(r_athletes)}"
+            )
+    r_opponent = rubber.get("opponent")
+    if not isinstance(r_opponent, list) or not r_opponent:
+        errors.add(f"{path}: {ctx} opponent must be a non-empty list")
+    elif rdisc in rules["maxAthletesByDiscipline"]:
+        expected = rules["maxAthletesByDiscipline"][rdisc]
+        if len(r_opponent) != expected:
+            errors.add(
+                f"{path}: {ctx} opponent for discipline {rdisc} expects {expected} name(s), "
+                f"got {len(r_opponent)}"
+            )
+    r_outcome = rubber.get("outcome")
+    if r_outcome not in rules.get("rubberOutcomes", []):
+        errors.add(
+            f"{path}: {ctx} outcome {r_outcome!r} not in allowed set {rules.get('rubberOutcomes', [])}"
+        )
+    r_scores = rubber.get("scores")
+    if r_outcome == "NOT_PLAYED":
+        if r_scores not in ([], None):
+            errors.add(f"{path}: {ctx} NOT_PLAYED rubber must have no scores, got {r_scores!r}")
+    else:
+        scores_list = r_scores if isinstance(r_scores, list) else []
+        check_scores(path, ctx, scores_list, errors)
+        if r_outcome in ("WIN", "LOSS"):
+            check_win_loss_consistency(path, ctx, r_outcome, scores_list, errors)
+    if r_outcome in ("WIN", "RETIRED_WIN", "WALKOVER_WIN"):
+        return "WON"
+    if r_outcome in ("LOSS", "RETIRED_LOSS", "WALKOVER_LOSS"):
+        return "LOST"
+    return None
+
+
+def check_tie(path, ctx, match, rules, errors):
+    outcome = match.get("outcome")
+    scores = match.get("scores")
+    if not isinstance(scores, list):
+        errors.add(f"{path}: {ctx} scores must be a list")
+        scores = []
+    opponent = match.get("opponent")
+    if isinstance(opponent, list) and opponent:
+        errors.add(f"{path}: {ctx} opponent must be empty for a team tie (the opponent is a country)")
+
+    zero_allowed = outcome in ("SCHEDULED", "WALKOVER_WIN", "WALKOVER_LOSS")
+    if zero_allowed:
+        if len(scores) not in (0, 1):
+            errors.add(
+                f"{path}: {ctx} tie scores must have 0 or 1 pair for outcome {outcome!r}, "
+                f"got {len(scores)}"
+            )
+    else:
+        if len(scores) != 1:
+            errors.add(f"{path}: {ctx} tie scores must have exactly one pair, got {len(scores)}")
+
+    tie_score = None
+    if len(scores) == 1:
+        pair = scores[0]
+        if (not isinstance(pair, list) or len(pair) != 2
+                or not all(isinstance(v, int) and not isinstance(v, bool) and v >= 0 for v in pair)):
+            errors.add(f"{path}: {ctx} tie score {pair!r} must be a pair of non-negative ints")
+        else:
+            tie_score = tuple(pair)
+            own, opp = tie_score
+            if outcome == "WIN" and own <= opp:
+                errors.add(
+                    f"{path}: {ctx} outcome=WIN but tie score {tie_score} does not favor own side"
+                )
+            if outcome == "LOSS" and opp <= own:
+                errors.add(
+                    f"{path}: {ctx} outcome=LOSS but tie score {tie_score} does not favor opponent"
+                )
+
+    rubbers = match.get("rubbers")
+    if rubbers is not None:
+        if not isinstance(rubbers, list):
+            errors.add(f"{path}: {ctx} rubbers must be a list")
+            rubbers = []
+        won = 0
+        lost = 0
+        for ri, rubber in enumerate(rubbers):
+            rctx = f"{ctx} rubbers[{ri}]"
+            result = check_rubber(path, rctx, rubber, rules, errors)
+            if result == "WON":
+                won += 1
+            elif result == "LOST":
+                lost += 1
+        if rubbers and tie_score is not None and (won, lost) != tie_score:
+            errors.add(
+                f"{path}: {ctx} rubber tally (won={won}, lost={lost}) does not match tie score {tie_score}"
+            )
+
+
+def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
     for field in ENTRY_REQUIRED_COMMON:
         if field not in entry:
             errors.add(f"{path}: {ctx} entry missing '{field}'")
     check_country(path, ctx, entry.get("country"), errors)
     disc = entry.get("discipline")
+    team_disciplines = set(rules.get("teamDisciplines", []))
+    is_team = disc in team_disciplines
     if disc not in rules["disciplines"]:
         errors.add(f"{path}: {ctx} discipline {disc!r} not in allowed set {rules['disciplines']}")
+
+    if event_id and "team" in event_id.lower() and disc in rules["disciplines"] and not is_team:
+        errors.add(
+            f"{path}: {ctx} discipline {disc!r} is an individual discipline but sits in "
+            f"team event {event_id!r}; individual rubbers must not be recorded as entries"
+        )
+
     athletes = entry.get("athletes")
-    if not isinstance(athletes, list) or not athletes:
-        errors.add(f"{path}: {ctx} athletes must be a non-empty list")
-    elif disc in rules["maxAthletesByDiscipline"]:
-        expected = rules["maxAthletesByDiscipline"][disc]
-        if len(athletes) != expected:
-            errors.add(
-                f"{path}: {ctx} discipline {disc} expects {expected} athlete(s), "
-                f"got {len(athletes)}"
-            )
+    if is_team:
+        if not isinstance(athletes, list) or athletes:
+            errors.add(f"{path}: {ctx} team entry athletes must be an empty list")
+    else:
+        if not isinstance(athletes, list) or not athletes:
+            errors.add(f"{path}: {ctx} athletes must be a non-empty list")
+        elif disc in rules["maxAthletesByDiscipline"]:
+            expected = rules["maxAthletesByDiscipline"][disc]
+            if len(athletes) != expected:
+                errors.add(
+                    f"{path}: {ctx} discipline {disc} expects {expected} athlete(s), "
+                    f"got {len(athletes)}"
+                )
     if "seed" in entry and entry["seed"] is not None:
         if not isinstance(entry["seed"], int) or isinstance(entry["seed"], bool):
             errors.add(f"{path}: {ctx} seed must be an int or null")
@@ -166,23 +291,26 @@ def check_entry(path, ctx, entry, rules, errors, is_results):
             errors.add(f"{path}: {ctx} matches must be a list")
             return
         for mi, match in enumerate(matches):
-            mctx = f"{ctx} match[{mi}]"
+            round_ = match.get("round")
+            outcome = match.get("outcome")
+            opp_country = match.get("opponentCountry")
+            mctx = f"{ctx} match[{mi}] {round_} vs {opp_country}"
             for field in MATCH_REQUIRED:
                 if field not in match:
                     errors.add(f"{path}: {mctx} missing '{field}'")
-            round_ = match.get("round")
             if round_ not in rules["rounds"]:
                 errors.add(f"{path}: {mctx} round {round_!r} not in allowed set {rules['rounds']}")
-            outcome = match.get("outcome")
             if outcome not in rules["outcomes"]:
                 errors.add(f"{path}: {mctx} outcome {outcome!r} not in allowed set {rules['outcomes']}")
-            opp_country = match.get("opponentCountry")
             check_country(path, mctx, opp_country, errors, allow_none=True)
             opponent = match.get("opponent")
             if not isinstance(opponent, list):
                 errors.add(f"{path}: {mctx} opponent must be a list")
             scores = match.get("scores")
-            if rules.get("scoreFormat") == "games":
+            score_format = rules.get("scoreFormatByDiscipline", {}).get(disc, rules.get("scoreFormat"))
+            if score_format == "ties":
+                check_tie(path, mctx, match, rules, errors)
+            elif score_format == "games":
                 check_scores(path, mctx, scores if isinstance(scores, list) else [], errors)
                 if isinstance(scores, list):
                     check_win_loss_consistency(path, mctx, outcome, scores, errors)
@@ -251,8 +379,8 @@ def validate_file(path, data, required_fields, rules_by_sport, errors, is_result
 
         status = event.get("status")
         for eni, entry in enumerate(entries):
-            ectx = f"{ctx} entries[{eni}]"
-            check_entry(path, ectx, entry, rules, errors, is_results)
+            ectx = f"{ctx} entries[{eni}] ({entry.get('country')} {entry.get('discipline')})"
+            check_entry(path, ectx, entry, rules, errors, is_results, event_id=eid)
             if is_results and status == "FINISHED":
                 for mi, match in enumerate(entry.get("matches", []) or []):
                     if match.get("outcome") == "SCHEDULED":

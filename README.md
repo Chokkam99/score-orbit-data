@@ -15,3 +15,12 @@ badminton events with Indian and Singaporean entries.
 - Run `python3 validate.py` before committing.
 - A GitHub Actions workflow (`.github/workflows/validate.yml`) runs `python3 validate.py` on every push and pull request.
 - Updated weekly by a reviewed pull request.
+
+## Team events
+
+A team entry (`MT`/`WT`/`XT`) has empty `athletes` and a `matches` list of ties, each with a tie
+score (`scores: [[own, opponent]]`) and, optionally, its `rubbers` (each an individual-discipline
+game within that tie, own points first).
+
+Rubbers are never individual entries: a country's singles/doubles rubber inside a team event stays
+nested under its tie, and never gets its own top-level entry alongside the team entry.
