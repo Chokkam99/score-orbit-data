@@ -4523,7 +4523,7 @@
       "start": "2026-09-25",
       "end": "2026-09-29",
       "status": "IN_PROGRESS",
-      "coverage": "India and Singapore main-draw matches in the individual events (singles and doubles) reached so far; quarterfinals were being played as of the read date and semifinals/finals had not yet happened.",
+      "coverage": "India and Singapore main-draw matches in the individual events (singles and doubles) reached so far; quarterfinals are complete as of the read date, only Loh Kean Yew (SGP, MS) remains alive going into the semifinals.",
       "sources": [
         {
           "label": "Badminton at the 2026 Asian Games (Wikipedia)",
@@ -4556,7 +4556,7 @@
           "readOn": "2026-09-27"
         }
       ],
-      "notes": "Level set to MAJOR by analogy with the Olympics/World Championships tier in rules.json, same reasoning as the team-event record. Per-match dates and times within the Sep 25-29 window are not shown in the Wikipedia bracket templates for these disciplines (only the women's and men's team pages carried an explicit date field), so match date is left null rather than guessed; the quarterfinals were underway on 26-27 Sep per the event's overview page. Quarterfinal opponents for P. V. Sindhu (vs Chen Yufei, CHN) and Unnati Hooda (vs Akane Yamaguchi, JPN) are named in the bracket and recorded as SCHEDULED; the women's doubles (Jolly/Gopichand) and mixed doubles (Kapila/Crasto) quarterfinal opponents were not yet filled in on the bracket page as of the read date, so no SCHEDULED match is recorded for them pending the next update.",
+      "notes": "Level set to MAJOR by analogy with the Olympics/World Championships tier in rules.json, same reasoning as the team-event record. Per-match dates and times within the Sep 25-29 window are not shown in the Wikipedia bracket templates for these disciplines, so match date/time is left null except where the source states one. All India quarterfinals are now decided: Sindhu (WS), Hooda (WS), Jolly/Gopichand (WD) and Kapila/Crasto (XD) all lost their quarterfinals and are eliminated. Loh Kean Yew (SGP, MS) won his quarterfinal and plays the semifinal against Yoo Tae-bin (KOR) on 2026-09-28 per the event schedule; exact time not shown on the bracket page so left null.",
       "entries": [
         {
           "country": "IND",
@@ -4696,12 +4696,25 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Chen Yufei"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  11
+                ],
+                [
+                  18,
+                  21
+                ],
+                [
+                  10,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -4781,12 +4794,25 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Akane Yamaguchi"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  14
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -4882,6 +4908,27 @@
               ],
               "date": null,
               "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Pearly Tan",
+                "Thinaah Muralitharan"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  9,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
             }
           ]
         },
@@ -4935,6 +4982,31 @@
               ],
               "date": null,
               "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Feng Yanzhe",
+                "Huang Dongping"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
             }
           ]
         },
@@ -4968,6 +5040,57 @@
                 ]
               ],
               "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Justin Hoh"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  21,
+                  14
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Jonatan Christie"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  21,
+                  14
+                ],
+                [
+                  21,
+                  19
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Yoo Tae-bin"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [],
+              "date": "2026-09-28",
               "time": null
             }
           ]
@@ -5068,6 +5191,1480 @@
                 [
                   12,
                   21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wtt-results:asian-games-2026-table-tennis-team-event",
+      "name": "Table tennis at the 2026 Asian Games - Team Event",
+      "shortName": "Asian Games Team Event",
+      "sport": "TABLE_TENNIS",
+      "ageCategory": "SENIOR",
+      "level": "MAJOR",
+      "officialTierName": "Asian Games",
+      "location": "Toyota, Japan",
+      "start": "2026-09-20",
+      "end": "2026-09-24",
+      "status": "FINISHED",
+      "coverage": "India (men's and women's team) and Singapore (women's team) ties, group stage through the round each team was eliminated, where the tie is published on Wikipedia with a score.",
+      "sources": [
+        {
+          "label": "Table tennis at the 2026 Asian Games (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Table_tennis_at_the_2026_Asian_Games",
+          "readOn": "2026-09-27"
+        },
+        {
+          "label": "Table tennis at the 2026 Asian Games - Men's team (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Table_tennis_at_the_2026_Asian_Games_%E2%80%93_Men%27s_team",
+          "readOn": "2026-09-27"
+        },
+        {
+          "label": "Table tennis at the 2026 Asian Games - Women's team (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Table_tennis_at_the_2026_Asian_Games_%E2%80%93_Women%27s_team",
+          "readOn": "2026-09-27"
+        }
+      ],
+      "notes": "Round labels G1-G3 follow the chronological order of each team's group-stage ties as listed on the source page. India men's team finished 2nd in Group F (advanced) but its Round of 16 tie is shown as a blank template on the Wikipedia page (no opponent or score filled in) as of the read date, so that match is left out rather than guessed; India's men's team is not known to have reached the quarterfinals (not listed among the 8 quarterfinalists). Singapore's men's team (Group G) box scores are all blank on the source page as of the read date, so no Singapore men's team entry is recorded this run; access blocked/not yet filled in, not evidence Singapore did not compete. India's women's team Round of 16 tie (3-2 win over Thailand) has only the aggregate tie score published, no rubber detail, so no rubbers array is included for that match. Singapore's women's team received a bye directly to the quarterfinals.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MT",
+          "athletes": [],
+          "seed": null,
+          "matches": [
+            {
+              "round": "G1",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  3,
+                  0
+                ]
+              ],
+              "date": "2026-09-20",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "MS",
+                  "athletes": [
+                    "Sathiyan Gnanasekaran"
+                  ],
+                  "opponent": [
+                    "Muhammad Negara"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      11,
+                      9
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "MS",
+                  "athletes": [
+                    "Manav Thakkar"
+                  ],
+                  "opponent": [
+                    "Muhammad Junindra"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      11,
+                      6
+                    ],
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      11,
+                      9
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "MS",
+                  "athletes": [
+                    "Manush Shah"
+                  ],
+                  "opponent": [
+                    "Affan Pratama"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      9
+                    ],
+                    [
+                      11,
+                      9
+                    ],
+                    [
+                      12,
+                      10
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "G2",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "IRN",
+              "scores": [
+                [
+                  0,
+                  3
+                ]
+              ],
+              "date": "2026-09-20",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "MS",
+                  "athletes": [
+                    "Manush Shah"
+                  ],
+                  "opponent": [
+                    "Noshad Alamiyan"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      3,
+                      11
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      10,
+                      12
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "MS",
+                  "athletes": [
+                    "Manav Thakkar"
+                  ],
+                  "opponent": [
+                    "Benyamin Faraji"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      2,
+                      11
+                    ],
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      6,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "MS",
+                  "athletes": [
+                    "Harmeet Desai"
+                  ],
+                  "opponent": [
+                    "Nima Alamian"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      10,
+                      12
+                    ],
+                    [
+                      15,
+                      13
+                    ],
+                    [
+                      3,
+                      11
+                    ],
+                    [
+                      12,
+                      10
+                    ],
+                    [
+                      2,
+                      11
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "G3",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "PAK",
+              "scores": [
+                [
+                  3,
+                  0
+                ]
+              ],
+              "date": "2026-09-21",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "MS",
+                  "athletes": [
+                    "Harmeet Desai"
+                  ],
+                  "opponent": [
+                    "Muhammad Khan"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      5
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "MS",
+                  "athletes": [
+                    "Sathiyan Gnanasekaran"
+                  ],
+                  "opponent": [
+                    "Abbas Khan"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      1
+                    ],
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      11,
+                      9
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "MS",
+                  "athletes": [
+                    "Payas Jain"
+                  ],
+                  "opponent": [
+                    "Taimur Khan"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      2
+                    ],
+                    [
+                      11,
+                      5
+                    ],
+                    [
+                      11,
+                      7
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WT",
+          "athletes": [],
+          "seed": null,
+          "matches": [
+            {
+              "round": "G1",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  3,
+                  0
+                ]
+              ],
+              "date": "2026-09-20",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Sreeja Akula"
+                  ],
+                  "opponent": [
+                    "Maharani Ni"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      4
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Diya Chitale"
+                  ],
+                  "opponent": [
+                    "Almaira Nebuchadnezzar"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      9
+                    ],
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      11,
+                      5
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Yashaswini Ghorpade"
+                  ],
+                  "opponent": [
+                    "Citra Rasmi"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      12,
+                      10
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      4
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "G2",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "SGP",
+              "scores": [
+                [
+                  3,
+                  2
+                ]
+              ],
+              "date": "2026-09-20",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Yashaswini Ghorpade"
+                  ],
+                  "opponent": [
+                    "Jian Zeng"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      11,
+                      9
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Sreeja Akula"
+                  ],
+                  "opponent": [
+                    "Loy Ming"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      6,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Diya Chitale"
+                  ],
+                  "opponent": [
+                    "Zhao Tan"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      7,
+                      11
+                    ],
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      5,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Sreeja Akula"
+                  ],
+                  "opponent": [
+                    "Jian Zeng"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      11,
+                      4
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Yashaswini Ghorpade"
+                  ],
+                  "opponent": [
+                    "Loy Ming"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      5,
+                      11
+                    ],
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      12,
+                      10
+                    ],
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      11,
+                      9
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "G3",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "PAK",
+              "scores": [
+                [
+                  3,
+                  0
+                ]
+              ],
+              "date": "2026-09-21",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Sutirtha Mukherjee"
+                  ],
+                  "opponent": [
+                    "Aleena Khan"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      4
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Syndrela Das"
+                  ],
+                  "opponent": [
+                    "Kalsoom Khan"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      6
+                    ],
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      11,
+                      5
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Sreeja Akula"
+                  ],
+                  "opponent": [
+                    "Fatima Khan"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      5
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "THA",
+              "scores": [
+                [
+                  3,
+                  2
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "PRK",
+              "scores": [
+                [
+                  0,
+                  3
+                ]
+              ],
+              "date": "2026-09-22",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Sreeja Akula"
+                  ],
+                  "opponent": [
+                    "Kim Kum Yong"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      7,
+                      11
+                    ],
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      5,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Yashaswini Ghorpade"
+                  ],
+                  "opponent": [
+                    "Pyon Song Gyong"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      3,
+                      11
+                    ],
+                    [
+                      6,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Diya Chitale"
+                  ],
+                  "opponent": [
+                    "Cha Su Yong"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      7,
+                      11
+                    ],
+                    [
+                      8,
+                      11
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WT",
+          "athletes": [],
+          "seed": null,
+          "matches": [
+            {
+              "round": "G1",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "PAK",
+              "scores": [
+                [
+                  3,
+                  0
+                ]
+              ],
+              "date": "2026-09-20",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Ser Lin Qian"
+                  ],
+                  "opponent": [
+                    "Aleena Khan"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Loy Ming"
+                  ],
+                  "opponent": [
+                    "Kalsoom Khan"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      2
+                    ],
+                    [
+                      11,
+                      1
+                    ],
+                    [
+                      11,
+                      3
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Chloe Lai"
+                  ],
+                  "opponent": [
+                    "Nosheen Aslam"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      1
+                    ],
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      2
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "G2",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  2,
+                  3
+                ]
+              ],
+              "date": "2026-09-20",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Jian Zeng"
+                  ],
+                  "opponent": [
+                    "Yashaswini Ghorpade"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      7,
+                      11
+                    ],
+                    [
+                      3,
+                      11
+                    ],
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      9,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Loy Ming"
+                  ],
+                  "opponent": [
+                    "Sreeja Akula"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      11,
+                      9
+                    ],
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      11,
+                      6
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Zhao Tan"
+                  ],
+                  "opponent": [
+                    "Diya Chitale"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      7,
+                      11
+                    ],
+                    [
+                      11,
+                      5
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Jian Zeng"
+                  ],
+                  "opponent": [
+                    "Sreeja Akula"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      11,
+                      6
+                    ],
+                    [
+                      3,
+                      11
+                    ],
+                    [
+                      7,
+                      11
+                    ],
+                    [
+                      4,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Loy Ming"
+                  ],
+                  "opponent": [
+                    "Yashaswini Ghorpade"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      11,
+                      5
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      10,
+                      12
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      9,
+                      11
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "G3",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  3,
+                  0
+                ]
+              ],
+              "date": "2026-09-21",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Zhao Tan"
+                  ],
+                  "opponent": [
+                    "Almaira Nebuchadnezzar"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      9
+                    ],
+                    [
+                      11,
+                      4
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Ser Lin Qian"
+                  ],
+                  "opponent": [
+                    "Cindy Putri"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      9
+                    ],
+                    [
+                      11,
+                      9
+                    ],
+                    [
+                      10,
+                      12
+                    ],
+                    [
+                      11,
+                      7
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Loy Ming"
+                  ],
+                  "opponent": [
+                    "Maharani Ni"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      6
+                    ],
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      11,
+                      6
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  0,
+                  3
+                ]
+              ],
+              "date": "2026-09-22",
+              "time": null,
+              "rubbers": [
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Ser Lin Qian"
+                  ],
+                  "opponent": [
+                    "Shin Yu-bin"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      11,
+                      5
+                    ],
+                    [
+                      5,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Loy Ming Ying"
+                  ],
+                  "opponent": [
+                    "Joo Cheon-hui"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      5,
+                      11
+                    ],
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      9,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "discipline": "WS",
+                  "athletes": [
+                    "Tan Zhao Yun"
+                  ],
+                  "opponent": [
+                    "Kim Na-yeong"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      5,
+                      11
+                    ],
+                    [
+                      5,
+                      11
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wtt-results:asian-games-2026-table-tennis-individual-event",
+      "name": "Table tennis at the 2026 Asian Games - Individual Event",
+      "shortName": "Asian Games Individual Event",
+      "sport": "TABLE_TENNIS",
+      "ageCategory": "SENIOR",
+      "level": "MAJOR",
+      "officialTierName": "Asian Games",
+      "location": "Toyota, Japan",
+      "start": "2026-09-20",
+      "end": "2026-09-28",
+      "status": "IN_PROGRESS",
+      "coverage": "Mixed doubles only so far: both India pairs, complete through their final match (bronze-medal semifinal loss for Shah/Chitale, quarterfinal loss for Ghorpade/Desai). Men's singles, women's singles, men's doubles and women's doubles have not been checked yet and are not included; those disciplines are still open (finals on 27-28 September) or may already be finished with Indian or Singaporean entries not yet verified.",
+      "sources": [
+        {
+          "label": "Table tennis at the 2026 Asian Games (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Table_tennis_at_the_2026_Asian_Games",
+          "readOn": "2026-09-27"
+        },
+        {
+          "label": "Table tennis at the 2026 Asian Games - Mixed doubles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Table_tennis_at_the_2026_Asian_Games_%E2%80%93_Mixed_doubles",
+          "readOn": "2026-09-27"
+        }
+      ],
+      "notes": "Mixed doubles is fully finished (medal table populated): Manush Shah/Diya Chitale won bronze (shared, no playoff, lost the semifinal); Yashaswini Ghorpade/Harmeet Desai lost in the quarterfinals. No Singapore mixed doubles entries were found. Match dates/times are not shown per round on the bracket page and are left null. Men's singles, women's singles, men's doubles and women's doubles for India/Singapore are left for a future update to stay within this run's page budget.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Manush Shah",
+            "Diya Chitale"
+          ],
+          "seed": 5,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Bimandee Swarna",
+                "Chanul Kulappuwadu"
+              ],
+              "opponentCountry": "SRI",
+              "scores": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Moosa Ahmed",
+                "Aishath Nazim"
+              ],
+              "opponentCountry": "MDV",
+              "scores": [
+                [
+                  11,
+                  0
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Doo Hoi Kem",
+                "Wong Chun Ting"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  13,
+                  15
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  5
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Sun Yingsha",
+                "Wang Chuqin"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  2,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Yashaswini Ghorpade",
+            "Harmeet Desai"
+          ],
+          "seed": 8,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Fathimath Ali",
+                "Mohamed Ismail"
+              ],
+              "opponentCountry": "MDV",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Ng Wing Lam",
+                "Yiu Kwan To"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Kuai Man",
+                "Lin Shidong"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  9,
+                  11
                 ]
               ],
               "date": null,
