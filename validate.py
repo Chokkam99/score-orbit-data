@@ -284,6 +284,8 @@ def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
         if field not in entry:
             errors.add(f"{path}: {ctx} entry missing '{field}'")
     check_country(path, ctx, entry.get("country"), errors)
+    if "eliminated" in entry and not isinstance(entry["eliminated"], bool):
+        errors.add(f"{path}: {ctx} eliminated must be true or false when present, got {entry['eliminated']!r}")
     disc = entry.get("discipline")
     team_disciplines = set(rules.get("teamDisciplines", []))
     is_team = disc in team_disciplines
