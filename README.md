@@ -33,3 +33,10 @@ stays its own event, with its own dates, status and format, and carries the same
 `tournament: {"id", "name", "shortName"}`, e.g. `{"id": "asian-games-2026", "name": "Asian Games
 2026", "shortName": "Asian Games"}`. The app shows the parts as one tournament. Parts of one sport
 must agree on the tournament names, age category and id prefix; `validate.py` checks this.
+
+## Group stages and elimination
+
+A loss in a group match (G1 to G5) doesn't end an entry's run in the app; the group isn't decided
+by one result. When the source shows an entry is out although it has matches left (for example,
+it can no longer qualify from its group), set `"eliminated": true` on that entry. A knockout loss,
+a final or a third-place match ends the run without the flag.
