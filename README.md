@@ -13,4 +13,5 @@ badminton events with Indian and Singaporean entries.
   tournament results pages). Nothing here is guessed; unconfirmed entry lists are left empty,
   and a match is only recorded when a source shows it.
 - Run `python3 validate.py` before committing.
+- A GitHub Actions workflow (`.github/workflows/validate.yml`) runs `python3 validate.py` on every push and pull request.
 - Updated weekly by a reviewed pull request.
