@@ -348,6 +348,36 @@ def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
                 check_iso_date(path, f"{mctx}.date", date_val, errors, allow_none=True)
 
 
+TOURNAMENT_ID_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
+
+
+def check_tournaments(path, events, errors):
+    """Optional `tournament` {id, name, shortName} links parts of one tournament (e.g. Asian Games
+    team and individual events). The app shows parts with the same sport and id as one
+    tournament, so those parts must agree on the tournament's names, age category and id prefix.
+    The same id may be used by several sports (each sport's parts combine separately)."""
+    parts = {}
+    for ei, event in enumerate(events):
+        if not isinstance(event, dict) or event.get("tournament") is None:
+            continue
+        t = event["tournament"]
+        ctx = f"event[{ei}] {event.get('name')!r} tournament"
+        if not isinstance(t, dict) or not all(isinstance(t.get(k), str) and t.get(k) for k in ("id", "name", "shortName")):
+            errors.add(f"{path}: {ctx} must be an object with non-empty id, name and shortName")
+            continue
+        if not TOURNAMENT_ID_RE.match(t["id"]):
+            errors.add(f"{path}: {ctx} id {t['id']!r} must be a lowercase slug like 'asian-games-2026'")
+        prefix = str(event.get("id", "")).split(":", 1)[0]
+        key = (event.get("sport"), t["id"])
+        signature = (t["name"], t["shortName"], event.get("ageCategory"), prefix)
+        if key in parts and parts[key] != signature:
+            errors.add(
+                f"{path}: {ctx} {t['id']!r} disagrees with another {key[0]} part on name, shortName, "
+                f"ageCategory or id prefix: {signature} vs {parts[key]}"
+            )
+        parts.setdefault(key, signature)
+
+
 def validate_file(path, data, required_fields, rules_by_sport, errors, is_results):
     if data is None:
         return
@@ -363,6 +393,7 @@ def validate_file(path, data, required_fields, rules_by_sport, errors, is_result
     if not isinstance(events, list):
         errors.add(f"{path}: 'events' must be a list")
         return
+    check_tournaments(path, events, errors)
 
     seen_ids = set()
     for ei, event in enumerate(events):

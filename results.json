@@ -4509,7 +4509,12 @@
             }
           ]
         }
-      ]
+      ],
+      "tournament": {
+        "id": "asian-games-2026",
+        "name": "Asian Games 2026",
+        "shortName": "Asian Games"
+      }
     },
     {
       "id": "bwf-results:asian-games-2026-badminton-individual-event",
@@ -5198,7 +5203,12 @@
             }
           ]
         }
-      ]
+      ],
+      "tournament": {
+        "id": "asian-games-2026",
+        "name": "Asian Games 2026",
+        "shortName": "Asian Games"
+      }
     },
     {
       "id": "wtt-results:asian-games-2026-table-tennis-team-event",
@@ -6463,7 +6473,12 @@
             }
           ]
         }
-      ]
+      ],
+      "tournament": {
+        "id": "asian-games-2026",
+        "name": "Asian Games 2026",
+        "shortName": "Asian Games"
+      }
     },
     {
       "id": "wtt-results:asian-games-2026-table-tennis-individual-event",
@@ -6709,7 +6724,12 @@
             }
           ]
         }
-      ]
+      ],
+      "tournament": {
+        "id": "asian-games-2026",
+        "name": "Asian Games 2026",
+        "shortName": "Asian Games"
+      }
     }
   ]
 }

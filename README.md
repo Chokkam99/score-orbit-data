@@ -25,3 +25,11 @@ game within that tie, own points first).
 
 Rubbers are never individual entries: a country's singles/doubles rubber inside a team event stays
 nested under its tie, and never gets its own top-level entry alongside the team entry.
+
+## Multi-event tournaments
+
+When one tournament has separate events (the Asian Games team and individual events), each part
+stays its own event, with its own dates, status and format, and carries the same
+`tournament: {"id", "name", "shortName"}`, e.g. `{"id": "asian-games-2026", "name": "Asian Games
+2026", "shortName": "Asian Games"}`. The app shows the parts as one tournament. Parts of one sport
+must agree on the tournament names, age category and id prefix; `validate.py` checks this.
