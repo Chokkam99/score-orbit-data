@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-09-27",
+  "updatedOn": "2026-09-29",
   "sport": "BADMINTON",
   "events": [
     {
@@ -4538,7 +4538,7 @@
         {
           "label": "Badminton at the 2026 Asian Games - Men's singles (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Badminton_at_the_2026_Asian_Games_%E2%80%93_Men%27s_singles",
-          "readOn": "2026-09-27"
+          "readOn": "2026-09-29"
         },
         {
           "label": "Badminton at the 2026 Asian Games - Women's singles (Wikipedia)",
@@ -4561,7 +4561,7 @@
           "readOn": "2026-09-27"
         }
       ],
-      "notes": "Level set to MAJOR by analogy with the Olympics/World Championships tier in rules.json, same reasoning as the team-event record. Per-match dates and times within the Sep 25-29 window are not shown in the Wikipedia bracket templates for these disciplines, so match date/time is left null except where the source states one. All India quarterfinals are now decided: Sindhu (WS), Hooda (WS), Jolly/Gopichand (WD) and Kapila/Crasto (XD) all lost their quarterfinals and are eliminated. Loh Kean Yew (SGP, MS) won his quarterfinal and plays the semifinal against Yoo Tae-bin (KOR) on 2026-09-28 per the event schedule; exact time not shown on the bracket page so left null.",
+      "notes": "Level set to MAJOR by analogy with the Olympics/World Championships tier in rules.json, same reasoning as the team-event record. Per-match dates and times within the Sep 25-29 window are not shown in the Wikipedia bracket templates for these disciplines, so match date/time is left null except where the source states one. All India quarterfinals are now decided: Sindhu (WS), Hooda (WS), Jolly/Gopichand (WD) and Kapila/Crasto (XD) all lost their quarterfinals and are eliminated. Loh Kean Yew (SGP, MS) won his semifinal against Yoo Tae-bin (KOR) and plays the final against Kunlavut Vitidsarn (THA), scheduled for 2026-09-29 at 11:00 JST per the bracket schedule table; converted date only, time left null since the app's local time convention is not established by prior data.",
       "entries": [
         {
           "country": "IND",
@@ -5089,13 +5089,37 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Yoo Tae-bin"
               ],
               "opponentCountry": "KOR",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  19,
+                  21
+                ],
+                [
+                  21,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Kunlavut Vitidsarn"
+              ],
+              "opponentCountry": "THA",
               "scores": [],
-              "date": "2026-09-28",
+              "date": "2026-09-29",
               "time": null
             }
           ]
@@ -6582,13 +6606,13 @@
       "location": "Toyota, Japan",
       "start": "2026-09-20",
       "end": "2026-09-28",
-      "status": "IN_PROGRESS",
-      "coverage": "India and Singapore entries across mixed doubles, men's singles, women's singles, men's doubles and women's doubles. All are now eliminated: mixed doubles finished (bronze for Shah/Chitale), and every other IND/SGP entry in singles and doubles lost in the round of 32, round of 16 or quarterfinal. Men's singles final (Sept 28) and women's doubles semifinal/final (Sept 27-28) remain, but with no IND/SGP entries left.",
+      "status": "FINISHED",
+      "coverage": "India and Singapore entries across mixed doubles, men's singles, women's singles, men's doubles and women's doubles. All are eliminated: mixed doubles finished (bronze for Shah/Chitale), and every other IND/SGP entry in singles and doubles lost in the round of 32, round of 16 or quarterfinal. The competition itself concluded 28 September with all finals played; none of the remaining gold-medal matches involved an IND/SGP entry.",
       "sources": [
         {
           "label": "Table tennis at the 2026 Asian Games (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Table_tennis_at_the_2026_Asian_Games",
-          "readOn": "2026-09-27"
+          "readOn": "2026-09-29"
         },
         {
           "label": "Table tennis at the 2026 Asian Games - Mixed doubles (Wikipedia)",
