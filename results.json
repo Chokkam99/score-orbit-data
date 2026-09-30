@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-09-29",
+  "updatedOn": "2026-09-30",
   "sport": "BADMINTON",
   "events": [
     {
@@ -4527,8 +4527,8 @@
       "location": "Ichinomiya, Japan",
       "start": "2026-09-25",
       "end": "2026-09-29",
-      "status": "IN_PROGRESS",
-      "coverage": "India and Singapore main-draw matches in the individual events (singles and doubles) reached so far; quarterfinals are complete as of the read date, only Loh Kean Yew (SGP, MS) remains alive going into the semifinals.",
+      "status": "FINISHED",
+      "coverage": "All India and Singapore main-draw matches in the individual events (singles and doubles), through the finals.",
       "sources": [
         {
           "label": "Badminton at the 2026 Asian Games (Wikipedia)",
@@ -4559,9 +4559,14 @@
           "label": "Badminton at the 2026 Asian Games - Mixed doubles (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Badminton_at_the_2026_Asian_Games_%E2%80%93_Mixed_doubles",
           "readOn": "2026-09-27"
+        },
+        {
+          "label": "Badminton at the 2026 Asian Games - Men's singles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Badminton_at_the_2026_Asian_Games_%E2%80%93_Men%27s_singles",
+          "readOn": "2026-09-30"
         }
       ],
-      "notes": "Level set to MAJOR by analogy with the Olympics/World Championships tier in rules.json, same reasoning as the team-event record. Per-match dates and times within the Sep 25-29 window are not shown in the Wikipedia bracket templates for these disciplines, so match date/time is left null except where the source states one. All India quarterfinals are now decided: Sindhu (WS), Hooda (WS), Jolly/Gopichand (WD) and Kapila/Crasto (XD) all lost their quarterfinals and are eliminated. Loh Kean Yew (SGP, MS) won his semifinal against Yoo Tae-bin (KOR) and plays the final against Kunlavut Vitidsarn (THA), scheduled for 2026-09-29 at 11:00 JST per the bracket schedule table; converted date only, time left null since the app's local time convention is not established by prior data.",
+      "notes": "All individual disciplines' finals were completed on 2026-09-29, per the Asian Games badminton overview page. Loh Kean Yew (SGP, MS) lost the gold medal final to Kunlavut Vitidsarn (THA) 12-21, 16-21. Per-match dates and times within the Sep 25-29 window are not shown in the Wikipedia bracket templates for most disciplines, so match date/time is left null except for the final.",
       "entries": [
         {
           "country": "IND",
@@ -5113,12 +5118,21 @@
             },
             {
               "round": "F",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Kunlavut Vitidsarn"
               ],
               "opponentCountry": "THA",
-              "scores": [],
+              "scores": [
+                [
+                  12,
+                  21
+                ],
+                [
+                  16,
+                  21
+                ]
+              ],
               "date": "2026-09-29",
               "time": null
             }
