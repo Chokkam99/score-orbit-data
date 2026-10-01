@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-09-30",
+  "updatedOn": "2026-10-01",
   "sport": "BADMINTON",
   "events": [
     {
@@ -7943,6 +7943,278 @@
         "name": "Asian Games 2026",
         "shortName": "Asian Games"
       }
+    },
+    {
+      "id": "wtt-results:astana-star-contender-2026",
+      "name": "WTT Star Contender Astana 2026",
+      "shortName": "Astana Star Contender",
+      "sport": "TABLE_TENNIS",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "WTT Star Contender",
+      "location": "Astana, Kazakhstan",
+      "start": "2026-09-15",
+      "end": "2026-09-20",
+      "status": "FINISHED",
+      "coverage": "India main-draw matches (no Singapore entries found)",
+      "sources": [
+        {
+          "label": "WTT Star Contender Astana 2026 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/WTT_Star_Contender_Astana_2026",
+          "readOn": "2026-10-01"
+        }
+      ],
+      "notes": "Backfill. Women's singles only; no Indian men's or Singaporean entries appear anywhere in the draw. The women's singles main draw is four 16-player sections (RD1-RD4 = first round through quarterfinals), mapped here to R64/R32/R16/QF, feeding a separate semifinal/final bracket neither Indian entry reached. Match dates/times are not shown per round in the source and are left null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Manika Batra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Arantxa Cossio"
+              ],
+              "opponentCountry": "MEX",
+              "scores": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Elizabet Abraamian"
+              ],
+              "opponentCountry": "RUS",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  12,
+                  10
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Satsuki Odo"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  4,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  12,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Anusha Kutumbale"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Maria Xiao"
+              ],
+              "opponentCountry": "ESP",
+              "scores": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Sayali Wani"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Arina Slautina"
+              ],
+              "opponentCountry": "RUS",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wtt-results:panagyurishte-2026",
+      "name": "WTT Contender Panagyurishte 2026",
+      "shortName": "Panagyurishte Contender",
+      "sport": "TABLE_TENNIS",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "WTT Contender",
+      "location": "Panagyurishte, Bulgaria",
+      "start": "2026-09-08",
+      "end": "2026-09-13",
+      "status": "FINISHED",
+      "coverage": "India main-draw matches (no Singapore entries found)",
+      "sources": [
+        {
+          "label": "WTT Contender Panagyurishte 2026 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/WTT_Contender_Panagyurishte_2026",
+          "readOn": "2026-10-01"
+        }
+      ],
+      "notes": "Backfill. Women's singles only; no Indian men's or Singaporean entries appear anywhere in the draw. Main draw of 32 (RD1-RD3 = R32/R16/QF) feeds a separate semifinal/final bracket the Indian entry did not reach. Match dates/times are not shown per round in the source and are left null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Manika Batra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Izabela Lupulesku"
+              ],
+              "opponentCountry": "SRB",
+              "scores": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  13,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Miu Hirano"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
