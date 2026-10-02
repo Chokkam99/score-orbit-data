@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-09-28",
+  "updatedOn": "2026-10-02",
   "sport": "BADMINTON",
   "events": [
     {
@@ -20,10 +20,10 @@
         {
           "label": "China Smash 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/China_Smash_2026",
-          "readOn": "2026-09-28"
+          "readOn": "2026-10-02"
         }
       ],
-      "notes": "Grand Smash, so level is MAJOR. The Wikipedia bracket templates are set up but every player-name field is still blank as of the read date, so no entries can be confirmed from that source. A search turned up an India news article naming Manav Thakkar, Manika Batra and Sreeja Akula as India's likely squad, but the host (indiasportshub.com) is blocked by this environment's network egress, so that could not be read and verify itself; treating as unconfirmed per the never-guess rule rather than recording it from a search snippet."
+      "notes": "Grand Smash, so level is MAJOR. Qualifying runs 1-3 October; the 64-player main draws for singles only begin 4 October, so the event has started but no IND/SGP main-draw match has been played yet. The Wikipedia bracket templates are still blank as of the re-read date. indiasportshub.com, worldtabletennis.com and china-smash.com are all blocked by this environment's network egress, so none of those could be read to verify an entry list; treating as unconfirmed per the never-guess rule rather than recording it from a search snippet."
     },
     {
       "id": "bwf-upcoming:world-junior-championships-2026",
