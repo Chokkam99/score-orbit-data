@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-01",
+  "updatedOn": "2026-10-02",
   "sport": "BADMINTON",
   "events": [
     {
@@ -8207,6 +8207,1011 @@
                 [
                   7,
                   11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bwf-results:world-championships-2026",
+      "name": "BWF World Championships 2026",
+      "shortName": "World Championships",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "MAJOR",
+      "officialTierName": "BWF World Championships",
+      "location": "New Delhi, India",
+      "start": "2026-08-17",
+      "end": "2026-08-23",
+      "status": "FINISHED",
+      "coverage": "India and Singapore main-draw matches",
+      "sources": [
+        {
+          "label": "2026 BWF World Championships (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Championships",
+          "readOn": "2026-10-02"
+        },
+        {
+          "label": "2026 BWF World Championships - Men's singles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Championships_%E2%80%93_Men%27s_singles",
+          "readOn": "2026-10-02"
+        },
+        {
+          "label": "2026 BWF World Championships - Women's singles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Championships_%E2%80%93_Women%27s_singles",
+          "readOn": "2026-10-02"
+        },
+        {
+          "label": "2026 BWF World Championships - Men's doubles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Championships_%E2%80%93_Men%27s_doubles",
+          "readOn": "2026-10-02"
+        },
+        {
+          "label": "2026 BWF World Championships - Women's doubles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Championships_%E2%80%93_Women%27s_doubles",
+          "readOn": "2026-10-02"
+        },
+        {
+          "label": "2026 BWF World Championships - Mixed doubles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Championships_%E2%80%93_Mixed_doubles",
+          "readOn": "2026-10-02"
+        }
+      ],
+      "notes": "Backfill. Required slug per docs/data-curation.md replacing-bundled-events table, replacing the bundled Aug-2026 finals capture. Host nation India fielded a large squad; Treesa Jolly/Gayatri Gopichand reached the semifinals in women's doubles. Per-round dates/times are not shown in the bracket templates and are left null. Byes into the draw (e.g. top seeds skipping the first round) are not recorded as separate BYE entries. Dhruv Kapila/Tanisha Crasto's round of 32 opponents (Leong Iok Chong/Ng Weng Chi) are flagged as Macau on Wikipedia, which has no IOC country code in rules.json/validate.py, so opponentCountry is left null for that match.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Ayush Shetty"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Shi Yuqi"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  21,
+                  14
+                ],
+                [
+                  13,
+                  21
+                ],
+                [
+                  21,
+                  19
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Dumindu Abeywickrama"
+              ],
+              "opponentCountry": "SRI",
+              "scores": [
+                [
+                  21,
+                  8
+                ],
+                [
+                  21,
+                  10
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Alwi Farhan"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  19,
+                  21
+                ],
+                [
+                  11,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Lakshya Sen"
+          ],
+          "seed": 14,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Collins Valentine Filimon"
+              ],
+              "opponentCountry": "AUT",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  8
+                ],
+                [
+                  21,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Garret Tan"
+              ],
+              "opponentCountry": "USA",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  19,
+                  21
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Loh Kean Yew"
+          ],
+          "seed": 13,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Brian Yang"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [
+                [
+                  21,
+                  14
+                ],
+                [
+                  22,
+                  20
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Lee Cheuk Yiu"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  21,
+                  17
+                ],
+                [
+                  21,
+                  15
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Victor Lai"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [
+                [
+                  20,
+                  22
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Jason Teh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Fabio Caponio"
+              ],
+              "opponentCountry": "ITA",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Jonatan Christie"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  19,
+                  21
+                ],
+                [
+                  11,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "P. V. Sindhu"
+          ],
+          "seed": 9,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Sophia Noble"
+              ],
+              "opponentCountry": "IRL",
+              "scores": [
+                [
+                  21,
+                  7
+                ],
+                [
+                  21,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Wen Yu Zhang"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  17
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Wang Zhiyi"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  11,
+                  21
+                ],
+                [
+                  21,
+                  15
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Unnati Hooda"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Thet Htar Thuzar"
+              ],
+              "opponentCountry": "MYA",
+              "scores": [
+                [
+                  22,
+                  20
+                ],
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Michelle Li"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [
+                [
+                  21,
+                  11
+                ],
+                [
+                  9,
+                  21
+                ],
+                [
+                  21,
+                  23
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Megan Lee"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Line Christophersen"
+              ],
+              "opponentCountry": "DEN",
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  7,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Satwiksairaj Rankireddy",
+            "Chirag Shetty"
+          ],
+          "seed": 5,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WALKOVER_WIN",
+              "opponent": [
+                "Alexander Dunn",
+                "Adam Pringle"
+              ],
+              "opponentCountry": "SCO",
+              "scores": [],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Junaidi Arif",
+                "Yap Roy King"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  21,
+                  23
+                ],
+                [
+                  21,
+                  19
+                ],
+                [
+                  21,
+                  17
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Liang Weikeng",
+                "Wang Chang"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  9,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Hariharan Amsakarunan",
+            "Arjun M. R."
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "RETIRED_WIN",
+              "opponent": [
+                "Scott Guildea",
+                "Paul Reynolds"
+              ],
+              "opponentCountry": "IRL",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  6,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Kang Min-hyuk",
+                "Ki Dong-ju"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MD",
+          "athletes": [
+            "Donovan Wee",
+            "Howin Wong"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Solomon Padiz Jr.",
+                "Julius Villabrille"
+              ],
+              "opponentCountry": "PHI",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  21,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Ben Lane",
+                "Sean Vendy"
+              ],
+              "opponentCountry": "ENG",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  19
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MD",
+          "athletes": [
+            "Wesley Koh",
+            "Junsuke Kubo"
+          ],
+          "seed": 10,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Bjarne Geiss",
+                "Jones Ralfy Jansen"
+              ],
+              "opponentCountry": "GER",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  12
+                ],
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Kim Astrup",
+                "Anders Skaarup Rasmussen"
+              ],
+              "opponentCountry": "DEN",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  8,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Treesa Jolly",
+            "Gayatri Gopichand"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Paula López",
+                "Lucía Rodríguez"
+              ],
+              "opponentCountry": "ESP",
+              "scores": [
+                [
+                  21,
+                  9
+                ],
+                [
+                  21,
+                  13
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Lauren Lam",
+                "Allison Lee"
+              ],
+              "opponentCountry": "USA",
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  21,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Rin Iwanaga",
+                "Kie Nakanishi"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Jia Yifan",
+                "Zhang Shuxian"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  15
+                ],
+                [
+                  21,
+                  13
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Liu Shengshu",
+                "Tan Ning"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  21,
+                  18
+                ],
+                [
+                  13,
+                  21
+                ],
+                [
+                  8,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Kavipriya Selvam",
+            "Simran Singhi"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Nikol Carulla",
+                "Carmen María Jiménez"
+              ],
+              "opponentCountry": "ESP",
+              "scores": [
+                [
+                  22,
+                  20
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Gabriela Stoeva",
+                "Stefani Stoeva"
+              ],
+              "opponentCountry": "BUL",
+              "scores": [
+                [
+                  7,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Dhruv Kapila",
+            "Tanisha Crasto"
+          ],
+          "seed": 15,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Leong Iok Chong",
+                "Ng Weng Chi"
+              ],
+              "opponentCountry": null,
+              "scores": [
+                [
+                  21,
+                  11
+                ],
+                [
+                  21,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Guo Xinwa",
+                "Chen Fanghui"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  5,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Rohan Kapoor",
+            "Ruthvika Gadde"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Jonathan Lai",
+                "Crystal Lai"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [
+                [
+                  22,
+                  20
+                ],
+                [
+                  19,
+                  21
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Ashith Surya",
+            "Amrutha Pramuthesh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Emre Sönmez",
+                "Yasemin Bektaş"
+              ],
+              "opponentCountry": "TUR",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  29,
+                  30
+                ],
+                [
+                  22,
+                  24
                 ]
               ],
               "date": null,
