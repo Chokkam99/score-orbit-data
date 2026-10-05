@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-04",
+  "updatedOn": "2026-10-05",
   "sport": "BADMINTON",
   "events": [
     {
@@ -9233,20 +9233,20 @@
       "start": "2026-10-01",
       "end": "2026-10-11",
       "status": "IN_PROGRESS",
-      "coverage": "India and Singapore entries in the qualifying rounds; no IND/SGP player reached the main draw",
+      "coverage": "India and Singapore entries in qualifying and the main draw. All qualifiers were eliminated before the main draw. In the main draw, direct entries and wild cards from both countries are in singles, doubles and mixed doubles; some results are in and some matches are still to be played.",
       "sources": [
         {
           "label": "China Smash 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/China_Smash_2026",
-          "readOn": "2026-10-03"
+          "readOn": "2026-10-05"
         },
         {
           "label": "China Smash 2026 - Qualification (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/China_Smash_2026_%E2%80%93_Qualification",
-          "readOn": "2026-10-03"
+          "readOn": "2026-10-05"
         }
       ],
-      "notes": "Qualifying rounds (Q1/Q2 here) ran 1-3 October; every IND/SGP singles qualifier lost by the second round except Diya Chitale, whose round 2 match vs Zhu Chengzhu (HKG) has no score yet on the source as of this read, so it is left out per the never-guess rule. No IND/SGP doubles entries found in the (still-blank) main draw page. Main draw runs 4-11 October.",
+      "notes": "Qualifying (1-3 Oct) eliminated every IND/SGP qualifier, including Diya Chitale's close Q2 loss to Zhu Chengzhu (HKG), so none reached the main draw via qualifying. Several IND/SGP players entered the main draw directly as seeds/wild cards (not through qualifying): Manush Shah, Manav Thakkar, Manika Batra and Sreeja Akula (IND); Izaac Quek, Ser Lin Qian and Zeng Jian (SGP) in singles, plus doubles/mixed doubles pairs. The main draw bracket page does not give per-match dates/times, only round-by-round day ranges, so SCHEDULED matches are left without a date. Xiaona Shan (GER) / Zeng Jian (SGP) is a cross-country pairing in women's doubles per the official draw; recorded under SGP since that is the tracked country. Manav Thakkar/Manush Shah (IND) and Izaac Quek/Koen Pang (SGP) in men's doubles, and Diya Chitale/Yashaswini Ghorpade (IND) in women's doubles, have byes into the second round but their opponent is not yet decided (the other half of their section has not played), so no next match is recorded for them yet.",
       "entries": [
         {
           "country": "IND",
@@ -9442,8 +9442,41 @@
               ],
               "date": null,
               "time": null
+            },
+            {
+              "round": "Q2",
+              "outcome": "LOSS",
+              "opponent": [
+                "Zhu Chengzhu"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  14,
+                  16
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  13
+                ]
+              ],
+              "date": null,
+              "time": null
             }
-          ]
+          ],
+          "eliminated": true
         },
         {
           "country": "IND",
@@ -9826,6 +9859,357 @@
               "time": null
             }
           ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Manush Shah"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Tomislav Pucar"
+              ],
+              "opponentCountry": "CRO",
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  12,
+                  14
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  8,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ],
+          "eliminated": true
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Manav Thakkar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Simon Gauzy"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Izaac Quek"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Zhou Qihao"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Manika Batra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Bruna Takahashi"
+              ],
+              "opponentCountry": "BRA",
+              "scores": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  12,
+                  10
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wang Manyu"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Sreeja Akula"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Fan Shuhan"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ],
+          "eliminated": true
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Ser Lin Qian"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Xiaona Shan"
+              ],
+              "opponentCountry": "GER",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Zeng Jian"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Orawan Paranang"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Manav Thakkar",
+            "Manush Shah"
+          ],
+          "seed": 2,
+          "matches": []
+        },
+        {
+          "country": "SGP",
+          "discipline": "MD",
+          "athletes": [
+            "Izaac Quek",
+            "Koen Pang"
+          ],
+          "seed": 8,
+          "matches": []
+        },
+        {
+          "country": "SGP",
+          "discipline": "WD",
+          "athletes": [
+            "Loy Ming Ying",
+            "Ser Lin Qian"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Giulia Takahashi",
+                "Laura Watanabe"
+              ],
+              "opponentCountry": "BRA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WD",
+          "athletes": [
+            "Xiaona Shan",
+            "Zeng Jian"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wang Yidi",
+                "Jiang Yiyi"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Diya Chitale",
+            "Yashaswini Ghorpade"
+          ],
+          "seed": 6,
+          "matches": []
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Manush Shah",
+            "Diya Chitale"
+          ],
+          "seed": 5,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Youssef Abdelaziz",
+                "Mariam Alhodaby"
+              ],
+              "opponentCountry": "EGY",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "XD",
+          "athletes": [
+            "Koen Pang",
+            "Zeng Jian"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Eduard Ionescu",
+                "Bernadette Szőcs"
+              ],
+              "opponentCountry": "ROU",
+              "scores": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ],
+          "eliminated": true
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-02",
+  "updatedOn": "2026-10-05",
   "sport": "BADMINTON",
   "events": [
     {
@@ -20,10 +20,10 @@
         {
           "label": "China Smash 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/China_Smash_2026",
-          "readOn": "2026-10-02"
+          "readOn": "2026-10-05"
         }
       ],
-      "notes": "Grand Smash, so level is MAJOR. Qualifying runs 1-3 October; the 64-player main draws for singles only begin 4 October, so the event has started but no IND/SGP main-draw match has been played yet. The Wikipedia bracket templates are still blank as of the re-read date. indiasportshub.com, worldtabletennis.com and china-smash.com are all blocked by this environment's network egress, so none of those could be read to verify an entry list; treating as unconfirmed per the never-guess rule rather than recording it from a search snippet."
+      "notes": "Grand Smash, so level is MAJOR. Now IN_PROGRESS with IND/SGP entries and matches; full detail is tracked in results.json (wtt-results:china-smash-2026) once the main draw started, so this entry is left unconfirmed/empty here per the usual handoff from upcoming to results."
     },
     {
       "id": "bwf-upcoming:world-junior-championships-2026",
@@ -192,6 +192,33 @@
         }
       ],
       "notes": "Access blocked, unverified, not 'not yet open': a WebSearch summary of the official prospectus (PDF not read directly) gave an entry deadline of 25 Aug 2026, already passed, so an accepted-entries list likely exists. BWF's own tournament pages (bwfworldtour.bwfbadminton.com) returned HTTP 403 to automated fetches, and the tournament's own site (arcticopen.fi) only links out to that same BWF page rather than listing players itself, so no entries could be confirmed as of the read date."
+    },
+    {
+      "id": "bwf-upcoming:malaysia-super-100-2026",
+      "name": "Malaysia Super 100 2026",
+      "shortName": "Malaysia Super 100",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 100",
+      "location": "Iskandar Puteri, Malaysia",
+      "start": "2026-10-13",
+      "end": "2026-10-18",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2026 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
+          "readOn": "2026-10-05"
+        },
+        {
+          "label": "2026 Malaysia Super 100 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Malaysia_Super_100",
+          "readOn": "2026-10-05"
+        }
+      ],
+      "notes": "Dates and level confirmed from the Wikipedia World Tour schedule; the dedicated tournament page is still a stub with no draw. BWF's own tournament pages return HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
     },
     {
       "id": "bwf-upcoming:denmark-open-2026",
