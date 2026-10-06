@@ -94,6 +94,17 @@ ALLOWED_SOURCE_HOSTS = [
     "ittf.com",
     "worldtabletennis.com",
     "olympics.com",
+    "badmintoneurope.com",
+    "tournamentsoftware.com",  # bwf.tournamentsoftware.com draws (may show a cookie wall)
+    # national federations named in the app's docs/data-curation.md (entry lists and squads)
+    "badmintonindia.org",
+    "singaporebadminton.org.sg",
+    "stta.org.sg",
+    "ttfi.org",
+    # reputable sports news that names squads and entry lists
+    "thehindu.com",           # incl. sportstar.thehindu.com
+    "indianexpress.com",
+    "straitstimes.com",
 ]
 
 # Rounds where a loss does not end an entry's run: group stage (the app's isGroupRound: G + digit).
