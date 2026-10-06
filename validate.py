@@ -9,6 +9,9 @@ win/loss-vs-games-won consistency check.
 Game-score law: every completed game of a decided match must be a legal score for the sport,
 configured per sport in rules.json (`gameScoring`). Retired matches skip their unfinished last game.
 
+Content checks: readOn and updatedOn may not be in the future (UTC today + 1 day); source
+URLs must use a host in ALLOWED_SOURCE_HOSTS.
+
 Rules the app's parsers (ResultsFeedParser.kt / UpcomingFeedParser.kt) enforce, which
 this file mirrors because the app rejects the *whole* file on any one of them:
 non-null required strings (reqString), a boolean entriesPublished (reqBoolean), ISO
@@ -32,7 +35,8 @@ errors for a file are collected and reported together).
 import json
 import re
 import sys
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
+from urllib.parse import urlsplit
 
 EM_DASH = "—"
 COUNTRY_RE = re.compile(r"^[A-Z]{3}$")
@@ -63,6 +67,24 @@ APP_ENUMS = {
 # The app treats exactly these as team disciplines (Discipline.isTeam()) and applies its tie
 # checks to them regardless of rules.json.
 APP_TEAM_DISCIPLINES = {"MT", "WT", "XT"}
+
+# Source URLs must point at one of these hosts (a listed domain or any subdomain of it, e.g.
+# en.wikipedia.org for wikipedia.org). First block: hosts used by the data on 5 Oct 2026. Second
+# block: official bodies and event sites we expect to cite. To cite a new site, add its domain here
+# in the same commit that first uses it; an unlisted host fails validation on purpose, so a link
+# to an unvetted site never reaches the feed unnoticed.
+ALLOWED_SOURCE_HOSTS = [
+    # in use today
+    "wikipedia.org",
+    "tribuneindia.com",
+    "thebridge.in",
+    "badmintonasia.org",
+    # official / obvious
+    "bwfbadminton.com",   # also bwfworldtour.bwfbadminton.com, bwfworldchampionships.bwfbadminton.com
+    "ittf.com",
+    "worldtabletennis.com",
+    "olympics.com",
+]
 
 UPCOMING_EVENT_REQUIRED = [
     "id", "name", "shortName", "sport", "ageCategory", "level",
@@ -148,6 +170,33 @@ def check_non_null(path, ctx, obj, fields, errors):
             errors.add(f"{path}: {ctx} '{field}' is null but the app requires a value")
 
 
+def latest_allowed_date():
+    """Newest date readOn/updatedOn may carry: today (UTC) plus one day for time zones ahead of UTC."""
+    return datetime.now(timezone.utc).date() + timedelta(days=1)
+
+
+def check_not_future(path, ctx, value, errors):
+    if value is not None and value > latest_allowed_date():
+        errors.add(f"{path}: {ctx} = {value.isoformat()} is in the future (latest allowed is {latest_allowed_date().isoformat()})")
+
+
+def source_url_problem(url):
+    """Why `url` is not an acceptable source link, or None when it is."""
+    if not isinstance(url, str):
+        return "is not a string"
+    try:
+        parts = urlsplit(url)
+        host = parts.hostname
+    except ValueError:
+        return "is not a valid URL"
+    if parts.scheme not in ("http", "https") or not host:
+        return "is not an http(s) URL with a host"
+    host = host.lower().rstrip(".")
+    if not any(host == h or host.endswith("." + h) for h in ALLOWED_SOURCE_HOSTS):
+        return f"has host {host!r}, which is not in ALLOWED_SOURCE_HOSTS (validate.py)"
+    return None
+
+
 def check_sources(path, ctx, sources, errors):
     if not isinstance(sources, list) or len(sources) == 0:
         errors.add(f"{path}: {ctx} must have at least one source")
@@ -160,7 +209,12 @@ def check_sources(path, ctx, sources, errors):
             if field not in src or not src[field]:
                 errors.add(f"{path}: {ctx} source[{i}] missing '{field}'")
         if "readOn" in src and src["readOn"]:
-            check_iso_date(path, f"{ctx} source[{i}].readOn", src["readOn"], errors)
+            read_on = check_iso_date(path, f"{ctx} source[{i}].readOn", src["readOn"], errors)
+            check_not_future(path, f"{ctx} source[{i}].readOn", read_on, errors)
+        if src.get("url"):
+            problem = source_url_problem(src["url"])
+            if problem:
+                errors.add(f"{path}: {ctx} source[{i}] url {src['url']!r} {problem}")
 
 
 def check_scores(path, ctx, scores, errors):
@@ -577,7 +631,8 @@ def validate_file(path, data, required_fields, non_null_fields, rules_by_sport, 
     if "sport" not in data:
         errors.add(f"{path}: top-level 'sport' field is required")
     if "updatedOn" in data:
-        check_iso_date(path, "updatedOn", data.get("updatedOn"), errors)
+        updated_on = check_iso_date(path, "updatedOn", data.get("updatedOn"), errors)
+        check_not_future(path, "updatedOn", updated_on, errors)
     else:
         errors.add(f"{path}: missing 'updatedOn'")
     events = data.get("events")
