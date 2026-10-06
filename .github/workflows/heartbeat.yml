@@ -1,0 +1,36 @@
+name: Heartbeat
+
+# Fails when the daily data routine has stopped publishing: results.json or upcoming.json has an
+# `updatedOn` more than 2 days before today (UTC). The routine runs at 00:30 UTC, this check at 06:00 UTC.
+#
+# Who hears about it: when a scheduled run fails, GitHub emails the account that last edited the cron
+# line below (the repo owner, as long as they made the last edit), provided that account keeps the
+# default "Actions: failed workflows" email notifications on. There is no other alerting. If someone
+# else changes the schedule, the emails go to them.
+#
+# GitHub switches scheduled workflows off after 60 days without any repository activity. A stopped
+# routine is that situation, but this check fails after 3 days, long before.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check updatedOn is recent
+        run: python3 heartbeat.py
