@@ -2,9 +2,20 @@
 """Validate upcoming.json and results.json against schema v1 and rules.json.
 
 Generic (sport-agnostic) checks live in this file: JSON parsing, schemaVersion,
-required fields, ISO dates, start <= end, sources with url + readOn, no em dash,
-no SCHEDULED matches in FINISHED events, country-code shape, and the
+required fields, ISO dates, start <= end, sources with label + url + readOn, no em
+dash, no SCHEDULED matches in FINISHED events, country-code shape, and the
 win/loss-vs-games-won consistency check.
+
+Rules the app's parsers (ResultsFeedParser.kt / UpcomingFeedParser.kt) enforce, which
+this file mirrors because the app rejects the *whole* file on any one of them:
+non-null required strings (reqString), a boolean entriesPublished (reqBoolean), ISO
+dates and match times (LocalDate/LocalTime.parse), a `scores` array on every match and
+rubber, no NOT_PLAYED team tie, no NaN/Infinity (org.json), an `order` on every rubber,
+and rules.json values that stay inside the app's enums (APP_ENUMS).
+
+Schema rules that are stricter than the parser on purpose (the app would accept the
+data, but it is never legitimate): rubbers on a non-team match, string-typed booleans,
+blank source labels/urls, non-IOC country codes, unknown sports.
 
 Sport-specific vocabulary (disciplines, rounds, levels, ageCategories, outcomes,
 statuses, score format, max athletes per discipline) lives in rules.json, keyed
@@ -22,7 +33,33 @@ from datetime import date
 
 EM_DASH = "—"
 COUNTRY_RE = re.compile(r"^[A-Z]{3}$")
-ISO_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+# ASCII-only and matched with fullmatch: `\d` accepts non-ASCII digits and `$` accepts a trailing
+# newline, both of which the app's LocalDate.parse / LocalTime.parse reject.
+ISO_DATE_RE = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}")
+# The forms the app's LocalTime.parse (ISO_LOCAL_TIME) accepts: HH:mm, HH:mm:ss, HH:mm:ss.fffffffff
+# (ResultsFeedParser.kt:156 parses every match `time`; a bad one rejects the whole file).
+ISO_TIME_RE = re.compile(r"([01][0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9](\.[0-9]{1,9})?)?")
+
+# The app's own enums (score-orbit app/src/main/java/com/scoreorbit/app/data/FixtureModels.kt and
+# ResultsModels.kt). The app parses these with Enum.valueOf, so a value outside them rejects the
+# whole file. rules.json may narrow them per sport but must never add to them.
+APP_ENUMS = {
+    "disciplines": {"MS", "WS", "MD", "WD", "XD", "MT", "WT", "XT"},
+    "levels": {"MAJOR", "TOUR", "DEVELOPMENT", None},
+    "ageCategories": {"SENIOR", "JUNIOR"},
+    "statuses": {"IN_PROGRESS", "FINISHED"},
+    "outcomes": {
+        "WIN", "LOSS", "WALKOVER_WIN", "WALKOVER_LOSS", "RETIRED_WIN", "RETIRED_LOSS",
+        "BYE", "SCHEDULED", "NOT_PLAYED",
+    },
+    "rubberOutcomes": {
+        "WIN", "LOSS", "WALKOVER_WIN", "WALKOVER_LOSS", "RETIRED_WIN", "RETIRED_LOSS",
+        "BYE", "SCHEDULED", "NOT_PLAYED",
+    },
+}
+# The app treats exactly these as team disciplines (Discipline.isTeam()) and applies its tie
+# checks to them regardless of rules.json.
+APP_TEAM_DISCIPLINES = {"MT", "WT", "XT"}
 
 UPCOMING_EVENT_REQUIRED = [
     "id", "name", "shortName", "sport", "ageCategory", "level",
@@ -38,7 +75,16 @@ ENTRY_REQUIRED_COMMON = ["country", "discipline", "athletes"]
 MATCH_REQUIRED = [
     "round", "outcome", "opponent", "opponentCountry", "scores",
 ]
-SOURCE_REQUIRED = ["url", "readOn"]
+# `label` and `url` are reqString on every source (ResultsFeedParser.kt:177-178,
+# UpcomingFeedParser.kt:80-81). `readOn` is optional for the app (never parsed as a date) but is
+# required by this schema so every claim carries the day it was read.
+SOURCE_REQUIRED = ["label", "url", "readOn"]
+# Fields the app reads with reqString: present *and* non-null, or the whole file is rejected
+# (ResultsFeedParser.kt:48-50; UpcomingFeedParser.kt:47-49, 54: upcoming `location` is required,
+# results `location` is optional there). Tournament refs: UpcomingFeedParser.kt:104.
+UPCOMING_EVENT_NON_NULL = ["id", "name", "shortName", "location"]
+RESULTS_EVENT_NON_NULL = ["id", "name", "shortName"]
+TOURNAMENT_NON_NULL = ["id", "name", "shortName"]
 
 
 class Errors(list):
@@ -57,8 +103,16 @@ def load_json(path, errors):
         idx = raw.index(EM_DASH)
         line = raw.count("\n", 0, idx) + 1
         errors.add(f"{path}: contains an em dash (U+2014) at line {line}; use a hyphen or rewrite")
+    def reject_constant(name):
+        # Python's json accepts NaN/Infinity/-Infinity; Android's org.json refuses them
+        # (JSONObject.put -> JSON.checkDouble throws JSONException), and the parsers turn any
+        # JSONException into "reject the whole file" (ResultsFeedParser.kt:35-36,
+        # UpcomingFeedParser.kt:32-33). No Kotlin line names this rule; the library enforces it.
+        errors.add(f"{path}: contains {name}, which is not valid JSON and the app rejects it")
+        return None
+
     try:
-        return json.loads(raw)
+        return json.loads(raw, parse_constant=reject_constant)
     except json.JSONDecodeError as e:
         errors.add(f"{path}: invalid JSON - {e}")
         return None
@@ -69,7 +123,7 @@ def check_iso_date(path, ctx, value, errors, allow_none=False):
         if not allow_none:
             errors.add(f"{path}: {ctx} is null but a date is required")
         return None
-    if not isinstance(value, str) or not ISO_DATE_RE.match(value):
+    if not isinstance(value, str) or not ISO_DATE_RE.fullmatch(value):
         errors.add(f"{path}: {ctx} = {value!r} is not an ISO date (YYYY-MM-DD)")
         return None
     try:
@@ -78,6 +132,17 @@ def check_iso_date(path, ctx, value, errors, allow_none=False):
     except ValueError:
         errors.add(f"{path}: {ctx} = {value!r} is not a real calendar date")
         return None
+
+
+def check_iso_time(path, ctx, value, errors):
+    if not isinstance(value, str) or not ISO_TIME_RE.fullmatch(value):
+        errors.add(f"{path}: {ctx} = {value!r} is not an ISO local time (HH:mm or HH:mm:ss)")
+
+
+def check_non_null(path, ctx, obj, fields, errors):
+    for field in fields:
+        if field in obj and obj[field] is None:
+            errors.add(f"{path}: {ctx} '{field}' is null but the app requires a value")
 
 
 def check_sources(path, ctx, sources, errors):
@@ -205,6 +270,8 @@ def check_rubber(path, ctx, rubber, rules, errors):
             f"{path}: {ctx} outcome {r_outcome!r} not in allowed set {rules.get('rubberOutcomes', [])}"
         )
     r_scores = rubber.get("scores")
+    if not isinstance(r_scores, list):
+        errors.add(f"{path}: {ctx} scores must be a list (use [] when there is no score), got {r_scores!r}")
     if r_outcome == "NOT_PLAYED":
         if r_scores not in ([], None):
             errors.add(f"{path}: {ctx} NOT_PLAYED rubber must have no scores, got {r_scores!r}")
@@ -222,9 +289,11 @@ def check_rubber(path, ctx, rubber, rules, errors):
 
 def check_tie(path, ctx, match, rules, errors):
     outcome = match.get("outcome")
+    if outcome == "NOT_PLAYED":
+        # ResultsFeedParser.kt:137-140
+        errors.add(f"{path}: {ctx} a tie can't be NOT_PLAYED (that outcome only exists on rubbers)")
     scores = match.get("scores")
     if not isinstance(scores, list):
-        errors.add(f"{path}: {ctx} scores must be a list")
         scores = []
     opponent = match.get("opponent")
     if isinstance(opponent, list) and opponent:
@@ -338,6 +407,8 @@ def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
             if not isinstance(opponent, list):
                 errors.add(f"{path}: {mctx} opponent must be a list")
             scores = match.get("scores")
+            if not isinstance(scores, list):
+                errors.add(f"{path}: {mctx} scores must be a list (use [] when there is no score)")
             score_format = rules.get("scoreFormatByDiscipline", {}).get(disc, rules.get("scoreFormat"))
             if score_format == "ties":
                 check_tie(path, mctx, match, rules, errors)
@@ -345,9 +416,22 @@ def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
                 check_scores(path, mctx, scores if isinstance(scores, list) else [], errors)
                 if isinstance(scores, list):
                     check_win_loss_consistency(path, mctx, outcome, scores, errors)
+            if score_format != "ties":
+                # The parser reads `rubbers` on every match with getJSONArray (ResultsFeedParser.kt:143-144),
+                # so a non-array value (even a falsy {} or "") rejects the whole file. A non-empty array on a
+                # non-team match is accepted by the app but is never legitimate (team-schema.md), so it is
+                # rejected here as a schema rule.
+                rubbers = match.get("rubbers")
+                if rubbers is not None and not isinstance(rubbers, list):
+                    errors.add(f"{path}: {mctx} rubbers must be a list when present, got {rubbers!r}")
+                elif rubbers:
+                    errors.add(f"{path}: {mctx} rubbers only belong on a team tie, not a {disc} match")
             date_val = match.get("date")
             if date_val is not None:
                 check_iso_date(path, f"{mctx}.date", date_val, errors, allow_none=True)
+            time_val = match.get("time")
+            if time_val is not None:
+                check_iso_time(path, f"{mctx}.time", time_val, errors)
 
 
 TOURNAMENT_ID_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
@@ -380,10 +464,45 @@ def check_tournaments(path, events, errors):
         parts.setdefault(key, signature)
 
 
-def validate_file(path, data, required_fields, rules_by_sport, errors, is_results):
+def check_tournament(path, ctx, event, errors):
+    if event.get("tournament") is None:
+        return
+    tournament = event["tournament"]
+    if not isinstance(tournament, dict):
+        errors.add(f"{path}: {ctx} tournament must be an object or null")
+        return
+    for field in TOURNAMENT_NON_NULL:
+        if tournament.get(field) is None:
+            errors.add(f"{path}: {ctx} tournament missing '{field}'")
+
+
+def check_rules_against_app(rules_by_sport, errors):
+    for sport, rules in rules_by_sport.items():
+        for key, allowed in APP_ENUMS.items():
+            extra = [v for v in rules.get(key, []) if v not in allowed]
+            if extra:
+                errors.add(f"rules.json: {sport} {key} {extra!r} are not values the app knows")
+        team = set(rules.get("teamDisciplines", []))
+        expected_team = APP_TEAM_DISCIPLINES & set(rules.get("disciplines", []))
+        if team != expected_team:
+            errors.add(
+                f"rules.json: {sport} teamDisciplines {sorted(team)} must be {sorted(expected_team)} "
+                f"(the app's team disciplines)"
+            )
+        # The app applies its tie checks (ResultsFeedParser.kt:137-142, 148) to team disciplines
+        # and only to them, so the validator must pick 'ties' for exactly those disciplines.
+        for disc in rules.get("disciplines", []):
+            fmt = rules.get("scoreFormatByDiscipline", {}).get(disc, rules.get("scoreFormat"))
+            if disc in expected_team and fmt != "ties":
+                errors.add(f"rules.json: {sport} {disc} scoreFormat must be 'ties', got {fmt!r}")
+            elif disc not in expected_team and fmt != "games":
+                errors.add(f"rules.json: {sport} {disc} scoreFormat must be 'games', got {fmt!r}")
+
+
+def validate_file(path, data, required_fields, non_null_fields, rules_by_sport, errors, is_results):
     if data is None:
         return
-    if data.get("schemaVersion") != 1:
+    if isinstance(data.get("schemaVersion"), bool) or data.get("schemaVersion") != 1:
         errors.add(f"{path}: schemaVersion must be 1, got {data.get('schemaVersion')!r}")
     if "sport" not in data:
         errors.add(f"{path}: top-level 'sport' field is required")
@@ -400,11 +519,17 @@ def validate_file(path, data, required_fields, rules_by_sport, errors, is_result
     seen_ids = set()
     for ei, event in enumerate(events):
         ctx = f"event[{ei}]"
-        name = event.get("name", "<unnamed>")
+        name = event.get("name") or "<unnamed>"
         ctx = f"event[{ei}] '{name}'"
         for field in required_fields:
             if field not in event:
                 errors.add(f"{path}: {ctx} missing '{field}'")
+        check_non_null(path, ctx, event, non_null_fields, errors)
+        # UpcomingFeedParser.kt:57 (reqBoolean). org.json would also accept the strings "true"/"false";
+        # the schema wants a real JSON boolean.
+        if not is_results and "entriesPublished" in event and not isinstance(event["entriesPublished"], bool):
+            errors.add(f"{path}: {ctx} entriesPublished must be true or false, got {event['entriesPublished']!r}")
+        check_tournament(path, ctx, event, errors)
 
         eid = event.get("id")
         if eid:
@@ -464,8 +589,11 @@ def main():
     upcoming = load_json("upcoming.json", errors)
     results = load_json("results.json", errors)
 
-    validate_file("upcoming.json", upcoming, UPCOMING_EVENT_REQUIRED, rules_data, errors, is_results=False)
-    validate_file("results.json", results, RESULTS_EVENT_REQUIRED, rules_data, errors, is_results=True)
+    check_rules_against_app(rules_data, errors)
+    validate_file("upcoming.json", upcoming, UPCOMING_EVENT_REQUIRED, UPCOMING_EVENT_NON_NULL,
+                  rules_data, errors, is_results=False)
+    validate_file("results.json", results, RESULTS_EVENT_REQUIRED, RESULTS_EVENT_NON_NULL,
+                  rules_data, errors, is_results=True)
 
     if errors:
         print(f"FAIL: {len(errors)} problem(s) found:")
