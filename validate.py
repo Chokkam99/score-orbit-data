@@ -843,7 +843,7 @@ def main(argv=None):
     previous_ref = args.previous_ref
     if previous_ref is not None and (previous_ref.startswith("-") or not git_ref_exists(previous_ref)):
         # An explicit ref that cannot be used must not silently turn the comparison off.
-        print(f"FAIL: --previous-ref {previous_ref!r} is not a git ref that resolves to a commit here")
+        print(f"FAIL: --previous-ref {previous_ref!r} does not resolve to a commit here")
         sys.exit(1)
 
     errors = Errors()

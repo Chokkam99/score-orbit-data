@@ -21,3 +21,6 @@ jobs:
 
       - name: Validate data files
         run: python3 validate.py
+
+      - name: Run the validator's self-tests
+        run: python3 -m unittest discover -s tests
