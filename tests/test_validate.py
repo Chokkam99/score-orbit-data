@@ -465,17 +465,17 @@ class HeartbeatTest(unittest.TestCase):
 
     def test_two_days_old_passes_three_days_old_fails(self):
         today = date(2026, 10, 8)
-        base = self.make("2026-10-06", "2026-10-08")
+        base = self.make("2026-10-06", "2026-10-01")
         self.assertEqual(quiet_check(today, base), [])
-        base = self.make("2026-10-05", "2026-10-08")
+        base = self.make("2026-10-05", "2026-10-04")
         problems = quiet_check(today, base)
         self.assertEqual(len(problems), 1)
         self.assertIn("results.json", problems[0])
         self.assertIn("3 days", problems[0])
 
-    def test_each_file_is_checked(self):
-        problems = quiet_check(date(2026, 10, 20), self.make("2026-10-01", "2026-10-02"))
-        self.assertEqual(len(problems), 2)
+    def test_a_week_old_upcoming_file_is_fine_when_results_is_fresh(self):
+        # upcoming.json changes about weekly; results.json is bumped on every run.
+        self.assertEqual(quiet_check(date(2026, 10, 8), self.make("2026-10-08", "2026-09-28")), [])
 
     def test_unreadable_or_missing_updated_on_fails(self):
         base = self.make("not a date", "2026-10-08")

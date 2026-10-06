@@ -1,7 +1,8 @@
 name: Heartbeat
 
-# Fails when the daily data routine has stopped publishing: results.json or upcoming.json has an
-# `updatedOn` more than 2 days before today (UTC). The routine runs at 00:30 UTC, this check at 06:00 UTC.
+# Fails when the daily data routine has stopped publishing: the newer `updatedOn` of results.json and
+# upcoming.json is more than 2 days before today (UTC). The routine bumps results.json on every run.
+# The routine runs at 00:30 UTC, this check at 06:00 UTC.
 #
 # Who hears about it: when a scheduled run fails, GitHub emails the account that last edited the cron
 # line below (the repo owner, as long as they made the last edit), provided that account keeps the
