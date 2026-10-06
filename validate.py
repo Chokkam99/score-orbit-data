@@ -13,6 +13,13 @@ Content checks: readOn and updatedOn may not be in the future (UTC today + 1 day
 URLs must use a host in ALLOWED_SOURCE_HOSTS; a knockout loss must be an entry's last decided
 match (check_progression says which formats are exempt).
 
+Previous-version checks (see previous_version): the data files are compared with the version
+before this change, taken from git. updatedOn may not go backwards, and results.json may not
+lose an event id (upcoming.json drops finished events by design, so it is exempt). Which version
+counts as "previous": the working-tree file differs from HEAD (the routine's local run before it
+commits) -> HEAD; otherwise (CI, where the commit under test is HEAD) -> HEAD~1; with
+`--previous-ref REF` -> REF, whatever HEAD says. Nothing to compare with -> a printed note, no check.
+
 Rules the app's parsers (ResultsFeedParser.kt / UpcomingFeedParser.kt) enforce, which
 this file mirrors because the app rejects the *whole* file on any one of them:
 non-null required strings (reqString), a boolean entriesPublished (reqBoolean), ISO
@@ -33,8 +40,10 @@ any IOC code (IOC_CODES) is accepted for `country` / `opponentCountry`.
 Exits non-zero with a clear message on the first class of failures found (all
 errors for a file are collected and reported together).
 """
+import argparse
 import json
 import re
+import subprocess
 import sys
 from datetime import date, datetime, timedelta, timezone
 from urllib.parse import urlsplit
@@ -739,8 +748,106 @@ def validate_file(path, data, required_fields, non_null_fields, rules_by_sport, 
                         )
 
 
-def main():
+def git_show(ref, path):
+    """Bytes of `path` at git `ref`, or None when git, the ref or the file is not available."""
+    try:
+        done = subprocess.run(["git", "show", f"{ref}:{path}"], capture_output=True)
+    except OSError:
+        return None
+    return done.stdout if done.returncode == 0 else None
+
+
+def git_ref_exists(ref):
+    try:
+        done = subprocess.run(["git", "rev-parse", "--verify", "--quiet", f"{ref}^{{commit}}"],
+                              capture_output=True)
+    except OSError:
+        return False
+    return done.returncode == 0
+
+
+def previous_version(path, previous_ref):
+    """(bytes of the previous version of `path` or None, short description for messages)."""
+    if previous_ref:
+        raw = git_show(previous_ref, path)
+        if raw is None:
+            return None, f"{previous_ref} has no {path}"
+        return raw, previous_ref
+    try:
+        with open(path, "rb") as f:
+            working = f.read()
+    except OSError:
+        working = None
+    head = git_show("HEAD", path)
+    if head is not None and working is not None and head != working:
+        return head, "HEAD (working tree has uncommitted changes)"
+    parent = git_show("HEAD~1", path)
+    if parent is None:
+        return None, "neither HEAD nor HEAD~1 has it: new file, first commit or shallow clone"
+    return parent, "HEAD~1"
+
+
+def quiet_iso_date(value):
+    if not isinstance(value, str) or not ISO_DATE_RE.fullmatch(value):
+        return None
+    try:
+        return date(*(int(x) for x in value.split("-")))
+    except ValueError:
+        return None
+
+
+def check_against_previous(path, current, is_results, previous_ref, errors, notes):
+    """updatedOn never goes backwards; results.json never loses an event id."""
+    if not isinstance(current, dict):
+        return
+    raw, source = previous_version(path, previous_ref)
+    if raw is None:
+        notes.append(f"{path}: previous-version checks skipped ({source})")
+        return
+    try:
+        previous = json.loads(raw.decode("utf-8"))
+        if not isinstance(previous, dict):
+            raise ValueError("not an object")
+    except ValueError:  # includes JSONDecodeError and UnicodeDecodeError
+        notes.append(f"{path}: previous-version checks skipped (the {source} copy is not valid JSON)")
+        return
+
+    old_date, new_date = quiet_iso_date(previous.get("updatedOn")), quiet_iso_date(current.get("updatedOn"))
+    if old_date is None:
+        notes.append(f"{path}: updatedOn check skipped (the {source} copy has no valid updatedOn)")
+    elif new_date is not None and new_date < old_date:
+        changed = {k: v for k, v in current.items() if k != "updatedOn"} != \
+                  {k: v for k, v in previous.items() if k != "updatedOn"}
+        errors.add(
+            f"{path}: updatedOn {new_date.isoformat()} is earlier than {old_date.isoformat()} in the "
+            f"previous version ({source}); updatedOn may be kept or raised, never lowered"
+            + (" (the content changed too)" if changed else " (only updatedOn changed)")
+        )
+
+    if is_results:
+        def event_ids(data):
+            events = data.get("events")
+            return [e.get("id") for e in events if isinstance(e, dict)] if isinstance(events, list) else []
+        now = set(event_ids(current))
+        for eid in event_ids(previous):
+            if eid not in now:
+                errors.add(f"{path}: event {eid!r} is in the previous version ({source}) but missing now; "
+                           f"results are never removed")
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Validate upcoming.json and results.json.")
+    parser.add_argument("--previous-ref", metavar="REF",
+                        help="compare with this git ref's version of each file instead of HEAD / HEAD~1")
+    args = parser.parse_args(argv)
+    previous_ref = args.previous_ref
+    if previous_ref is not None and (previous_ref.startswith("-") or not git_ref_exists(previous_ref)):
+        # An explicit ref that cannot be used must not silently turn the comparison off.
+        print(f"FAIL: --previous-ref {previous_ref!r} is not a git ref that resolves to a commit here")
+        sys.exit(1)
+
     errors = Errors()
+    notes = []
 
     rules_data = load_json("rules.json", errors)
     if rules_data is None:
@@ -757,7 +864,11 @@ def main():
                   rules_data, errors, is_results=False)
     validate_file("results.json", results, RESULTS_EVENT_REQUIRED, RESULTS_EVENT_NON_NULL,
                   rules_data, errors, is_results=True)
+    check_against_previous("upcoming.json", upcoming, False, previous_ref, errors, notes)
+    check_against_previous("results.json", results, True, previous_ref, errors, notes)
 
+    for note in notes:
+        print("note:", note)
     if errors:
         print(f"FAIL: {len(errors)} problem(s) found:")
         for e in errors:

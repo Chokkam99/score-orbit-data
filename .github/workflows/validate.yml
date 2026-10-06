@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # validate.py compares the data with the previous commit (HEAD~1), so fetch two commits.
+          fetch-depth: 2
 
       - name: Set up Python
         uses: actions/setup-python@v5
