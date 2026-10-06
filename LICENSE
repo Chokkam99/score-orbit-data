@@ -1,0 +1,45 @@
+ScoreOrbit data: licence notice
+
+This repository holds two kinds of content under two licences.
+
+1. Data: results.json, upcoming.json and variants.json
+
+   Licensed under Creative Commons Attribution-ShareAlike 4.0 International
+   (CC BY-SA 4.0): https://creativecommons.org/licenses/by-sa/4.0/
+
+   Much of the data is taken from Wikipedia, whose text is available under the
+   same licence (https://en.wikipedia.org/wiki/Wikipedia:Copyrights). It is
+   credited to the Wikipedia contributors; the page history of each article
+   lists the individual authors, and every event's "sources" list names the
+   pages it was read from. The data was reduced to facts (who played whom, the
+   round, the score) and reorganised, so it has been changed from the source.
+   Other cited sites are linked as references only; their text is not copied.
+
+   If you reuse the data you must credit Wikipedia contributors with a link to
+   the licence above, say that you changed it, and share your version under
+   CC BY-SA 4.0 as well.
+
+2. Everything else: validate.py, heartbeat.py, rules.json, tests/, .github/
+   and README.md
+
+   MIT License
+
+   Copyright (c) 2026 Chokkam99
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
