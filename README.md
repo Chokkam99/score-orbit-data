@@ -11,7 +11,8 @@ phones read, after raw.githubusercontent.com's short cache (a few minutes).
 
 - `upcoming.json`: schema version 1. Each event lists its sources and the date they were read.
 - `results.json`: schema version 1. Finished-event match results (round, outcome, opponent,
-  scores) for the same countries, with sources and read dates.
+  scores) for the same countries, with sources and read dates. Every event also carries `medals`
+  and `timeZone` (see "Results event fields").
 - `rules.json`: per-sport vocabulary (allowed disciplines, rounds, levels, age categories,
   outcomes, statuses, score format, game scoring law) used by `validate.py`. To add a country,
   nothing to change. To add a sport, add its rules to `rules.json`. Supported sports: `BADMINTON`,
@@ -55,7 +56,8 @@ To check by hand before committing: `python3 validate.py`. To run the self-tests
   file for: missing or null required strings, enum values, ISO dates and match times, a `scores`
   list on every match, NaN/Infinity, and so on. A rejected file leaves phones on their last good copy.
 - Schema rules: sources with `label`, `url` and `readOn`, IOC country codes, athlete counts per
-  discipline, tie scores that agree with their rubbers, tournament tags, no em dash.
+  discipline, tie scores that agree with their rubbers, tournament tags, `medals` and `timeZone` on
+  every results event, no em dash.
 - Game scores follow the sport's law (`gameScoring` in `rules.json`): badminton games go to 21, win by
   2, capped at 30 (30-29 is legal); table tennis games go to 11, win by 2, no cap. Every completed
   game of a WIN/LOSS match or rubber is checked, and the winner by games must match the outcome.
@@ -111,13 +113,30 @@ game within that tie, own points first).
 Rubbers are never individual entries: a country's singles/doubles rubber inside a team event stays
 nested under its tie, and never gets its own top-level entry alongside the team entry.
 
+## Results event fields: medals and timeZone
+
+Every event in `results.json` (not `upcoming.json`) has both fields, written right after `location`.
+`medals` is a JSON boolean: `true` only for events that award medals, which are multi-sport Games
+(Olympics, Asian Games, Commonwealth Games) and Championships (World Championships, continental
+championships), and `false` for everything else, including MAJOR-level events that award prizes but
+no medals (BWF World Tour Finals, WTT Grand Smashes such as China Smash, WTT Finals). Junior
+championships (World Juniors, Asia Juniors) award medals too. `validate.py` refuses `medals: true`
+on a `TOUR` or `DEVELOPMENT` event (`MAJOR` is usual; a junior championship may have no level), and
+the parts of one tournament must agree on it.
+
+`timeZone` is the IANA time zone of the venue, for example `Asia/Shanghai`; it lets the app show
+match times in the fan's own time zone. `validate.py` accepts a name only when it is in Python's
+`zoneinfo.available_timezones()`; on a machine with no time zone database it checks just the
+`Area/Location` shape and prints a `note:` line instead of failing.
+
 ## Multi-event tournaments
 
 When one tournament has separate events (the Asian Games team and individual events), each part
 stays its own event, with its own dates, status and format, and carries the same
 `tournament: {"id", "name", "shortName"}`, e.g. `{"id": "asian-games-2026", "name": "Asian Games
 2026", "shortName": "Asian Games"}`. The app shows the parts as one tournament. Parts of one sport
-must agree on the tournament names, age category and id prefix; `validate.py` checks this.
+must agree on the tournament names, age category, id prefix and (in `results.json`) `medals`;
+`validate.py` checks this.
 
 ## Group stages and elimination
 

@@ -10,6 +10,7 @@ read the repo's results.json / upcoming.json, so they keep working as the data c
 previous-version tests make a throw-away git repository in the temp directory.
 """
 import contextlib
+import copy
 import io
 import json
 import os
@@ -18,12 +19,18 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import zoneinfo
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from unittest import mock
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO))
 import heartbeat  # noqa: E402
+import validate  # noqa: E402
+
+# The zone-name tests need the machine's time zone database; without one validate.py checks names by shape.
+HAS_TZ_DB = bool(zoneinfo.available_timezones())
 
 TODAY = datetime.now(timezone.utc).date()
 ISO = date.isoformat
@@ -42,7 +49,8 @@ def event_base(event_id, sport, entries):
     return {
         "id": event_id, "name": "Test " + event_id, "shortName": "Test", "sport": sport,
         "ageCategory": "SENIOR", "level": "TOUR", "officialTierName": "Test tier",
-        "location": "Nowhere", "start": ISO(TODAY - timedelta(days=10)), "end": ISO(TODAY - timedelta(days=5)),
+        "location": "Nowhere", "medals": False, "timeZone": "Asia/Shanghai",
+        "start": ISO(TODAY - timedelta(days=10)), "end": ISO(TODAY - timedelta(days=5)),
         "status": "FINISHED", "coverage": "Test coverage", "entries": entries, "sources": [source()],
     }
 
@@ -76,7 +84,7 @@ def results_doc(updated_on=TODAY):
 
 def upcoming_doc(updated_on=TODAY):
     ev = event_base("bwf-upcoming:test-open-2027", "BADMINTON", [])
-    for k in ("status", "coverage"):
+    for k in ("status", "coverage", "medals", "timeZone"):  # results-only fields
         del ev[k]
     ev.update({"start": ISO(TODAY + timedelta(days=10)), "end": ISO(TODAY + timedelta(days=15)),
                "entriesPublished": False})
@@ -219,6 +227,145 @@ class DateTest(Base):
         self.assertOk(w.run())
         w.results["updatedOn"] = ISO(TODAY + timedelta(days=2))
         self.assertFails(w.run(), "updatedOn", "in the future")
+
+
+# validate.py run as if the machine had no time zone database: available_timezones() is empty.
+NO_TZ_DATABASE = ("import zoneinfo; zoneinfo.available_timezones = lambda: set(); "
+                  "import validate; validate.main([])")
+
+
+class MedalsAndTimeZoneTest(Base):
+    """Every results event has `medals` (a real boolean, never true on a TOUR or DEVELOPMENT event) and a real `timeZone`."""
+
+    def event(self, w):
+        return w.results["events"][0]
+
+    def two_parts(self, w, first_medals, second_medals):
+        """Make the badminton event two MAJOR parts of one tournament (ids avoid 'team'), with the given medals."""
+        first = self.event(w)
+        first.update(id="bwf-results:test-games-2026-singles", level="MAJOR", medals=first_medals,
+                     tournament={"id": "test-games-2026", "name": "Test Games 2026", "shortName": "Test Games"})
+        second = copy.deepcopy(first)
+        second.update(id="bwf-results:test-games-2026-doubles", medals=second_medals)
+        w.results["events"].insert(1, second)
+
+    def test_medals_is_required(self):
+        w = self.ws()
+        del self.event(w)["medals"]
+        self.assertFails(w.run(), "results.json", "missing 'medals'")
+
+    def test_medals_must_be_a_real_boolean(self):
+        w = self.ws()
+        for bad in ("true", "false", 1, 0, None):
+            self.event(w)["medals"] = bad
+            self.assertFails(w.run(), "medals must be true or false", repr(bad))
+
+    def test_medals_true_is_refused_on_tour_and_development_events(self):
+        w = self.ws()
+        self.event(w)["medals"] = True  # the fixture event is level TOUR
+        self.assertFails(w.run(), "medals is true but level is 'TOUR'", "never a TOUR or DEVELOPMENT event")
+        self.event(w)["level"] = "DEVELOPMENT"
+        self.assertFails(w.run(), "medals is true but level is 'DEVELOPMENT'")
+        self.event(w)["level"] = "MAJOR"
+        self.assertOk(w.run())
+
+    def test_a_junior_championship_with_no_level_may_award_medals(self):
+        w = self.ws()
+        self.event(w).update(level=None, ageCategory="JUNIOR", medals=True)  # e.g. World Juniors
+        self.assertOk(w.run())
+
+    def test_a_major_event_may_award_no_medals(self):
+        w = self.ws()
+        self.event(w).update(level="MAJOR", medals=False)  # e.g. a WTT Grand Smash or the World Tour Finals
+        self.assertOk(w.run())
+
+    def test_time_zone_is_required(self):
+        w = self.ws()
+        del self.event(w)["timeZone"]
+        self.assertFails(w.run(), "results.json", "missing 'timeZone'")
+
+    def test_time_zone_must_be_a_non_empty_string(self):
+        w = self.ws()
+        for bad in ("", "  ", None, 5, ["Asia/Tokyo"]):
+            self.event(w)["timeZone"] = bad
+            self.assertFails(w.run(), "timeZone", "non-empty string")
+
+    @unittest.skipUnless(HAS_TZ_DB, "needs a time zone database")
+    def test_time_zone_must_be_a_real_iana_zone(self):
+        w = self.ws()
+        for bad in ("Mars/Olympus", "asia/shanghai", " Asia/Shanghai", "Shanghai", "UTC+8"):
+            self.event(w)["timeZone"] = bad
+            self.assertFails(w.run(), f"timeZone {bad!r} is not an IANA time zone name")
+        for good in ("Asia/Shanghai", "Asia/Ho_Chi_Minh", "Asia/Kolkata", "Europe/Sofia", "America/Argentina/Buenos_Aires"):
+            self.event(w)["timeZone"] = good
+            self.assertOk(w.run())
+
+    def test_time_zone_is_not_needed_on_upcoming_events(self):
+        w = self.ws()
+        self.assertNotIn("timeZone", w.upcoming["events"][0])
+        self.assertNotIn("medals", w.upcoming["events"][0])
+        self.assertOk(w.run())
+
+    def test_parts_of_one_tournament_must_agree_on_medals(self):
+        w = self.ws()
+        self.two_parts(w, True, True)
+        self.assertOk(w.run())
+        del w.results["events"][1]  # drop the second part, then make the parts disagree
+        self.two_parts(w, True, False)
+        self.assertFails(w.run(), "disagrees with another BADMINTON part on medals",
+                         "'bwf-results:test-games-2026-doubles' has medals=false",
+                         "'bwf-results:test-games-2026-singles' has medals=true")
+
+    def test_parts_of_one_tournament_may_agree_on_no_medals(self):
+        w = self.ws()
+        self.two_parts(w, False, False)
+        self.assertOk(w.run())
+
+    def test_parts_of_different_sports_do_not_have_to_agree(self):
+        w = self.ws()
+        self.two_parts(w, True, True)
+        w.results["events"][1]["sport"] = "TABLE_TENNIS"
+        w.results["events"][1]["id"] = "wtt-results:test-games-2026-doubles"
+        w.results["events"][1].update(medals=False, level="MAJOR")
+        w.results["events"][1]["entries"] = [entry("WS", [match("R32", "WIN", [[11, 5], [11, 7], [11, 9]])])]
+        self.assertOk(w.run())
+
+    def test_shape_only_check_without_a_time_zone_database(self):
+        with mock.patch.object(validate, "known_time_zones", return_value=frozenset()):
+            for good in ("Asia/Shanghai", "America/Argentina/Buenos_Aires", "America/Port-au-Prince", "Etc/GMT+5",
+                          "Mars/Olympus"):
+                self.assertEqual(validate.time_zone_problem(good), (None, True), good)
+            for bad in ("", "  ", "Shanghai", "Asia/", "/Shanghai", "Asia//Tokyo", "Asia/Tok yo", "12/30", None):
+                problem, shape_only = validate.time_zone_problem(bad)
+                self.assertTrue(problem, bad)
+                self.assertFalse(shape_only, bad)
+
+    @unittest.skipUnless(HAS_TZ_DB, "needs a time zone database")
+    def test_a_machine_with_a_time_zone_database_prints_no_note(self):
+        code, out = self.ws().run()
+        self.assertEqual(code, 0, out)
+        self.assertNotIn("time zone database", out)
+
+    def test_no_time_zone_database_means_a_note_not_a_failure(self):
+        w = self.ws()
+        self.event(w)["timeZone"] = "Mars/Olympus"  # well formed, so only its shape can be checked
+        w.write()
+        done = subprocess.run([sys.executable, "-c", NO_TZ_DATABASE], cwd=w.dir, capture_output=True, text=True,
+                              env=GIT_ENV)
+        out = done.stdout + done.stderr
+        self.assertEqual(done.returncode, 0, out)
+        self.assertIn("OK:", out)
+        notes = [line for line in out.splitlines() if "no time zone database" in line]
+        self.assertEqual(len(notes), 1, out)
+        self.assertTrue(notes[0].startswith("note: results.json:"), notes[0])
+        self.assertTrue(all("OK" not in line for line in out.splitlines() if line.startswith("note:")), out)
+        # a malformed name still fails there
+        self.event(w)["timeZone"] = "Shanghai"
+        w.write()
+        done = subprocess.run([sys.executable, "-c", NO_TZ_DATABASE], cwd=w.dir, capture_output=True, text=True,
+                              env=GIT_ENV)
+        self.assertEqual(done.returncode, 1, done.stdout)
+        self.assertIn("not a well-formed IANA time zone name", done.stdout)
 
 
 class SourceHostTest(Base):

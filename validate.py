@@ -13,6 +13,11 @@ Content checks: readOn and updatedOn may not be in the future (UTC today + 1 day
 URLs must use a host in ALLOWED_SOURCE_HOSTS; a knockout loss must be an entry's last decided
 match (check_progression says which formats are exempt).
 
+Every results event carries `medals` (a real boolean; true only for Games and Championships, so
+never on a TOUR or DEVELOPMENT event; a junior championship may have no level; parts of one
+tournament must agree) and `timeZone` (a real IANA zone name, checked with zoneinfo; see
+time_zone_problem for what happens without a tz database).
+
 Previous-version checks (see previous_version): the data files are compared with the version
 before this change, taken from git. updatedOn may not go backwards, and results.json may not
 lose an event id (upcoming.json drops finished events by design, so it is exempt). Which version
@@ -45,6 +50,7 @@ import json
 import re
 import subprocess
 import sys
+import zoneinfo
 from datetime import date, datetime, timedelta, timezone
 from urllib.parse import urlsplit
 
@@ -119,7 +125,7 @@ UPCOMING_EVENT_REQUIRED = [
 ]
 RESULTS_EVENT_REQUIRED = [
     "id", "name", "shortName", "sport", "ageCategory", "level",
-    "officialTierName", "location", "start", "end", "status",
+    "officialTierName", "location", "medals", "timeZone", "start", "end", "status",
     "coverage", "entries", "sources",
 ]
 ENTRY_REQUIRED_COMMON = ["country", "discipline", "athletes"]
@@ -204,6 +210,38 @@ def latest_allowed_date():
 def check_not_future(path, ctx, value, errors):
     if value is not None and value > latest_allowed_date():
         errors.add(f"{path}: {ctx} = {value.isoformat()} is in the future (latest allowed is {latest_allowed_date().isoformat()})")
+
+
+# A well-formed "Area/Location" zone name (America/Argentina/Buenos_Aires, America/Port-au-Prince,
+# Etc/GMT+5), used only when this machine has no time zone database to check names against.
+TIME_ZONE_SHAPE_RE = re.compile(r"[A-Za-z]+(/[A-Za-z0-9][A-Za-z0-9_+\-]*)+")
+_known_time_zones = None
+
+
+def known_time_zones():
+    """The IANA zone names this machine knows (cached); empty when it has no time zone database."""
+    global _known_time_zones
+    if _known_time_zones is None:
+        _known_time_zones = frozenset(zoneinfo.available_timezones())
+    return _known_time_zones
+
+
+def time_zone_problem(value):
+    """(why `value` is not an acceptable `timeZone`, or None; True when only its shape was checked).
+
+    A name is valid when it is in zoneinfo.available_timezones(). With no tz database on the machine
+    that set is empty, so a well-formed "Area/Location" name is accepted instead (shape_only) and the
+    caller prints a note rather than failing."""
+    if not isinstance(value, str) or not value.strip():
+        return "must be a non-empty string naming an IANA time zone, e.g. 'Asia/Shanghai'", False
+    known = known_time_zones()
+    if known:
+        if value in known:
+            return None, False
+        return "is not an IANA time zone name, e.g. 'Asia/Shanghai'", False
+    if TIME_ZONE_SHAPE_RE.fullmatch(value):
+        return None, True
+    return "is not a well-formed IANA time zone name like 'Area/Location'", False
 
 
 def source_url_problem(url):
@@ -619,8 +657,10 @@ def check_tournaments(path, events, errors):
     """Optional `tournament` {id, name, shortName} links parts of one tournament (e.g. Asian Games
     team and individual events). The app shows parts with the same sport and id as one
     tournament, so those parts must agree on the tournament's names, age category and id prefix.
-    The same id may be used by several sports (each sport's parts combine separately)."""
+    The same id may be used by several sports (each sport's parts combine separately). In
+    results.json the parts must also agree on `medals`: a tournament either awards medals or not."""
     parts = {}
+    medals_of = {}
     for ei, event in enumerate(events):
         if not isinstance(event, dict) or event.get("tournament") is None:
             continue
@@ -640,6 +680,15 @@ def check_tournaments(path, events, errors):
                 f"ageCategory or id prefix: {signature} vs {parts[key]}"
             )
         parts.setdefault(key, signature)
+        medals = event.get("medals")
+        if isinstance(medals, bool):
+            first_id, first_medals = medals_of.setdefault(key, (event.get("id"), medals))
+            if medals != first_medals:
+                errors.add(
+                    f"{path}: {ctx} {t['id']!r} disagrees with another {key[0]} part on medals: "
+                    f"{event.get('id')!r} has medals={str(medals).lower()} but {first_id!r} has "
+                    f"medals={str(first_medals).lower()}"
+                )
 
 
 def check_tournament(path, ctx, event, errors):
@@ -681,7 +730,28 @@ def check_rules_against_app(rules_by_sport, errors):
                 errors.add(f"rules.json: {sport} {disc} scoreFormat must be 'games', got {fmt!r}")
 
 
-def validate_file(path, data, required_fields, non_null_fields, rules_by_sport, errors, is_results):
+def check_medals_and_time_zone(path, ctx, event, errors, shape_only_zones):
+    """results.json only: `medals` is a real boolean and `timeZone` a real zone.
+
+    Only Games and Championships award medals, so medals may not be true on a TOUR or DEVELOPMENT
+    event. MAJOR is the usual level; null is allowed because a junior championship (World Juniors)
+    often has no level (data-curation.md leaves a junior level null unless certain)."""
+    if "medals" in event:
+        medals = event["medals"]
+        if not isinstance(medals, bool):
+            errors.add(f"{path}: {ctx} medals must be true or false, got {medals!r}")
+        elif medals and event.get("level") in ("TOUR", "DEVELOPMENT"):
+            errors.add(f"{path}: {ctx} medals is true but level is {event.get('level')!r}; "
+                       f"only Games and Championships award medals, never a TOUR or DEVELOPMENT event")
+    if "timeZone" in event:
+        problem, shape_only = time_zone_problem(event["timeZone"])
+        if problem:
+            errors.add(f"{path}: {ctx} timeZone {event['timeZone']!r} {problem}")
+        elif shape_only:
+            shape_only_zones.append(ctx)
+
+
+def validate_file(path, data, required_fields, non_null_fields, rules_by_sport, errors, is_results, notes=None):
     if data is None:
         return
     if isinstance(data.get("schemaVersion"), bool) or data.get("schemaVersion") != 1:
@@ -700,6 +770,7 @@ def validate_file(path, data, required_fields, non_null_fields, rules_by_sport, 
     check_tournaments(path, events, errors)
 
     seen_ids = set()
+    shape_only_zones = []
     for ei, event in enumerate(events):
         ctx = f"event[{ei}]"
         name = event.get("name") or "<unnamed>"
@@ -712,6 +783,8 @@ def validate_file(path, data, required_fields, non_null_fields, rules_by_sport, 
         # the schema wants a real JSON boolean.
         if not is_results and "entriesPublished" in event and not isinstance(event["entriesPublished"], bool):
             errors.add(f"{path}: {ctx} entriesPublished must be true or false, got {event['entriesPublished']!r}")
+        if is_results:
+            check_medals_and_time_zone(path, ctx, event, errors, shape_only_zones)
         check_tournament(path, ctx, event, errors)
 
         eid = event.get("id")
@@ -757,6 +830,9 @@ def validate_file(path, data, required_fields, non_null_fields, rules_by_sport, 
                         errors.add(
                             f"{path}: {ectx} match[{mi}] is SCHEDULED but event status is FINISHED"
                         )
+    if shape_only_zones and notes is not None:
+        notes.append(f"{path}: this machine has no time zone database, so {len(shape_only_zones)} timeZone "
+                     f"value(s) were checked for their Area/Location shape only")
 
 
 def git_show(ref, path):
@@ -874,7 +950,7 @@ def main(argv=None):
     validate_file("upcoming.json", upcoming, UPCOMING_EVENT_REQUIRED, UPCOMING_EVENT_NON_NULL,
                   rules_data, errors, is_results=False)
     validate_file("results.json", results, RESULTS_EVENT_REQUIRED, RESULTS_EVENT_NON_NULL,
-                  rules_data, errors, is_results=True)
+                  rules_data, errors, is_results=True, notes=notes)
     check_against_previous("upcoming.json", upcoming, False, previous_ref, errors, notes)
     check_against_previous("results.json", results, True, previous_ref, errors, notes)
 
