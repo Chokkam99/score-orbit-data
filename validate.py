@@ -10,7 +10,8 @@ Game-score law: every completed game of a decided match must be a legal score fo
 configured per sport in rules.json (`gameScoring`). Retired matches skip their unfinished last game.
 
 Content checks: readOn and updatedOn may not be in the future (UTC today + 1 day); source
-URLs must use a host in ALLOWED_SOURCE_HOSTS.
+URLs must use a host in ALLOWED_SOURCE_HOSTS; a knockout loss must be an entry's last decided
+match (check_progression says which formats are exempt).
 
 Rules the app's parsers (ResultsFeedParser.kt / UpcomingFeedParser.kt) enforce, which
 this file mirrors because the app rejects the *whole* file on any one of them:
@@ -85,6 +86,11 @@ ALLOWED_SOURCE_HOSTS = [
     "worldtabletennis.com",
     "olympics.com",
 ]
+
+# Rounds where a loss does not end an entry's run: group stage (the app's isGroupRound: G + digit).
+GROUP_ROUND_RE = re.compile(r"G[0-9]")
+QUALIFYING_ROUND_RE = re.compile(r"Q[0-9]+")
+ELIMINATING_OUTCOMES = {"LOSS", "WALKOVER_LOSS", "RETIRED_LOSS"}  # the app's isElimination()
 
 UPCOMING_EVENT_REQUIRED = [
     "id", "name", "shortName", "sport", "ageCategory", "level",
@@ -310,6 +316,37 @@ def check_game_law(path, ctx, outcome, scores, rules, errors):
         problem = game_law_problem(game[0], game[1], law)
         if problem:
             errors.add(f"{path}: {ctx} game {gi + 1} score {game[0]}-{game[1]} is not a legal game: {problem}")
+
+
+def check_progression(path, ctx, matches, errors):
+    """A knockout loss is the end of an entry's run: no decided match may follow it.
+
+    Group rounds (G1-G5) are skipped (a group loss does not end the run). Two real formats do continue
+    after a knockout loss and are allowed: a semi-final loser playing the 3P match, and a qualifying
+    loser entering the main draw as a lucky loser. SCHEDULED matches are not decided and are ignored.
+    The app reads the same data with ResultsEntry.isOut(), which looks at the last non-SCHEDULED
+    match, so an entry that 'loses and keeps playing' would show inconsistently there."""
+    for i, match in enumerate(matches):
+        if not isinstance(match, dict) or match.get("outcome") not in ELIMINATING_OUTCOMES:
+            continue
+        rnd = match.get("round")
+        if not isinstance(rnd, str) or GROUP_ROUND_RE.fullmatch(rnd):
+            continue
+        for j in range(i + 1, len(matches)):
+            later = matches[j]
+            if not isinstance(later, dict) or later.get("outcome") == "SCHEDULED":
+                continue
+            nxt = later.get("round")
+            if rnd == "SF" and nxt == "3P":
+                continue
+            if (QUALIFYING_ROUND_RE.fullmatch(rnd) and isinstance(nxt, str)
+                    and not QUALIFYING_ROUND_RE.fullmatch(nxt)):
+                continue
+            errors.add(
+                f"{path}: {ctx} match[{j}] {nxt} ({later.get('outcome')}) comes after a knockout loss in "
+                f"match[{i}] {rnd} ({match.get('outcome')}); a knockout loss ends the entry's run"
+            )
+            return
 
 
 # IOC country codes (plus ENG/SCO/WAL and TPE), matching the app's flag table in
@@ -552,6 +589,7 @@ def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
             time_val = match.get("time")
             if time_val is not None:
                 check_iso_time(path, f"{mctx}.time", time_val, errors)
+        check_progression(path, ctx, matches, errors)
 
 
 TOURNAMENT_ID_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
