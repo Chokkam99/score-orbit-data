@@ -6,6 +6,9 @@ required fields, ISO dates, start <= end, sources with label + url + readOn, no 
 dash, no SCHEDULED matches in FINISHED events, country-code shape, and the
 win/loss-vs-games-won consistency check.
 
+Game-score law: every completed game of a decided match must be a legal score for the sport,
+configured per sport in rules.json (`gameScoring`). Retired matches skip their unfinished last game.
+
 Rules the app's parsers (ResultsFeedParser.kt / UpcomingFeedParser.kt) enforce, which
 this file mirrors because the app rejects the *whole* file on any one of them:
 non-null required strings (reqString), a boolean entriesPublished (reqBoolean), ISO
@@ -194,6 +197,67 @@ def check_win_loss_consistency(path, ctx, outcome, scores, errors):
         )
 
 
+def game_scoring_config_problem(law):
+    """Why a rules.json `gameScoring` block is unusable, or None."""
+    if not isinstance(law, dict):
+        return "must be an object {pointsToWin, winBy, cap}"
+    points, win_by, cap = law.get("pointsToWin"), law.get("winBy"), law.get("cap")
+    for name, value in (("pointsToWin", points), ("winBy", win_by)):
+        if not isinstance(value, int) or isinstance(value, bool) or value < 1:
+            return f"{name} must be an integer >= 1, got {value!r}"
+    if cap is not None and (not isinstance(cap, int) or isinstance(cap, bool) or cap <= points):
+        return f"cap must be null or an integer above pointsToWin, got {cap!r}"
+    return None
+
+
+def game_law_problem(a, b, law):
+    """Why a *completed* game ending a-b breaks the sport's scoring law, or None when it is legal.
+
+    Law: first to `pointsToWin`, but only with a lead of `winBy`; at 'pointsToWin' all the lead can be
+    short of `winBy`, so play continues until someone leads by `winBy`, or reaches `cap` (when set),
+    where a one-point lead is enough (badminton 30-29)."""
+    points, win_by, cap = law["pointsToWin"], law["winBy"], law.get("cap")
+    win, lose = max(a, b), min(a, b)
+    if win == lose:
+        return "a completed game cannot be tied"
+    if win < points:
+        return f"the winner has {win}, fewer than the {points} needed"
+    if cap is not None and win > cap:
+        return f"the winner has {win}, above the cap of {cap}"
+    if cap is not None and win == cap:
+        if lose < cap - win_by:
+            return f"a game only reaches the cap of {cap} when the loser has at least {cap - win_by}"
+    elif win == points:
+        if lose > points - win_by:
+            return f"at {points} the winner must lead by {win_by}, so play continues"
+    elif lose != win - win_by:
+        return f"past {points} the winner leads by exactly {win_by}"
+    return None
+
+
+def check_game_law(path, ctx, outcome, scores, rules, errors):
+    """Every completed game of a decided match must be a legal score for the sport.
+
+    Retired matches (RETIRED_WIN/LOSS) end mid-game, so their last game is unfinished and skipped;
+    earlier games are complete. Walkovers, byes and scheduled matches carry no completed games."""
+    law = rules.get("gameScoring")
+    if law is None or game_scoring_config_problem(law) or not isinstance(scores, list):
+        return
+    if outcome in ("WIN", "LOSS"):
+        games = scores
+    elif outcome in ("RETIRED_WIN", "RETIRED_LOSS"):
+        games = scores[:-1]
+    else:
+        return
+    for gi, game in enumerate(games):
+        if (not isinstance(game, list) or len(game) != 2
+                or not all(isinstance(v, int) and not isinstance(v, bool) for v in game)):
+            continue  # a malformed pair is reported by check_scores
+        problem = game_law_problem(game[0], game[1], law)
+        if problem:
+            errors.add(f"{path}: {ctx} game {gi + 1} score {game[0]}-{game[1]} is not a legal game: {problem}")
+
+
 # IOC country codes (plus ENG/SCO/WAL and TPE), matching the app's flag table in
 # score-orbit app/src/main/java/com/scoreorbit/app/data/Flags.kt. A code outside this set shows
 # with no flag or name in the app (e.g. "IRN" instead of IOC "IRI" for Iran).
@@ -280,6 +344,7 @@ def check_rubber(path, ctx, rubber, rules, errors):
         check_scores(path, ctx, scores_list, errors)
         if r_outcome in ("WIN", "LOSS"):
             check_win_loss_consistency(path, ctx, r_outcome, scores_list, errors)
+        check_game_law(path, ctx, r_outcome, scores_list, rules, errors)
     if r_outcome in ("WIN", "RETIRED_WIN", "WALKOVER_WIN"):
         return "WON"
     if r_outcome in ("LOSS", "RETIRED_LOSS", "WALKOVER_LOSS"):
@@ -416,6 +481,7 @@ def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
                 check_scores(path, mctx, scores if isinstance(scores, list) else [], errors)
                 if isinstance(scores, list):
                     check_win_loss_consistency(path, mctx, outcome, scores, errors)
+                    check_game_law(path, mctx, outcome, scores, rules, errors)
             if score_format != "ties":
                 # The parser reads `rubbers` on every match with getJSONArray (ResultsFeedParser.kt:143-144),
                 # so a non-array value (even a falsy {} or "") rejects the whole file. A non-empty array on a
@@ -478,6 +544,10 @@ def check_tournament(path, ctx, event, errors):
 
 def check_rules_against_app(rules_by_sport, errors):
     for sport, rules in rules_by_sport.items():
+        if "gameScoring" in rules:
+            problem = game_scoring_config_problem(rules["gameScoring"])
+            if problem:
+                errors.add(f"rules.json: {sport} gameScoring {problem}")
         for key, allowed in APP_ENUMS.items():
             extra = [v for v in rules.get(key, []) if v not in allowed]
             if extra:

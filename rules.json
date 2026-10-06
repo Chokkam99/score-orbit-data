@@ -35,6 +35,7 @@
       "WALKOVER_LOSS",
       "NOT_PLAYED"
     ],
+    "gameScoring": {"pointsToWin": 21, "winBy": 2, "cap": 30},
     "scoreFormat": "games",
     "scoreFormatByDiscipline": {
       "MT": "ties",
@@ -78,6 +79,7 @@
       "WALKOVER_LOSS",
       "NOT_PLAYED"
     ],
+    "gameScoring": {"pointsToWin": 11, "winBy": 2, "cap": null},
     "scoreFormat": "games",
     "scoreFormatByDiscipline": {
       "MT": "ties",
