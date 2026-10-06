@@ -19,7 +19,8 @@ phones read, after raw.githubusercontent.com's short cache (a few minutes).
   `wtt-results:`/`wtt-upcoming:`.
 - `validate.py`: the validator described below. `tests/test_validate.py`: its self-tests.
 - `heartbeat.py`: the staleness check run by the heartbeat workflow.
-- `.github/workflows/validate.yml`, `.github/workflows/heartbeat.yml`: the two workflows.
+- `.github/workflows/promote.yml`, `validate.yml`, `heartbeat.yml`: the gate to `main`, the
+  validation run on every push, and the daily staleness check.
 - `variants.json`: not read by the app, `validate.py` or CI. It was committed with the rubber-order
   fix (2580568) and its purpose is not documented.
 - `LICENSE`: which licence covers what (data CC BY-SA 4.0, code MIT).
@@ -31,13 +32,19 @@ left empty, and a match is only recorded when a source shows it.
 ## How the data is updated
 
 A scheduled routine runs every day at 00:30 UTC. It reads the public pages, edits `results.json` and
-`upcoming.json`, runs `python3 validate.py`, and when that prints `OK` it commits and pushes
-directly to `main`. There is no pull request and no human review before the push: `validate.py` is the
-only gate before the data is live.
+`upcoming.json`, sets `results.json`'s `updatedOn` to the run date (even when nothing else changed,
+so the date says when the data was last checked), runs `python3 validate.py`, and when that prints
+`OK` it commits and pushes to the `staging` branch, never to `main`.
 
-A GitHub Actions workflow (`validate.yml`) runs `python3 validate.py` and the self-tests after every
-push and on every pull request. It runs after the push, so it cannot hold a bad commit back; a red
-run is the signal to fix `main`.
+`main` is what the app downloads. The `promote.yml` workflow moves `main` forward to `staging` only
+when staging builds on the current `main`, changes nothing but `results.json` and `upcoming.json`, and
+passes `python3 validate.py --previous-ref origin/main` plus the self-tests. Otherwise `main` stays
+where it was, phones keep the last good data, and the failed run emails the repo owner. Because the
+routine can only change the two data files, the validator, `rules.json` and the workflows that judge
+its data are always `main`'s own.
+
+The `validate.yml` workflow also runs `python3 validate.py` and the self-tests on every push and pull
+request, as a second check.
 
 To check by hand before committing: `python3 validate.py`. To run the self-tests:
 `python3 -m unittest discover -s tests`. Python 3 standard library only.
@@ -54,7 +61,8 @@ To check by hand before committing: `python3 validate.py`. To run the self-tests
   game of a WIN/LOSS match or rubber is checked, and the winner by games must match the outcome.
 - `readOn` and `updatedOn` are not in the future (today UTC plus one day is allowed).
 - Source URLs use a host in `ALLOWED_SOURCE_HOSTS` at the top of `validate.py` (a domain or any
-  subdomain of it). To cite a new site, add its domain there in the commit that first uses it.
+  subdomain of it). Only the repo owner adds a host, in a commit to `main`; the routine may not change
+  `validate.py` (the promote workflow refuses it), so it reports a source it could not use instead.
 - A knockout loss is an entry's last decided match. Group rounds are exempt, a semi-final loser may
   play the `3P` match, and a qualifying loser may enter the main draw as a lucky loser.
 
@@ -80,8 +88,9 @@ are pushed at once it compares the tip with its parent, not each commit.
 
 ## Heartbeat
 
-`heartbeat.yml` runs daily at 06:00 UTC (and on demand) and runs `heartbeat.py`, which fails when
-`results.json` or `upcoming.json` has an `updatedOn` more than 2 days before today (UTC). It exists
+`heartbeat.yml` runs daily at 06:00 UTC (and on demand) and runs `heartbeat.py`, which fails when the
+newer `updatedOn` of `results.json` and `upcoming.json` is more than 2 days before today (UTC); the
+routine bumps `results.json` on every run, so this means no run has published for three days. It exists
 because nothing else notices a routine that has stopped. When a scheduled run fails, GitHub emails the
 account that last edited the workflow's cron line (the repo owner), if that account has failed-workflow
 email notifications on, which is the default.

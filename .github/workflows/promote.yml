@@ -1,0 +1,63 @@
+name: Promote
+
+# The daily routine pushes its commit to `staging`, never to `main`. This workflow is the gate: it
+# fast-forwards `main` (what the app downloads) to `staging` only when
+#   1. staging builds on the current main (a fast-forward, nothing on main is lost),
+#   2. staging changes nothing but results.json and upcoming.json (so the validator, rules and
+#      workflows that judge the data come from main, not from the commit being judged), and
+#   3. validate.py passes, comparing the data with main's copy (--previous-ref origin/main).
+# Otherwise main stays where it was, phones keep yesterday's data, and the failed run emails the
+# repo owner. A push made with GITHUB_TOKEN does not start other workflows, so validate.yml does
+# not run again on main for a promoted commit; this workflow already ran the same checks.
+
+on:
+  push:
+    branches: [staging]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: promote
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout staging
+        uses: actions/checkout@v4
+        with:
+          ref: staging
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Staging must build on main
+        run: |
+          git fetch origin main
+          if ! git merge-base --is-ancestor origin/main HEAD; then
+            echo "::error::staging does not build on the current main; nothing promoted"
+            exit 1
+          fi
+
+      - name: Staging may change only the data files
+        run: |
+          other=$(git diff --name-only origin/main HEAD | grep -v -x -e results.json -e upcoming.json || true)
+          if [ -n "$other" ]; then
+            echo "::error::staging changes files other than results.json and upcoming.json; nothing promoted:"
+            echo "$other"
+            exit 1
+          fi
+
+      - name: Validate against main
+        run: |
+          python3 validate.py --previous-ref origin/main
+          python3 -m unittest discover -s tests
+
+      - name: Fast-forward main
+        run: git push origin HEAD:main
