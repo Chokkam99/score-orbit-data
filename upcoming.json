@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-05",
+  "updatedOn": "2026-10-07",
   "sport": "BADMINTON",
   "events": [
     {
@@ -186,12 +186,12 @@
       "entries": [],
       "sources": [
         {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
+          "label": "2026 Arctic Open (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Arctic_Open",
+          "readOn": "2026-10-07"
         }
       ],
-      "notes": "Access blocked, unverified, not 'not yet open': a WebSearch summary of the official prospectus (PDF not read directly) gave an entry deadline of 25 Aug 2026, already passed, so an accepted-entries list likely exists. BWF's own tournament pages (bwfworldtour.bwfbadminton.com) returned HTTP 403 to automated fetches, and the tournament's own site (arcticopen.fi) only links out to that same BWF page rather than listing players itself, so no entries could be confirmed as of the read date."
+      "notes": "Now IN_PROGRESS with IND/SGP entries and matches; full detail is tracked in results.json (bwf-results:arctic-open-2026), so this entry is left unconfirmed/empty here per the usual handoff from upcoming to results."
     },
     {
       "id": "bwf-upcoming:malaysia-super-100-2026",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-06",
+  "updatedOn": "2026-10-07",
   "sport": "BADMINTON",
   "events": [
     {
@@ -9260,7 +9260,7 @@
         {
           "label": "China Smash 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/China_Smash_2026",
-          "readOn": "2026-10-06"
+          "readOn": "2026-10-07"
         },
         {
           "label": "China Smash 2026 - Qualification (Wikipedia)",
@@ -9268,7 +9268,7 @@
           "readOn": "2026-10-06"
         }
       ],
-      "notes": "Qualifying (1-3 Oct) eliminated every IND/SGP qualifier, including Diya Chitale's close Q2 loss to Zhu Chengzhu (HKG), so none reached the main draw via qualifying. Several IND/SGP players entered the main draw directly as seeds/wild cards (not through qualifying): Manush Shah, Manav Thakkar, Manika Batra and Sreeja Akula (IND); Izaac Quek, Ser Lin Qian and Zeng Jian (SGP) in singles, plus doubles/mixed doubles pairs. The main draw bracket page does not give per-match dates/times, only round-by-round day ranges, so SCHEDULED matches are left without a date. Xiaona Shan (GER) / Zeng Jian (SGP) is a cross-country pairing in women's doubles per the official draw; recorded under SGP since that is the tracked country. Manav Thakkar/Manush Shah (IND) and Izaac Quek/Koen Pang (SGP) in men's doubles, and Diya Chitale/Yashaswini Ghorpade (IND) in women's doubles, still have byes into the second round but their opponent is not yet decided (the other half of their section has not played), so no next match is recorded for them yet. Manav Thakkar's (IND) R64 match vs Simon Gauzy (FRA) is left SCHEDULED: the Wikipedia bracket's own per-game scores for that match (9-11, 9-11, 11-7, 11-5, 12-10) add up to a 3-2 win for Thakkar, but the page bolds Gauzy as the match winner and lists Gauzy, not Thakkar, in the next round slot. That is an internal contradiction on the source page itself; rather than guess which side is the transcription error, this match is left unrecorded until the page is corrected or a second source confirms the result.",
+      "notes": "Qualifying (1-3 Oct) eliminated every IND/SGP qualifier, so none reached the main draw via qualifying; several IND/SGP players entered the main draw directly as seeds/wild cards. Manav Thakkar's (IND) R64 win over Simon Gauzy, previously left unrecorded due to a bold/score contradiction on the source page, is now consistent (Thakkar bolded as winner with scores summing to 3-2) and is recorded as a WIN. Manav Thakkar/Manush Shah (IND) and Izaac Quek/Koen Pang (SGP) in men's doubles, and Diya Chitale/Yashaswini Ghorpade (IND) in women's doubles, had byes into the second round (R16); their opponents are now decided and recorded as SCHEDULED. The main draw bracket page does not give per-match dates/times, only round-by-round day ranges, so SCHEDULED matches are left without a date.",
       "entries": [
         {
           "country": "IND",
@@ -9935,9 +9935,41 @@
           "matches": [
             {
               "round": "R64",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Simon Gauzy"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  12,
+                  10
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Alexis Lebrun"
               ],
               "opponentCountry": "FRA",
               "scores": [],
@@ -10031,12 +10063,29 @@
             },
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Wang Manyu"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
+              "scores": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -10165,7 +10214,20 @@
             "Manush Shah"
           ],
           "seed": 2,
-          "matches": []
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Chen Junsong",
+                "Zhou Qihao"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
         },
         {
           "country": "SGP",
@@ -10175,7 +10237,20 @@
             "Koen Pang"
           ],
           "seed": 8,
-          "matches": []
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Darko Jorgić",
+                "Deni Kožul"
+              ],
+              "opponentCountry": "SLO",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
         },
         {
           "country": "SGP",
@@ -10274,7 +10349,20 @@
             "Yashaswini Ghorpade"
           ],
           "seed": 6,
-          "matches": []
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Gao Yuxin",
+                "Xiang Junlin"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
         },
         {
           "country": "IND",
@@ -10287,13 +10375,26 @@
           "matches": [
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Youssef Abdelaziz",
                 "Mariam Alhodaby"
               ],
               "opponentCountry": "EGY",
-              "scores": [],
+              "scores": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  4
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -11655,6 +11756,436 @@
                 ],
                 [
                   17,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bwf-results:arctic-open-2026",
+      "name": "Arctic Open 2026",
+      "shortName": "Arctic Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 500",
+      "location": "Vantaa, Finland",
+      "medals": false,
+      "timeZone": "Europe/Helsinki",
+      "start": "2026-10-06",
+      "end": "2026-10-11",
+      "status": "IN_PROGRESS",
+      "coverage": "India and Singapore entries in men's singles, women's singles, men's doubles and mixed doubles. First-round (R32) results are in for women's singles; other disciplines' first matches have not been played yet as of the read date.",
+      "sources": [
+        {
+          "label": "2026 Arctic Open (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Arctic_Open",
+          "readOn": "2026-10-07"
+        }
+      ],
+      "notes": "No women's doubles entries from India or Singapore were found in the draw. Seeds shown as qualifier/placement codes (e.g. Q3, Q4, PFQ) on the source page, not numeric seeds, are recorded as seed: null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Rounak Chouhan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Weng Hongyang"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Srikanth Kidambi"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Brian Yang"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Prannoy H. S."
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Anders Antonsen"
+              ],
+              "opponentCountry": "DEN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Tharun Mannepalli"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Magnus Johannesen"
+              ],
+              "opponentCountry": "DEN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Jason Teh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Nhat Nguyen"
+              ],
+              "opponentCountry": "IRL",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Isharani Baruah"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Ratchanok Intanon"
+              ],
+              "opponentCountry": "THA",
+              "scores": [
+                [
+                  10,
+                  21
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Sharma"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Chiu Pin-chian"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  21,
+                  17
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ratchanok Intanon"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "P. V. Sindhu"
+          ],
+          "seed": 6,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Wen Yu Zhang"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [
+                [
+                  21,
+                  8
+                ],
+                [
+                  21,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Riko Gunji"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Ashmita Chaliha"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Line Christophersen"
+              ],
+              "opponentCountry": "DEN",
+              "scores": [
+                [
+                  7,
+                  21
+                ],
+                [
+                  21,
+                  14
+                ],
+                [
+                  24,
+                  26
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Malvika Bansod"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Kirsty Gilmour"
+              ],
+              "opponentCountry": "SCO",
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Unnati Hooda"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Han Qianxi"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  15
+                ],
+                [
+                  22,
+                  24
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Yeo Jia Min"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Nguyễn Thùy Linh"
+              ],
+              "opponentCountry": "VIE",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  19,
+                  21
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Krishna Prasad Garaga",
+            "Pruthvi Roy"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "He Jiting",
+                "Ren Xiangyu"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Ishaan Bhatnagar",
+            "Shruti Mishra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Pakkapon Teeraratsakul",
+                "Sapsiree Taerattanachai"
+              ],
+              "opponentCountry": "THA",
+              "scores": [
+                [
+                  3,
+                  21
+                ],
+                [
+                  6,
                   21
                 ]
               ],
