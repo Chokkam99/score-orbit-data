@@ -12,13 +12,16 @@ phones read, after raw.githubusercontent.com's short cache (a few minutes).
 - `upcoming.json`: schema version 1. Each event lists its sources and the date they were read.
 - `results.json`: schema version 1. Finished-event match results (round, outcome, opponent,
   scores) for the same countries, with sources and read dates. Every event also carries `medals`
-  and `timeZone` (see "Results event fields").
+  and `timeZone` (see "Results event fields"). An optional top-level `names` lists players whose
+  name the sources spell more than one way (see "Player names").
 - `rules.json`: per-sport vocabulary (allowed disciplines, rounds, levels, age categories,
   outcomes, statuses, score format, game scoring law) used by `validate.py`. To add a country,
   nothing to change. To add a sport, add its rules to `rules.json`. Supported sports: `BADMINTON`,
   `TABLE_TENNIS` (the app skips events for any other sport). Table tennis ids use
   `wtt-results:`/`wtt-upcoming:`.
 - `validate.py`: the validator described below. `tests/test_validate.py`: its self-tests.
+- `names_report.py`: lists spellings that may be the same person and are not in `names` yet (see
+  "Player names"). `tests/test_names_report.py`: its self-tests.
 - `heartbeat.py`: the staleness check run by the heartbeat workflow.
 - `.github/workflows/promote.yml`, `validate.yml`, `heartbeat.yml`: the gate to `main`, the
   validation run on every push, and the daily staleness check.
@@ -67,6 +70,8 @@ To check by hand before committing: `python3 validate.py`. To run the self-tests
   `validate.py` (the promote workflow refuses it), so it reports a source it could not use instead.
 - A knockout loss is an entry's last decided match. Group rounds are exempt, a semi-final loser may
   play the `3P` match, and a qualifying loser may enter the main draw as a lucky loser.
+- The `names` directory in `results.json` follows the rules under "Player names"; `upcoming.json` may
+  not have one.
 
 ### Previous-version checks
 
@@ -144,6 +149,43 @@ A loss in a group match (G1 to G5) doesn't end an entry's run in the app; the gr
 by one result. When the source shows an entry is out although it has matches left (for example,
 it can no longer qualify from its group), set `"eliminated": true` on that entry. A knockout loss,
 a final or a third-place match ends the run without the flag.
+
+## Player names
+
+The sources spell some players more than one way ("Tanvi Sharma", "T. Sharma", "T SHARMA"). The
+optional top-level `names` array in `results.json` says which spellings are one person:
+
+```json
+"names": [
+  {"sport": "BADMINTON", "country": "IND", "name": "Tanvi Sharma", "aliases": ["T. Sharma", "T SHARMA"]}
+]
+```
+
+`name` is the spelling the app shows: the player's full name as their federation profile writes it.
+`aliases` are other spellings of the same person seen in any source. Event entries keep the source's
+own spelling; nothing rewrites them. Record an alias only when a source shows both spellings are the
+same person (the same profile link or player id, or a page naming both forms), never because two
+names look alike. The first two entries are the people the app's code also maps (P. V. Sindhu,
+Satwiksairaj Rankireddy); they keep the spelling the app already showed.
+
+`validate.py` checks that `names`, when present, is a list of objects, each with a supported sport,
+an IOC country code, a non-empty `name` and a non-empty list of distinct non-empty `aliases`, none of
+them the `name` itself. Within one sport and country, no two entries have the same `name`, no alias
+is listed for two people, and no alias is another person's `name`. Those comparisons ignore case,
+accents and punctuation, the way the app compares names, so "T. Sharma" and "T SHARMA" count as one
+spelling there (one person may still list both).
+
+The app reads the directory first: a spelling listed here shows as its `name` on every screen, and a
+`name` is final, never resolved to a longer one. Spellings not listed fall back to the app's own
+rules, which join an abbreviation to the one full name in the data that fits it. A malformed `names`
+section, or one bad entry in it, is skipped by the app; it never costs the file or an event.
+
+`python3 names_report.py [APP_FIXTURES_DIR]` lists spellings that may need an entry: short forms
+(initials, all-caps surnames) with the fuller spellings in the data they could stand for, and
+near-duplicates (the same words in another order, the same letters spaced differently, or a hyphen
+where another spelling has a space), grouped by sport and country. It reads `results.json`, `upcoming.json` and, when given, an app checkout's
+`fixtures/` (its feed copies, draw CSVs and `metadata.json` opponents), and skips spellings already
+in `names`. Its candidates are leads to check against a source, not facts.
 
 ## Licence
 

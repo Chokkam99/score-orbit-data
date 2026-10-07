@@ -18,6 +18,12 @@ never on a TOUR or DEVELOPMENT event; a junior championship may have no level; p
 tournament must agree) and `timeZone` (a real IANA zone name, checked with zoneinfo; see
 time_zone_problem for what happens without a tz database).
 
+Player names (check_names): results.json may carry a top-level `names` directory, one object per
+person with a supported sport, an IOC country, the `name` the app shows and the `aliases` the
+sources also use. One spelling may name only one person per sport and country, compared the way
+the app compares names (name_key). upcoming.json may not carry one: the app reads it from
+results.json only.
+
 Previous-version checks (see previous_version): the data files are compared with the version
 before this change, taken from git. updatedOn may not go backwards, and results.json may not
 lose an event id (upcoming.json drops finished events by design, so it is exempt). Which version
@@ -50,6 +56,7 @@ import json
 import re
 import subprocess
 import sys
+import unicodedata
 import zoneinfo
 from datetime import date, datetime, timedelta, timezone
 from urllib.parse import urlsplit
@@ -441,6 +448,76 @@ def check_country(path, ctx, value, errors, allow_none=False):
         errors.add(f"{path}: {ctx} country {value!r} is not an IOC code (e.g. Iran is IRI, not IRN)")
 
 
+def name_key(raw):
+    """A name as the app compares it (normalizeNameKey in the app's PlayerIndex.kt): accents and
+    punctuation dropped, lower case, single spaces. "P.V. Sindhu" and "P. V. Sindhu" are one key,
+    and so are "T. Sharma" and "T SHARMA"."""
+    decomposed = unicodedata.normalize("NFD", raw)
+    without_marks = "".join(c for c in decomposed if unicodedata.category(c) != "Mn")
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", without_marks.lower()).split())
+
+
+def check_names(path, names, rules_by_sport, errors):
+    """results.json's optional `names` directory: one object per person,
+    {"sport", "country", "name", "aliases"}. `name` is the spelling the app shows; `aliases` are other
+    spellings of the same person seen in a source. Inside one person the aliases are distinct strings
+    and none is the name itself ("T. Sharma" and "T SHARMA" may both be listed). Across people of one
+    sport and country the app matches by name_key, so the checks between people use it too: no two
+    people with the same name, no alias listed for two people, no alias equal to another person's name."""
+    if not isinstance(names, list):
+        errors.add(f"{path}: names must be a list of people, got {type(names).__name__}")
+        return
+    owners = {}  # (sport, country, name_key) -> (index, name, "name" or "alias")
+    for i, person in enumerate(names):
+        ctx = f"names[{i}]"
+        if not isinstance(person, dict):
+            errors.add(f"{path}: {ctx} must be an object with sport, country, name and aliases")
+            continue
+        sport, country, name = person.get("sport"), person.get("country"), person.get("name")
+        if sport not in rules_by_sport:
+            errors.add(f"{path}: {ctx} sport {sport!r} is not a supported sport ({', '.join(sorted(rules_by_sport))})")
+        country_errors = len(errors)
+        check_country(path, ctx, country, errors)
+        country_ok = len(errors) == country_errors
+        if not isinstance(name, str) or not name_key(name):
+            errors.add(f"{path}: {ctx} name must be a non-empty string, got {name!r}")
+            name = None
+        else:
+            ctx = f"names[{i}] {name!r}"
+        aliases = person.get("aliases")
+        if not isinstance(aliases, list) or not aliases:
+            errors.add(f"{path}: {ctx} aliases must be a non-empty list of other spellings, got {aliases!r}")
+            aliases = []
+        spellings = [] if name is None else [(name, "name")]
+        listed = set()
+        for alias in aliases:
+            if not isinstance(alias, str) or not name_key(alias):
+                errors.add(f"{path}: {ctx} alias {alias!r} must be a non-empty string")
+            elif alias in listed:
+                errors.add(f"{path}: {ctx} alias {alias!r} is listed twice")
+            elif alias == name:
+                errors.add(f"{path}: {ctx} alias {alias!r} is the person's name; list only other spellings")
+            else:
+                listed.add(alias)
+                spellings.append((alias, "alias"))
+        if sport not in rules_by_sport or not country_ok:
+            continue
+        for spelling, role in spellings:
+            key = (sport, country, name_key(spelling))
+            if key not in owners:
+                owners[key] = (i, spelling, role)
+                continue
+            other_index, other_spelling, other_role = owners[key]
+            if other_index == i:
+                continue  # one person's own spellings may share a key
+            if role == "name" and other_role == "name":
+                problem = f"is a second entry for {sport} {country} {other_spelling!r} (names[{other_index}]); one person, one entry"
+            else:
+                problem = (f"{role} {spelling!r} is also the {other_role} {other_spelling!r} of names[{other_index}] "
+                           f"({sport} {country}); one spelling can name only one person")
+            errors.add(f"{path}: {ctx} {problem}")
+
+
 def check_rubber(path, ctx, rubber, rules, errors):
     individual_disciplines = [
         d for d in rules["disciplines"] if d not in set(rules.get("teamDisciplines", []))
@@ -763,6 +840,11 @@ def validate_file(path, data, required_fields, non_null_fields, rules_by_sport, 
         check_not_future(path, "updatedOn", updated_on, errors)
     else:
         errors.add(f"{path}: missing 'updatedOn'")
+    if "names" in data:
+        if is_results:
+            check_names(path, data["names"], rules_by_sport, errors)
+        else:
+            errors.add(f"{path}: 'names' belongs in results.json; the app reads the names directory from there only")
     events = data.get("events")
     if not isinstance(events, list):
         errors.add(f"{path}: 'events' must be a list")

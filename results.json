@@ -2,6 +2,24 @@
   "schemaVersion": 1,
   "updatedOn": "2026-10-07",
   "sport": "BADMINTON",
+  "names": [
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "P. V. Sindhu",
+      "aliases": [
+        "Pusarla V. Sindhu"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Satwiksairaj Rankireddy",
+      "aliases": [
+        "S. Rankireddy"
+      ]
+    }
+  ],
   "events": [
     {
       "id": "bwf-results:china-masters-2026",

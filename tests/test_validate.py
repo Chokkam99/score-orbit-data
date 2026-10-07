@@ -498,6 +498,108 @@ class AppParserRulesTest(Base):
         self.assertFails(w.run(), "are not values the app knows")
 
 
+def person(name="Tanvi Sharma", aliases=("T. Sharma", "T SHARMA"), sport="BADMINTON", country="IND"):
+    return {"sport": sport, "country": country, "name": name, "aliases": list(aliases)}
+
+
+class NamesDirectoryTest(Base):
+    """results.json's optional `names`: one person per entry, one spelling per person in a sport and country."""
+
+    def run_names(self, *people):
+        w = self.ws()
+        w.results["names"] = list(people)
+        return w.run()
+
+    def run_names_raw(self, value):
+        w = self.ws()
+        w.results["names"] = value
+        return w.run()
+
+    def test_no_names_section_is_fine(self):
+        w = self.ws()
+        self.assertNotIn("names", w.results)
+        self.assertOk(w.run())
+
+    def test_the_documented_example_passes(self):
+        # Aliases that the app normalises to one key ("T. Sharma", "T SHARMA") may both be listed.
+        self.assertOk(self.run_names(person(), person("P. V. Sindhu", ["Pusarla V. Sindhu"])))
+
+    def test_names_must_be_a_list_of_objects(self):
+        for bad in ({}, "Tanvi Sharma", None):
+            self.assertFails(self.run_names_raw(bad), "names must be a list of people")
+        self.assertFails(self.run_names("Tanvi Sharma"), "names[0] must be an object")
+
+    def test_sport_must_be_supported(self):
+        self.assertFails(self.run_names(person(sport="SQUASH")), "names[0] sport 'SQUASH' is not a supported sport")
+        self.assertFails(self.run_names({k: v for k, v in person().items() if k != "sport"}), "sport None")
+        self.assertOk(self.run_names(person(sport="TABLE_TENNIS")))
+
+    def test_country_must_be_an_ioc_code(self):
+        self.assertFails(self.run_names(person(country="IRN")), "names[0] country 'IRN' is not an IOC code")
+        self.assertFails(self.run_names(person(country="ind")), "must be exactly 3 uppercase letters")
+        self.assertFails(self.run_names(person(country=None)), "names[0] country is null")
+
+    def test_name_must_be_a_non_empty_string(self):
+        for bad in ("", "   ", ". .", None, 5, ["Tanvi Sharma"]):
+            self.assertFails(self.run_names(person(name=bad)), "names[0] name must be a non-empty string")
+
+    def test_aliases_must_be_a_non_empty_list_of_non_empty_strings(self):
+        for bad in ([], None, "T. Sharma"):
+            w = self.ws()
+            w.results["names"] = [dict(person(), aliases=bad)]
+            self.assertFails(w.run(), "aliases must be a non-empty list of other spellings")
+        for bad in ("", "  ", None, 7):
+            self.assertFails(self.run_names(person(aliases=["T. Sharma", bad])), f"alias {bad!r} must be a non-empty string")
+
+    def test_aliases_are_distinct_and_never_the_name(self):
+        self.assertFails(self.run_names(person(aliases=["T. Sharma", "T. Sharma"])), "alias 'T. Sharma' is listed twice")
+        self.assertFails(self.run_names(person(aliases=["Tanvi Sharma"])), "alias 'Tanvi Sharma' is the person's name")
+
+    def test_one_alias_for_two_people_is_rejected(self):
+        self.assertFails(self.run_names(person(), person("Tara Sharma", ["T. Sharma"])),
+                         "names[1] 'Tara Sharma' alias 'T. Sharma' is also the alias 'T. Sharma' of names[0]",
+                         "one spelling can name only one person")
+        # compared the way the app compares names: "T SHARMA" and "t. sharma" are the same key
+        self.assertFails(self.run_names(person(aliases=["T SHARMA"]), person("Tara Sharma", ["t. sharma"])),
+                         "alias 't. sharma' is also the alias 'T SHARMA' of names[0]")
+
+    def test_an_alias_may_not_be_another_persons_name(self):
+        self.assertFails(self.run_names(person(), person("Tara Sharma", ["Tanvi Sharma"])),
+                         "alias 'Tanvi Sharma' is also the name 'Tanvi Sharma' of names[0]")
+        self.assertFails(self.run_names(person("Tara Sharma", ["Tanvi Sharma"]), person()),
+                         "name 'Tanvi Sharma' is also the alias 'Tanvi Sharma' of names[0]")
+
+    def test_one_person_one_entry(self):
+        self.assertFails(self.run_names(person(), person(aliases=["Sharma Tanvi"])),
+                         "names[1] 'Tanvi Sharma' is a second entry for BADMINTON IND 'Tanvi Sharma' (names[0])")
+        self.assertFails(self.run_names(person(), person("TANVI SHARMA", ["Sharma Tanvi"])), "is a second entry for")
+
+    def test_the_same_spelling_in_another_sport_or_country_is_another_person(self):
+        self.assertOk(self.run_names(person(), person(country="SGP"), person(sport="TABLE_TENNIS")))
+        self.assertOk(self.run_names(person(), person("Tara Sharma", ["T. Sharma"], country="SGP")))
+
+    def test_an_em_dash_in_a_name_is_rejected(self):
+        w = self.ws()
+        w.results["names"] = [person(aliases=["T. Sharma DASH IND"])]
+        w.write()  # json.dumps escapes non-ASCII, so put the dash itself in the file
+        path = w.dir / "results.json"
+        path.write_text(path.read_text().replace("DASH", "\u2014"), encoding="utf-8")
+        done = subprocess.run([sys.executable, "validate.py"], cwd=w.dir, capture_output=True, text=True, env=GIT_ENV)
+        self.assertEqual(done.returncode, 1, done.stdout)
+        self.assertIn("results.json: contains an em dash", done.stdout)
+
+    def test_names_belong_in_results_json_only(self):
+        w = self.ws()
+        w.upcoming["names"] = [person()]
+        self.assertFails(w.run(), "upcoming.json: 'names' belongs in results.json")
+
+    def test_name_key_matches_the_apps_normalisation(self):
+        self.assertEqual(validate.name_key("P.V. Sindhu"), "p v sindhu")
+        self.assertEqual(validate.name_key("  T  SHARMA "), "t sharma")
+        self.assertEqual(validate.name_key("Chi Yu-jen"), "chi yu jen")
+        self.assertEqual(validate.name_key("Lê Đức Phát"), "le uc phat")
+
+
 @unittest.skipUnless(GIT, "git is needed for the previous-version checks")
 class PreviousVersionTest(Base):
     def test_working_tree_is_compared_with_head(self):
