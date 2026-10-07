@@ -167,6 +167,11 @@ def load_json(path, errors):
         idx = raw.index(EM_DASH)
         line = raw.count("\n", 0, idx) + 1
         errors.add(f"{path}: contains an em dash (U+2014) at line {line}; use a hyphen or rewrite")
+    elif "\\u2014" in raw.lower():
+        # The same dash written as a JSON escape decodes to an em dash in the app.
+        idx = raw.lower().index("\\u2014")
+        line = raw.count("\n", 0, idx) + 1
+        errors.add(f"{path}: contains an escaped em dash (\\u2014) at line {line}; use a hyphen or rewrite")
     def reject_constant(name):
         # Python's json accepts NaN/Infinity/-Infinity; Android's org.json refuses them
         # (JSONObject.put -> JSON.checkDouble throws JSONException), and the parsers turn any

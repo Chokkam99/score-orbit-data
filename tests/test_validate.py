@@ -588,6 +588,14 @@ class NamesDirectoryTest(Base):
         self.assertEqual(done.returncode, 1, done.stdout)
         self.assertIn("results.json: contains an em dash", done.stdout)
 
+    def test_an_escaped_em_dash_is_rejected_too(self):
+        w = self.ws()
+        w.results["names"] = [person(aliases=["T. Sharma \u2014 IND"])]
+        w.write()  # json.dumps writes the dash as the escape \u2014, which the app decodes to a dash
+        done = subprocess.run([sys.executable, "validate.py"], cwd=w.dir, capture_output=True, text=True, env=GIT_ENV)
+        self.assertEqual(done.returncode, 1, done.stdout)
+        self.assertIn("results.json: contains an escaped em dash", done.stdout)
+
     def test_names_belong_in_results_json_only(self):
         w = self.ws()
         w.upcoming["names"] = [person()]
