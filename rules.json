@@ -130,5 +130,162 @@
       "WT": "ties",
       "XT": "ties"
     }
+  },
+  "BOXING": {
+    "disciplines": {
+      "M50": {"name": "Men's 50 kg", "gender": "M", "kind": "SINGLE"},
+      "M55": {"name": "Men's 55 kg", "gender": "M", "kind": "SINGLE"},
+      "M60": {"name": "Men's 60 kg", "gender": "M", "kind": "SINGLE"},
+      "M65": {"name": "Men's 65 kg", "gender": "M", "kind": "SINGLE"},
+      "M70": {"name": "Men's 70 kg", "gender": "M", "kind": "SINGLE"},
+      "M75": {"name": "Men's 75 kg", "gender": "M", "kind": "SINGLE"},
+      "M80": {"name": "Men's 80 kg", "gender": "M", "kind": "SINGLE"},
+      "M85": {"name": "Men's 85 kg", "gender": "M", "kind": "SINGLE"},
+      "M90": {"name": "Men's 90 kg", "gender": "M", "kind": "SINGLE"},
+      "M+90": {"name": "Men's +90 kg", "gender": "M", "kind": "SINGLE"},
+      "W48": {"name": "Women's 48 kg", "gender": "W", "kind": "SINGLE"},
+      "W51": {"name": "Women's 51 kg", "gender": "W", "kind": "SINGLE"},
+      "W54": {"name": "Women's 54 kg", "gender": "W", "kind": "SINGLE"},
+      "W57": {"name": "Women's 57 kg", "gender": "W", "kind": "SINGLE"},
+      "W60": {"name": "Women's 60 kg", "gender": "W", "kind": "SINGLE"},
+      "W65": {"name": "Women's 65 kg", "gender": "W", "kind": "SINGLE"},
+      "W70": {"name": "Women's 70 kg", "gender": "W", "kind": "SINGLE"},
+      "W75": {"name": "Women's 75 kg", "gender": "W", "kind": "SINGLE"},
+      "W80": {"name": "Women's 80 kg", "gender": "W", "kind": "SINGLE"},
+      "W+80": {"name": "Women's +80 kg", "gender": "W", "kind": "SINGLE"}
+    },
+    "rounds": ["R64", "R32", "R16", "QF", "SF", "F"],
+    "levels": ["MAJOR", "TOUR"],
+    "ageCategories": ["SENIOR"],
+    "statuses": ["IN_PROGRESS", "FINISHED"],
+    "outcomes": ["WIN", "LOSS", "WALKOVER_WIN", "WALKOVER_LOSS", "RETIRED_WIN", "RETIRED_LOSS", "BYE", "SCHEDULED"],
+    "methods": {
+      "DEC": {"name": "Judges' decision", "outcomes": ["WIN", "LOSS"], "scores": "pair"},
+      "RSC": {"name": "Referee stops contest", "outcomes": ["WIN", "LOSS"], "scores": "empty", "round": true},
+      "RSC-I": {"name": "Stopped for injury", "outcomes": ["WIN", "LOSS"], "scores": "empty", "round": true},
+      "KO": {"name": "Knockout", "outcomes": ["WIN", "LOSS"], "scores": "empty", "round": true},
+      "DSQ": {"name": "Disqualification", "outcomes": ["WIN", "LOSS"], "scores": "empty"},
+      "ABD": {"name": "Abandon", "outcomes": ["RETIRED_WIN", "RETIRED_LOSS"], "scores": "empty"}
+    },
+    "methodRoundMax": 3,
+    "votes": {"maxEach": 5, "totalMin": 3, "totalMax": 5},
+    "levelWin": "never",
+    "thirdPlaceMatch": false,
+    "scoreFormat": "score"
+  },
+  "WRESTLING": {
+    "disciplines": {
+      "FS57": {"name": "Men's freestyle 57 kg", "gender": "M", "kind": "SINGLE"},
+      "FS61": {"name": "Men's freestyle 61 kg", "gender": "M", "kind": "SINGLE"},
+      "FS65": {"name": "Men's freestyle 65 kg", "gender": "M", "kind": "SINGLE"},
+      "FS70": {"name": "Men's freestyle 70 kg", "gender": "M", "kind": "SINGLE"},
+      "FS74": {"name": "Men's freestyle 74 kg", "gender": "M", "kind": "SINGLE"},
+      "FS79": {"name": "Men's freestyle 79 kg", "gender": "M", "kind": "SINGLE"},
+      "FS86": {"name": "Men's freestyle 86 kg", "gender": "M", "kind": "SINGLE"},
+      "FS92": {"name": "Men's freestyle 92 kg", "gender": "M", "kind": "SINGLE"},
+      "FS97": {"name": "Men's freestyle 97 kg", "gender": "M", "kind": "SINGLE"},
+      "FS125": {"name": "Men's freestyle 125 kg", "gender": "M", "kind": "SINGLE"},
+      "GR55": {"name": "Men's Greco-Roman 55 kg", "gender": "M", "kind": "SINGLE"},
+      "GR60": {"name": "Men's Greco-Roman 60 kg", "gender": "M", "kind": "SINGLE"},
+      "GR63": {"name": "Men's Greco-Roman 63 kg", "gender": "M", "kind": "SINGLE"},
+      "GR67": {"name": "Men's Greco-Roman 67 kg", "gender": "M", "kind": "SINGLE"},
+      "GR72": {"name": "Men's Greco-Roman 72 kg", "gender": "M", "kind": "SINGLE"},
+      "GR77": {"name": "Men's Greco-Roman 77 kg", "gender": "M", "kind": "SINGLE"},
+      "GR82": {"name": "Men's Greco-Roman 82 kg", "gender": "M", "kind": "SINGLE"},
+      "GR87": {"name": "Men's Greco-Roman 87 kg", "gender": "M", "kind": "SINGLE"},
+      "GR97": {"name": "Men's Greco-Roman 97 kg", "gender": "M", "kind": "SINGLE"},
+      "GR130": {"name": "Men's Greco-Roman 130 kg", "gender": "M", "kind": "SINGLE"},
+      "WW50": {"name": "Women's freestyle 50 kg", "gender": "W", "kind": "SINGLE"},
+      "WW53": {"name": "Women's freestyle 53 kg", "gender": "W", "kind": "SINGLE"},
+      "WW55": {"name": "Women's freestyle 55 kg", "gender": "W", "kind": "SINGLE"},
+      "WW57": {"name": "Women's freestyle 57 kg", "gender": "W", "kind": "SINGLE"},
+      "WW59": {"name": "Women's freestyle 59 kg", "gender": "W", "kind": "SINGLE"},
+      "WW62": {"name": "Women's freestyle 62 kg", "gender": "W", "kind": "SINGLE"},
+      "WW65": {"name": "Women's freestyle 65 kg", "gender": "W", "kind": "SINGLE"},
+      "WW68": {"name": "Women's freestyle 68 kg", "gender": "W", "kind": "SINGLE"},
+      "WW72": {"name": "Women's freestyle 72 kg", "gender": "W", "kind": "SINGLE"},
+      "WW76": {"name": "Women's freestyle 76 kg", "gender": "W", "kind": "SINGLE"}
+    },
+    "rounds": ["R32", "R16", "QF", "SF", "F", "REP1", "REP2", "3P"],
+    "levels": ["MAJOR", "TOUR"],
+    "ageCategories": ["SENIOR"],
+    "statuses": ["IN_PROGRESS", "FINISHED"],
+    "outcomes": ["WIN", "LOSS", "WALKOVER_WIN", "WALKOVER_LOSS", "RETIRED_WIN", "RETIRED_LOSS", "BYE", "SCHEDULED"],
+    "methods": {
+      "FALL": {"name": "Win by fall", "outcomes": ["WIN", "LOSS"], "scores": "any", "time": true, "winnerMayTrail": true},
+      "TECH_SUP": {"name": "Technical superiority", "outcomes": ["WIN", "LOSS"], "scores": "pair", "time": true},
+      "POINTS": {"name": "Win on points", "outcomes": ["WIN", "LOSS"], "scores": "pair"},
+      "INJURY": {"name": "Injury default", "outcomes": ["RETIRED_WIN", "RETIRED_LOSS"], "scores": "any"},
+      "DSQ": {"name": "Disqualification", "outcomes": ["WIN", "LOSS"], "scores": "any", "winnerMayTrail": true}
+    },
+    "levelWin": "any",
+    "continuesAfterLoss": [
+      {"from": ["R32", "R16", "QF"], "to": ["REP1", "REP2", "3P"]}
+    ],
+    "thirdPlaceMatch": true,
+    "scoreFormat": "score"
+  },
+  "ARCHERY": {
+    "disciplines": {
+      "RM": {"name": "Recurve men", "gender": "M", "kind": "SINGLE", "scoring": "recurve"},
+      "RW": {"name": "Recurve women", "gender": "W", "kind": "SINGLE", "scoring": "recurve"},
+      "CM": {"name": "Compound men", "gender": "M", "kind": "SINGLE", "scoring": "compound", "maxTotal": 150},
+      "CW": {"name": "Compound women", "gender": "W", "kind": "SINGLE", "scoring": "compound", "maxTotal": 150},
+      "RMT": {"name": "Recurve men's team", "gender": "M", "kind": "CREW", "athletes": 3, "scoring": "recurve"},
+      "RWT": {"name": "Recurve women's team", "gender": "W", "kind": "CREW", "athletes": 3, "scoring": "recurve"},
+      "CMT": {"name": "Compound men's team", "gender": "M", "kind": "CREW", "athletes": 3, "scoring": "compound", "maxTotal": 240},
+      "CWT": {"name": "Compound women's team", "gender": "W", "kind": "CREW", "athletes": 3, "scoring": "compound", "maxTotal": 240},
+      "RXT": {"name": "Recurve mixed team", "gender": "X", "kind": "CREW", "athletes": 2, "scoring": "recurve"},
+      "CXT": {"name": "Compound mixed team", "gender": "X", "kind": "CREW", "athletes": 2, "scoring": "compound", "maxTotal": 160}
+    },
+    "rounds": ["R128", "R96", "R64", "R48", "R32", "R24", "R16", "QF", "SF", "F", "3P"],
+    "levels": ["MAJOR", "TOUR", "DEVELOPMENT"],
+    "ageCategories": ["SENIOR"],
+    "statuses": ["IN_PROGRESS", "FINISHED"],
+    "outcomes": ["WIN", "LOSS", "WALKOVER_WIN", "WALKOVER_LOSS", "RETIRED_WIN", "RETIRED_LOSS", "BYE", "SCHEDULED"],
+    "methods": {},
+    "recurveSetPoints": {
+      "SINGLE": {"pairs": [[6, 0], [6, 2], [6, 4], [7, 1], [7, 3], [6, 5]], "shootOffPairs": [[6, 5]]},
+      "CREW": {"pairs": [[6, 0], [5, 1], [6, 2], [5, 3], [5, 4]], "shootOffPairs": [[5, 4]]}
+    },
+    "levelWin": "tiebreak",
+    "tiebreak": {"name": "shoot-off", "levelAllowed": true},
+    "thirdPlaceMatch": true,
+    "scoreFormat": "score"
+  },
+  "HOCKEY": {
+    "disciplines": {
+      "MT": {"name": "Men's team", "gender": "M", "kind": "TEAM"},
+      "WT": {"name": "Women's team", "gender": "W", "kind": "TEAM"}
+    },
+    "rounds": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10", "G11", "G12", "G13", "G14", "G15", "G16", "5P", "7P", "9P", "11P", "13P", "15P", "QF", "SF", "3P", "F"],
+    "levels": ["MAJOR", "TOUR", "DEVELOPMENT"],
+    "ageCategories": ["SENIOR"],
+    "statuses": ["IN_PROGRESS", "FINISHED"],
+    "outcomes": ["WIN", "LOSS", "DRAW", "WALKOVER_WIN", "WALKOVER_LOSS", "RETIRED_WIN", "RETIRED_LOSS", "BYE", "SCHEDULED"],
+    "methods": {},
+    "levelWin": "tiebreak",
+    "tiebreak": {"name": "shootout", "levelAllowed": false},
+    "continuesAfterLoss": [
+      {"from": ["QF", "SF"], "to": ["5P", "7P", "9P", "11P", "13P", "15P"]}
+    ],
+    "thirdPlaceMatch": true,
+    "scoreFormat": "score"
+  },
+  "KABADDI": {
+    "disciplines": {
+      "MT": {"name": "Men's team", "gender": "M", "kind": "TEAM"},
+      "WT": {"name": "Women's team", "gender": "W", "kind": "TEAM"}
+    },
+    "rounds": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10", "G11", "G12", "G13", "G14", "G15", "G16", "QF", "SF", "F"],
+    "levels": ["MAJOR"],
+    "ageCategories": ["SENIOR"],
+    "statuses": ["IN_PROGRESS", "FINISHED"],
+    "outcomes": ["WIN", "LOSS", "DRAW", "WALKOVER_WIN", "WALKOVER_LOSS", "RETIRED_WIN", "RETIRED_LOSS", "BYE", "SCHEDULED"],
+    "methods": {},
+    "levelWin": "tiebreak",
+    "tiebreak": {"name": "tie-break", "levelAllowed": false},
+    "thirdPlaceMatch": false,
+    "scoreFormat": "score"
   }
 }

@@ -9,6 +9,13 @@ win/loss-vs-games-won consistency check.
 Game-score law: every completed game of a decided match must be a legal score for the sport,
 configured per sport in rules.json (`gameScoring`). Retired matches skip their unfinished last game.
 
+Score sports (boxing, wrestling, archery, hockey, kabaddi; rules.json `scoreFormat: "score"`): a match
+holds one pair of scores or none, plus optional `method`, `methodRound`, `methodTime` and `tiebreak`.
+Their events are named in rules.json (`disciplines` is an object {code: {name, gender, kind}}), and an
+entry must repeat that name, gender and kind (a bare MT or WT, as in racket sports, is exempt). The
+sport's laws (judges' votes, set points, who must be ahead, DRAW, what a method allows) are read from
+its rules.json block; see check_score_match and score_rules_problems.
+
 Content checks: readOn and updatedOn may not be in the future (UTC today + 1 day); source
 URLs must use a host in ALLOWED_SOURCE_HOSTS; a knockout loss must be an entry's last decided
 match (check_progression says which formats are exempt).
@@ -81,6 +88,7 @@ APP_ENUMS = {
     "outcomes": {
         "WIN", "LOSS", "WALKOVER_WIN", "WALKOVER_LOSS", "RETIRED_WIN", "RETIRED_LOSS",
         "BYE", "SCHEDULED", "NOT_PLAYED",
+        "DRAW",  # hockey and kabaddi group rounds; joins the app's enum in the same change as this line
     },
     "rubberOutcomes": {
         "WIN", "LOSS", "WALKOVER_WIN", "WALKOVER_LOSS", "RETIRED_WIN", "RETIRED_LOSS",
@@ -120,10 +128,24 @@ ALLOWED_SOURCE_HOSTS = [
     "straitstimes.com",
 ]
 
-# Rounds where a loss does not end an entry's run: group stage (the app's isGroupRound: G + digit).
-GROUP_ROUND_RE = re.compile(r"G[0-9]")
+# Rounds where a loss does not end an entry's run: group stage (the app's isGroupRound: G + one or two
+# digits, G1 to G16 for a hockey league season). Which group rounds a sport has is its `rounds` list.
+GROUP_ROUND_RE = re.compile(r"G[0-9]{1,2}")
 QUALIFYING_ROUND_RE = re.compile(r"Q[0-9]+")
 ELIMINATING_OUTCOMES = {"LOSS", "WALKOVER_LOSS", "RETIRED_LOSS"}  # the app's isElimination()
+
+# Score sports (rules.json `scoreFormat: "score"`): who is on an entry, by `kind`. A discipline may pin
+# the exact count with `athletes` (an archery team is 3, a mixed team 2); TEAM is a national team whose
+# players are not listed.
+SCORE_FORMAT = "score"
+KIND_ATHLETES = {"SINGLE": (1, 1), "PAIR": (2, 2), "CREW": (2, 6), "TEAM": (0, 0)}
+GENDERS = ("M", "W", "X")
+# No score exists for these: the match was not played, or no result is recorded.
+NO_SCORE_OUTCOMES = ("SCHEDULED", "BYE", "WALKOVER_WIN", "WALKOVER_LOSS")
+# "m:ss" as the cards write it: minutes without a leading zero, two-digit seconds ("2:31", "0:04").
+METHOD_TIME_RE = re.compile(r"(0|[1-9][0-9]?):[0-5][0-9]")
+METHOD_SCORE_POLICIES = ("pair", "empty", "any")
+LEVEL_WIN_POLICIES = ("never", "tiebreak", "any")
 
 UPCOMING_EVENT_REQUIRED = [
     "id", "name", "shortName", "sport", "ageCategory", "level",
@@ -388,14 +410,20 @@ def check_game_law(path, ctx, outcome, scores, rules, errors):
             errors.add(f"{path}: {ctx} game {gi + 1} score {game[0]}-{game[1]} is not a legal game: {problem}")
 
 
-def check_progression(path, ctx, matches, errors):
+def check_progression(path, ctx, matches, errors, rules=None):
     """A knockout loss is the end of an entry's run: no decided match may follow it.
 
-    Group rounds (G1-G5) are skipped (a group loss does not end the run). Two real formats do continue
-    after a knockout loss and are allowed: a semi-final loser playing the 3P match, and a qualifying
-    loser entering the main draw as a lucky loser. SCHEDULED matches are not decided and are ignored.
+    Group rounds (G1 to G16) are skipped (a group loss does not end the run). Two real formats do
+    continue after a knockout loss and are allowed everywhere: a semi-final loser playing the 3P match,
+    and a qualifying loser entering the main draw as a lucky loser. A sport may allow more in its
+    rules.json `continuesAfterLoss` (a list of {"from": [rounds], "to": [rounds]}): wrestling's
+    repechage after an early loss, hockey's classification matches after a quarter-final loss. A loss
+    in a round that is not listed under `from` (a repechage or bronze bout, a classification match,
+    a final) still ends the run. SCHEDULED matches are not decided and are ignored.
     The app reads the same data with ResultsEntry.isOut(), which looks at the last non-SCHEDULED
     match, so an entry that 'loses and keeps playing' would show inconsistently there."""
+    continues = rules.get("continuesAfterLoss") if isinstance(rules, dict) else None
+    continues = [c for c in continues if isinstance(c, dict)] if isinstance(continues, list) else []
     for i, match in enumerate(matches):
         if not isinstance(match, dict) or match.get("outcome") not in ELIMINATING_OUTCOMES:
             continue
@@ -408,6 +436,8 @@ def check_progression(path, ctx, matches, errors):
                 continue
             nxt = later.get("round")
             if rnd == "SF" and nxt == "3P":
+                continue
+            if any(rnd in (c.get("from") or []) and nxt in (c.get("to") or []) for c in continues):
                 continue
             if (QUALIFYING_ROUND_RE.fullmatch(rnd) and isinstance(nxt, str)
                     and not QUALIFYING_ROUND_RE.fullmatch(nxt)):
@@ -646,13 +676,270 @@ def check_tie(path, ctx, match, rules, errors):
             )
 
 
-def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
-    for field in ENTRY_REQUIRED_COMMON:
-        if field not in entry:
-            errors.add(f"{path}: {ctx} entry missing '{field}'")
-    check_country(path, ctx, entry.get("country"), errors)
-    if "eliminated" in entry and not isinstance(entry["eliminated"], bool):
-        errors.add(f"{path}: {ctx} eliminated must be true or false when present, got {entry['eliminated']!r}")
+def is_score_sport(rules):
+    """True for a sport whose matches are one head-to-head score (rules.json `scoreFormat: "score"`)."""
+    return rules.get("scoreFormat") == SCORE_FORMAT
+
+
+def is_int(value):
+    return isinstance(value, int) and not isinstance(value, bool)
+
+
+def read_pair(path, ctx, label, value, errors):
+    """(own, opponent) when `value` is a pair of non-negative whole numbers, else None (and an error)."""
+    if (not isinstance(value, list) or len(value) != 2
+            or not all(is_int(v) and v >= 0 for v in value)):
+        errors.add(f"{path}: {ctx} {label} {value!r} must be a pair [own, opponent] of non-negative whole numbers")
+        return None
+    return value[0], value[1]
+
+
+def athlete_range(rule):
+    """(fewest, most) athletes a score-sport discipline lists: its kind's range, or its pinned `athletes`."""
+    low, high = KIND_ATHLETES.get(rule.get("kind"), (0, 0))
+    if is_int(rule.get("athletes")):
+        low = high = rule["athletes"]
+    return low, high
+
+
+def check_score_discipline(path, ctx, entry, rules, errors):
+    """A score-sport entry: `discipline` is one of the sport's codes, `disciplineName`, `gender` and `kind`
+    repeat what rules.json says for that code, and `athletes` fits the kind. Returns the code's rules.json
+    object, or None when the code is unknown.
+
+    The app tells events apart by code alone and shows the first name it reads for a code, so rules.json
+    fixes one name per code (F1). A bare racket code (MT, WT: hockey and kabaddi national teams) is read
+    by the app as that racket event, which ignores the three fields; they are neither required nor
+    checked there. TEAM entries list no athletes."""
+    disc = entry.get("discipline")
+    known = rules.get("disciplines")
+    known = known if isinstance(known, dict) else {}
+    rule = known.get(disc) if isinstance(disc, str) else None
+    if not isinstance(rule, dict):
+        errors.add(f"{path}: {ctx} discipline {disc!r} not in allowed set {list(known)}")
+        return None
+    if disc not in APP_ENUMS["disciplines"]:
+        for field, key in (("disciplineName", "name"), ("gender", "gender"), ("kind", "kind")):
+            expected = rule.get(key)
+            if field not in entry:
+                errors.add(f"{path}: {ctx} discipline {disc!r} needs '{field}': {expected!r} "
+                           f"(the app skips the event without it)")
+            elif entry[field] != expected:
+                errors.add(f"{path}: {ctx} {field} {entry[field]!r} must be {expected!r} for discipline "
+                           f"{disc!r} (rules.json fixes one {field} per code)")
+    athletes = entry.get("athletes")
+    kind = rule.get("kind")
+    low, high = athlete_range(rule)
+    if not isinstance(athletes, list):
+        errors.add(f"{path}: {ctx} athletes must be a list")
+    elif kind == "TEAM":
+        if athletes:
+            errors.add(f"{path}: {ctx} team entry athletes must be an empty list")
+    elif not low <= len(athletes) <= high:
+        expected = str(low) if low == high else f"{low} to {high}"
+        errors.add(f"{path}: {ctx} discipline {disc} ({kind}) expects {expected} athlete(s), got {len(athletes)}")
+    return rule
+
+
+def check_score_method(path, ctx, match, outcome, scores, rules, errors):
+    """The match's `method` (a code from the sport's `methods`), or None. It must go with the outcome, and
+    the method says whether the score pair is required, optional or absent (a stoppage, an abandon or a
+    disqualification in boxing has no score). Returns the method's rules.json object."""
+    if "method" not in match:
+        return None
+    method = match["method"]
+    methods = rules.get("methods")
+    methods = methods if isinstance(methods, dict) else {}
+    if not isinstance(method, str):
+        errors.add(f"{path}: {ctx} method must be a string from {list(methods)} or left out, got {method!r}")
+        return None
+    if method not in methods:
+        listing = f"one of {list(methods)}" if methods else "used here: this sport has no methods"
+        errors.add(f"{path}: {ctx} method {method!r} is not {listing}")
+        return None
+    rule = methods[method]
+    name = rule.get("name", method)
+    allowed = rule.get("outcomes", [])
+    if outcome not in allowed:
+        errors.add(f"{path}: {ctx} method {method} ({name}) does not go with outcome {outcome!r}; "
+                   f"it goes with {', '.join(allowed)}")
+    policy = rule.get("scores", "any")
+    has_pair = isinstance(scores, list) and len(scores) == 1
+    if policy == "pair" and not has_pair:
+        errors.add(f"{path}: {ctx} method {method} ({name}) is decided on a score, so scores must hold the pair")
+    elif policy == "empty" and isinstance(scores, list) and scores:
+        errors.add(f"{path}: {ctx} method {method} ({name}) has no score, so scores must be [] (got {scores})")
+    return rule
+
+
+def check_method_detail(path, ctx, match, method, method_rule, rules, errors):
+    """`methodRound` (boxing: the round a bout was stopped, 1 to 3) and `methodTime` (wrestling: when a
+    fall or technical superiority happened, "m:ss"). Each goes only with the methods flagged for it."""
+    methods = rules.get("methods")
+    methods = methods if isinstance(methods, dict) else {}
+    for field, flag in (("methodRound", "round"), ("methodTime", "time")):
+        if field not in match:
+            continue
+        value = match[field]
+        flagged = [m for m, r in methods.items() if isinstance(r, dict) and r.get(flag)]
+        if not flagged:
+            errors.add(f"{path}: {ctx} {field} is not used in this sport")
+            continue
+        if method_rule is None or not method_rule.get(flag):
+            errors.add(f"{path}: {ctx} {field} goes only with method {', '.join(flagged)}, "
+                       f"not with {method if method else 'no method'}")
+        if field == "methodRound":
+            top = rules.get("methodRoundMax", 3)
+            if not is_int(value) or not 1 <= value <= top:
+                errors.add(f"{path}: {ctx} methodRound must be a whole number from 1 to {top}, got {value!r}")
+        elif not isinstance(value, str) or not METHOD_TIME_RE.fullmatch(value):
+            errors.add(f"{path}: {ctx} methodTime {value!r} must look like m:ss, for example '2:31' or '0:04'")
+
+
+def recurve_pair_problem(disc_rule, rules, pair):
+    """Why a recurve set-point pair cannot be a final result, or None. Individual matches go to 6 set
+    points, team and mixed-team matches to 5 (the discipline's kind says which)."""
+    key = "SINGLE" if disc_rule.get("kind") == "SINGLE" else "CREW"
+    law = (rules.get("recurveSetPoints") or {}).get(key) or {}
+    legal = [tuple(p) for p in law.get("pairs", []) if isinstance(p, list)]
+    winner_first = (max(pair), min(pair))
+    if winner_first in legal:
+        return None
+    listing = ", ".join(f"{a}-{b}" for a, b in legal)
+    return (f"recurve set points {pair[0]}-{pair[1]} are not a legal "
+            f"{'individual' if key == 'SINGLE' else 'team'} result; the winner's pair is one of {listing}")
+
+
+def is_shoot_off_pair(disc_rule, rules, pair):
+    """True for the recurve pair a shoot-off produces (6-5 individual, 5-4 team): not level, yet it carries
+    a `tiebreak`, because the shoot-off decided the last point."""
+    if disc_rule.get("scoring") != "recurve":
+        return False
+    key = "SINGLE" if disc_rule.get("kind") == "SINGLE" else "CREW"
+    law = (rules.get("recurveSetPoints") or {}).get(key) or {}
+    return (max(pair), min(pair)) in [tuple(p) for p in law.get("shootOffPairs", []) if isinstance(p, list)]
+
+
+def check_tiebreak(path, ctx, match, outcome, pair, disc_rule, rules, errors):
+    """`tiebreak` [own, opponent]: hockey's shootout, archery's shoot-off, a kabaddi tie-break. It decides
+    a WIN or LOSS that the score leaves level (and, in recurve archery, the 6-5 or 5-4 a shoot-off makes);
+    the side that wins it is the winner of the match. Returns the pair, or None."""
+    if "tiebreak" not in match:
+        return None
+    law = rules.get("tiebreak")
+    if not isinstance(law, dict):
+        errors.add(f"{path}: {ctx} tiebreak is not used in this sport")
+        return None
+    tiebreak = read_pair(path, ctx, "tiebreak", match["tiebreak"], errors)
+    if tiebreak is None or outcome == "DRAW":
+        return tiebreak  # a DRAW with a tiebreak is reported by the DRAW rules
+    name = law.get("name", "tiebreak")
+    if outcome not in ("WIN", "LOSS"):
+        errors.add(f"{path}: {ctx} a {name} only decides a WIN or LOSS, not {outcome}")
+        return tiebreak
+    if pair is None:
+        errors.add(f"{path}: {ctx} tiebreak only after a level score, but the match has no score")
+        return tiebreak
+    if pair[0] != pair[1] and not is_shoot_off_pair(disc_rule or {}, rules, pair):
+        errors.add(f"{path}: {ctx} tiebreak only after a level score, but the score is {pair[0]}-{pair[1]}")
+        return tiebreak
+    own, opp = tiebreak
+    if own == opp and not law.get("levelAllowed", False):
+        errors.add(f"{path}: {ctx} the {name} {own}-{opp} is level; a {name} has a winner")
+    elif outcome == "WIN" and own < opp:
+        errors.add(f"{path}: {ctx} outcome=WIN but the {name} {own}-{opp} goes to the opponent")
+    elif outcome == "LOSS" and opp < own:
+        errors.add(f"{path}: {ctx} outcome=LOSS but the {name} {own}-{opp} goes to our side")
+    return tiebreak
+
+
+def check_score_match(path, ctx, match, disc_rule, rules, errors):
+    """One match of a score sport (rules.json `scoreFormat: "score"`).
+
+    - `scores` is one pair [own, opponent] or empty. SCHEDULED, BYE and WALKOVER have none.
+    - A decided WIN or LOSS with a pair has the winner strictly ahead, except where the sport's `levelWin`
+      allows more: "tiebreak" lets a level score stand when a `tiebreak` decides it (hockey, kabaddi,
+      archery), "any" lets it stand outright (wrestling: criteria decide, and the winner may trail only
+      with a method flagged `winnerMayTrail`: a fall or a disqualification).
+    - DRAW: a level pair, no tiebreak, a group round only (and only in a sport whose outcomes list it).
+    - `method`, `methodRound`, `methodTime`, `tiebreak`: see their check functions.
+    - Sport laws: boxing `votes`, archery `recurveSetPoints` and `maxTotal`.
+    The outcome, never the score alone, says who won."""
+    outcome = match.get("outcome")
+    rnd = match.get("round")
+    scores = match.get("scores")
+    pair = None
+    if isinstance(scores, list):  # a non-list is reported by check_entry
+        if len(scores) > 1:
+            errors.add(f"{path}: {ctx} a match holds one pair of scores or none, got {len(scores)} pairs")
+        elif len(scores) == 1:
+            pair = read_pair(path, ctx, "scores[0]", scores[0], errors)
+        if scores and outcome in NO_SCORE_OUTCOMES:
+            errors.add(f"{path}: {ctx} outcome {outcome} has no score, so scores must be [] (got {scores})")
+
+    method_rule = check_score_method(path, ctx, match, outcome, scores, rules, errors)
+    method = match.get("method") if method_rule is not None else None
+    check_method_detail(path, ctx, match, method, method_rule, rules, errors)
+    tiebreak = check_tiebreak(path, ctx, match, outcome, pair, disc_rule, rules, errors)
+
+    if outcome == "DRAW" and "DRAW" in rules.get("outcomes", []):  # elsewhere the outcome itself is the error
+        if not (isinstance(rnd, str) and GROUP_ROUND_RE.fullmatch(rnd)):
+            errors.add(f"{path}: {ctx} a DRAW is only allowed in a group round (G1 to G16), not in {rnd!r}")
+        if pair is None:
+            errors.add(f"{path}: {ctx} a DRAW needs a level score, but the match has none")
+        elif pair[0] != pair[1]:
+            errors.add(f"{path}: {ctx} a DRAW needs a level score, got {pair[0]}-{pair[1]}")
+        if "tiebreak" in match:
+            errors.add(f"{path}: {ctx} a DRAW has no tiebreak; a match decided by one is a WIN or LOSS")
+
+    if outcome in ("WIN", "LOSS") and pair is not None:
+        own, opp = pair
+        level_win = rules.get("levelWin", "never")
+        if own == opp:
+            if level_win == "never":
+                errors.add(f"{path}: {ctx} outcome={outcome} but the score {own}-{opp} is level; "
+                           f"the winner must be strictly ahead")
+            elif level_win == "tiebreak" and "tiebreak" not in match:
+                hint = ("; a level group-round match is a DRAW"
+                        if "DRAW" in rules.get("outcomes", []) else "")
+                errors.add(f"{path}: {ctx} outcome={outcome} with a level score {own}-{opp} needs a "
+                           f"tiebreak that decides it{hint}")
+        elif (own > opp) != (outcome == "WIN") and not (method_rule or {}).get("winnerMayTrail"):
+            side = "our side" if outcome == "WIN" else "the opponent"
+            errors.add(f"{path}: {ctx} outcome={outcome} but {side} is behind on the score {own}-{opp}; "
+                       f"the winner must be ahead"
+                       + (" (only a fall or a disqualification wins from behind)"
+                          if any(isinstance(r, dict) and r.get("winnerMayTrail")
+                                 for r in (rules.get("methods") or {}).values()) else ""))
+
+    votes = rules.get("votes")
+    if isinstance(votes, dict) and pair is not None:
+        top, low, high = votes.get("maxEach", 5), votes.get("totalMin", 3), votes.get("totalMax", 5)
+        if max(pair) > top:
+            errors.add(f"{path}: {ctx} judges' votes must each be 0 to {top}, got {pair[0]}-{pair[1]}")
+        elif not low <= sum(pair) <= high:
+            errors.add(f"{path}: {ctx} judges' votes must total {low} to {high}, "
+                       f"got {pair[0]}-{pair[1]} (total {sum(pair)})")
+
+    scoring = (disc_rule or {}).get("scoring")
+    if pair is not None and scoring == "recurve" and outcome in ("WIN", "LOSS"):
+        problem = recurve_pair_problem(disc_rule, rules, pair)
+        if problem:
+            errors.add(f"{path}: {ctx} {problem}")
+    elif pair is not None and scoring == "compound":
+        cap = disc_rule.get("maxTotal")
+        if is_int(cap) and max(pair) > cap:
+            errors.add(f"{path}: {ctx} compound total {max(pair)} is above the {cap} points a "
+                       f"{disc_rule.get('name', 'match')} can score")
+
+    if (disc_rule or {}).get("kind") == "TEAM":
+        opponent = match.get("opponent")
+        if isinstance(opponent, list) and opponent:
+            errors.add(f"{path}: {ctx} opponent must be empty for a team match (the opponent is a country)")
+
+
+def check_racket_discipline(path, ctx, entry, rules, errors, event_id):
+    """The racket sports' discipline and athlete-count checks (`disciplines` is a list of codes)."""
     disc = entry.get("discipline")
     team_disciplines = set(rules.get("teamDisciplines", []))
     is_team = disc in team_disciplines
@@ -679,6 +966,22 @@ def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
                     f"{path}: {ctx} discipline {disc} expects {expected} athlete(s), "
                     f"got {len(athletes)}"
                 )
+
+
+def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
+    for field in ENTRY_REQUIRED_COMMON:
+        if field not in entry:
+            errors.add(f"{path}: {ctx} entry missing '{field}'")
+    check_country(path, ctx, entry.get("country"), errors)
+    if "eliminated" in entry and not isinstance(entry["eliminated"], bool):
+        errors.add(f"{path}: {ctx} eliminated must be true or false when present, got {entry['eliminated']!r}")
+    disc = entry.get("discipline")
+    score_sport = is_score_sport(rules)
+    disc_rule = None
+    if score_sport:
+        disc_rule = check_score_discipline(path, ctx, entry, rules, errors)
+    else:
+        check_racket_discipline(path, ctx, entry, rules, errors, event_id)
     if "seed" in entry and entry["seed"] is not None:
         if not isinstance(entry["seed"], int) or isinstance(entry["seed"], bool):
             errors.add(f"{path}: {ctx} seed must be an int or null")
@@ -707,8 +1010,13 @@ def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
             scores = match.get("scores")
             if not isinstance(scores, list):
                 errors.add(f"{path}: {mctx} scores must be a list (use [] when there is no score)")
-            score_format = rules.get("scoreFormatByDiscipline", {}).get(disc, rules.get("scoreFormat"))
-            if score_format == "ties":
+            if score_sport:
+                score_format = SCORE_FORMAT
+            else:
+                score_format = rules.get("scoreFormatByDiscipline", {}).get(disc, rules.get("scoreFormat"))
+            if score_format == SCORE_FORMAT:
+                check_score_match(path, mctx, match, disc_rule, rules, errors)
+            elif score_format == "ties":
                 check_tie(path, mctx, match, rules, errors)
             elif score_format == "games":
                 check_scores(path, mctx, scores if isinstance(scores, list) else [], errors)
@@ -731,7 +1039,7 @@ def check_entry(path, ctx, entry, rules, errors, is_results, event_id=None):
             time_val = match.get("time")
             if time_val is not None:
                 check_iso_time(path, f"{mctx}.time", time_val, errors)
-        check_progression(path, ctx, matches, errors)
+        check_progression(path, ctx, matches, errors, rules)
 
 
 TOURNAMENT_ID_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
@@ -787,16 +1095,139 @@ def check_tournament(path, ctx, event, errors):
             errors.add(f"{path}: {ctx} tournament missing '{field}'")
 
 
+def score_rules_problems(rules):
+    """What is wrong with a score sport's rules.json block, as short phrases (empty when it is usable).
+
+    A score sport lists its events as `disciplines` {code: {name, gender, kind[, athletes][, scoring,
+    maxTotal]}}, and says in `thirdPlaceMatch` whether it plays a bronze match (which must agree with
+    "3P" being one of its `rounds`). Its laws are optional keys: `methods`, `methodRoundMax`, `votes`,
+    `levelWin`, `tiebreak`, `recurveSetPoints`, `continuesAfterLoss`. There is no `gameScoring`."""
+    problems = []
+    for key in ("rounds", "levels", "ageCategories", "statuses", "outcomes"):
+        if not isinstance(rules.get(key), list) or not rules.get(key):
+            problems.append(f"{key} must be a non-empty list")
+    rounds = rules["rounds"] if isinstance(rules.get("rounds"), list) else []
+    outcomes = rules["outcomes"] if isinstance(rules.get("outcomes"), list) else []
+
+    disciplines = rules.get("disciplines")
+    if not isinstance(disciplines, dict) or not disciplines:
+        problems.append("disciplines must be an object {code: {name, gender, kind}}")
+        disciplines = {}
+    for code, rule in disciplines.items():
+        where = f"discipline {code!r}"
+        if not isinstance(code, str) or not code or code != code.strip() or " " in code:
+            problems.append(f"{where} must be a code without spaces")
+        if not isinstance(rule, dict):
+            problems.append(f"{where} must be an object {{name, gender, kind}}")
+            continue
+        if not isinstance(rule.get("name"), str) or not rule["name"].strip():
+            problems.append(f"{where} needs a non-empty name")
+        if rule.get("gender") not in GENDERS:
+            problems.append(f"{where} gender must be one of {', '.join(GENDERS)}, got {rule.get('gender')!r}")
+        kind = rule.get("kind")
+        if not isinstance(kind, str) or kind not in KIND_ATHLETES:
+            problems.append(f"{where} kind must be one of {', '.join(KIND_ATHLETES)}, got {kind!r}")
+        else:
+            low, high = KIND_ATHLETES[kind]
+            if "athletes" in rule and not (is_int(rule["athletes"]) and low <= rule["athletes"] <= high):
+                problems.append(f"{where} athletes must be a whole number from {low} to {high} for kind {kind}, "
+                                f"got {rule['athletes']!r}")
+            if code in APP_ENUMS["disciplines"] and kind != "TEAM":
+                problems.append(f"{where} is a racket code, which the app reads as a team event: its kind must be TEAM")
+        scoring = rule.get("scoring")
+        if scoring == "recurve":
+            key = "SINGLE" if kind == "SINGLE" else "CREW"
+            law = (rules.get("recurveSetPoints") or {}).get(key)
+            if not isinstance(law, dict) or not isinstance(law.get("pairs"), list) or not law["pairs"]:
+                problems.append(f"{where} is recurve, so recurveSetPoints.{key}.pairs must list the legal pairs")
+        elif scoring == "compound":
+            if not is_int(rule.get("maxTotal")) or rule["maxTotal"] < 1:
+                problems.append(f"{where} is compound, so it needs a maxTotal of 1 or more")
+        elif scoring is not None:
+            problems.append(f"{where} scoring must be 'recurve' or 'compound', got {scoring!r}")
+
+    third = rules.get("thirdPlaceMatch")
+    if not isinstance(third, bool):
+        problems.append("thirdPlaceMatch must be true or false")
+    elif third != ("3P" in rounds):
+        problems.append(f"thirdPlaceMatch is {str(third).lower()} but 3P "
+                        f"{'is' if '3P' in rounds else 'is not'} one of its rounds")
+    if "gameScoring" in rules:
+        problems.append("has no gameScoring (a score sport has no games)")
+
+    methods = rules.get("methods", {})
+    if not isinstance(methods, dict):
+        problems.append("methods must be an object {code: {name, outcomes, scores}} (empty when there are none)")
+        methods = {}
+    for code, rule in methods.items():
+        where = f"method {code!r}"
+        if not isinstance(rule, dict):
+            problems.append(f"{where} must be an object {{name, outcomes, scores}}")
+            continue
+        listed = rule.get("outcomes")
+        if not isinstance(listed, list) or not listed or any(o not in outcomes for o in listed):
+            problems.append(f"{where} outcomes must be a non-empty subset of the sport's outcomes, got {listed!r}")
+        if rule.get("scores", "any") not in METHOD_SCORE_POLICIES:
+            problems.append(f"{where} scores must be one of {', '.join(METHOD_SCORE_POLICIES)}, got {rule.get('scores')!r}")
+        for flag in ("round", "time", "winnerMayTrail"):
+            if flag in rule and not isinstance(rule[flag], bool):
+                problems.append(f"{where} {flag} must be true or false")
+    if any(isinstance(r, dict) and r.get("round") for r in methods.values()):
+        top = rules.get("methodRoundMax")
+        if not is_int(top) or top < 1:
+            problems.append("methodRoundMax must be a whole number of 1 or more when a method records a round")
+
+    level_win = rules.get("levelWin", "never")
+    if level_win not in LEVEL_WIN_POLICIES:
+        problems.append(f"levelWin must be one of {', '.join(LEVEL_WIN_POLICIES)}, got {level_win!r}")
+    tiebreak = rules.get("tiebreak")
+    if tiebreak is not None and (not isinstance(tiebreak, dict) or not isinstance(tiebreak.get("levelAllowed"), bool)):
+        problems.append("tiebreak must be an object with a true or false levelAllowed")
+    if level_win == "tiebreak" and not isinstance(tiebreak, dict):
+        problems.append("levelWin 'tiebreak' needs a tiebreak object")
+
+    votes = rules.get("votes")
+    if votes is not None:
+        keys = ("maxEach", "totalMin", "totalMax")
+        if (not isinstance(votes, dict) or not all(is_int(votes.get(k)) for k in keys)
+                or votes["totalMin"] > votes["totalMax"]):
+            problems.append("votes must be {maxEach, totalMin, totalMax} whole numbers, totalMin at most totalMax")
+
+    continues = rules.get("continuesAfterLoss", [])
+    if not isinstance(continues, list):
+        problems.append("continuesAfterLoss must be a list of {from: [rounds], to: [rounds]}")
+        continues = []
+    for item in continues:
+        for side in ("from", "to"):
+            listed = item.get(side) if isinstance(item, dict) else None
+            if not isinstance(listed, list) or not listed or any(r not in rounds for r in listed):
+                problems.append(f"continuesAfterLoss {side} must list rounds of the sport, got {listed!r}")
+    return problems
+
+
 def check_rules_against_app(rules_by_sport, errors):
     for sport, rules in rules_by_sport.items():
-        if "gameScoring" in rules:
+        score_sport = is_score_sport(rules)
+        if "gameScoring" in rules and not score_sport:
             problem = game_scoring_config_problem(rules["gameScoring"])
             if problem:
                 errors.add(f"rules.json: {sport} gameScoring {problem}")
         for key, allowed in APP_ENUMS.items():
+            if key == "disciplines" and score_sport:
+                continue  # a score sport's codes are its own (M60, FS57, RM); only MT and WT are the app's
             extra = [v for v in rules.get(key, []) if v not in allowed]
             if extra:
                 errors.add(f"rules.json: {sport} {key} {extra!r} are not values the app knows")
+        if score_sport:
+            # Every discipline of a score sport is read as SCORE, team disciplines included (a hockey
+            # 2-2 shootout win or a pool draw is not a tie of rubbers).
+            for problem in score_rules_problems(rules):
+                errors.add(f"rules.json: {sport} {problem}")
+            for disc in rules.get("disciplines", []):
+                fmt = rules.get("scoreFormatByDiscipline", {}).get(disc, rules.get("scoreFormat"))
+                if fmt != SCORE_FORMAT:
+                    errors.add(f"rules.json: {sport} {disc} scoreFormat must be 'score', got {fmt!r}")
+            continue
         team = set(rules.get("teamDisciplines", []))
         expected_team = APP_TEAM_DISCIPLINES & set(rules.get("disciplines", []))
         if team != expected_team:
