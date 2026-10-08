@@ -13361,7 +13361,7 @@
           "readOn": "2026-10-08"
         }
       ],
-      "notes": "Round labels G1 to G3 follow the order of each team's pool ties on the page. Neither team event has a third-place match: both losing semifinalists take bronze. The third rubber of a 2-0 quarterfinal tie shows no score on the page ('-' or blank) and is recorded NOT_PLAYED (India men v Kuwait, India women v Singapore). Singapore's pool tie against Macau has opponentCountry null because Macau (MAC) is not in the IOC code set validate.py accepts. Tanvi Khanna's rubber against Narges Soltani in India v Iran is shown '11-5, 3-0, retired', so it is a RETIRED_WIN with the last game unfinished. The pages list rubber games with the first-named team first; they are flipped where needed so each entry's own points come first. Names are as each page displays them: Suraj Kumar Chand here against Suraj Chand in mixed doubles, and Wai Lynn Au Yeong and Wai Yhann Au Yeong here against Au Yeong Wai Lynn and Au Yeong Wai Yhann in singles. Pool ties on the men's page show a date and no time. Seeds are null: the women's bracket shows bands such as 3/4.",
+      "notes": "Round labels G1 to G3 follow the order of each team's pool ties on the page. Neither team event has a third-place match: both losing semifinalists take bronze. The third rubber of a 2-0 quarterfinal tie shows no score on the page ('-' or blank) and is recorded NOT_PLAYED (India men v Kuwait, India women v Singapore). Tanvi Khanna's rubber against Narges Soltani in India v Iran is shown '11-5, 3-0, retired', so it is a RETIRED_WIN with the last game unfinished. The pages list rubber games with the first-named team first; they are flipped where needed so each entry's own points come first. Names are as each page displays them: Suraj Kumar Chand here against Suraj Chand in mixed doubles, and Wai Lynn Au Yeong and Wai Yhann Au Yeong here against Au Yeong Wai Lynn and Au Yeong Wai Yhann in singles. Pool ties on the men's page show a date and no time. Seeds are null: the women's bracket shows bands such as 3/4.",
       "entries": [
         {
           "country": "IND",
@@ -14222,7 +14222,7 @@
               "round": "G1",
               "outcome": "WIN",
               "opponent": [],
-              "opponentCountry": null,
+              "opponentCountry": "MAC",
               "scores": [
                 [
                   2,
