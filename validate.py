@@ -419,8 +419,9 @@ def check_progression(path, ctx, matches, errors):
             return
 
 
-# IOC country codes (plus ENG/SCO/WAL, and the IOC's AIN for Individual Neutral Athletes and EOR
-# for the Refugee Olympic Team), matching the app's flag table in
+# IOC country codes (plus ENG/SCO/WAL, MAC for Macau, which plays the Asian Games and BWF and ITTF
+# events but is not an IOC member, and the IOC's AIN for Individual Neutral Athletes and EOR for the
+# Refugee Olympic Team), matching the app's flag table in
 # score-orbit app/src/main/java/com/scoreorbit/app/data/Flags.kt. A code outside this set shows
 # with no flag or name in the app (e.g. "IRN" instead of IOC "IRI" for Iran).
 IOC_CODES = {
@@ -432,7 +433,7 @@ IOC_CODES = {
     "FSM", "GAB", "GAM", "GBR", "GBS", "GEO", "GEQ", "GER", "GHA", "GRE", "GRN", "GUA", "GUI",
     "GUM", "GUY", "HAI", "HKG", "HON", "HUN", "INA", "IND", "IRI", "IRL", "IRQ", "ISL", "ISR",
     "ISV", "ITA", "IVB", "JAM", "JOR", "JPN", "KAZ", "KEN", "KGZ", "KIR", "KOR", "KOS", "KSA", "KUW",
-    "LAO", "LAT", "LBA", "LBN", "LBR", "LCA", "LES", "LIE", "LTU", "LUX", "MAD", "MAR", "MAS", "MAW",
+    "LAO", "LAT", "LBA", "LBN", "LBR", "LCA", "LES", "LIE", "LTU", "LUX", "MAC", "MAD", "MAR", "MAS", "MAW",
     "MDA", "MDV", "MEX", "MGL", "MHL", "MKD", "MLI", "MLT", "MNE", "MON", "MOZ", "MRI", "MTN",
     "MYA", "NAM", "NCA", "NED", "NEP", "NGR", "NIG", "NOR", "NRU", "NZL", "OMA", "PAK", "PAN",
     "PAR", "PER", "PHI", "PLE", "PLW", "PNG", "POL", "POR", "PRK", "PUR", "QAT", "ROU", "RSA",
