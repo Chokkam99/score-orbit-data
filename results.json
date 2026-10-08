@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-07",
+  "updatedOn": "2026-10-08",
   "sport": "BADMINTON",
   "names": [
     {
@@ -17,6 +17,30 @@
       "name": "Satwiksairaj Rankireddy",
       "aliases": [
         "S. Rankireddy"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Srikanth Kidambi",
+      "aliases": [
+        "Kidambi Srikanth"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Arjun M. R.",
+      "aliases": [
+        "M.R. Arjun"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "CHN",
+      "name": "Shi Yuqi",
+      "aliases": [
+        "Shi Yu Qi"
       ]
     }
   ],
@@ -9278,7 +9302,7 @@
         {
           "label": "China Smash 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/China_Smash_2026",
-          "readOn": "2026-10-07"
+          "readOn": "2026-10-08"
         },
         {
           "label": "China Smash 2026 - Qualification (Wikipedia)",
@@ -9985,12 +10009,29 @@
             },
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Alexis Lebrun"
               ],
               "opponentCountry": "FRA",
-              "scores": [],
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  12,
+                  14
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -10178,12 +10219,25 @@
             },
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Chen Xingtong"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
+              "scores": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -10235,10 +10289,43 @@
           "matches": [
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Chen Junsong",
                 "Zhou Qihao"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  2,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  12,
+                  10
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Liang Jingkun",
+                "Xiang Peng"
               ],
               "opponentCountry": "CHN",
               "scores": [],
@@ -10258,12 +10345,37 @@
           "matches": [
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Darko Jorgić",
                 "Deni Kožul"
               ],
               "opponentCountry": "SLO",
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wen Ruibo",
+                "Yuan Licen"
+              ],
+              "opponentCountry": "CHN",
               "scores": [],
               "date": null,
               "time": null
@@ -10310,13 +10422,26 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Chien Tung-chuan",
                 "Li Yu-jhun"
               ],
               "opponentCountry": "TPE",
-              "scores": [],
+              "scores": [
+                [
+                  7,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -10370,13 +10495,34 @@
           "matches": [
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Gao Yuxin",
                 "Xiang Junlin"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
+              "scores": [
+                [
+                  12,
+                  10
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  8,
+                  11
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -10413,6 +10559,18 @@
                   4
                 ]
               ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Eduard Ionescu",
+                "Bernadette Szőcs"
+              ],
+              "opponentCountry": "ROU",
+              "scores": [],
               "date": null,
               "time": null
             }
@@ -11803,7 +11961,7 @@
         {
           "label": "2026 Arctic Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Arctic_Open",
-          "readOn": "2026-10-07"
+          "readOn": "2026-10-08"
         }
       ],
       "notes": "No women's doubles entries from India or Singapore were found in the draw. Seeds shown as qualifier/placement codes (e.g. Q3, Q4, PFQ) on the source page, not numeric seeds, are recorded as seed: null.",
@@ -11818,12 +11976,25 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Weng Hongyang"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
+              "scores": [
+                [
+                  22,
+                  20
+                ],
+                [
+                  20,
+                  22
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -11839,12 +12010,25 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Brian Yang"
               ],
               "opponentCountry": "CAN",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  15,
+                  21
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -11860,12 +12044,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Anders Antonsen"
               ],
               "opponentCountry": "DEN",
-              "scores": [],
+              "scores": [
+                [
+                  10,
+                  21
+                ],
+                [
+                  9,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -11881,11 +12074,31 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Magnus Johannesen"
               ],
               "opponentCountry": "DEN",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Christo Popov"
+              ],
+              "opponentCountry": "FRA",
               "scores": [],
               "date": null,
               "time": null
@@ -11902,11 +12115,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Nhat Nguyen"
               ],
               "opponentCountry": "IRL",
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  21,
+                  16
+                ],
+                [
+                  23,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Anders Antonsen"
+              ],
+              "opponentCountry": "DEN",
               "scores": [],
               "date": null,
               "time": null
@@ -12168,12 +12405,37 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "He Jiting",
                 "Ren Xiangyu"
               ],
               "opponentCountry": "CHN",
+              "scores": [
+                [
+                  10,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  22,
+                  20
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Oliver Butler",
+                "Samuel Jones"
+              ],
+              "opponentCountry": "ENG",
               "scores": [],
               "date": null,
               "time": null
@@ -12213,6 +12475,137 @@
           ]
         }
       ]
+    },
+    {
+      "id": "bwf-results:world-junior-championships-2026-team-event",
+      "name": "2026 Suhandinata Cup",
+      "shortName": "Suhandinata Cup",
+      "sport": "BADMINTON",
+      "ageCategory": "JUNIOR",
+      "level": null,
+      "officialTierName": "BWF World Junior Team Championships",
+      "location": "Cairo, Egypt",
+      "medals": true,
+      "timeZone": "Africa/Cairo",
+      "start": "2026-10-05",
+      "end": "2026-10-10",
+      "status": "IN_PROGRESS",
+      "coverage": "India's and Singapore's mixed-team results in the Suhandinata Cup (the World Junior Championships team event). The event uses a subgroup round robin, then a group play-off to settle 1st-8th in each of 8 groups, then a knockout ranking stage (5-11 October, both finishing and losing teams keep playing classification ties). Individual rubber scores are not published on the source page for the group-stage ties, only each tie's overall 2-set or 3-set result, so rubbers are omitted.",
+      "tournament": {
+        "id": "world-junior-championships-2026",
+        "name": "2026 BWF World Junior Championships",
+        "shortName": "World Junior Championships"
+      },
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "XT",
+          "athletes": [],
+          "seed": 7,
+          "matches": [
+            {
+              "round": "G1",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "ALG",
+              "scores": [
+                [
+                  2,
+                  0
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "G2",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "PER",
+              "scores": [
+                [
+                  2,
+                  0
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "G3",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "UAE",
+              "scores": [
+                [
+                  0,
+                  2
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "XT",
+          "athletes": [],
+          "seed": null,
+          "matches": [
+            {
+              "round": "G1",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "AUT",
+              "scores": [
+                [
+                  2,
+                  0
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "G2",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "CZE",
+              "scores": [
+                [
+                  0,
+                  2
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "G3",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "CAN",
+              "scores": [
+                [
+                  1,
+                  2
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026 Suhandinata Cup (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Suhandinata_Cup",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "India finished 2nd of 8 teams in Group D (won subgroup D1 over Algeria and Peru, then lost the group play-off to UAE); Singapore finished 2nd of 3 in subgroup B1 (beat Austria, lost to Czech Republic, then lost the second-placed play-off to Canada). Both continue in the event's classification/ranking knockout stage through 10 October, but the source had not yet published those pairings as of the read date."
     }
   ]
 }

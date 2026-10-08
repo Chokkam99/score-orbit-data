@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-07",
+  "updatedOn": "2026-10-08",
   "sport": "BADMINTON",
   "events": [
     {
@@ -169,7 +169,7 @@
           "readOn": "2026-09-26"
         }
       ],
-      "notes": "Team event (Suhandinata Cup) runs 5-10 Oct; individual event runs 11-17 Oct. India's 18-member travelling squad is listed here across disciplines; some athletes (e.g. Yogansh Singh, Aanya Bisht) appear in more than one discipline, which is why the discipline entry count exceeds 18. No Singapore squad announcement was found as of the read date, so no SGP entries are recorded; level is left null per the juniors rule even though this is BWF's top junior championship."
+      "notes": "Team event (Suhandinata Cup) runs 5-10 Oct; individual event runs 11-17 Oct. India's 18-member travelling squad is listed here across disciplines; some athletes (e.g. Yogansh Singh, Aanya Bisht) appear in more than one discipline, which is why the discipline entry count exceeds 18. No Singapore squad announcement was found as of the read date, so no SGP entries are recorded; level is left null per the juniors rule even though this is BWF's top junior championship. The team event (Suhandinata Cup) is now tracked in results.json as IN_PROGRESS; this upcoming entry covers the individual event only, which starts 11 October."
     },
     {
       "id": "bwf-upcoming:arctic-open-2026",
