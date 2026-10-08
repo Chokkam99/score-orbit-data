@@ -12606,6 +12606,2722 @@
         }
       ],
       "notes": "India finished 2nd of 8 teams in Group D (won subgroup D1 over Algeria and Peru, then lost the group play-off to UAE); Singapore finished 2nd of 3 in subgroup B1 (beat Austria, lost to Czech Republic, then lost the second-placed play-off to Canada). Both continue in the event's classification/ranking knockout stage through 10 October, but the source had not yet published those pairings as of the read date."
+    },
+    {
+      "id": "squash-results:asian-games-2026-squash-individual-event",
+      "name": "Squash at the 2026 Asian Games - Individual Event",
+      "shortName": "Asian Games Individual Event",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "MAJOR",
+      "officialTierName": "Asian Games",
+      "location": "Nagoya, Japan",
+      "medals": true,
+      "timeZone": "Asia/Tokyo",
+      "start": "2026-09-23",
+      "end": "2026-09-27",
+      "status": "FINISHED",
+      "coverage": "India (men's singles, women's singles, mixed doubles) and Singapore (women's singles, mixed doubles): every match from each entry's first played match to its last. India won silver in men's singles (Abhay Singh) and women's singles (Anahat Singh) and bronze in mixed doubles (Joshna Chinappa and Velavan Senthilkumar). Singapore won no medal.",
+      "sources": [
+        {
+          "label": "Squash at the 2026 Asian Games (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Squash_at_the_2026_Asian_Games",
+          "readOn": "2026-10-08"
+        },
+        {
+          "label": "Squash at the 2026 Asian Games - Men's singles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Squash_at_the_2026_Asian_Games_%E2%80%93_Men%27s_singles",
+          "readOn": "2026-10-08"
+        },
+        {
+          "label": "Squash at the 2026 Asian Games - Women's singles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Squash_at_the_2026_Asian_Games_%E2%80%93_Women%27s_singles",
+          "readOn": "2026-10-08"
+        },
+        {
+          "label": "Squash at the 2026 Asian Games - Mixed doubles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Squash_at_the_2026_Asian_Games_%E2%80%93_Mixed_doubles",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Squash has no third-place match, so no 3P match is recorded: both losing semifinalists take bronze and their runs end at SF. The men's singles page still shows a 3rd/4th result (Noor Zaman beat Muhammad Irfan, both PAK) that contradicts its own medal list; it involves no IND or SGP entry and is left out. First-round byes are not recorded as matches. The pages give a schedule by round, not by match, so each match date is its round's scheduled date and time is null (the 15:00 and similar times on the pages are session starts). Seeds are null for mixed doubles (the page shows bands such as 3/4) and for Au Yeong Wai Lynn and Au Yeong Wai Yhann (the women's singles page swaps their seeds 9 and 13 between rounds). Opponent names are as the pages display them (for example Muhammad Irfan, Tse Yee Lam Toby). Scores are left empty for the mixed doubles round of 16 between Joshna Chinappa/Velavan Senthilkumar and Suraj Chand/Shameena Riaz (page: 11-7, 11-10) and for the Chinappa/Senthilkumar semifinal loss to Lee Ka Yi/Tang Ming Hong (page: 10-11, 11-2, 10-11), because games ending 11-10 break the 11-point, win-by-2 game law the validator applies; the outcomes follow the bracket. The Singapore pair's round of 32 win over Khulan Purevjav/Amartuvshin Mandakhbayar is shown 11-0, 11-0; the page does not call it a walkover, so it is recorded as played.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Abhay Singh"
+          ],
+          "seed": 2,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Arkaradet Arkarahirunya"
+              ],
+              "opponentCountry": "THA",
+              "scores": [
+                [
+                  11,
+                  1
+                ],
+                [
+                  11,
+                  0
+                ],
+                [
+                  11,
+                  2
+                ]
+              ],
+              "date": "2026-09-23",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Ravindu Laksiri"
+              ],
+              "opponentCountry": "SRI",
+              "scores": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": "2026-09-24",
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Ryunosuke Tsukue"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": "2026-09-25",
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "WIN",
+              "opponent": [
+                "Muhammad Irfan"
+              ],
+              "opponentCountry": "PAK",
+              "scores": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": "2026-09-26",
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Ng Eain Yow"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ]
+              ],
+              "date": "2026-09-27",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Veer Chotrani"
+          ],
+          "seed": 4,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Shamil Wakeel"
+              ],
+              "opponentCountry": "SRI",
+              "scores": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  3
+                ]
+              ],
+              "date": "2026-09-23",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Sanjay Jeeva"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  15,
+                  17
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": "2026-09-24",
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Muhammad Irfan"
+              ],
+              "opponentCountry": "PAK",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ]
+              ],
+              "date": "2026-09-25",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Anahat Singh"
+          ],
+          "seed": 3,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Au Yeong Wai Lynn"
+              ],
+              "opponentCountry": "SGP",
+              "scores": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": "2026-09-24",
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Tanvi Khanna"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  11,
+                  2
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  3
+                ]
+              ],
+              "date": "2026-09-25",
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "WIN",
+              "opponent": [
+                "Satomi Watanabe"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  3
+                ]
+              ],
+              "date": "2026-09-26",
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Sivasangari Subramaniam"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  4,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ]
+              ],
+              "date": "2026-09-27",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Khanna"
+          ],
+          "seed": 7,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Kim Da-mi"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  5
+                ]
+              ],
+              "date": "2026-09-23",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Au Yeong Wai Yhann"
+              ],
+              "opponentCountry": "SGP",
+              "scores": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  13,
+                  11
+                ]
+              ],
+              "date": "2026-09-24",
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Anahat Singh"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  2,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ]
+              ],
+              "date": "2026-09-25",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Suraj Chand",
+            "Shameena Riaz"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Joshna Chinappa",
+                "Velavan Senthilkumar"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": "2026-09-24",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Joshna Chinappa",
+            "Velavan Senthilkumar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Suraj Chand",
+                "Shameena Riaz"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": "2026-09-24",
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Jemyca Aribado",
+                "David Pelino"
+              ],
+              "opponentCountry": "PHI",
+              "scores": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  5
+                ]
+              ],
+              "date": "2026-09-25",
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Lee Ka Yi",
+                "Tang Ming Hong"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [],
+              "date": "2026-09-26",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Au Yeong Wai Lynn"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Anna Ugay"
+              ],
+              "opponentCountry": "UZB",
+              "scores": [
+                [
+                  11,
+                  0
+                ],
+                [
+                  11,
+                  1
+                ],
+                [
+                  11,
+                  2
+                ]
+              ],
+              "date": "2026-09-23",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Anahat Singh"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  4,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ]
+              ],
+              "date": "2026-09-24",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Au Yeong Wai Yhann"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Mahnoor Ali"
+              ],
+              "opponentCountry": "PAK",
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  8
+                ]
+              ],
+              "date": "2026-09-23",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Tanvi Khanna"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  11,
+                  13
+                ]
+              ],
+              "date": "2026-09-24",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "XD",
+          "athletes": [
+            "Jayna Lim",
+            "Samuel Quek Wei Yi"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Khulan Purevjav",
+                "Amartuvshin Mandakhbayar"
+              ],
+              "opponentCountry": "MGL",
+              "scores": [
+                [
+                  11,
+                  0
+                ],
+                [
+                  11,
+                  0
+                ]
+              ],
+              "date": "2026-09-23",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Tse Yee Lam Toby",
+                "Lai Cheuk Nam"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ]
+              ],
+              "date": "2026-09-24",
+              "time": null
+            }
+          ]
+        }
+      ],
+      "tournament": {
+        "id": "asian-games-2026",
+        "name": "Asian Games 2026",
+        "shortName": "Asian Games"
+      }
+    },
+    {
+      "id": "squash-results:asian-games-2026-squash-team-event",
+      "name": "Squash at the 2026 Asian Games - Team Event",
+      "shortName": "Asian Games Team Event",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "MAJOR",
+      "officialTierName": "Asian Games",
+      "location": "Nagoya, Japan",
+      "medals": true,
+      "timeZone": "Asia/Tokyo",
+      "start": "2026-09-28",
+      "end": "2026-10-02",
+      "status": "FINISHED",
+      "coverage": "India's men's and women's teams and Singapore's women's team: every tie from the pool stage to each team's last, with rubbers. Singapore did not enter the men's team event. India won bronze in both (semifinal losses to Malaysia in the men's and to Hong Kong in the women's). Singapore's women's team lost to India in the quarterfinals.",
+      "sources": [
+        {
+          "label": "Squash at the 2026 Asian Games (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Squash_at_the_2026_Asian_Games",
+          "readOn": "2026-10-08"
+        },
+        {
+          "label": "Squash at the 2026 Asian Games - Men's team (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Squash_at_the_2026_Asian_Games_%E2%80%93_Men%27s_team",
+          "readOn": "2026-10-08"
+        },
+        {
+          "label": "Squash at the 2026 Asian Games - Women's team (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Squash_at_the_2026_Asian_Games_%E2%80%93_Women%27s_team",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Round labels G1 to G3 follow the order of each team's pool ties on the page. Neither team event has a third-place match: both losing semifinalists take bronze. The third rubber of a 2-0 quarterfinal tie shows no score on the page ('-' or blank) and is recorded NOT_PLAYED (India men v Kuwait, India women v Singapore). Singapore's pool tie against Macau has opponentCountry null because Macau (MAC) is not in the IOC code set validate.py accepts. Tanvi Khanna's rubber against Narges Soltani in India v Iran is shown '11-5, 3-0, retired', so it is a RETIRED_WIN with the last game unfinished. The pages list rubber games with the first-named team first; they are flipped where needed so each entry's own points come first. Names are as each page displays them: Suraj Kumar Chand here against Suraj Chand in mixed doubles, and Wai Lynn Au Yeong and Wai Yhann Au Yeong here against Au Yeong Wai Lynn and Au Yeong Wai Yhann in singles. Pool ties on the men's page show a date and no time. Seeds are null: the women's bracket shows bands such as 3/4.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MT",
+          "athletes": [],
+          "seed": null,
+          "matches": [
+            {
+              "round": "G1",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  3,
+                  0
+                ]
+              ],
+              "date": "2026-09-28",
+              "time": null,
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Suraj Kumar Chand"
+                  ],
+                  "opponent": [
+                    "Shaoqian Du"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      2
+                    ],
+                    [
+                      12,
+                      10
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Veer Chotrani"
+                  ],
+                  "opponent": [
+                    "Haizhen Li"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      5
+                    ],
+                    [
+                      11,
+                      5
+                    ],
+                    [
+                      11,
+                      3
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Velavan Senthilkumar"
+                  ],
+                  "opponent": [
+                    "Penglin Zhou"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      2
+                    ],
+                    [
+                      11,
+                      4
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "G2",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  3,
+                  0
+                ]
+              ],
+              "date": "2026-09-28",
+              "time": null,
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Velavan Senthilkumar"
+                  ],
+                  "opponent": [
+                    "Jooyoung Na"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      6
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      7
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Abhay Singh"
+                  ],
+                  "opponent": [
+                    "Jeongmin Ryu"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      11,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Veer Chotrani"
+                  ],
+                  "opponent": [
+                    "Seojin Oh"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      6
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      2
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "KUW",
+              "scores": [
+                [
+                  2,
+                  0
+                ]
+              ],
+              "date": "2026-09-30",
+              "time": "14:30",
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Veer Chotrani"
+                  ],
+                  "opponent": [
+                    "Bader Almaghrebi"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      12,
+                      10
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      11,
+                      0
+                    ],
+                    [
+                      11,
+                      5
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Abhay Singh"
+                  ],
+                  "opponent": [
+                    "Ammar Altamimi"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      8
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Velavan Senthilkumar"
+                  ],
+                  "opponent": [
+                    "Jassim Adel Al Ghareeb"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                }
+              ]
+            },
+            {
+              "round": "SF",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  1,
+                  2
+                ]
+              ],
+              "date": "2026-10-01",
+              "time": "16:30",
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Abhay Singh"
+                  ],
+                  "opponent": [
+                    "Eain Yow Ng"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      8,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Veer Chotrani"
+                  ],
+                  "opponent": [
+                    "Sanjay Jeeva"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      11,
+                      5
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "MS",
+                  "athletes": [
+                    "Velavan Senthilkumar"
+                  ],
+                  "opponent": [
+                    "Ameeshenraj Chandaran"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      12,
+                      10
+                    ],
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      9,
+                      11
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WT",
+          "athletes": [],
+          "seed": null,
+          "matches": [
+            {
+              "round": "G1",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  2,
+                  1
+                ]
+              ],
+              "date": "2026-09-28",
+              "time": "10:00",
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Shameena Riaz"
+                  ],
+                  "opponent": [
+                    "Ziyuan Yin"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      11,
+                      6
+                    ],
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      12,
+                      14
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Tanvi Khanna"
+                  ],
+                  "opponent": [
+                    "Yuning Zhang"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      5
+                    ],
+                    [
+                      11,
+                      5
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Joshna Chinappa"
+                  ],
+                  "opponent": [
+                    "Ziyi Liu"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      12,
+                      10
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      6
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "G2",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  2,
+                  1
+                ]
+              ],
+              "date": "2026-09-28",
+              "time": "15:30",
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Joshna Chinappa"
+                  ],
+                  "opponent": [
+                    "Erisa Sano Herring"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      1
+                    ],
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      11,
+                      9
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Anahat Singh"
+                  ],
+                  "opponent": [
+                    "Satomi Watanabe"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      9,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Tanvi Khanna"
+                  ],
+                  "opponent": [
+                    "Akari Midorikawa"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      12,
+                      10
+                    ],
+                    [
+                      11,
+                      9
+                    ],
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      12,
+                      10
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "G3",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "IRI",
+              "scores": [
+                [
+                  3,
+                  0
+                ]
+              ],
+              "date": "2026-09-29",
+              "time": "10:00",
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Tanvi Khanna"
+                  ],
+                  "opponent": [
+                    "Narges Soltani"
+                  ],
+                  "outcome": "RETIRED_WIN",
+                  "scores": [
+                    [
+                      11,
+                      5
+                    ],
+                    [
+                      3,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Anahat Singh"
+                  ],
+                  "opponent": [
+                    "Fereshteh Eghtedari"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      5
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      11,
+                      7
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Joshna Chinappa"
+                  ],
+                  "opponent": [
+                    "Najmeh Boushehrizadeh"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      1
+                    ],
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      9
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "SGP",
+              "scores": [
+                [
+                  2,
+                  0
+                ]
+              ],
+              "date": "2026-09-30",
+              "time": "10:00",
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Tanvi Khanna"
+                  ],
+                  "opponent": [
+                    "Wai Lynn Au Yeong"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      6
+                    ],
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      15,
+                      13
+                    ],
+                    [
+                      11,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Anahat Singh"
+                  ],
+                  "opponent": [
+                    "Wai Yhann Au Yeong"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      7
+                    ],
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      4
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Joshna Chinappa"
+                  ],
+                  "opponent": [
+                    "Naisha Singh"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                }
+              ]
+            },
+            {
+              "round": "SF",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  1,
+                  2
+                ]
+              ],
+              "date": "2026-10-01",
+              "time": "10:30",
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Anahat Singh"
+                  ],
+                  "opponent": [
+                    "Chan Sin Yuk"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      11,
+                      9
+                    ],
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      11,
+                      13
+                    ],
+                    [
+                      10,
+                      12
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Tanvi Khanna"
+                  ],
+                  "opponent": [
+                    "Lee Ka Yi"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      13,
+                      11
+                    ],
+                    [
+                      11,
+                      9
+                    ],
+                    [
+                      13,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Joshna Chinappa"
+                  ],
+                  "opponent": [
+                    "Tomato Ho"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      7,
+                      11
+                    ],
+                    [
+                      9,
+                      11
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WT",
+          "athletes": [],
+          "seed": null,
+          "matches": [
+            {
+              "round": "G1",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": null,
+              "scores": [
+                [
+                  2,
+                  1
+                ]
+              ],
+              "date": "2026-09-28",
+              "time": "15:30",
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Naisha Singh"
+                  ],
+                  "opponent": [
+                    "Yeung Wai Leng"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      8
+                    ],
+                    [
+                      13,
+                      11
+                    ],
+                    [
+                      11,
+                      9
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Wai Yhann Au Yeong"
+                  ],
+                  "opponent": [
+                    "Gigi Yeung"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      10,
+                      12
+                    ],
+                    [
+                      10,
+                      12
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Wai Lynn Au Yeong"
+                  ],
+                  "opponent": [
+                    "Kwai Chi Liu"
+                  ],
+                  "outcome": "WIN",
+                  "scores": [
+                    [
+                      11,
+                      3
+                    ],
+                    [
+                      11,
+                      5
+                    ],
+                    [
+                      11,
+                      4
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "G2",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  0,
+                  3
+                ]
+              ],
+              "date": "2026-09-29",
+              "time": "10:00",
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Wai Lynn Au Yeong"
+                  ],
+                  "opponent": [
+                    "Aira Azman"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      8,
+                      11
+                    ],
+                    [
+                      2,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Wai Yhann Au Yeong"
+                  ],
+                  "opponent": [
+                    "Sivasangari Subramaniam"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      5,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Naisha Singh"
+                  ],
+                  "opponent": [
+                    "Aifa Azman"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      0,
+                      11
+                    ],
+                    [
+                      10,
+                      12
+                    ],
+                    [
+                      3,
+                      11
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  0,
+                  2
+                ]
+              ],
+              "date": "2026-09-30",
+              "time": "10:00",
+              "rubbers": [
+                {
+                  "order": 1,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Wai Lynn Au Yeong"
+                  ],
+                  "opponent": [
+                    "Tanvi Khanna"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      11,
+                      4
+                    ],
+                    [
+                      13,
+                      15
+                    ],
+                    [
+                      1,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "order": 2,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Wai Yhann Au Yeong"
+                  ],
+                  "opponent": [
+                    "Anahat Singh"
+                  ],
+                  "outcome": "LOSS",
+                  "scores": [
+                    [
+                      7,
+                      11
+                    ],
+                    [
+                      3,
+                      11
+                    ],
+                    [
+                      4,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "order": 3,
+                  "discipline": "WS",
+                  "athletes": [
+                    "Naisha Singh"
+                  ],
+                  "opponent": [
+                    "Joshna Chinappa"
+                  ],
+                  "outcome": "NOT_PLAYED",
+                  "scores": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tournament": {
+        "id": "asian-games-2026",
+        "name": "Asian Games 2026",
+        "shortName": "Asian Games"
+      }
+    },
+    {
+      "id": "squash-results:hcl-squash-indian-tour-5-ahmedabad-2026",
+      "name": "HCL Squash Indian Tour #5 Ahmedabad 2026",
+      "shortName": "Indian Tour #5 Ahmedabad",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "DEVELOPMENT",
+      "officialTierName": "PSA Challenger",
+      "location": "Ahmedabad, India",
+      "medals": false,
+      "timeZone": "Asia/Kolkata",
+      "start": "2026-01-27",
+      "end": "2026-01-31",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2025-26 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: Challenger 6 ($6,000) for both draws. Only the women's final has an IND finalist. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Khanna"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Farida Walid"
+              ],
+              "opponentCountry": "EGY",
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  15,
+                  13
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  5,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:squash-on-fire-open-2026",
+      "name": "Squash on Fire Open 2026",
+      "shortName": "Squash on Fire Open",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "PSA World Events Bronze",
+      "location": "Washington, D.C., United States",
+      "medals": false,
+      "timeZone": "America/New_York",
+      "start": "2026-01-28",
+      "end": "2026-02-01",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2025-26 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: World Events Bronze ($66,000) for both draws. Only the women's final has an IND finalist. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Anahat Singh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "WIN",
+              "opponent": [
+                "Georgina Kennedy"
+              ],
+              "opponentCountry": "ENG",
+              "scores": [
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:jsw-indian-open-2026",
+      "name": "JSW Indian Open 2026",
+      "shortName": "JSW Indian Open",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "PSA World Events Copper",
+      "location": "Mumbai, India",
+      "medals": false,
+      "timeZone": "Asia/Kolkata",
+      "start": "2026-03-18",
+      "end": "2026-03-22",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2025-26 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: World Events Copper ($44,500) for both draws. Both finals have an IND finalist: Abhay Singh beat Veer Chotrani in the men's final, and Anahat Singh won the women's final. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Abhay Singh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "WIN",
+              "opponent": [
+                "Veer Chotrani"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Veer Chotrani"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Abhay Singh"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Anahat Singh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "WIN",
+              "opponent": [
+                "Hana Moataz"
+              ],
+              "opponentCountry": "EGY",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:hcl-psa-challenger-tour-chennai-2026",
+      "name": "HCL PSA Challenger Tour Chennai 2026",
+      "shortName": "Chennai Challenger",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "DEVELOPMENT",
+      "officialTierName": "PSA Challenger",
+      "location": "Chennai, India",
+      "medals": false,
+      "timeZone": "Asia/Kolkata",
+      "start": "2026-04-16",
+      "end": "2026-04-20",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2025-26 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: Challenger 6 ($6,000) for both draws. Only the men's final has an IND finalist. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Suraj Chand"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "WIN",
+              "opponent": [
+                "Ryu Jeong-min"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  3
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:woodruff-nee-trophy-2026",
+      "name": "Woodruff-Nee Trophy 2026",
+      "shortName": "Woodruff-Nee Trophy",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "DEVELOPMENT",
+      "officialTierName": "PSA Challenger",
+      "location": "Washington, D.C., United States",
+      "medals": false,
+      "timeZone": "America/New_York",
+      "start": "2026-06-17",
+      "end": "2026-06-21",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2025-26 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: Challenger 3 ($3,000) for the men's draw and Challenger 9 ($9,000) for the women's. Only the men's final has an IND finalist, so the Challenger 3 draw is the one recorded. The event has no date cell of its own on the page; the dates are those of the date cell shown against it, which spans this event and the one above it. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Tavneet Mundra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Tad Carney"
+              ],
+              "opponentCountry": "USA",
+              "scores": [
+                [
+                  4,
+                  11
+                ],
+                [
+                  1,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:hcl-psa-challenger-tour-juhu-2026",
+      "name": "HCL PSA Challenger Tour Juhu 2026",
+      "shortName": "Juhu Challenger",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "DEVELOPMENT",
+      "officialTierName": "PSA Challenger",
+      "location": "Juhu, India",
+      "medals": false,
+      "timeZone": "Asia/Kolkata",
+      "start": "2026-06-29",
+      "end": "2026-07-03",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2025-26 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: Challenger 15 ($15,000) for both draws. Only the women's final has an IND finalist. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Khanna"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "WIN",
+              "opponent": [
+                "Farida Walid"
+              ],
+              "opponentCountry": "EGY",
+              "scores": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  2,
+                  11
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:victorian-open-2026",
+      "name": "Victorian Open 2026",
+      "shortName": "Victorian Open",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "DEVELOPMENT",
+      "officialTierName": "PSA Challenger",
+      "location": "Wheelers Hill, Australia",
+      "medals": false,
+      "timeZone": "Australia/Melbourne",
+      "start": "2026-07-29",
+      "end": "2026-08-02",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2026-27 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: Challenger 6 ($6,000) for both draws. Only the women's final has an IND finalist. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Sanya Vats"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Heo Min-gyeong"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  10,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:ballarat-open-2026",
+      "name": "Ballarat Open 2026",
+      "shortName": "Ballarat Open",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "DEVELOPMENT",
+      "officialTierName": "PSA Challenger",
+      "location": "Wendouree, Australia",
+      "medals": false,
+      "timeZone": "Australia/Melbourne",
+      "start": "2026-08-06",
+      "end": "2026-08-09",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2026-27 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: Challenger 3 ($3,000) for both draws. Only the women's final has an IND finalist. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Sanya Vats"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Sarah Cardwell"
+              ],
+              "opponentCountry": "AUS",
+              "scores": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:budapest-open-2026",
+      "name": "Budapest Open 2026",
+      "shortName": "Budapest Open",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "PSA World Events Copper",
+      "location": "Budapest, Hungary",
+      "medals": false,
+      "timeZone": "Europe/Budapest",
+      "start": "2026-08-24",
+      "end": "2026-08-28",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2026-27 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: World Events Copper ($43,500); the page lists a men's draw only. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Velavan Senthilkumar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "WIN",
+              "opponent": [
+                "Balázs Farkas"
+              ],
+              "opponentCountry": "HUN",
+              "scores": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  2
+                ],
+                [
+                  11,
+                  3
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:tuanku-muhriz-trophy-2026",
+      "name": "Tuanku Muhriz Trophy 2026",
+      "shortName": "Tuanku Muhriz Trophy",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "DEVELOPMENT",
+      "officialTierName": "PSA Challenger",
+      "location": "Seremban, Malaysia",
+      "medals": false,
+      "timeZone": "Asia/Kuala_Lumpur",
+      "start": "2026-08-26",
+      "end": "2026-08-30",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2026-27 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: Challenger 15 ($15,000) for both draws. Only the men's final has an IND finalist. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Abhay Singh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "WIN",
+              "opponent": [
+                "Henry Leung"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  12,
+                  10
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:jsw-sunil-verma-memorial-2026",
+      "name": "JSW Sunil Verma Memorial 2026",
+      "shortName": "Sunil Verma Memorial",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "DEVELOPMENT",
+      "officialTierName": "PSA Challenger",
+      "location": "Vasind, India",
+      "medals": false,
+      "timeZone": "Asia/Kolkata",
+      "start": "2026-09-26",
+      "end": "2026-09-30",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2026-27 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_PSA_Squash_Tour",
+          "readOn": "2026-10-08"
+        }
+      ],
+      "notes": "Tier on the page: Challenger 9 ($9,000) for the men's draw and Challenger 3 ($3,000) for the women's. Both finals have an IND finalist: Om Semwal lost the men's final, and Akanksha Salunkhe beat Sanya Vats in the women's final. The page calls this the 11th edition, a number it also gives a November 2025 edition on the previous season page, so the name leaves it out. Siow Yee Xian is listed as MYS on the page and recorded as MAS. The final's date is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Om Semwal"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Siow Yee Xian"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Akanksha Salunkhe"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "WIN",
+              "opponent": [
+                "Sanya Vats"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Sanya Vats"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Akanksha Salunkhe"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
