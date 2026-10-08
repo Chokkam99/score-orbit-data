@@ -17,8 +17,8 @@ phones read, after raw.githubusercontent.com's short cache (a few minutes).
 - `rules.json`: per-sport vocabulary (allowed disciplines, rounds, levels, age categories,
   outcomes, statuses, score format, game scoring law) used by `validate.py`. To add a country,
   nothing to change. To add a sport, add its rules to `rules.json`. Supported sports: `BADMINTON`,
-  `TABLE_TENNIS` (the app skips events for any other sport). Table tennis ids use
-  `wtt-results:`/`wtt-upcoming:`.
+  `TABLE_TENNIS`, `SQUASH` (the app skips events for any sport it doesn't support yet). Table
+  tennis ids use `wtt-results:`/`wtt-upcoming:`, squash ids `squash-results:`/`squash-upcoming:`.
 - `validate.py`: the validator described below. `tests/test_validate.py`: its self-tests.
 - `names_report.py`: lists spellings that may be the same person and are not in `names` yet (see
   "Player names"). `tests/test_names_report.py`: its self-tests.
@@ -62,8 +62,13 @@ To check by hand before committing: `python3 validate.py`. To run the self-tests
   discipline, tie scores that agree with their rubbers, tournament tags, `medals` and `timeZone` on
   every results event, no em dash.
 - Game scores follow the sport's law (`gameScoring` in `rules.json`): badminton games go to 21, win by
-  2, capped at 30 (30-29 is legal); table tennis games go to 11, win by 2, no cap. Every completed
-  game of a WIN/LOSS match or rubber is checked, and the winner by games must match the outcome.
+  2, capped at 30 (30-29 is legal); table tennis and squash games go to 11, win by 2, no cap. Every
+  completed game of a WIN/LOSS match or rubber is checked, and the winner by games must match the
+  outcome. An event that plays a different law sets its own `gameScoring` object on the event,
+  which replaces the sport's for that event only: the Squash World Cup plays games to 7 with
+  sudden death at 6-6, `{"pointsToWin": 7, "winBy": 1, "cap": null}`.
+- Squash has no third-place match, so `3P` is not a squash round. At the Asian Games both losing
+  semifinalists win bronze.
 - `readOn` and `updatedOn` are not in the future (today UTC plus one day is allowed).
 - Source URLs use a host in `ALLOWED_SOURCE_HOSTS` at the top of `validate.py` (a domain or any
   subdomain of it). Only the repo owner adds a host, in a commit to `main`; the routine may not change

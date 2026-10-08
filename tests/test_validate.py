@@ -209,6 +209,54 @@ class GameScoreLawTest(Base):
         self.assertFails(self.run_badminton([[21, 15], [21, 18]], "LOSS"), "outcome=LOSS but opponent")
 
 
+class SquashTest(Base):
+    """Squash shares table tennis's game law (11, win by 2, no cap) but has no third-place match."""
+
+    def squash_event(self, matches, **extra):
+        ev = event_base("squash-results:test-open-2026", "SQUASH", [entry("MS", matches)])
+        ev.update(extra)
+        return ev
+
+    def run_with(self, event):
+        w = self.ws()
+        w.results["events"].append(event)
+        return w.run()
+
+    def test_games_to_eleven(self):
+        self.assertOk(self.run_with(self.squash_event([match("R32", "WIN", [[11, 7], [12, 14], [11, 9], [11, 4]])])))
+        self.assertFails(self.run_with(self.squash_event([match("R32", "WIN", [[11, 10], [11, 7], [11, 9]])])), "11-10")
+
+    def test_no_third_place_round(self):
+        self.assertFails(self.run_with(self.squash_event([match("3P", "WIN", [[11, 7], [11, 9], [11, 4]])])),
+                         "round '3P' not in allowed set")
+
+    def test_event_game_law_overrides_the_sport(self):
+        # The Squash World Cup: games to 7, sudden death at 6-6.
+        seven = {"pointsToWin": 7, "winBy": 1, "cap": None}
+        games = [[7, 6], [7, 3], [7, 5]]
+        self.assertFails(self.run_with(self.squash_event([match("R32", "WIN", games)])), "7-6")
+        self.assertOk(self.run_with(self.squash_event([match("R32", "WIN", games)], gameScoring=seven)))
+
+    def test_a_broken_event_game_law_is_reported(self):
+        bad = {"pointsToWin": 0, "winBy": 1, "cap": None}
+        self.assertFails(self.run_with(self.squash_event([match("R32", "WIN", [[11, 7], [11, 9], [11, 4]])],
+                                                         gameScoring=bad)),
+                         "gameScoring pointsToWin must be an integer >= 1")
+
+
+class CountryCodeTest(Base):
+    def test_morocco_kosovo_neutral_and_refugee_codes_are_accepted(self):
+        for code in ("MAR", "KOS", "AIN", "EOR"):
+            w = self.ws()
+            w.badminton_matches()[0]["opponentCountry"] = code
+            self.assertOk(w.run())
+
+    def test_non_ioc_codes_are_still_rejected(self):
+        w = self.ws()
+        w.badminton_matches()[0]["opponentCountry"] = "IRN"
+        self.assertFails(w.run(), "'IRN' is not an IOC code")
+
+
 class DateTest(Base):
     def test_future_read_on_is_rejected(self):
         w = self.ws()
@@ -530,7 +578,8 @@ class NamesDirectoryTest(Base):
         self.assertFails(self.run_names("Tanvi Sharma"), "names[0] must be an object")
 
     def test_sport_must_be_supported(self):
-        self.assertFails(self.run_names(person(sport="SQUASH")), "names[0] sport 'SQUASH' is not a supported sport")
+        self.assertFails(self.run_names(person(sport="BASKETBALL")), "names[0] sport 'BASKETBALL' is not a supported sport")
+        self.assertOk(self.run_names(person(sport="SQUASH")))
         self.assertFails(self.run_names({k: v for k, v in person().items() if k != "sport"}), "sport None")
         self.assertOk(self.run_names(person(sport="TABLE_TENNIS")))
 

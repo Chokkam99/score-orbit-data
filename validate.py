@@ -419,19 +419,20 @@ def check_progression(path, ctx, matches, errors):
             return
 
 
-# IOC country codes (plus ENG/SCO/WAL and TPE), matching the app's flag table in
+# IOC country codes (plus ENG/SCO/WAL, and the IOC's AIN for Individual Neutral Athletes and EOR
+# for the Refugee Olympic Team), matching the app's flag table in
 # score-orbit app/src/main/java/com/scoreorbit/app/data/Flags.kt. A code outside this set shows
 # with no flag or name in the app (e.g. "IRN" instead of IOC "IRI" for Iran).
 IOC_CODES = {
-    "AFG", "ALB", "ALG", "AND", "ANG", "ANT", "ARG", "ARM", "ARU", "ASA", "AUS", "AUT", "AZE",
+    "AFG", "AIN", "ALB", "ALG", "AND", "ANG", "ANT", "ARG", "ARM", "ARU", "ASA", "AUS", "AUT", "AZE",
     "BAH", "BAN", "BAR", "BDI", "BEL", "BEN", "BER", "BHU", "BIH", "BIZ", "BOL", "BOT", "BRA",
     "BRN", "BRU", "BUL", "BUR", "CAF", "CAM", "CAN", "CAY", "CGO", "CHA", "CHI", "CHN", "CIV",
     "CMR", "COD", "COK", "COL", "COM", "CPV", "CRC", "CRO", "CUB", "CYP", "CZE", "DEN", "DJI",
-    "DMA", "DOM", "ECU", "EGY", "ENG", "ERI", "ESA", "ESP", "EST", "ETH", "FIJ", "FIN", "FRA",
+    "DMA", "DOM", "ECU", "EGY", "ENG", "EOR", "ERI", "ESA", "ESP", "EST", "ETH", "FIJ", "FIN", "FRA",
     "FSM", "GAB", "GAM", "GBR", "GBS", "GEO", "GEQ", "GER", "GHA", "GRE", "GRN", "GUA", "GUI",
     "GUM", "GUY", "HAI", "HKG", "HON", "HUN", "INA", "IND", "IRI", "IRL", "IRQ", "ISL", "ISR",
-    "ISV", "ITA", "IVB", "JAM", "JOR", "JPN", "KAZ", "KEN", "KGZ", "KIR", "KOR", "KSA", "KUW",
-    "LAO", "LAT", "LBA", "LBN", "LBR", "LCA", "LES", "LIE", "LTU", "LUX", "MAD", "MAS", "MAW",
+    "ISV", "ITA", "IVB", "JAM", "JOR", "JPN", "KAZ", "KEN", "KGZ", "KIR", "KOR", "KOS", "KSA", "KUW",
+    "LAO", "LAT", "LBA", "LBN", "LBR", "LCA", "LES", "LIE", "LTU", "LUX", "MAD", "MAR", "MAS", "MAW",
     "MDA", "MDV", "MEX", "MGL", "MHL", "MKD", "MLI", "MLT", "MNE", "MON", "MOZ", "MRI", "MTN",
     "MYA", "NAM", "NCA", "NED", "NEP", "NGR", "NIG", "NOR", "NRU", "NZL", "OMA", "PAK", "PAN",
     "PAR", "PER", "PHI", "PLE", "PLW", "PNG", "POL", "POR", "PRK", "PUR", "QAT", "ROU", "RSA",
@@ -887,6 +888,14 @@ def validate_file(path, data, required_fields, non_null_fields, rules_by_sport, 
                 f"{path}: {ctx} has unknown sport {sport!r}; add it to rules.json"
             )
             continue
+        # An event may play a different game law from its sport's (the Squash World Cup plays games
+        # to 7, sudden death at 6-6): an event-level `gameScoring` replaces the sport's for that event.
+        if "gameScoring" in event:
+            problem = game_scoring_config_problem(event["gameScoring"])
+            if problem:
+                errors.add(f"{path}: {ctx} gameScoring {problem}")
+            else:
+                rules = {**rules, "gameScoring": event["gameScoring"]}
 
         if event.get("ageCategory") not in rules["ageCategories"]:
             errors.add(f"{path}: {ctx} ageCategory {event.get('ageCategory')!r} not in {rules['ageCategories']}")
