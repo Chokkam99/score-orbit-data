@@ -449,7 +449,7 @@ def check_progression(path, ctx, matches, errors, rules=None):
             return
 
 
-# IOC country codes (plus ENG/SCO/WAL, MAC for Macau, which plays the Asian Games and BWF and ITTF
+# IOC country codes (plus ENG/SCO/WAL and NIR for the home nations at the Commonwealth Games, MAC for Macau, which plays the Asian Games and BWF and ITTF
 # events but is not an IOC member, and the IOC's AIN for Individual Neutral Athletes and EOR for the
 # Refugee Olympic Team), matching the app's flag table in
 # score-orbit app/src/main/java/com/scoreorbit/app/data/Flags.kt. A code outside this set shows
@@ -465,7 +465,7 @@ IOC_CODES = {
     "ISV", "ITA", "IVB", "JAM", "JOR", "JPN", "KAZ", "KEN", "KGZ", "KIR", "KOR", "KOS", "KSA", "KUW",
     "LAO", "LAT", "LBA", "LBN", "LBR", "LCA", "LES", "LIE", "LTU", "LUX", "MAC", "MAD", "MAR", "MAS", "MAW",
     "MDA", "MDV", "MEX", "MGL", "MHL", "MKD", "MLI", "MLT", "MNE", "MON", "MOZ", "MRI", "MTN",
-    "MYA", "NAM", "NCA", "NED", "NEP", "NGR", "NIG", "NOR", "NRU", "NZL", "OMA", "PAK", "PAN",
+    "MYA", "NAM", "NCA", "NED", "NEP", "NGR", "NIG", "NIR", "NOR", "NRU", "NZL", "OMA", "PAK", "PAN",
     "PAR", "PER", "PHI", "PLE", "PLW", "PNG", "POL", "POR", "PRK", "PUR", "QAT", "ROU", "RSA",
     "RUS", "RWA", "SAM", "SCO", "SEN", "SEY", "SGP", "SKN", "SLE", "SLO", "SMR", "SOL", "SOM",
     "SRB", "SRI", "SSD", "STP", "SUD", "SUI", "SUR", "SVK", "SWE", "SWZ", "SYR", "TAN", "TGA",

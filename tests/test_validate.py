@@ -246,7 +246,7 @@ class SquashTest(Base):
 
 class CountryCodeTest(Base):
     def test_morocco_kosovo_macau_neutral_and_refugee_codes_are_accepted(self):
-        for code in ("MAR", "KOS", "AIN", "EOR", "MAC"):
+        for code in ("MAR", "KOS", "AIN", "EOR", "MAC", "NIR"):
             w = self.ws()
             w.badminton_matches()[0]["opponentCountry"] = code
             self.assertOk(w.run())
