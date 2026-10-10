@@ -1,30 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-08",
+  "updatedOn": "2026-10-10",
   "sport": "BADMINTON",
   "events": [
-    {
-      "id": "wtt-upcoming:china-smash-2026",
-      "name": "China Smash 2026",
-      "shortName": "China Smash",
-      "sport": "TABLE_TENNIS",
-      "ageCategory": "SENIOR",
-      "level": "MAJOR",
-      "officialTierName": "WTT Grand Smash",
-      "location": "Beijing, China",
-      "start": "2026-10-01",
-      "end": "2026-10-11",
-      "entriesPublished": false,
-      "entries": [],
-      "sources": [
-        {
-          "label": "China Smash 2026 (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/China_Smash_2026",
-          "readOn": "2026-10-05"
-        }
-      ],
-      "notes": "Grand Smash, so level is MAJOR. Now IN_PROGRESS with IND/SGP entries and matches; full detail is tracked in results.json (wtt-results:china-smash-2026) once the main draw started, so this entry is left unconfirmed/empty here per the usual handoff from upcoming to results."
-    },
     {
       "id": "bwf-upcoming:world-junior-championships-2026",
       "name": "BWF World Junior Championships 2026",
@@ -169,29 +147,7 @@
           "readOn": "2026-09-26"
         }
       ],
-      "notes": "Team event (Suhandinata Cup) runs 5-10 Oct; individual event runs 11-17 Oct. India's 18-member travelling squad is listed here across disciplines; some athletes (e.g. Yogansh Singh, Aanya Bisht) appear in more than one discipline, which is why the discipline entry count exceeds 18. No Singapore squad announcement was found as of the read date, so no SGP entries are recorded; level is left null per the juniors rule even though this is BWF's top junior championship. The team event (Suhandinata Cup) is now tracked in results.json as IN_PROGRESS; this upcoming entry covers the individual event only, which starts 11 October."
-    },
-    {
-      "id": "bwf-upcoming:arctic-open-2026",
-      "name": "Arctic Open 2026",
-      "shortName": "Arctic Open",
-      "sport": "BADMINTON",
-      "ageCategory": "SENIOR",
-      "level": "TOUR",
-      "officialTierName": "HSBC BWF World Tour Super 500",
-      "location": "Vantaa, Finland",
-      "start": "2026-10-06",
-      "end": "2026-10-11",
-      "entriesPublished": false,
-      "entries": [],
-      "sources": [
-        {
-          "label": "2026 Arctic Open (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_Arctic_Open",
-          "readOn": "2026-10-07"
-        }
-      ],
-      "notes": "Now IN_PROGRESS with IND/SGP entries and matches; full detail is tracked in results.json (bwf-results:arctic-open-2026), so this entry is left unconfirmed/empty here per the usual handoff from upcoming to results."
+      "notes": "Team event (Suhandinata Cup) runs 5-10 Oct; individual event runs 11-17 Oct. India's 18-member travelling squad is listed here across disciplines; some athletes (e.g. Yogansh Singh, Aanya Bisht) appear in more than one discipline, which is why the discipline entry count exceeds 18. No Singapore squad announcement was found as of the read date, so no SGP entries are recorded; level is left null per the juniors rule even though this is BWF's top junior championship. The team event (Suhandinata Cup) is tracked in results.json, now FINISHED (India 13th, Singapore 27th); this upcoming entry covers the individual event only, which starts 11 October."
     },
     {
       "id": "bwf-upcoming:malaysia-super-100-2026",

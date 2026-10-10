@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-09",
+  "updatedOn": "2026-10-10",
   "sport": "BADMINTON",
   "names": [
     {
@@ -65,6 +65,30 @@
       "name": "Oh Jun-sung",
       "aliases": [
         "Oh Junsung"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "TPE",
+      "name": "Chi Yu-jen",
+      "aliases": [
+        "Chi Yu Jen"
+      ]
+    },
+    {
+      "sport": "TABLE_TENNIS",
+      "country": "SGP",
+      "name": "Zeng Jian",
+      "aliases": [
+        "Jian Zeng"
+      ]
+    },
+    {
+      "sport": "SQUASH",
+      "country": "SGP",
+      "name": "Au Yeong Wai Yhann",
+      "aliases": [
+        "Wai Yhann Au Yeong"
       ]
     }
   ],
@@ -9320,21 +9344,21 @@
       "timeZone": "Asia/Shanghai",
       "start": "2026-10-01",
       "end": "2026-10-11",
-      "status": "IN_PROGRESS",
-      "coverage": "India and Singapore entries in qualifying and the main draw. All qualifiers were eliminated before the main draw. In the main draw, direct entries and wild cards from both countries are in singles, doubles and mixed doubles. Manav Thakkar/Manush Shah (IND) reached the men's doubles semi-final; every other IND/SGP entry is eliminated.",
+      "status": "FINISHED",
+      "coverage": "India and Singapore entries in qualifying and the main draw. All qualifiers were eliminated before the main draw. In the main draw, direct entries and wild cards from both countries were in singles, doubles and mixed doubles; every IND/SGP entry is now eliminated. Manav Thakkar/Manush Shah (IND) reached the semi-final of the men's doubles, the best IND/SGP result.",
       "sources": [
         {
           "label": "China Smash 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/China_Smash_2026",
-          "readOn": "2026-10-09"
+          "readOn": "2026-10-10"
         },
         {
           "label": "China Smash 2026 - Qualification (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/China_Smash_2026_%E2%80%93_Qualification",
-          "readOn": "2026-10-06"
+          "readOn": "2026-10-10"
         }
       ],
-      "notes": "Qualifying (1-3 Oct) eliminated every IND/SGP qualifier, so none reached the main draw via qualifying; several IND/SGP players entered the main draw directly as seeds/wild cards. Manav Thakkar/Manush Shah (IND, seed 2) beat Liang Jingkun/Xiang Peng 3-0 in the men's doubles quarter-final and play Lim Jong-hoon/Oh Jun-sung (KOR, seed 4) in the semi-final. Izaac Quek/Koen Pang (SGP) lost their men's doubles quarter-final to Wen Ruibo/Yuan Licen 0-3. Manush Shah/Diya Chitale (IND, seed 5) beat Eduard Ionescu/Bernadette Szőcs 3-0 in the mixed doubles quarter-final, then lost the semi-final to Lin Yun-ju/Cheng I-ching 1-3. The main draw bracket page does not give per-match dates/times, only round-by-round day ranges, so matches are left without a date.",
+      "notes": "Qualifying (1-3 Oct) eliminated every IND/SGP qualifier, so none reached the main draw via qualifying; several IND/SGP players entered the main draw directly as seeds/wild cards. Manav Thakkar/Manush Shah (IND, seed 2) beat Liang Jingkun/Xiang Peng 3-0 in the men's doubles quarter-final, then lost the semi-final 0-3 to Lim Jong-hoon/Oh Jun-sung (KOR, seed 4). Izaac Quek/Koen Pang (SGP) lost their men's doubles quarter-final to Wen Ruibo/Yuan Licen 0-3. Manush Shah/Diya Chitale (IND, seed 5) beat Eduard Ionescu/Bernadette Szőcs 3-0 in the mixed doubles quarter-final, then lost the semi-final to Lin Yun-ju/Cheng I-ching 1-3. The main draw bracket page does not give per-match dates/times, only round-by-round day ranges, so matches are left without a date.",
       "entries": [
         {
           "country": "IND",
@@ -10371,17 +10395,31 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Lim Jong-hoon",
                 "Oh Jun-sung"
               ],
               "opponentCountry": "KOR",
-              "scores": [],
+              "scores": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ]
+              ],
               "date": null,
               "time": null
             }
-          ]
+          ],
+          "eliminated": true
         },
         {
           "country": "SGP",
@@ -12061,16 +12099,16 @@
       "timeZone": "Europe/Helsinki",
       "start": "2026-10-06",
       "end": "2026-10-11",
-      "status": "IN_PROGRESS",
-      "coverage": "India and Singapore entries in men's singles, women's singles, men's doubles and mixed doubles. First-round (R32) and second-round (R16) results are in; P. V. Sindhu (women's singles) and Krishna Prasad Garaga/Pruthvi Roy (men's doubles) have reached the quarter-finals, every other IND/SGP entry is eliminated.",
+      "status": "FINISHED",
+      "coverage": "India and Singapore entries in men's singles, women's singles, men's doubles and mixed doubles. Every IND/SGP entry is eliminated; P. V. Sindhu (women's singles) and Krishna Prasad Garaga/Pruthvi Roy (men's doubles) reached the quarter-finals, the best IND/SGP results.",
       "sources": [
         {
           "label": "2026 Arctic Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Arctic_Open",
-          "readOn": "2026-10-09"
+          "readOn": "2026-10-10"
         }
       ],
-      "notes": "No women's doubles entries from India or Singapore were found in the draw. Seeds shown as qualifier/placement codes (e.g. Q3, Q4, PFQ) on the source page, not numeric seeds, are recorded as seed: null. The bracket page gives no per-match dates/times, so matches are left without a date.",
+      "notes": "No women's doubles entries from India or Singapore were found in the draw. Seeds shown as qualifier/placement codes (e.g. Q3, Q4, PFQ) on the source page, not numeric seeds, are recorded as seed: null. P. V. Sindhu (seed 6) lost her quarter-final 1-2 to Ratchanok Intanon. Krishna Prasad Garaga/Pruthvi Roy lost their quarter-final in straight games to Christian Faust Kjær/Rasmus Kjær. The bracket page gives no per-match dates/times, so matches are left without a date.",
       "entries": [
         {
           "country": "IND",
@@ -12200,17 +12238,6 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
-              "opponent": [
-                "Christo Popov"
-              ],
-              "opponentCountry": "FRA",
-              "scores": [],
-              "date": null,
-              "time": null
-            },
-            {
-              "round": "R16",
               "outcome": "LOSS",
               "opponent": [
                 "Christo Popov"
@@ -12261,17 +12288,6 @@
                   21
                 ]
               ],
-              "date": null,
-              "time": null
-            },
-            {
-              "round": "R16",
-              "outcome": "SCHEDULED",
-              "opponent": [
-                "Anders Antonsen"
-              ],
-              "opponentCountry": "DEN",
-              "scores": [],
               "date": null,
               "time": null
             },
@@ -12358,17 +12374,6 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
-              "opponent": [
-                "Ratchanok Intanon"
-              ],
-              "opponentCountry": "THA",
-              "scores": [],
-              "date": null,
-              "time": null
-            },
-            {
-              "round": "R16",
               "outcome": "LOSS",
               "opponent": [
                 "Ratchanok Intanon"
@@ -12420,17 +12425,6 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
-              "opponent": [
-                "Riko Gunji"
-              ],
-              "opponentCountry": "JPN",
-              "scores": [],
-              "date": null,
-              "time": null
-            },
-            {
-              "round": "R16",
               "outcome": "WIN",
               "opponent": [
                 "Riko Gunji"
@@ -12451,16 +12445,30 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Ratchanok Intanon"
               ],
               "opponentCountry": "THA",
-              "scores": [],
+              "scores": [
+                [
+                  11,
+                  21
+                ],
+                [
+                  21,
+                  19
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
-          ]
+          ],
+          "eliminated": true
         },
         {
           "country": "IND",
@@ -12630,18 +12638,6 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
-              "opponent": [
-                "Oliver Butler",
-                "Samuel Jones"
-              ],
-              "opponentCountry": "ENG",
-              "scores": [],
-              "date": null,
-              "time": null
-            },
-            {
-              "round": "R16",
               "outcome": "WIN",
               "opponent": [
                 "Oliver Butler",
@@ -12663,17 +12659,27 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Christian Faust Kjær",
                 "Rasmus Kjær"
               ],
               "opponentCountry": "DEN",
-              "scores": [],
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
-          ]
+          ],
+          "eliminated": true
         },
         {
           "country": "IND",
@@ -12722,8 +12728,8 @@
       "timeZone": "Africa/Cairo",
       "start": "2026-10-05",
       "end": "2026-10-10",
-      "status": "IN_PROGRESS",
-      "coverage": "India's and Singapore's mixed-team results in the Suhandinata Cup (the World Junior Championships team event). The event uses a subgroup round robin, then a group play-off to settle 1st-8th in each of 8 groups, then a knockout ranking stage (5-11 October, both finishing and losing teams keep playing classification ties). Individual rubber scores are not published on the source page for the group-stage ties, only each tie's overall 2-set or 3-set result, so rubbers are omitted.",
+      "status": "FINISHED",
+      "coverage": "India's and Singapore's mixed-team results in the Suhandinata Cup (the World Junior Championships team event). The event uses a subgroup round robin, then a group play-off to settle 1st-8th in each of 8 groups, then a knockout ranking stage for the rest (5-10 October). India finished 13th and Singapore finished 27th. Individual rubber scores are not published on the source page for the group-stage ties, only each tie's overall 2-set or 3-set result, so rubbers are omitted; the classification stage's ties are not recorded as separate matches here (see notes).",
       "tournament": {
         "id": "world-junior-championships-2026",
         "name": "2026 BWF World Junior Championships",
@@ -12778,7 +12784,8 @@
               "date": null,
               "time": null
             }
-          ]
+          ],
+          "eliminated": true
         },
         {
           "country": "SGP",
@@ -12836,10 +12843,15 @@
         {
           "label": "2026 Suhandinata Cup (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Suhandinata_Cup",
-          "readOn": "2026-10-09"
+          "readOn": "2026-10-10"
+        },
+        {
+          "label": "2026 BWF World Junior Championships/9th to 16th classification (Wikipedia template)",
+          "url": "https://en.wikipedia.org/wiki/Template:2026_BWF_World_Junior_Championships/9th_to_16th_classification",
+          "readOn": "2026-10-10"
         }
       ],
-      "notes": "India finished 2nd of 8 teams in Group D (won subgroup D1 over Algeria and Peru, then lost the group play-off to UAE); Singapore finished 4th of 6 teams in Group B (2nd in subgroup B1, then lost the group's second-placed play-off to Canada). In the finals round, India (placed in the 9th-16th classification bracket) lost its first match to Chinese Taipei 1-2, then beat the Czech Republic 2-0 in the 13th-16th play-off and now plays England for 13th/14th place; no date is published yet. Singapore (25th-32nd classification) beat Poland 2-1, lost to Sri Lanka 0-2, then beat Finland 2-0 in the 27th-28th place match, finishing the event in 27th place. The classification bracket's individual matches are not recorded as separate results here: the schema's badminton team round vocabulary (G1-G3 plus QF/SF/F/3P) has no code for a team that loses and keeps playing outside the semi-final-to-bronze case, so recording them as QF/SF/F would wrongly mark a continuing team as eliminated. Singapore's campaign is complete, so it is flagged eliminated directly; India's last recorded match is still the group-stage loss, which correctly leaves it shown as live since India still has a match to play. Individual rubber scores are not published on the source page for the group-stage ties, only each tie's overall 2-set or 3-set result, so rubbers are omitted."
+      "notes": "India finished 2nd of 8 teams in Group D (won subgroup D1 over Algeria and Peru, then lost the group play-off to UAE); Singapore finished 4th of 6 teams in Group B (2nd in subgroup B1, then lost the group's second-placed play-off to Canada). In the 9th-16th classification bracket, India lost its first tie 1-2 to Chinese Taipei, beat the Czech Republic 2-0 in the 13th-16th play-off, then beat England 2-0 in the 13th-14th place match to finish 13th. In the 25th-32nd classification bracket, Singapore beat Poland 2-1, lost to Sri Lanka 0-2, then beat Finland 2-0 in the 27th-28th place match to finish 27th (confirmed by the final ranking table). The classification bracket's individual ties are not recorded as separate results here: the schema's badminton team round vocabulary (G1-G3 plus QF/SF/F/3P) has no code for a team that loses and keeps playing outside the semi-final-to-bronze case, so recording them as QF/SF/F would wrongly end a continuing team's run under the knockout-loss check. No dates are published for the classification ties. Individual rubber scores are not published on the source page for the group-stage ties, only each tie's overall 2-set or 3-set result, so rubbers are omitted."
     },
     {
       "id": "squash-results:asian-games-2026-squash-individual-event",
