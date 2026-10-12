@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-10",
+  "updatedOn": "2026-10-12",
   "sport": "BADMINTON",
   "events": [
     {
@@ -461,6 +461,35 @@
         }
       ],
       "notes": "Hosted in Singapore, so Singaporean entries are expected, but the calendar page only shows administrative details (entry deadlines, prize money); no player entry list was published as of the read date."
+    },
+    {
+      "id": "hockey-upcoming:asian-champions-trophy-2026-men",
+      "name": "2026 Men's Asian Champions Trophy",
+      "shortName": "Asian Champions Trophy",
+      "sport": "HOCKEY",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "Hero Asian Champions Trophy 2026",
+      "location": "Jalandhar and Mohali, Punjab, India",
+      "start": "2026-10-27",
+      "end": "2026-11-05",
+      "entriesPublished": true,
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MT",
+          "athletes": [],
+          "seed": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026 Men's Asian Champions Trophy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Men%27s_Asian_Champions_Trophy",
+          "readOn": "2026-10-12"
+        }
+      ],
+      "notes": "Six teams in one group (BAN, CHN, IND as host, JPN, MAS, KOR); top 4 reach the semifinals, bottom 2 play the 5th place match. India's group matches, all 19:00 IST at Surjit Hockey Stadium, Jalandhar: BAN (27 Oct), CHN (29 Oct), JPN (30 Oct, India second-named), MAS (1 Nov, India second-named), KOR (2 Nov). Semifinals, bronze and final at Mohali International Hockey Stadium on 4-5 Nov. Pakistan withdrew over security concerns and was replaced by Bangladesh."
     }
   ]
 }
