@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-13",
+  "updatedOn": "2026-10-14",
   "sport": "BADMINTON",
   "names": [
     {
@@ -52829,6 +52829,967 @@
                   ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bwf-results:world-junior-championships-2026-individual-event",
+      "name": "2026 BWF World Junior Championships",
+      "shortName": "World Junior Championships",
+      "sport": "BADMINTON",
+      "ageCategory": "JUNIOR",
+      "level": null,
+      "officialTierName": "BWF World Junior Championships",
+      "location": "Cairo, Egypt",
+      "medals": true,
+      "timeZone": "Africa/Cairo",
+      "start": "2026-10-11",
+      "end": "2026-10-17",
+      "status": "IN_PROGRESS",
+      "coverage": "India's boys' singles results in the individual event (girls' singles and all doubles draws had not been updated with any results on the source page as of this read; India's entries there are not yet recorded). The event trials BWF's 3x15 scoring system (games to 15, win by 2, capped at 21) for all individual events, so this event carries its own gameScoring overriding the sport's usual law; BWF's own announcement page (bwfbadminton.com) returned HTTP 403 to automated fetches, so the exact cap/win-by figures are corroborated by secondary reporting rather than fetched directly, though the observed game scores on the draw page are consistent with them. No Singapore entries were found for this championship. Exact per-match dates are not given on the draw page, only the event's 11-17 October window.",
+      "gameScoring": {
+        "pointsToWin": 15,
+        "winBy": 2,
+        "cap": 21
+      },
+      "sources": [
+        {
+          "label": "2026 BWF World Junior Championships (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships",
+          "readOn": "2026-10-14"
+        },
+        {
+          "label": "2026 BWF World Junior Championships – boys' singles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships_%E2%80%93_boys%27_singles",
+          "readOn": "2026-10-14"
+        }
+      ],
+      "notes": "Round names follow BWF's own 'First/Second/Third/Fourth round' labels for the section draws, mapped here to R128/R64/R32/R16; the finals stage (QF/SF/F) had not been reached by any section as of this read.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Nishchal Chand"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "WIN",
+              "opponent": [
+                "Rayan Almukhimer"
+              ],
+              "opponentCountry": "KSA",
+              "scores": [
+                [
+                  15,
+                  4
+                ],
+                [
+                  15,
+                  6
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "César Rodrigues"
+              ],
+              "opponentCountry": "POR",
+              "scores": [
+                [
+                  15,
+                  7
+                ],
+                [
+                  15,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Xu Jining"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  15,
+                  13
+                ],
+                [
+                  13,
+                  15
+                ],
+                [
+                  15,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Kong Wei Xiang"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Dev Ruparelia"
+          ],
+          "seed": 3,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Oussama Keddou"
+              ],
+              "opponentCountry": "ALG",
+              "scores": [
+                [
+                  15,
+                  5
+                ],
+                [
+                  15,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Anish Nair"
+              ],
+              "opponentCountry": "ENG",
+              "scores": [
+                [
+                  15,
+                  7
+                ],
+                [
+                  15,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Yudha Rendra Wijaya"
+              ],
+              "opponentCountry": "INA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Jagsher Singh Khangurra"
+          ],
+          "seed": 14,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Mohamed Rayane Bouffeniche"
+              ],
+              "opponentCountry": "ALG",
+              "scores": [
+                [
+                  15,
+                  5
+                ],
+                [
+                  15,
+                  6
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Pranav Bhaugeerothee"
+              ],
+              "opponentCountry": "MRI",
+              "scores": [
+                [
+                  15,
+                  4
+                ],
+                [
+                  15,
+                  3
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Punnatat Prempunpong"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Akhil Reddy Bobba"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Tiew Wei Jie"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  15,
+                  12
+                ],
+                [
+                  15,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Vihaan Shah"
+              ],
+              "opponentCountry": "NED",
+              "scores": [
+                [
+                  15,
+                  12
+                ],
+                [
+                  15,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Lim Boon Le"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ],
+      "tournament": {
+        "id": "world-junior-championships-2026",
+        "name": "2026 BWF World Junior Championships",
+        "shortName": "World Junior Championships"
+      }
+    },
+    {
+      "id": "bwf-results:malaysia-super-100-2026",
+      "name": "Malaysia Super 100 2026",
+      "shortName": "Malaysia Super 100",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 100",
+      "location": "Iskandar Puteri, Malaysia",
+      "medals": false,
+      "timeZone": "Asia/Kuala_Lumpur",
+      "start": "2026-10-13",
+      "end": "2026-10-18",
+      "status": "IN_PROGRESS",
+      "coverage": "India's results so far. Men's singles and mixed doubles draws had results posted as of this read; women's singles, men's doubles and women's doubles draws were set but had no match scores posted yet, so no entries are recorded for those disciplines today. No Singapore entries were found with results yet either.",
+      "sources": [
+        {
+          "label": "2026 Malaysia Super 100 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Malaysia_Super_100",
+          "readOn": "2026-10-14"
+        }
+      ],
+      "notes": "Exact per-match dates are not given on the draw page, only the event's 13-18 October window.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Kavin Thangam"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Shogo Ogawa"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  9,
+                  21
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Tushar Suveer"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Bharat Raghav"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Eogene Ewe"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Bharat Raghav"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Tushar Suveer"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Mithun Manjunath"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Huang Ping-hsien"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  21,
+                  19
+                ],
+                [
+                  8,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Rounak Chouhan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Cheam June Wei"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Ashith Surya",
+            "Amrutha Pramuthesh"
+          ],
+          "seed": 2,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Liao Pinyi",
+                "Liang Yuen"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  19,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Sathwik Reddy Kanapuram",
+            "Radhika Sharma"
+          ],
+          "seed": 3,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WALKOVER_LOSS",
+              "opponent": [
+                "Lee Hyeong-woo",
+                "Park Seul"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Ishaan Bhatnagar",
+            "Shruti Mishra"
+          ],
+          "seed": 7,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Lu Ming-che",
+                "Chou Yun-an"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  20,
+                  22
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bwf-results:denmark-open-2026",
+      "name": "Denmark Open 2026",
+      "shortName": "Denmark Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 750",
+      "location": "Odense, Denmark",
+      "medals": false,
+      "timeZone": "Europe/Copenhagen",
+      "start": "2026-10-13",
+      "end": "2026-10-18",
+      "status": "IN_PROGRESS",
+      "coverage": "India's and Singapore's results so far.",
+      "sources": [
+        {
+          "label": "2026 Denmark Open (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Denmark_Open",
+          "readOn": "2026-10-14"
+        }
+      ],
+      "notes": "Exact per-match dates are not given on the draw page, only the event's 13-18 October window.",
+      "entries": [
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Jason Teh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Lee Chia-hao"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  23,
+                  21
+                ],
+                [
+                  21,
+                  15
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Victor Lai"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Lakshya Sen"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Chou Tien-chen"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  21,
+                  13
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Srikanth Kidambi"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Arnaud Merklé"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [
+                [
+                  22,
+                  20
+                ],
+                [
+                  21,
+                  19
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Alex Lanier"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Ayush Shetty"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Alwi Farhan"
+              ],
+              "opponentCountry": "INA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "P. V. Sindhu"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Yvonne Li"
+              ],
+              "opponentCountry": "GER",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  23,
+                  25
+                ],
+                [
+                  19,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Sharma"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Natsuki Nidaira"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  19
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Yvonne Li"
+              ],
+              "opponentCountry": "GER",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Devika Sihag"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Pornpawee Chochuwong"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Ashmita Chaliha"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Kaloyana Nalbantova"
+              ],
+              "opponentCountry": "BUL",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Unnati Hooda"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Han Qianxi"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Satwiksairaj Rankireddy",
+            "Chirag Shetty"
+          ],
+          "seed": 5,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "He Jiting",
+                "Ren Xiangyu"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Rutaparna Panda",
+            "Swetaparna Panda"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Bao Lijing",
+                "Cao Zihan"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Treesa Jolly",
+            "Gayatri Gopichand"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Chen Yan-fei",
+                "Hsieh Pei-shan"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [],
+              "date": null,
+              "time": null
             }
           ]
         }
