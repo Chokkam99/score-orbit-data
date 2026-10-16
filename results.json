@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-15",
+  "updatedOn": "2026-10-16",
   "sport": "BADMINTON",
   "names": [
     {
@@ -121,6 +121,14 @@
       "name": "Low Rui Xuan Jeanna",
       "aliases": [
         "Jeanna Low"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Hariharan Amsakarunan",
+      "aliases": [
+        "H Amsakarunan"
       ]
     }
   ],
@@ -52882,35 +52890,35 @@
         {
           "label": "2026 BWF World Junior Championships (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships",
-          "readOn": "2026-10-15"
+          "readOn": "2026-10-16"
         },
         {
           "label": "2026 BWF World Junior Championships – boys' singles (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships_%E2%80%93_boys%27_singles",
-          "readOn": "2026-10-15"
+          "readOn": "2026-10-16"
         },
         {
           "label": "2026 BWF World Junior Championships – girls' singles (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships_%E2%80%93_girls%27_singles",
-          "readOn": "2026-10-15"
+          "readOn": "2026-10-16"
         },
         {
           "label": "2026 BWF World Junior Championships – boys' doubles (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships_%E2%80%93_boys%27_doubles",
-          "readOn": "2026-10-15"
+          "readOn": "2026-10-16"
         },
         {
           "label": "2026 BWF World Junior Championships – girls' doubles (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships_%E2%80%93_girls%27_doubles",
-          "readOn": "2026-10-15"
+          "readOn": "2026-10-16"
         },
         {
           "label": "2026 BWF World Junior Championships – mixed doubles (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships_%E2%80%93_mixed_doubles",
-          "readOn": "2026-10-15"
+          "readOn": "2026-10-16"
         }
       ],
-      "notes": "Round names follow BWF's own 'First/Second/Third/Fourth/Fifth round' labels for the section draws, mapped here to R128/R64/R32/R16/QF. The event trials BWF's 3x15 scoring system (games to 15, win by 2, capped at 21) for all individual events, so it carries its own gameScoring overriding the sport's usual law. Anson Chan/Edmund Tan's (SGP) boys' doubles R32 loss to Feng Yilang/Wei Jianzhen is shown on Wikipedia as 21-7, 21-5, not a legal game under the 15-point law; scores are left empty here and the outcome (LOSS) is recorded from the bracket result alone.",
+      "notes": "Round names follow BWF's own 'First/Second/Third/Fourth/Fifth round' labels for the section draws, mapped here to R128/R64/R32/R16/QF. The event trials BWF's 3x15 scoring system (games to 15, win by 2, capped at 21) for all individual events, so it carries its own gameScoring overriding the sport's usual law. Anson Chan/Edmund Tan's (SGP) boys' doubles R32 loss to Feng Yilang/Wei Jianzhen is shown on Wikipedia as 21-7, 21-5, not a legal game under the 15-point law; scores are left empty here and the outcome (LOSS) is recorded from the bracket result alone. Boys' singles has one more round than this draw's label mapping covers: past the sectional 'Fourth round' (R16), the combined bracket's 'Fifth round' is recorded as QF, the explicit 'Quarterfinals' round as SF and the explicit 'Semifinals' round as F; no boys' singles entry has reached the true final.",
       "entries": [
         {
           "country": "IND",
@@ -52986,12 +52994,41 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Kong Wei Xiang"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  15,
+                  9
+                ],
+                [
+                  15,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Fardhan Rainanda Joe"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  10,
+                  15
+                ],
+                [
+                  15,
+                  17
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -53047,12 +53084,49 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Yudha Rendra Wijaya"
               ],
               "opponentCountry": "INA",
-              "scores": [],
+              "scores": [
+                [
+                  16,
+                  14
+                ],
+                [
+                  9,
+                  15
+                ],
+                [
+                  15,
+                  10
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Chan Yee Hei"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  15,
+                  17
+                ],
+                [
+                  15,
+                  11
+                ],
+                [
+                  10,
+                  15
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -53108,11 +53182,79 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Punnatat Prempunpong"
               ],
               "opponentCountry": "THA",
+              "scores": [
+                [
+                  15,
+                  11
+                ],
+                [
+                  10,
+                  15
+                ],
+                [
+                  17,
+                  15
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Chong Lee Qian"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  15,
+                  9
+                ],
+                [
+                  15,
+                  8
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "WIN",
+              "opponent": [
+                "Jhuang Yuan-syue"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  6,
+                  15
+                ],
+                [
+                  17,
+                  15
+                ],
+                [
+                  15,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Radithya Wardhana"
+              ],
+              "opponentCountry": "INA",
               "scores": [],
               "date": null,
               "time": null
@@ -53169,12 +53311,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Lim Boon Le"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  13,
+                  15
+                ],
+                [
+                  16,
+                  18
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -53340,12 +53491,41 @@
             },
             {
               "round": "R64",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Laura Roviezzo"
               ],
               "opponentCountry": "BRA",
-              "scores": [],
+              "scores": [
+                [
+                  15,
+                  7
+                ],
+                [
+                  15,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Yin Yiqing"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  10,
+                  15
+                ],
+                [
+                  3,
+                  15
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -53551,13 +53731,22 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Mahiro Oku",
                 "Masato Yamashiro"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  10,
+                  15
+                ],
+                [
+                  12,
+                  15
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -53726,13 +53915,22 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Genevie Lim",
                 "Low Zi Yu"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  13,
+                  15
+                ],
+                [
+                  12,
+                  15
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -53959,7 +54157,7 @@
         {
           "label": "2026 Malaysia Super 100 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Malaysia_Super_100",
-          "readOn": "2026-10-15"
+          "readOn": "2026-10-16"
         }
       ],
       "notes": "Exact per-match dates are not given on the draw page, only the event's 13-18 October window.",
@@ -54044,12 +54242,25 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Jeon Hyeok-jin"
               ],
               "opponentCountry": "KOR",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  18
+                ],
+                [
+                  17,
+                  21
+                ],
+                [
+                  19,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -54420,11 +54631,35 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Wang Pei-yu"
               ],
               "opponentCountry": "TPE",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  12
+                ],
+                [
+                  21,
+                  19
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Xu Wenjing"
+              ],
+              "opponentCountry": "CHN",
               "scores": [],
               "date": null,
               "time": null
@@ -54461,12 +54696,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Xu Wenjing"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
+              "scores": [
+                [
+                  12,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -54532,12 +54776,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Yuan Anqi"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  3,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -54573,12 +54826,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Kim Ga-ram"
               ],
               "opponentCountry": "KOR",
-              "scores": [],
+              "scores": [
+                [
+                  10,
+                  21
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -54644,11 +54906,35 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Tidapron Kleebyeesun"
               ],
               "opponentCountry": "THA",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Kim Ga-ram"
+              ],
+              "opponentCountry": "KOR",
               "scores": [],
               "date": null,
               "time": null
@@ -54885,13 +55171,26 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Dania Sofea",
                 "Tan Zhing Hui"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  24,
+                  22
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -54982,7 +55281,7 @@
         {
           "label": "2026 Denmark Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Denmark_Open",
-          "readOn": "2026-10-15"
+          "readOn": "2026-10-16"
         }
       ],
       "notes": "Exact per-match dates are not given on the draw page, only the event's 13-18 October window.",
@@ -55017,12 +55316,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Victor Lai"
               ],
               "opponentCountry": "CAN",
-              "scores": [],
+              "scores": [
+                [
+                  7,
+                  21
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -55092,12 +55400,25 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Alex Lanier"
               ],
               "opponentCountry": "FRA",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  11
+                ],
+                [
+                  15,
+                  21
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -55205,11 +55526,31 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Yvonne Li"
               ],
               "opponentCountry": "GER",
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  21,
+                  19
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "An Se-young"
+              ],
+              "opponentCountry": "KOR",
               "scores": [],
               "date": null,
               "time": null
@@ -55276,12 +55617,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Akane Yamaguchi"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  10,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -55421,12 +55771,33 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Rachel Allessya Rose",
                 "Febi Setianingrum"
               ],
               "opponentCountry": "INA",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  17
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Pearly Tan",
+                "Thinaah Muralitharan"
+              ],
+              "opponentCountry": "MAS",
               "scores": [],
               "date": null,
               "time": null
