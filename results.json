@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-16",
+  "updatedOn": "2026-10-17",
   "sport": "BADMINTON",
   "names": [
     {
@@ -104,7 +104,8 @@
       "country": "SGP",
       "name": "Chan Yeng Juen Anson",
       "aliases": [
-        "Anson Chan"
+        "Anson Chan",
+        "Anson Chan Yeng Juen"
       ]
     },
     {
@@ -112,7 +113,8 @@
       "country": "SGP",
       "name": "Tan Xuan De Edmund",
       "aliases": [
-        "Edmund Tan"
+        "Edmund Tan",
+        "Edmund Tan Xuan De"
       ]
     },
     {
@@ -129,6 +131,14 @@
       "name": "Hariharan Amsakarunan",
       "aliases": [
         "H Amsakarunan"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "SGP",
+      "name": "Goh Guan Song Aldrich",
+      "aliases": [
+        "Aldrich Goh Guan Song"
       ]
     }
   ],
@@ -52879,7 +52889,7 @@
       "timeZone": "Africa/Cairo",
       "start": "2026-10-11",
       "end": "2026-10-17",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India's and Singapore's results across all five disciplines (boys' and girls' singles, boys', girls' and mixed doubles) so far. Girls' singles and most doubles slots had not reached their first decided match on the source pages as of this read; those entries are not yet recorded.",
       "gameScoring": {
         "pointsToWin": 15,
@@ -52890,12 +52900,12 @@
         {
           "label": "2026 BWF World Junior Championships (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships",
-          "readOn": "2026-10-16"
+          "readOn": "2026-10-17"
         },
         {
           "label": "2026 BWF World Junior Championships – boys' singles (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Junior_Championships_%E2%80%93_boys%27_singles",
-          "readOn": "2026-10-16"
+          "readOn": "2026-10-17"
         },
         {
           "label": "2026 BWF World Junior Championships – girls' singles (Wikipedia)",
@@ -53250,12 +53260,25 @@
             },
             {
               "round": "F",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Radithya Wardhana"
               ],
               "opponentCountry": "INA",
-              "scores": [],
+              "scores": [
+                [
+                  6,
+                  15
+                ],
+                [
+                  15,
+                  13
+                ],
+                [
+                  3,
+                  15
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -54157,7 +54180,7 @@
         {
           "label": "2026 Malaysia Super 100 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Malaysia_Super_100",
-          "readOn": "2026-10-16"
+          "readOn": "2026-10-17"
         }
       ],
       "notes": "Exact per-match dates are not given on the draw page, only the event's 13-18 October window.",
@@ -54655,12 +54678,21 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Xu Wenjing"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
+              "scores": [
+                [
+                  11,
+                  21
+                ],
+                [
+                  16,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -54930,12 +54962,25 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Kim Ga-ram"
               ],
               "opponentCountry": "KOR",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  11,
+                  21
+                ],
+                [
+                  19,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -55281,7 +55326,7 @@
         {
           "label": "2026 Denmark Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Denmark_Open",
-          "readOn": "2026-10-16"
+          "readOn": "2026-10-17"
         }
       ],
       "notes": "Exact per-match dates are not given on the draw page, only the event's 13-18 October window.",
@@ -55546,12 +55591,21 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "An Se-young"
               ],
               "opponentCountry": "KOR",
-              "scores": [],
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -55792,13 +55846,94 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Pearly Tan",
                 "Thinaah Muralitharan"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  14
+                ],
+                [
+                  17,
+                  21
+                ],
+                [
+                  11,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squash-results:us-challenger-series-3-2026",
+      "name": "US Challenger Series #3 2026",
+      "shortName": "US Challenger Series #3",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "DEVELOPMENT",
+      "officialTierName": "PSA Challenger",
+      "location": "Redwood City, California, United States",
+      "medals": false,
+      "timeZone": "America/Los_Angeles",
+      "start": "2026-10-10",
+      "end": "2026-10-12",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "sources": [
+        {
+          "label": "2026-27 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_PSA_Squash_Tour",
+          "readOn": "2026-10-17"
+        }
+      ],
+      "notes": "Tier on the page: Challenger 3 ($3,000) for both the men's and women's draws. Only the men's final had an IND finalist. The final's date within the 10-12 October window is not on the page, so date is null.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Aryaveer Dewan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Brendan Tagliarini"
+              ],
+              "opponentCountry": "USA",
+              "scores": [
+                [
+                  10,
+                  12
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  1,
+                  11
+                ]
+              ],
               "date": null,
               "time": null
             }
