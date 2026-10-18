@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-17",
+  "updatedOn": "2026-10-18",
   "sport": "BADMINTON",
   "names": [
     {
@@ -139,6 +139,31 @@
       "name": "Goh Guan Song Aldrich",
       "aliases": [
         "Aldrich Goh Guan Song"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "SGP",
+      "name": "Wesley Koh Eng Keat",
+      "aliases": [
+        "Wesley Koh",
+        "Eng Keat Wesley Koh"
+      ]
+    },
+    {
+      "sport": "TABLE_TENNIS",
+      "country": "SGP",
+      "name": "Xiaona Shan",
+      "aliases": [
+        "Shan Xiaona"
+      ]
+    },
+    {
+      "sport": "TABLE_TENNIS",
+      "country": "HKG",
+      "name": "Wong Chun Ting",
+      "aliases": [
+        "Wong Chun-ting"
       ]
     }
   ],
