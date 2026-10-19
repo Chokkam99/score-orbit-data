@@ -1,57 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-17",
+  "updatedOn": "2026-10-19",
   "sport": "BADMINTON",
   "events": [
-    {
-      "id": "bwf-upcoming:malaysia-super-100-2026",
-      "name": "Malaysia Super 100 2026",
-      "shortName": "Malaysia Super 100",
-      "sport": "BADMINTON",
-      "ageCategory": "SENIOR",
-      "level": "TOUR",
-      "officialTierName": "HSBC BWF World Tour Super 100",
-      "location": "Iskandar Puteri, Malaysia",
-      "start": "2026-10-13",
-      "end": "2026-10-18",
-      "entriesPublished": false,
-      "entries": [],
-      "sources": [
-        {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-10-05"
-        },
-        {
-          "label": "2026 Malaysia Super 100 (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_Malaysia_Super_100",
-          "readOn": "2026-10-05"
-        }
-      ],
-      "notes": "Dates and level confirmed from the Wikipedia World Tour schedule; the dedicated tournament page is still a stub with no draw. BWF's own tournament pages return HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
-    },
-    {
-      "id": "bwf-upcoming:denmark-open-2026",
-      "name": "Denmark Open 2026",
-      "shortName": "Denmark Open",
-      "sport": "BADMINTON",
-      "ageCategory": "SENIOR",
-      "level": "TOUR",
-      "officialTierName": "HSBC BWF World Tour Super 750",
-      "location": "Odense, Denmark",
-      "start": "2026-10-13",
-      "end": "2026-10-18",
-      "entriesPublished": false,
-      "entries": [],
-      "sources": [
-        {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
-        }
-      ],
-      "notes": "Access blocked, unverified, not confirmed 'not yet open': BWF Tour entry deadlines are typically several weeks before the event, so an accepted-entries list plausibly exists by now, but BWF's own tournament pages returned HTTP 403 to automated fetches and the tournament's own site (denmarkopen.dk) only links out to that same BWF page rather than listing players itself. No BAI squad announcement specific to this 2026 edition was found via search either."
-    },
     {
       "id": "bwf-upcoming:french-open-2026",
       "name": "French Open 2026",
@@ -63,16 +14,123 @@
       "location": "Tremblay-en-France, France",
       "start": "2026-10-20",
       "end": "2026-10-25",
-      "entriesPublished": false,
-      "entries": [],
-      "sources": [
+      "entriesPublished": true,
+      "entries": [
         {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Jason Teh"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Srikanth Kidambi"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Ayush Shetty"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Lakshya Sen"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "P. V. Sindhu"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Sharma"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Isharani Baruah"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Ashmita Chaliha"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Unnati Hooda"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Devika Sihag"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Satwiksairaj Rankireddy",
+            "Chirag Shetty"
+          ],
+          "seed": 5
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Treesa Jolly",
+            "Gayatri Gopichand"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Rutaparna Panda",
+            "Swetaparna Panda"
+          ],
+          "seed": null
         }
       ],
-      "notes": "Access blocked, unverified: BWF's own tournament pages returned HTTP 403 to automated fetches, and no BAI squad announcement specific to this 2026 edition was found via search, so entries could not be confirmed either way as of the read date."
+      "sources": [
+        {
+          "label": "2026 French Open (badminton) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_French_Open_(badminton)",
+          "readOn": "2026-10-19"
+        }
+      ]
     },
     {
       "id": "bwf-upcoming:indonesia-masters-super-100-ii-2026",
@@ -85,16 +143,134 @@
       "location": "Kudus, Indonesia",
       "start": "2026-10-20",
       "end": "2026-10-25",
-      "entriesPublished": false,
-      "entries": [],
-      "sources": [
+      "entriesPublished": true,
+      "entries": [
         {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Rounak Chouhan"
+          ],
+          "seed": 8
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Sankar Subramanian"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Saneeth Dayanand"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Meiraba Maisnam"
+          ],
+          "seed": null
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Yeo Jia Min"
+          ],
+          "seed": 2
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Mansi Singh"
+          ],
+          "seed": 6
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Samiya Farooqui"
+          ],
+          "seed": null
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Megan Lee"
+          ],
+          "seed": null
+        },
+        {
+          "country": "SGP",
+          "discipline": "MD",
+          "athletes": [
+            "Nge Joo Jie",
+            "Howin Wong"
+          ],
+          "seed": null
+        },
+        {
+          "country": "SGP",
+          "discipline": "WD",
+          "athletes": [
+            "Heng Xiao En",
+            "Andrea Tay"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Priya Konjengbam",
+            "Shruti Mishra"
+          ],
+          "seed": 3
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Ishaan Bhatnagar",
+            "Shruti Mishra"
+          ],
+          "seed": 3
+        },
+        {
+          "country": "SGP",
+          "discipline": "XD",
+          "athletes": [
+            "Terry Hee",
+            "Gloria Emanuelle Widjaja"
+          ],
+          "seed": 6
+        },
+        {
+          "country": "SGP",
+          "discipline": "XD",
+          "athletes": [
+            "Kriston Choo",
+            "Heng Xiao En"
+          ],
+          "seed": null
         }
       ],
-      "notes": "Access blocked, unverified: dates and level confirmed from the Wikipedia schedule, but BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
+      "sources": [
+        {
+          "label": "2026 Indonesia Masters Super 100 II (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Indonesia_Masters_Super_100_II",
+          "readOn": "2026-10-19"
+        }
+      ]
     },
     {
       "id": "bwf-upcoming:hylo-open-2026",
@@ -344,6 +520,50 @@
         }
       ],
       "notes": "Six teams in one group (BAN, CHN, IND as host, JPN, MAS, KOR); top 4 reach the semifinals, bottom 2 play the 5th place match. India's group matches, all 19:00 IST at Surjit Hockey Stadium, Jalandhar: BAN (27 Oct), CHN (29 Oct), JPN (30 Oct, India second-named), MAS (1 Nov, India second-named), KOR (2 Nov). Semifinals, bronze and final at Mohali International Hockey Stadium on 4-5 Nov. Pakistan withdrew over security concerns and was replaced by Bangladesh."
+    },
+    {
+      "id": "wtt-upcoming:wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier 2026",
+      "shortName": "WTT Champions Montpellier",
+      "sport": "TABLE_TENNIS",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "WTT Champions",
+      "location": "Montpellier, France",
+      "start": "2026-10-27",
+      "end": "2026-11-01",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "WTT Champions Montpellier 2026 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/WTT_Champions_Montpellier_2026",
+          "readOn": "2026-10-19"
+        }
+      ],
+      "notes": "Draw not yet published on Wikipedia as of the read date; worldtabletennis.com cannot be read directly (JavaScript app with no content on a plain fetch)."
+    },
+    {
+      "id": "wtt-upcoming:wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt 2026",
+      "shortName": "WTT Champions Frankfurt",
+      "sport": "TABLE_TENNIS",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "WTT Champions",
+      "location": "Frankfurt, Germany",
+      "start": "2026-11-03",
+      "end": "2026-11-08",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "WTT Champions Frankfurt 2026 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/WTT_Champions_Frankfurt_2026",
+          "readOn": "2026-10-19"
+        }
+      ],
+      "notes": "Draw not yet published on Wikipedia as of the read date; worldtabletennis.com cannot be read directly (JavaScript app with no content on a plain fetch)."
     }
   ]
 }

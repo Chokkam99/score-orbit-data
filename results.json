@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-18",
+  "updatedOn": "2026-10-19",
   "sport": "BADMINTON",
   "names": [
     {
@@ -164,6 +164,22 @@
       "name": "Wong Chun Ting",
       "aliases": [
         "Wong Chun-ting"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "SGP",
+      "name": "Heng Xiao En",
+      "aliases": [
+        "Xiao En Heng"
+      ]
+    },
+    {
+      "sport": "SQUASH",
+      "country": "SGP",
+      "name": "Au Yeong Wai Lynn",
+      "aliases": [
+        "Wai Lynn Au Yeong"
       ]
     }
   ],
@@ -54199,13 +54215,13 @@
       "timeZone": "Asia/Kuala_Lumpur",
       "start": "2026-10-13",
       "end": "2026-10-18",
-      "status": "IN_PROGRESS",
-      "coverage": "India's and Singapore's results so far, across all five disciplines (men's and women's singles, men's, women's and mixed doubles).",
+      "status": "FINISHED",
+      "coverage": "India and Singapore main-draw matches",
       "sources": [
         {
           "label": "2026 Malaysia Super 100 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Malaysia_Super_100",
-          "readOn": "2026-10-17"
+          "readOn": "2026-10-19"
         }
       ],
       "notes": "Exact per-match dates are not given on the draw page, only the event's 13-18 October window.",
@@ -55345,13 +55361,13 @@
       "timeZone": "Europe/Copenhagen",
       "start": "2026-10-13",
       "end": "2026-10-18",
-      "status": "IN_PROGRESS",
-      "coverage": "India's and Singapore's results so far.",
+      "status": "FINISHED",
+      "coverage": "India and Singapore main-draw matches",
       "sources": [
         {
           "label": "2026 Denmark Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Denmark_Open",
-          "readOn": "2026-10-17"
+          "readOn": "2026-10-19"
         }
       ],
       "notes": "Exact per-match dates are not given on the draw page, only the event's 13-18 October window.",
