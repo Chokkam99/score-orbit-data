@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-20",
+  "updatedOn": "2026-10-21",
   "sport": "BADMINTON",
   "names": [
     {
@@ -180,6 +180,30 @@
       "name": "Au Yeong Wai Lynn",
       "aliases": [
         "Wai Lynn Au Yeong"
+      ]
+    },
+    {
+      "sport": "SQUASH",
+      "country": "MAS",
+      "name": "Ng Eain Yow",
+      "aliases": [
+        "Eain Yow Ng"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "KOR",
+      "name": "Kim Won-ho",
+      "aliases": [
+        "Kim Won Ho"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "KOR",
+      "name": "Seo Seung-jae",
+      "aliases": [
+        "Seo Seung Jae"
       ]
     }
   ],
@@ -55979,6 +56003,757 @@
               "time": null
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "bwf-results:french-open-2026",
+      "name": "French Open 2026",
+      "shortName": "French Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 750",
+      "location": "Tremblay-en-France, France",
+      "medals": false,
+      "timeZone": "Europe/Paris",
+      "start": "2026-10-20",
+      "end": "2026-10-25",
+      "status": "IN_PROGRESS",
+      "coverage": "India and Singapore main-draw matches",
+      "entries": [
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Jason Teh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Nhat Nguyen"
+              ],
+              "opponentCountry": "IRL",
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Toma Junior Popov"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Srikanth Kidambi"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ayush Shetty"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Ayush Shetty"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Srikanth Kidambi"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Lakshya Sen"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Kodai Naraoka"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "P. V. Sindhu"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Supanida Katethong"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Sharma"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Isharani Baruah"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  12
+                ],
+                [
+                  21,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Han Yue"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Isharani Baruah"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Tanvi Sharma"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  12,
+                  21
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Ashmita Chaliha"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Han Qianxi"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  21,
+                  18
+                ],
+                [
+                  24,
+                  22
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Pornpawee Chochuwong"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Unnati Hooda"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Riko Gunji"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Devika Sihag"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Putri Kusuma Wardani"
+              ],
+              "opponentCountry": "INA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Satwiksairaj Rankireddy",
+            "Chirag Shetty"
+          ],
+          "seed": 5,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Christo Popov",
+                "Toma Junior Popov"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [
+                [
+                  19,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Treesa Jolly",
+            "Gayatri Gopichand"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Lin Chih-chun",
+                "Yang Chu-yun"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Rutaparna Panda",
+            "Swetaparna Panda"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ririna Hiramoto",
+                "Chiharu Shida"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026 French Open (badminton) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_French_Open_(badminton)",
+          "readOn": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "bwf-results:indonesia-masters-super-100-ii-2026",
+      "name": "Indonesia Masters Super 100 II 2026",
+      "shortName": "Indonesia Masters II",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 100",
+      "location": "Kudus, Indonesia",
+      "medals": false,
+      "timeZone": "Asia/Jakarta",
+      "start": "2026-10-20",
+      "end": "2026-10-25",
+      "status": "IN_PROGRESS",
+      "coverage": "India and Singapore main-draw matches. Saneeth Dayanand (IND, men's singles entry) does not appear in the published draw. Yeo Jia Min (SGP) and Mansi Singh (IND), both seeded in women's singles, withdrew before the draw and have no matches. Kriston Choo/Heng Xiao En's first-round opponents were listed as MAS and VEN on Wikipedia; opponentCountry is left null since the pair spans two countries.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Rounak Chouhan"
+          ],
+          "seed": 8,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Bismo Raya Oktora"
+              ],
+              "opponentCountry": "INA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Sankar Subramanian"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Cho Hyeon-woo"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  21,
+                  14
+                ],
+                [
+                  21,
+                  15
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Justin Hoh"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Meiraba Maisnam"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Dendi Triansyah"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  9,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Samiya Farooqui"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Peng Yu-wei"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Megan Lee"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Liang Ting-yu"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MD",
+          "athletes": [
+            "Nge Joo Jie",
+            "Howin Wong"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Lin Chia-yen",
+                "Lin Yong-sheng"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WD",
+          "athletes": [
+            "Heng Xiao En",
+            "Andrea Tay"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Tidapron Kleebyeesun",
+                "Nattamon Laisuan"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Priya Konjengbam",
+            "Shruti Mishra"
+          ],
+          "seed": 3,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Chou Yun-an",
+                "Ko Ruo-hsuan"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Ishaan Bhatnagar",
+            "Shruti Mishra"
+          ],
+          "seed": 3,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Lee Hyeong-woo",
+                "Park Seul"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  19,
+                  21
+                ],
+                [
+                  21,
+                  19
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "XD",
+          "athletes": [
+            "Terry Hee",
+            "Gloria Emanuelle Widjaja"
+          ],
+          "seed": 6,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Liao Pinyi",
+                "Liang Yuen"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Kenta Matsukawa",
+                "Rima Sekino"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "XD",
+          "athletes": [
+            "Kriston Choo",
+            "Heng Xiao En"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Par Tien Ann",
+                "Juliana Zefanya Gabriela"
+              ],
+              "opponentCountry": null,
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  21,
+                  17
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Emre Sönmez",
+                "Yasemen Bektaş"
+              ],
+              "opponentCountry": "TUR",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026 Indonesia Masters Super 100 II (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Indonesia_Masters_Super_100_II",
+          "readOn": "2026-10-21"
         }
       ]
     }
