@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-22",
+  "updatedOn": "2026-10-23",
   "sport": "BADMINTON",
   "names": [
     {
@@ -56056,12 +56056,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Toma Junior Popov"
               ],
               "opponentCountry": "FRA",
-              "scores": [],
+              "scores": [
+                [
+                  10,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -56135,12 +56144,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "RETIRED_LOSS",
               "opponent": [
                 "Kodai Naraoka"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  6,
+                  11
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -56201,11 +56219,31 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Riko Gunji"
               ],
               "opponentCountry": "JPN",
+              "scores": [
+                [
+                  21,
+                  12
+                ],
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Chiu Pin-chian"
+              ],
+              "opponentCountry": "TPE",
               "scores": [],
               "date": null,
               "time": null
@@ -56242,12 +56280,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "An Se-young"
               ],
               "opponentCountry": "KOR",
-              "scores": [],
+              "scores": [
+                [
+                  11,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -56313,9 +56360,29 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Akane Yamaguchi"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Nozomi Okuhara"
               ],
               "opponentCountry": "JPN",
               "scores": [],
@@ -56497,7 +56564,7 @@
         {
           "label": "2026 French Open (badminton) (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_French_Open_(badminton)",
-          "readOn": "2026-10-22"
+          "readOn": "2026-10-23"
         }
       ]
     },
@@ -56515,7 +56582,7 @@
       "start": "2026-10-20",
       "end": "2026-10-25",
       "status": "IN_PROGRESS",
-      "coverage": "India and Singapore main-draw matches. Saneeth Dayanand (IND, men's singles entry) does not appear in the published draw. Yeo Jia Min (SGP) and Mansi Singh (IND), both seeded in women's singles, withdrew before the draw and have no matches. Kriston Choo/Heng Xiao En's first-round opponents were listed as MAS and VEN on Wikipedia; opponentCountry is left null since the pair spans two countries. Kriston Choo also plays men's doubles with Gabriel Chong (SGP); that entry was added once their match appeared in the draw.",
+      "coverage": "India and Singapore main-draw matches. Saneeth Dayanand (IND, men's singles entry) does not appear in the published draw. Yeo Jia Min (SGP) and Mansi Singh (IND), both seeded in women's singles, withdrew before the draw and have no matches. Kriston Choo/Heng Xiao En's first-round opponents were listed as MAS and VEN on Wikipedia; opponentCountry is left null since the pair spans two countries. Kriston Choo also plays men's doubles with Gabriel Chong (SGP); that entry was added once their match appeared in the draw. Terry Hee/Gloria Emanuelle Widjaja's R16 win over Kenta Matsukawa/Rima Sekino is shown on Wikipedia as 21-16, 21-20; the second game score is not a legal badminton game (no side can win 21-20) and is not recorded, so only the first game's score is kept.",
       "entries": [
         {
           "country": "IND",
@@ -56551,11 +56618,31 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Chen Yu-cheng"
               ],
               "opponentCountry": "TPE",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  21,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Sun Chao"
+              ],
+              "opponentCountry": "CHN",
               "scores": [],
               "date": null,
               "time": null
@@ -56587,17 +56674,6 @@
                   15
                 ]
               ],
-              "date": null,
-              "time": null
-            },
-            {
-              "round": "R32",
-              "outcome": "SCHEDULED",
-              "opponent": [
-                "Justin Hoh"
-              ],
-              "opponentCountry": "MAS",
-              "scores": [],
               "date": null,
               "time": null
             },
@@ -56691,12 +56767,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Nodoka Sunakawa"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  16,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -56868,13 +56953,22 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Ki Dong-ju",
                 "Jeong Na-eun"
               ],
               "opponentCountry": "KOR",
-              "scores": [],
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  8,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -56912,12 +57006,29 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Kenta Matsukawa",
                 "Rima Sekino"
               ],
               "opponentCountry": "JPN",
+              "scores": [
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ki Dong-ju",
+                "Jeong Na-eun"
+              ],
+              "opponentCountry": "KOR",
               "scores": [],
               "date": null,
               "time": null
@@ -56956,13 +57067,22 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Emre Sönmez",
                 "Yasemen Bektaş"
               ],
               "opponentCountry": "TUR",
-              "scores": [],
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -56996,13 +57116,22 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Taufik Aderya",
                 "Alexius Ongkytama Subagio"
               ],
               "opponentCountry": "INA",
-              "scores": [],
+              "scores": [
+                [
+                  12,
+                  21
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -57013,7 +57142,7 @@
         {
           "label": "2026 Indonesia Masters Super 100 II (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Indonesia_Masters_Super_100_II",
-          "readOn": "2026-10-22"
+          "readOn": "2026-10-23"
         }
       ]
     }
