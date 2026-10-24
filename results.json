@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-23",
+  "updatedOn": "2026-10-24",
   "sport": "BADMINTON",
   "names": [
     {
@@ -204,6 +204,30 @@
       "name": "Seo Seung-jae",
       "aliases": [
         "Seo Seung Jae"
+      ]
+    },
+    {
+      "sport": "TABLE_TENNIS",
+      "country": "SGP",
+      "name": "Tan Zhao Yun",
+      "aliases": [
+        "Zhao Yun Tan"
+      ]
+    },
+    {
+      "sport": "TABLE_TENNIS",
+      "country": "HKG",
+      "name": "Yiu Kwan-to",
+      "aliases": [
+        "Yiu Kwan To"
+      ]
+    },
+    {
+      "sport": "TABLE_TENNIS",
+      "country": "PRK",
+      "name": "Kim Kum-yong",
+      "aliases": [
+        "Kim Kum Yong"
       ]
     }
   ],
@@ -56239,11 +56263,31 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Chiu Pin-chian"
               ],
               "opponentCountry": "TPE",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Hina Akechi"
+              ],
+              "opponentCountry": "JPN",
               "scores": [],
               "date": null,
               "time": null
@@ -56380,12 +56424,25 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Nozomi Okuhara"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  10,
+                  21
+                ],
+                [
+                  21,
+                  17
+                ],
+                [
+                  16,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -56564,7 +56621,7 @@
         {
           "label": "2026 French Open (badminton) (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_French_Open_(badminton)",
-          "readOn": "2026-10-23"
+          "readOn": "2026-10-24"
         }
       ]
     },
@@ -56638,9 +56695,29 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Sun Chao"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Dong Tianyao"
               ],
               "opponentCountry": "CHN",
               "scores": [],
@@ -57023,12 +57100,37 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Ki Dong-ju",
                 "Jeong Na-eun"
               ],
               "opponentCountry": "KOR",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  19,
+                  21
+                ],
+                [
+                  22,
+                  20
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Bimo Prasetyo",
+                "Thesya Munggaran"
+              ],
+              "opponentCountry": "INA",
               "scores": [],
               "date": null,
               "time": null
@@ -57136,13 +57238,73 @@
               "time": null
             }
           ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Joel Koh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Hein Htut"
+              ],
+              "opponentCountry": "MYA",
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Numair Shaik"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Lim Ming Hong"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
         }
       ],
       "sources": [
         {
           "label": "2026 Indonesia Masters Super 100 II (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Indonesia_Masters_Super_100_II",
-          "readOn": "2026-10-23"
+          "readOn": "2026-10-24"
         }
       ]
     }
