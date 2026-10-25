@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-24",
+  "updatedOn": "2026-10-25",
   "sport": "BADMINTON",
   "names": [
     {
@@ -228,6 +228,30 @@
       "name": "Kim Kum-yong",
       "aliases": [
         "Kim Kum Yong"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "TPE",
+      "name": "Wu Guan-xun",
+      "aliases": [
+        "Wu Guanxun"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "GER",
+      "name": "Aditya Gahirwal",
+      "aliases": [
+        "A. Gahirwal"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "GER",
+      "name": "Luan Wolber",
+      "aliases": [
+        "L. Wolber"
       ]
     }
   ],
@@ -5883,7 +5907,7 @@
                     "Manav Thakkar"
                   ],
                   "opponent": [
-                    "An Jaehyun"
+                    "An Jae-hyun"
                   ],
                   "outcome": "LOSS",
                   "scores": [
@@ -56283,11 +56307,35 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Hina Akechi"
               ],
               "opponentCountry": "JPN",
+              "scores": [
+                [
+                  21,
+                  10
+                ],
+                [
+                  20,
+                  22
+                ],
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "An Se-young"
+              ],
+              "opponentCountry": "KOR",
               "scores": [],
               "date": null,
               "time": null
@@ -56621,7 +56669,7 @@
         {
           "label": "2026 French Open (badminton) (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_French_Open_(badminton)",
-          "readOn": "2026-10-24"
+          "readOn": "2026-10-25"
         }
       ]
     },
@@ -56715,12 +56763,25 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Dong Tianyao"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  18
+                ],
+                [
+                  8,
+                  21
+                ],
+                [
+                  16,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -57125,12 +57186,33 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Bimo Prasetyo",
                 "Thesya Munggaran"
               ],
               "opponentCountry": "INA",
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  23,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Li Hongyi",
+                "Huang Kexin"
+              ],
+              "opponentCountry": "CHN",
               "scores": [],
               "date": null,
               "time": null
@@ -57304,7 +57386,7 @@
         {
           "label": "2026 Indonesia Masters Super 100 II (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Indonesia_Masters_Super_100_II",
-          "readOn": "2026-10-24"
+          "readOn": "2026-10-25"
         }
       ]
     }
