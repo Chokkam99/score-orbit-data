@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-25",
+  "updatedOn": "2026-10-26",
   "sport": "BADMINTON",
   "names": [
     {
@@ -252,6 +252,32 @@
       "name": "Luan Wolber",
       "aliases": [
         "L. Wolber"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Gayatri Gopichand Pullela",
+      "aliases": [
+        "Gayatri Gopichand",
+        "G. Pullela"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Pruthvi Krishnamurthy Roy",
+      "aliases": [
+        "Pruthvi Roy",
+        "P. Krishnamurthy Roy"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Viswa Tej Gobburu",
+      "aliases": [
+        "Viswatej Gobburu"
       ]
     }
   ],
@@ -56067,7 +56093,7 @@
       "timeZone": "Europe/Paris",
       "start": "2026-10-20",
       "end": "2026-10-25",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India and Singapore main-draw matches",
       "entries": [
         {
@@ -56331,12 +56357,25 @@
             },
             {
               "round": "F",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "An Se-young"
               ],
               "opponentCountry": "KOR",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  11,
+                  21
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -56669,7 +56708,7 @@
         {
           "label": "2026 French Open (badminton) (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_French_Open_(badminton)",
-          "readOn": "2026-10-25"
+          "readOn": "2026-10-26"
         }
       ]
     },
@@ -56686,7 +56725,7 @@
       "timeZone": "Asia/Jakarta",
       "start": "2026-10-20",
       "end": "2026-10-25",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India and Singapore main-draw matches. Saneeth Dayanand (IND, men's singles entry) does not appear in the published draw. Yeo Jia Min (SGP) and Mansi Singh (IND), both seeded in women's singles, withdrew before the draw and have no matches. Kriston Choo/Heng Xiao En's first-round opponents were listed as MAS and VEN on Wikipedia; opponentCountry is left null since the pair spans two countries. Kriston Choo also plays men's doubles with Gabriel Chong (SGP); that entry was added once their match appeared in the draw. Terry Hee/Gloria Emanuelle Widjaja's R16 win over Kenta Matsukawa/Rima Sekino is shown on Wikipedia as 21-16, 21-20; the second game score is not a legal badminton game (no side can win 21-20) and is not recorded, so only the first game's score is kept.",
       "entries": [
         {
@@ -57207,13 +57246,26 @@
             },
             {
               "round": "F",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Li Hongyi",
                 "Huang Kexin"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  5,
+                  21
+                ],
+                [
+                  10,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -57386,7 +57438,7 @@
         {
           "label": "2026 Indonesia Masters Super 100 II (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Indonesia_Masters_Super_100_II",
-          "readOn": "2026-10-25"
+          "readOn": "2026-10-26"
         }
       ]
     }

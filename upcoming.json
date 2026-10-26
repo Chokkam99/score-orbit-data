@@ -1,50 +1,58 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-19",
+  "updatedOn": "2026-10-26",
   "sport": "BADMINTON",
   "events": [
     {
-      "id": "bwf-upcoming:french-open-2026",
-      "name": "French Open 2026",
-      "shortName": "French Open",
+      "id": "bwf-upcoming:hylo-open-2026",
+      "name": "Hylo Open 2026",
+      "shortName": "Hylo Open",
       "sport": "BADMINTON",
       "ageCategory": "SENIOR",
       "level": "TOUR",
-      "officialTierName": "HSBC BWF World Tour Super 750",
-      "location": "Tremblay-en-France, France",
-      "start": "2026-10-20",
-      "end": "2026-10-25",
+      "officialTierName": "HSBC BWF World Tour Super 500",
+      "location": "Saarbrücken, Germany",
+      "start": "2026-10-27",
+      "end": "2026-11-01",
       "entriesPublished": true,
       "entries": [
-        {
-          "country": "SGP",
-          "discipline": "MS",
-          "athletes": [
-            "Jason Teh"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Srikanth Kidambi"
-          ],
-          "seed": null
-        },
         {
           "country": "IND",
           "discipline": "MS",
           "athletes": [
             "Ayush Shetty"
           ],
-          "seed": null
+          "seed": 8
         },
         {
           "country": "IND",
           "discipline": "MS",
           "athletes": [
             "Lakshya Sen"
+          ],
+          "seed": 7
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Prannoy H. S."
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Tharun Mannepalli"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Kiran George"
           ],
           "seed": null
         },
@@ -54,13 +62,37 @@
           "athletes": [
             "P. V. Sindhu"
           ],
+          "seed": 2
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Unnati Hooda"
+          ],
+          "seed": 6
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Devika Sihag"
+          ],
           "seed": null
         },
         {
           "country": "IND",
           "discipline": "WS",
           "athletes": [
-            "Tanvi Sharma"
+            "Aakarshi Kashyap"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Malvika Bansod"
           ],
           "seed": null
         },
@@ -76,223 +108,35 @@
           "country": "IND",
           "discipline": "WS",
           "athletes": [
+            "Anmol Kharb"
+          ],
+          "seed": null
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
             "Ashmita Chaliha"
           ],
           "seed": null
         },
         {
-          "country": "IND",
-          "discipline": "WS",
+          "country": "SGP",
+          "discipline": "MS",
           "athletes": [
-            "Unnati Hooda"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Devika Sihag"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "MD",
-          "athletes": [
-            "Satwiksairaj Rankireddy",
-            "Chirag Shetty"
-          ],
-          "seed": 5
-        },
-        {
-          "country": "IND",
-          "discipline": "WD",
-          "athletes": [
-            "Treesa Jolly",
-            "Gayatri Gopichand"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "WD",
-          "athletes": [
-            "Rutaparna Panda",
-            "Swetaparna Panda"
+            "Jason Teh"
           ],
           "seed": null
         }
       ],
       "sources": [
         {
-          "label": "2026 French Open (badminton) (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_French_Open_(badminton)",
-          "readOn": "2026-10-19"
-        }
-      ]
-    },
-    {
-      "id": "bwf-upcoming:indonesia-masters-super-100-ii-2026",
-      "name": "Indonesia Masters Super 100 II 2026",
-      "shortName": "Indonesia Masters II",
-      "sport": "BADMINTON",
-      "ageCategory": "SENIOR",
-      "level": "TOUR",
-      "officialTierName": "HSBC BWF World Tour Super 100",
-      "location": "Kudus, Indonesia",
-      "start": "2026-10-20",
-      "end": "2026-10-25",
-      "entriesPublished": true,
-      "entries": [
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Rounak Chouhan"
-          ],
-          "seed": 8
-        },
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Sankar Subramanian"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Saneeth Dayanand"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Meiraba Maisnam"
-          ],
-          "seed": null
-        },
-        {
-          "country": "SGP",
-          "discipline": "WS",
-          "athletes": [
-            "Yeo Jia Min"
-          ],
-          "seed": 2
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Mansi Singh"
-          ],
-          "seed": 6
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Samiya Farooqui"
-          ],
-          "seed": null
-        },
-        {
-          "country": "SGP",
-          "discipline": "WS",
-          "athletes": [
-            "Megan Lee"
-          ],
-          "seed": null
-        },
-        {
-          "country": "SGP",
-          "discipline": "MD",
-          "athletes": [
-            "Nge Joo Jie",
-            "Howin Wong"
-          ],
-          "seed": null
-        },
-        {
-          "country": "SGP",
-          "discipline": "WD",
-          "athletes": [
-            "Heng Xiao En",
-            "Andrea Tay"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "WD",
-          "athletes": [
-            "Priya Konjengbam",
-            "Shruti Mishra"
-          ],
-          "seed": 3
-        },
-        {
-          "country": "IND",
-          "discipline": "XD",
-          "athletes": [
-            "Ishaan Bhatnagar",
-            "Shruti Mishra"
-          ],
-          "seed": 3
-        },
-        {
-          "country": "SGP",
-          "discipline": "XD",
-          "athletes": [
-            "Terry Hee",
-            "Gloria Emanuelle Widjaja"
-          ],
-          "seed": 6
-        },
-        {
-          "country": "SGP",
-          "discipline": "XD",
-          "athletes": [
-            "Kriston Choo",
-            "Heng Xiao En"
-          ],
-          "seed": null
+          "label": "2026 Hylo Open (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Hylo_Open",
+          "readOn": "2026-10-26"
         }
       ],
-      "sources": [
-        {
-          "label": "2026 Indonesia Masters Super 100 II (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_Indonesia_Masters_Super_100_II",
-          "readOn": "2026-10-19"
-        }
-      ]
-    },
-    {
-      "id": "bwf-upcoming:hylo-open-2026",
-      "name": "Hylo Open 2026",
-      "shortName": "Hylo Open",
-      "sport": "BADMINTON",
-      "ageCategory": "SENIOR",
-      "level": "TOUR",
-      "officialTierName": "HSBC BWF World Tour Super 500",
-      "location": "Saarbrücken, Germany",
-      "start": "2026-10-27",
-      "end": "2026-11-01",
-      "entriesPublished": false,
-      "entries": [],
-      "sources": [
-        {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
-        }
-      ],
-      "notes": "Access blocked, unverified: BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
+      "notes": "Qualifier (Q) slots were blank on the draw page, so any IND/SGP qualifiers are not yet reflected. No IND or SGP doubles pairs appear in the draw."
     },
     {
       "id": "bwf-upcoming:korea-open-2026",
@@ -305,16 +149,16 @@
       "location": "Yeosu, South Korea",
       "start": "2026-11-03",
       "end": "2026-11-08",
-      "entriesPublished": false,
+      "entriesPublished": true,
       "entries": [],
       "sources": [
         {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
+          "label": "2026 Korea Open (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Korea_Open",
+          "readOn": "2026-10-26"
         }
       ],
-      "notes": "Access blocked, unverified: BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
+      "notes": "Entry list published; no IND or SGP player or pair appears in it. Three entrants (Darya Astakhova, Alevtina Ibragimova, Anastasia Zakharova) have no country flag shown on the page, so they are not recorded either way."
     },
     {
       "id": "bwf-upcoming:japan-masters-2026",
