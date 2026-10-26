@@ -57441,6 +57441,429 @@
           "readOn": "2026-10-26"
         }
       ]
+    },
+    {
+      "id": "wrestling-results:world-championships-2026",
+      "name": "2026 World Wrestling Championships",
+      "shortName": "World Championships",
+      "sport": "WRESTLING",
+      "ageCategory": "SENIOR",
+      "level": "MAJOR",
+      "officialTierName": "World Championships",
+      "location": "Astana, Kazakhstan",
+      "medals": true,
+      "timeZone": "Asia/Almaty",
+      "start": "2026-10-24",
+      "end": "2026-11-01",
+      "status": "IN_PROGRESS",
+      "coverage": "India's Greco-Roman wrestlers in all ten weights, one entry each: every bout the page shows. Men's freestyle and women's freestyle have not started yet on the schedule (women's freestyle 50-57-65-76 kg finals are the evening of 27 October, the rest later), and none of those weight-class pages exist on Wikipedia yet, so nothing is recorded for freestyle or women's freestyle this run. No Singapore entry was found in any Greco-Roman weight.",
+      "sources": [
+        {
+          "label": "2026 World Wrestling Championships (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships",
+          "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's Greco-Roman 55 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_55_kg",
+          "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's Greco-Roman 60 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_60_kg",
+          "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's Greco-Roman 63 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_63_kg",
+          "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's Greco-Roman 67 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_67_kg",
+          "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's Greco-Roman 72 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_72_kg",
+          "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's Greco-Roman 77 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_77_kg",
+          "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's Greco-Roman 82 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_82_kg",
+          "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's Greco-Roman 87 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_87_kg",
+          "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's Greco-Roman 97 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_97_kg",
+          "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's Greco-Roman 130 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_130_kg",
+          "readOn": "2026-10-26"
+        }
+      ],
+      "notes": "Dates come from each weight's infobox range (first day = early rounds and quarterfinals, second day = repechage, bronze bouts and the final), since no page gives a per-bout date. The 63, 67 and 87 kg finals have not been decided yet (infobox medal fields blank on the read date); their Indian wrestlers were already eliminated in the round of 32 regardless, since their round-of-32 opponents had already lost before reaching the final. No match carried the fall mark (F) for an Indian wrestler, so no method is recorded for any of them. Lalit Sehrawat (55 kg) had a bye into the round of 16; the bye itself is not recorded as a match.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "GR55",
+          "disciplineName": "Men's Greco-Roman 55 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Lalit Sehrawat"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Ömer Halis Recep"
+              ],
+              "opponentCountry": "TUR",
+              "scores": [
+                [
+                  9,
+                  7
+                ]
+              ],
+              "date": "2026-10-24",
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Payam Ahmadi"
+              ],
+              "opponentCountry": "IRI",
+              "scores": [
+                [
+                  0,
+                  9
+                ]
+              ],
+              "date": "2026-10-24",
+              "time": null
+            },
+            {
+              "round": "REP2",
+              "outcome": "WIN",
+              "opponent": [
+                "Max Nowry"
+              ],
+              "opponentCountry": "USA",
+              "scores": [
+                [
+                  7,
+                  0
+                ]
+              ],
+              "date": "2026-10-25",
+              "time": null
+            },
+            {
+              "round": "3P",
+              "outcome": "LOSS",
+              "opponent": [
+                "Iskhar Kurbayev"
+              ],
+              "opponentCountry": "KAZ",
+              "scores": [
+                [
+                  0,
+                  9
+                ]
+              ],
+              "date": "2026-10-25",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "GR60",
+          "disciplineName": "Men's Greco-Roman 60 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Harsh"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Kurmanbek Zhaparov"
+              ],
+              "opponentCountry": "KGZ",
+              "scores": [
+                [
+                  0,
+                  9
+                ]
+              ],
+              "date": "2026-10-24",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "GR63",
+          "disciplineName": "Men's Greco-Roman 63 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Sahil Kadyan"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Edmond Nazaryan"
+              ],
+              "opponentCountry": "BUL",
+              "scores": [
+                [
+                  0,
+                  7
+                ]
+              ],
+              "date": "2026-10-26",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "GR67",
+          "disciplineName": "Men's Greco-Roman 67 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Sachin Sahrawat"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Chung Han-jae"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  5,
+                  6
+                ]
+              ],
+              "date": "2026-10-26",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "GR72",
+          "disciplineName": "Men's Greco-Roman 72 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Karanjit Singh"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Rintaro Sogabe"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  2,
+                  3
+                ]
+              ],
+              "date": "2026-10-25",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "GR77",
+          "disciplineName": "Men's Greco-Roman 77 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Lovepreet Singh"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Doniyorkhon Nakibov"
+              ],
+              "opponentCountry": "UZB",
+              "scores": [
+                [
+                  0,
+                  8
+                ]
+              ],
+              "date": "2026-10-24",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "GR82",
+          "disciplineName": "Men's Greco-Roman 82 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Prince"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Viktor Nemeš"
+              ],
+              "opponentCountry": "SRB",
+              "scores": [
+                [
+                  1,
+                  3
+                ]
+              ],
+              "date": "2026-10-24",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "GR87",
+          "disciplineName": "Men's Greco-Roman 87 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Sunil Kumar"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Exauce Mukubu"
+              ],
+              "opponentCountry": "NOR",
+              "scores": [
+                [
+                  0,
+                  9
+                ]
+              ],
+              "date": "2026-10-26",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "GR97",
+          "disciplineName": "Men's Greco-Roman 97 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Nitesh Siwach"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Anton Vieweg"
+              ],
+              "opponentCountry": "GER",
+              "scores": [
+                [
+                  0,
+                  8
+                ]
+              ],
+              "date": "2026-10-25",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "GR130",
+          "disciplineName": "Men's Greco-Roman 130 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Joginder Rathee"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Rıza Kayaalp"
+              ],
+              "opponentCountry": "TUR",
+              "scores": [
+                [
+                  0,
+                  9
+                ]
+              ],
+              "date": "2026-10-25",
+              "time": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
