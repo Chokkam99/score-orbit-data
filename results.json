@@ -57464,12 +57464,12 @@
       "start": "2026-10-24",
       "end": "2026-11-01",
       "status": "IN_PROGRESS",
-      "coverage": "India's Greco-Roman wrestlers in all ten weights, one entry each: every bout the page shows. Men's freestyle and women's freestyle have not started yet on the schedule (women's freestyle 50-57-65-76 kg finals are the evening of 27 October, the rest later), and none of those weight-class pages exist on Wikipedia yet, so nothing is recorded for freestyle or women's freestyle this run. No Singapore entry was found in any Greco-Roman weight.",
+      "coverage": "India's Greco-Roman wrestlers in all ten weights (finished), one entry each, and India's and Singapore's women's freestyle entries in the 50, 57, 65 and 76 kg weights contested so far (qualification and semifinals on 27 October; finals and repechage follow on 28 October): every bout the page shows. Men's freestyle and the remaining women's freestyle weights (53, 55, 59, 62, 68, 72 kg) have not started on the schedule yet, and none of those weight-class pages carry brackets. No Singapore entry was found in any Greco-Roman weight.",
       "sources": [
         {
           "label": "2026 World Wrestling Championships (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships",
-          "readOn": "2026-10-26"
+          "readOn": "2026-10-27"
         },
         {
           "label": "2026 World Wrestling Championships - Men's Greco-Roman 55 kg (Wikipedia)",
@@ -57520,9 +57520,29 @@
           "label": "2026 World Wrestling Championships - Men's Greco-Roman 130 kg (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_Greco-Roman_130_kg",
           "readOn": "2026-10-26"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Women's freestyle 50 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_50_kg",
+          "readOn": "2026-10-27"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Women's freestyle 57 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_57_kg",
+          "readOn": "2026-10-27"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Women's freestyle 65 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_65_kg",
+          "readOn": "2026-10-27"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Women's freestyle 76 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_76_kg",
+          "readOn": "2026-10-27"
         }
       ],
-      "notes": "Dates come from each weight's infobox range (first day = early rounds and quarterfinals, second day = repechage, bronze bouts and the final), since no page gives a per-bout date. The 63, 67 and 87 kg finals have not been decided yet (infobox medal fields blank on the read date); their Indian wrestlers were already eliminated in the round of 32 regardless, since their round-of-32 opponents had already lost before reaching the final. No match carried the fall mark (F) for an Indian wrestler, so no method is recorded for any of them. Lalit Sehrawat (55 kg) had a bye into the round of 16; the bye itself is not recorded as a match.",
+      "notes": "Dates come from each weight's infobox range (first day = early rounds and quarterfinals, second day = repechage, bronze bouts and the final), since no page gives a per-bout date. The 63, 67 and 87 kg finals have not been decided yet (infobox medal fields blank on the read date); their Indian wrestlers were already eliminated in the round of 32 regardless, since their round-of-32 opponents had already lost before reaching the final. No match carried the fall mark (F) for an Indian wrestler, so no method is recorded for any of them. Lalit Sehrawat (55 kg) had a bye into the round of 16; the bye itself is not recorded as a match. Neha Sharma (57 kg, IND) and Danielle Lim (57 kg, SGP) are eliminated: both lost in the round of 32/16 to opponents (Iryna Kurachkina, Mia Friesen) who themselves lost before the final. Rajnita Jangra (65 kg, IND) lost in the round of 16 to Irina Rîngaci, who reached the final, so she is still in and scheduled for repechage round 1 on 28 October. Neelam Sirohi (50 kg, IND) and Kajal Dhochak (76 kg, IND) both reached their event finals, scheduled for 28 October. The validator's IOC_CODES list has no code for Belarus; Natallia Varakina's and Iryna Kurachkina's opponentCountry is left null until that list adds one, rather than guessed.",
       "entries": [
         {
           "country": "IND",
@@ -57867,6 +57887,278 @@
                 ]
               ],
               "date": "2026-10-25",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WW50",
+          "disciplineName": "Women's freestyle 50 kg",
+          "gender": "W",
+          "kind": "SINGLE",
+          "athletes": [
+            "Neelam Sirohi"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Natallia Varakina"
+              ],
+              "opponentCountry": null,
+              "scores": [
+                [
+                  6,
+                  0
+                ]
+              ],
+              "date": "2026-10-27",
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WALKOVER_WIN",
+              "opponent": [
+                "Elizaveta Smirnova"
+              ],
+              "opponentCountry": "RUS",
+              "scores": [],
+              "date": "2026-10-27",
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "WIN",
+              "opponent": [
+                "Zeinep Bayanova"
+              ],
+              "opponentCountry": "KAZ",
+              "scores": [
+                [
+                  7,
+                  3
+                ]
+              ],
+              "date": "2026-10-27",
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Yui Susaki"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [],
+              "date": "2026-10-28",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WW57",
+          "disciplineName": "Women's freestyle 57 kg",
+          "gender": "W",
+          "kind": "SINGLE",
+          "athletes": [
+            "Neha Sharma"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Achouak Djamila Tekouk"
+              ],
+              "opponentCountry": "ALG",
+              "scores": [
+                [
+                  4,
+                  2
+                ]
+              ],
+              "date": "2026-10-27",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Iryna Kurachkina"
+              ],
+              "opponentCountry": null,
+              "scores": [
+                [
+                  1,
+                  4
+                ]
+              ],
+              "date": "2026-10-27",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WW57",
+          "disciplineName": "Women's freestyle 57 kg",
+          "gender": "W",
+          "kind": "SINGLE",
+          "athletes": [
+            "Danielle Lim"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Mia Friesen"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [
+                [
+                  0,
+                  10
+                ]
+              ],
+              "date": "2026-10-27",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WW65",
+          "disciplineName": "Women's freestyle 65 kg",
+          "gender": "W",
+          "kind": "SINGLE",
+          "athletes": [
+            "Rajnita Jangra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Kateryna Zelenykh"
+              ],
+              "opponentCountry": "ROU",
+              "scores": [
+                [
+                  8,
+                  6
+                ]
+              ],
+              "date": "2026-10-27",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Irina Rîngaci"
+              ],
+              "opponentCountry": "MDA",
+              "scores": [
+                [
+                  0,
+                  10
+                ]
+              ],
+              "date": "2026-10-27",
+              "time": null
+            },
+            {
+              "round": "REP1",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Nana Ikehata"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [],
+              "date": "2026-10-28",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WW76",
+          "disciplineName": "Women's freestyle 76 kg",
+          "gender": "W",
+          "kind": "SINGLE",
+          "athletes": [
+            "Kajal Dhochak"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Kamilė Griškienė"
+              ],
+              "opponentCountry": "LTU",
+              "scores": [
+                [
+                  5,
+                  0
+                ]
+              ],
+              "method": "FALL",
+              "date": "2026-10-27",
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Enkh-Amaryn Davaanasan"
+              ],
+              "opponentCountry": "MGL",
+              "scores": [
+                [
+                  9,
+                  2
+                ]
+              ],
+              "date": "2026-10-27",
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "WIN",
+              "opponent": [
+                "Aiperi Medet Kyzy"
+              ],
+              "opponentCountry": "KGZ",
+              "scores": [
+                [
+                  10,
+                  7
+                ]
+              ],
+              "date": "2026-10-27",
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Anastasiya Alpyeyeva"
+              ],
+              "opponentCountry": "UKR",
+              "scores": [],
+              "date": "2026-10-28",
               "time": null
             }
           ]
