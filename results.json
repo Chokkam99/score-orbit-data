@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-26",
+  "updatedOn": "2026-10-27",
   "sport": "BADMINTON",
   "names": [
     {
@@ -278,6 +278,14 @@
       "name": "Viswa Tej Gobburu",
       "aliases": [
         "Viswatej Gobburu"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "CAN",
+      "name": "Wen Yu Zhang",
+      "aliases": [
+        "Wenyu Zhang"
       ]
     }
   ],
