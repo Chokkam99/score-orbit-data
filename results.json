@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-27",
+  "updatedOn": "2026-10-28",
   "sport": "BADMINTON",
   "names": [
     {
@@ -58203,6 +58203,1900 @@
               "scores": [],
               "date": "2026-10-27",
               "time": "19:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wtt-results:asian-table-tennis-championships-2026",
+      "name": "2026 Asian Table Tennis Championships",
+      "shortName": "Asian Table Tennis Championships",
+      "sport": "TABLE_TENNIS",
+      "ageCategory": "SENIOR",
+      "level": "MAJOR",
+      "officialTierName": "ITTF-ATTU Asian Table Tennis Championships",
+      "location": "Tashkent, Uzbekistan",
+      "medals": true,
+      "timeZone": "Asia/Tashkent",
+      "start": "2026-10-19",
+      "end": "2026-10-25",
+      "status": "FINISHED",
+      "coverage": "Men's singles, women's singles, men's doubles and mixed doubles main draws with every Indian and Singaporean entry and match shown. Qualification playoff matches for 2027 World Championship continental spots, played after a Round of 16 or Round of 32 loss, are not captured (no round code in this data represents them). Women's doubles and the men's/women's team events were not checked due to the page budget; the team events' medal table shows no Indian or Singaporean medal, but non-medalling team participation was not verified.",
+      "sources": [
+        {
+          "label": "2026 Asian Table Tennis Championships (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Asian_Table_Tennis_Championships",
+          "readOn": "2026-10-28"
+        },
+        {
+          "label": "2026 Asian Table Tennis Championships - Mixed doubles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Asian_Table_Tennis_Championships_%E2%80%93_Mixed_doubles",
+          "readOn": "2026-10-28"
+        },
+        {
+          "label": "2026 Asian Table Tennis Championships - Men's doubles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Asian_Table_Tennis_Championships_%E2%80%93_Men%27s_doubles",
+          "readOn": "2026-10-28"
+        },
+        {
+          "label": "2026 Asian Table Tennis Championships - Men's singles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Asian_Table_Tennis_Championships_%E2%80%93_Men%27s_singles",
+          "readOn": "2026-10-28"
+        },
+        {
+          "label": "2026 Asian Table Tennis Championships - Women's singles (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Asian_Table_Tennis_Championships_%E2%80%93_Women%27s_singles",
+          "readOn": "2026-10-28"
+        }
+      ],
+      "notes": "Backfill. Match dates/times are not shown per round in the source and are left null. Chua Josh's (SGP, men's singles) Round of 64 win is not recorded: the Wikipedia draw template's game 3 and game 4 point totals for that match are internally inconsistent (the side marked as winning each game has the lower of the two listed scores), so the exact result could not be verified; his subsequent Round of 32 loss to Wong Chun Ting is shown cleanly and is recorded. Several Round of 16/32 losers played extra qualification playoff matches for continental World Championship quota spots; these are not recorded since no round code in this schema represents them, and recording them would also conflict with the knockout-loss-ends-the-run check.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Harmeet Desai",
+            "Yashaswini Ghorpade"
+          ],
+          "seed": 4,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Muhammad Negara",
+                "Citra Rasmi"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  14,
+                  12
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Hsu Hsien-Chia",
+                "Wu Ying-Syuan"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Park Ganghyeon",
+                "Lee Daeun"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  9
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Sora Matsushima",
+                "Miwa Harimoto"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Payas Jain",
+            "Syndrela Das"
+          ],
+          "seed": 6,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Shokhrukh Iskandarov",
+                "Arujan Kamalova"
+              ],
+              "opponentCountry": "UZB",
+              "scores": [
+                [
+                  11,
+                  1
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  8
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Kuo Guan-Hong",
+                "Yeh Yi-Tian"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  2
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Huang Youzheng",
+                "Chen Yi"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  3,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "XD",
+          "athletes": [
+            "Izaac Quek",
+            "Loy Ming Ying"
+          ],
+          "seed": 11,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Muhammad Junindra",
+                "Almaira Nebuchadnezzar"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  8
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Mohammed Abdulwahhab",
+                "Aia Mohamed"
+              ],
+              "opponentCountry": "QAT",
+              "scores": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Wong Chun Ting",
+                "Doo Hoi Kem"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "XD",
+          "athletes": [
+            "Pang Koen",
+            "Ser Lin Qian"
+          ],
+          "seed": 13,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Sarayut Tancharoen",
+                "Jinnipa Sawettabut"
+              ],
+              "opponentCountry": "THA",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  14,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Park Ganghyeon",
+                "Lee Daeun"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MD",
+          "athletes": [
+            "Koen Pang",
+            "Izaac Quek"
+          ],
+          "seed": 4,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Nawachet Prasongpol",
+                "Nawin Mekamporn"
+              ],
+              "opponentCountry": "THA",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  3
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Nima Alamian",
+                "Noshad Alamiyan"
+              ],
+              "opponentCountry": "IRI",
+              "scores": [
+                [
+                  7,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  2
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Wong Qi Shen",
+                "Choong Javen"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  9
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Lin Shidong",
+                "Huang Youzheng"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  1,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Payas Jain",
+            "Manav Thakkar"
+          ],
+          "seed": 6,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Aidos Kenzhigulov",
+                "Sanzhar Zhubanov"
+              ],
+              "opponentCountry": "KAZ",
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Clarence Chew",
+                "Chua Josh"
+              ],
+              "opponentCountry": "SGP",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  8
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Wen Ruibo",
+                "Yuan Licen"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  3,
+                  11
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  4,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MD",
+          "athletes": [
+            "Chew Clarence",
+            "Chua Josh"
+          ],
+          "seed": 9,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Im Jin Zhen",
+                "Yap Rui Zhe"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  9
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Payas Jain",
+                "Manav Thakkar"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Manav Thakkar"
+          ],
+          "seed": 12,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "WIN",
+              "opponent": [
+                "Chun Wang"
+              ],
+              "opponentCountry": "MAC",
+              "scores": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  5
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Muhammad Junindra"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  14,
+                  12
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  8
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Koen Pang"
+              ],
+              "opponentCountry": "SGP",
+              "scores": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  8
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Xiang Peng"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  2,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Harmeet Desai"
+          ],
+          "seed": 21,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "WIN",
+              "opponent": [
+                "Ahmed Almusayebi"
+              ],
+              "opponentCountry": "UAE",
+              "scores": [
+                [
+                  11,
+                  2
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Temuulen Myandal"
+              ],
+              "opponentCountry": "MGL",
+              "scores": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  2
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Huang Youzheng"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  6,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Payas Jain"
+          ],
+          "seed": 22,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "LOSS",
+              "opponent": [
+                "Clarence Chew"
+              ],
+              "opponentCountry": "SGP",
+              "scores": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Koen Pang"
+          ],
+          "seed": 24,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "WIN",
+              "opponent": [
+                "Ghassan Al Ghassani"
+              ],
+              "opponentCountry": "OMA",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  2
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Sanzhar Zhubanov"
+              ],
+              "opponentCountry": "KAZ",
+              "scores": [
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  1
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Manav Thakkar"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  4,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Izaac Quek"
+          ],
+          "seed": 19,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "WIN",
+              "opponent": [
+                "Abdulaziz Bu Shulaybi"
+              ],
+              "opponentCountry": "KSA",
+              "scores": [
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Phakpoom Sanguansin"
+              ],
+              "opponentCountry": "THA",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Chan Baldwin Ho Wah"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  11,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Feng Yi-hsin"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  14,
+                  12
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  8,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Chua Josh"
+          ],
+          "seed": 29,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "WIN",
+              "opponent": [
+                "Vepa Meredov"
+              ],
+              "opponentCountry": "TKM",
+              "scores": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Wong Chun Ting"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  2,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Clarence Chew"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "WIN",
+              "opponent": [
+                "Payas Jain"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Salman Abuhamda"
+              ],
+              "opponentCountry": "BRN",
+              "scores": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  9
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Kirill Gerassimenko"
+              ],
+              "opponentCountry": "KAZ",
+              "scores": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  1,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Nicholas Tan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "LOSS",
+              "opponent": [
+                "Kuo Guan-hong"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  2,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Zeng Jian"
+          ],
+          "seed": 14,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Sarvinoz Mirkadirova"
+              ],
+              "opponentCountry": "KAZ",
+              "scores": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Karen Lyne"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  13,
+                  11
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  2
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Miwa Harimoto"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  5,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Tan Zhao Yun"
+          ],
+          "seed": 25,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Angelina Romanovskaya"
+              ],
+              "opponentCountry": "KAZ",
+              "scores": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  4
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Honoka Hashimoto"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  7,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  1,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Chloe Lai"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "WIN",
+              "opponent": [
+                "Komang Sudarnita"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  2,
+                  11
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  9
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Peng Yu-Han"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Syndrela Das"
+          ],
+          "seed": 23,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Fatemeh Yariseraji"
+              ],
+              "opponentCountry": "IRI",
+              "scores": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  2
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Peng Yu-Han"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  17,
+                  15
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Kuai Man"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Swastika Ghosh"
+          ],
+          "seed": 29,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "WIN",
+              "opponent": [
+                "Jana Abedali"
+              ],
+              "opponentCountry": "JOR",
+              "scores": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  3
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Sai Khoy"
+              ],
+              "opponentCountry": "BAN",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  3
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Su Tsz Tung"
+              ],
+              "opponentCountry": "HKG",
+              "scores": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Loy Ming Ying"
+          ],
+          "seed": 26,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "WIN",
+              "opponent": [
+                "Zhanerke Koshkumbayeva"
+              ],
+              "opponentCountry": "KAZ",
+              "scores": [
+                [
+                  13,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  6
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Qin Yuxuan"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  12,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Siti Aminah"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "LOSS",
+              "opponent": [
+                "Lee Zion"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  10,
+                  12
+                ],
+                [
+                  3,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Yashaswini Ghorpade"
+          ],
+          "seed": 20,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Lee Zion"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  3,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "WS",
+          "athletes": [
+            "Ser Lin Qian"
+          ],
+          "seed": 19,
+          "matches": [
+            {
+              "round": "R128",
+              "outcome": "WIN",
+              "opponent": [
+                "Sonam Soma"
+              ],
+              "opponentCountry": "BAN",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  1
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R64",
+              "outcome": "LOSS",
+              "opponent": [
+                "Mahshid Ashtari"
+              ],
+              "opponentCountry": "IRI",
+              "scores": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  10,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
             }
           ]
         }
