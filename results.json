@@ -57488,12 +57488,12 @@
       "start": "2026-10-24",
       "end": "2026-11-01",
       "status": "IN_PROGRESS",
-      "coverage": "India's Greco-Roman wrestlers in all ten weights (finished), one entry each, and India's and Singapore's women's freestyle entries in the 50, 57, 65 and 76 kg weights contested so far (qualification and semifinals on 27 October; finals and repechage follow on 28 October): every bout the page shows. Men's freestyle and the remaining women's freestyle weights (53, 55, 59, 62, 68, 72 kg) have not started on the schedule yet, and none of those weight-class pages carry brackets. No Singapore entry was found in any Greco-Roman weight.",
+      "coverage": "India's and Singapore's wrestlers in all ten Greco-Roman weights and all ten women's freestyle weights contested so far: every bout the page shows. Women's freestyle 55 and 59 kg started on 29 October (quarterfinals and semifinals that day); 59 kg's final is scheduled for 30 October. Men's freestyle has not started on the schedule yet and none of those weight-class pages carry brackets.",
       "sources": [
         {
           "label": "2026 World Wrestling Championships (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships",
-          "readOn": "2026-10-28"
+          "readOn": "2026-10-29"
         },
         {
           "label": "2026 World Wrestling Championships - Men's Greco-Roman 55 kg (Wikipedia)",
@@ -57578,15 +57578,25 @@
         {
           "label": "2026 World Wrestling Championships - Women's freestyle 68 kg (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_68_kg",
-          "readOn": "2026-10-28"
+          "readOn": "2026-10-29"
         },
         {
           "label": "2026 World Wrestling Championships - Women's freestyle 72 kg (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_72_kg",
-          "readOn": "2026-10-28"
+          "readOn": "2026-10-29"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Women's freestyle 55 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_55_kg",
+          "readOn": "2026-10-29"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Women's freestyle 59 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Women%27s_freestyle_59_kg",
+          "readOn": "2026-10-29"
         }
       ],
-      "notes": "Dates come from each weight's infobox range (first day = early rounds and quarterfinals, second day = repechage, bronze bouts and the final), since no page gives a per-bout date. The 63, 67 and 87 kg finals are now decided; India's entries in those weights were already eliminated in the round of 32, since their round-of-32 opponents had already lost before reaching the final, so no further matches were added for them. No match carried the fall mark (F) for an Indian wrestler except where noted. Lalit Sehrawat (55 kg) had a bye into the round of 16; the bye itself is not recorded as a match, as with Neha Sangwan (62 kg) and Srishti Janghu's and Tanu Sharma's round-of-32 byes in 68 and 72 kg where the bracket shows no round-of-32 opponent for them. Neelam Sirohi (50 kg, IND) lost the final by fall and takes silver. Kajal Dhochak (76 kg, IND) lost the final on points and takes silver. Rajnita Jangra (65 kg, IND) lost her repechage match to Nana Ikehata (JPN), who went on to win bronze; her run is over. Nishu Bhanwala (53 kg, IND) and Neha Sangwan (62 kg, IND) are eliminated: both lost to opponents (Andreea Ana, Amina Tandelova) who themselves lost before the final, so neither qualifies for repechage. Srishti Janghu (68 kg, IND) and Tanu Sharma (72 kg, IND) lost directly to a finalist (Meerim Zhumanazarova, Wiktoria Chołuj) and are still in, scheduled for their one repechage round on 29 October (recorded as REP1, matching the one repechage round these two weights play before the bronze matches, as already done for Rajnita Jangra). The validator's IOC_CODES list has no code for Belarus; Natallia Varakina's and Iryna Kurachkina's opponentCountry is left null until that list adds one, rather than guessed. Women's freestyle 55 and 59 kg and all men's freestyle weights had not reached their qualification rounds on the page as read on 28 October.",
+      "notes": "Dates come from each weight's infobox range (first day = early rounds and quarterfinals, second day = repechage, bronze bouts and the final), since no page gives a per-bout date. The 63, 67 and 87 kg finals are now decided; India's entries in those weights were already eliminated in the round of 32, since their round-of-32 opponents had already lost before reaching the final, so no further matches were added for them. No match carried the fall mark (F) for an Indian wrestler except where noted. Lalit Sehrawat (55 kg) had a bye into the round of 16; the bye itself is not recorded as a match, as with Neha Sangwan (62 kg) and Srishti Janghu's and Tanu Sharma's round-of-32 byes in 68 and 72 kg where the bracket shows no round-of-32 opponent for them. Neelam Sirohi (50 kg, IND) lost the final by fall and takes silver. Kajal Dhochak (76 kg, IND) lost the final on points and takes silver. Rajnita Jangra (65 kg, IND) lost her repechage match to Nana Ikehata (JPN), who went on to win bronze; her run is over. Nishu Bhanwala (53 kg, IND) and Neha Sangwan (62 kg, IND) are eliminated: both lost to opponents (Andreea Ana, Amina Tandelova) who themselves lost before the final, so neither qualifies for repechage. Srishti Janghu (68 kg, IND) and Tanu Sharma (72 kg, IND) lost directly to a finalist (Meerim Zhumanazarova, Wiktoria Chołuj) and are still in, scheduled for their one repechage round on 29 October (recorded as REP1, matching the one repechage round these two weights play before the bronze matches, as already done for Rajnita Jangra). The validator's IOC_CODES list has no code for Belarus; Natallia Varakina's and Iryna Kurachkina's opponentCountry is left null until that list adds one, rather than guessed. Women's freestyle 55 and 59 kg and all men's freestyle weights had not reached their qualification rounds on the page as read on 28 October. Women's freestyle 55 kg began on 29 October: Ahilya Shatrughn Shinde (IND) lost her quarterfinal to Tuba Demir (TUR), who did not reach the final, so she does not qualify for repechage and is eliminated. Women's freestyle 59 kg also began on 29 October: Manisha Bhanwala (IND) won through to the final, scheduled 30 October against Abigail Nette (USA). Srishti Janghu (68 kg, IND) lost her repechage match to Kennedy Blades (USA) on 29 October; her run is over. Tanu Sharma (72 kg, IND) won her repechage match against Zaineb Sghaier (TUN) and then the bronze match against Precious Wieser (USA), both on 29 October, and takes bronze.",
       "entries": [
         {
           "country": "IND",
@@ -58345,16 +58355,22 @@
             },
             {
               "round": "REP1",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Kennedy Blades"
               ],
               "opponentCountry": "USA",
-              "scores": [],
+              "scores": [
+                [
+                  1,
+                  12
+                ]
+              ],
               "date": "2026-10-29",
               "time": null
             }
-          ]
+          ],
+          "eliminated": true
         },
         {
           "country": "IND",
@@ -58385,13 +58401,154 @@
             },
             {
               "round": "REP1",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Zaineb Sghaier"
               ],
               "opponentCountry": "TUN",
-              "scores": [],
+              "scores": [
+                [
+                  5,
+                  4
+                ]
+              ],
               "date": "2026-10-29",
+              "time": null
+            },
+            {
+              "round": "3P",
+              "outcome": "WIN",
+              "opponent": [
+                "Precious Wieser"
+              ],
+              "opponentCountry": "USA",
+              "scores": [
+                [
+                  9,
+                  5
+                ]
+              ],
+              "date": "2026-10-29",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WW55",
+          "disciplineName": "Women's freestyle 55 kg",
+          "gender": "W",
+          "kind": "SINGLE",
+          "athletes": [
+            "Ahilya Shatrughn Shinde"
+          ],
+          "seed": null,
+          "eliminated": true,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Yaynelis Sanz"
+              ],
+              "opponentCountry": "CUB",
+              "scores": [
+                [
+                  8,
+                  1
+                ]
+              ],
+              "date": "2026-10-29",
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Tuba Demir"
+              ],
+              "opponentCountry": "TUR",
+              "scores": [
+                [
+                  6,
+                  9
+                ]
+              ],
+              "date": "2026-10-29",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WW59",
+          "disciplineName": "Women's freestyle 59 kg",
+          "gender": "W",
+          "kind": "SINGLE",
+          "athletes": [
+            "Manisha Bhanwala"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Laurence Beauregard"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [
+                [
+                  6,
+                  2
+                ]
+              ],
+              "method": "FALL",
+              "date": "2026-10-29",
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Khürelkhüügiin Bolortuyaa"
+              ],
+              "opponentCountry": "MGL",
+              "scores": [
+                [
+                  6,
+                  0
+                ]
+              ],
+              "date": "2026-10-29",
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "WIN",
+              "opponent": [
+                "Altyn Shagayeva"
+              ],
+              "opponentCountry": "KAZ",
+              "scores": [
+                [
+                  10,
+                  0
+                ]
+              ],
+              "method": "FALL",
+              "date": "2026-10-29",
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Abigail Nette"
+              ],
+              "opponentCountry": "USA",
+              "scores": [],
+              "date": "2026-10-30",
               "time": null
             }
           ]
