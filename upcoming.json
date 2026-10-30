@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-26",
+  "updatedOn": "2026-10-30",
   "sport": "BADMINTON",
   "events": [
     {
@@ -347,16 +347,16 @@
       "location": "Montpellier, France",
       "start": "2026-10-27",
       "end": "2026-11-01",
-      "entriesPublished": false,
+      "entriesPublished": true,
       "entries": [],
       "sources": [
         {
           "label": "WTT Champions Montpellier 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/WTT_Champions_Montpellier_2026",
-          "readOn": "2026-10-19"
+          "readOn": "2026-10-30"
         }
       ],
-      "notes": "Draw not yet published on Wikipedia as of the read date; worldtabletennis.com cannot be read directly (JavaScript app with no content on a plain fetch)."
+      "notes": "Draw published, no IND or SGP player in the singles draws."
     },
     {
       "id": "wtt-upcoming:wtt-champions-frankfurt-2026",

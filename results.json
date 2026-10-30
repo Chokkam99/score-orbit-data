@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-29",
+  "updatedOn": "2026-10-30",
   "sport": "BADMINTON",
   "names": [
     {
@@ -60556,11 +60556,35 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Kiran George"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  18,
+                  21
+                ],
+                [
+                  21,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Kalle Koljonen"
+              ],
+              "opponentCountry": "FIN",
               "scores": [],
               "date": null,
               "time": null
@@ -60597,12 +60621,25 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Lakshya Sen"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -60762,11 +60799,31 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Rosy Oktavia Pancasari"
               ],
               "opponentCountry": "FRA",
+              "scores": [
+                [
+                  21,
+                  9
+                ],
+                [
+                  21,
+                  6
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Amalie Schulz"
+              ],
+              "opponentCountry": "DEN",
               "scores": [],
               "date": null,
               "time": null
@@ -60807,11 +60864,31 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Frederikke Østergaard"
               ],
               "opponentCountry": "DEN",
+              "scores": [
+                [
+                  21,
+                  11
+                ],
+                [
+                  21,
+                  19
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Anmol Kharb"
+              ],
+              "opponentCountry": "IND",
               "scores": [],
               "date": null,
               "time": null
@@ -60848,11 +60925,35 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Line Christophersen"
               ],
               "opponentCountry": "DEN",
+              "scores": [
+                [
+                  11,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  25,
+                  23
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Unnati Hooda"
+              ],
+              "opponentCountry": "IND",
               "scores": [],
               "date": null,
               "time": null
@@ -60889,12 +60990,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Line Kjærsfeldt"
               ],
               "opponentCountry": "DEN",
-              "scores": [],
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  19,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -60934,12 +61044,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Wen Yu Zhang"
               ],
               "opponentCountry": "CAN",
-              "scores": [],
+              "scores": [
+                [
+                  11,
+                  21
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -61048,7 +61167,7 @@
         {
           "label": "2026 Hylo Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Hylo_Open",
-          "readOn": "2026-10-29"
+          "readOn": "2026-10-30"
         }
       ],
       "notes": "Exact per-match dates and times are not given on the draw page, only the event's 27 October to 1 November window. Ayush Shetty (seed 8) withdrew before the draw and has no recorded match. No IND or SGP pair appears in the doubles draws."
