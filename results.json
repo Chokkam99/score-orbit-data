@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-30",
+  "updatedOn": "2026-10-31",
   "sport": "BADMINTON",
   "names": [
     {
@@ -60967,11 +60967,35 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Kalle Koljonen"
               ],
               "opponentCountry": "FIN",
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  21,
+                  17
+                ],
+                [
+                  21,
+                  13
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Toma Junior Popov"
+              ],
+              "opponentCountry": "FRA",
               "scores": [],
               "date": null,
               "time": null
@@ -61074,9 +61098,9 @@
               "round": "R32",
               "outcome": "LOSS",
               "opponent": [
-                "Arnaud Merklé"
+                "Chi Yu-jen"
               ],
-              "opponentCountry": "FRA",
+              "opponentCountry": "TPE",
               "scores": [
                 [
                   15,
@@ -61206,11 +61230,31 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Amalie Schulz"
               ],
               "opponentCountry": "DEN",
+              "scores": [
+                [
+                  21,
+                  12
+                ],
+                [
+                  21,
+                  10
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Anmol Kharb"
+              ],
+              "opponentCountry": "IND",
               "scores": [],
               "date": null,
               "time": null
@@ -61271,12 +61315,25 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Anmol Kharb"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  16,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -61336,9 +61393,33 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Unnati Hooda"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  18,
+                  21
+                ],
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "P. V. Sindhu"
               ],
               "opponentCountry": "IND",
               "scores": [],
@@ -61554,7 +61635,7 @@
         {
           "label": "2026 Hylo Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Hylo_Open",
-          "readOn": "2026-10-30"
+          "readOn": "2026-10-31"
         }
       ],
       "notes": "Exact per-match dates and times are not given on the draw page, only the event's 27 October to 1 November window. Ayush Shetty (seed 8) withdrew before the draw and has no recorded match. No IND or SGP pair appears in the doubles draws."
