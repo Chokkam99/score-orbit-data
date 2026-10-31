@@ -57488,12 +57488,12 @@
       "start": "2026-10-24",
       "end": "2026-11-01",
       "status": "IN_PROGRESS",
-      "coverage": "India's and Singapore's wrestlers in all ten Greco-Roman weights, all ten women's freestyle weights and all ten men's freestyle weights contested so far: every bout the page shows. Men's freestyle started on 29 October (65 and 97 kg) and continued on 30 October (61, 70, 86 and 125 kg); 57, 74, 79 and 92 kg had not reached their qualification rounds on the page as read on 30 October.",
+      "coverage": "India's and Singapore's wrestlers in all ten Greco-Roman weights, all ten women's freestyle weights and all ten men's freestyle weights contested so far: every bout the page shows. Men's freestyle 61, 70, 86 and 125 kg finished their repechage and bronze bouts on 31 October; 57, 74, 79 and 92 kg reached only the qualification round on 31 October, repechage and finals are on 1 November. Singapore's Gary Chow (men's freestyle 86 kg) lost his only bout in a preliminary round below the Round of 32 (Wikipedia calls it a Round of 64); WRESTLING's rounds in rules.json start at R32, so that bout has no round code here and is not recorded, matching how Pushpender Dalal's own preliminary-round win at the same weight was already left out.",
       "sources": [
         {
           "label": "2026 World Wrestling Championships (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships",
-          "readOn": "2026-10-30"
+          "readOn": "2026-10-31"
         },
         {
           "label": "2026 World Wrestling Championships - Men's Greco-Roman 55 kg (Wikipedia)",
@@ -57598,7 +57598,7 @@
         {
           "label": "2026 World Wrestling Championships - Men's freestyle 61 kg (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_freestyle_61_kg",
-          "readOn": "2026-10-30"
+          "readOn": "2026-10-31"
         },
         {
           "label": "2026 World Wrestling Championships - Men's freestyle 65 kg (Wikipedia)",
@@ -57613,7 +57613,7 @@
         {
           "label": "2026 World Wrestling Championships - Men's freestyle 86 kg (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_freestyle_86_kg",
-          "readOn": "2026-10-30"
+          "readOn": "2026-10-31"
         },
         {
           "label": "2026 World Wrestling Championships - Men's freestyle 97 kg (Wikipedia)",
@@ -57623,10 +57623,30 @@
         {
           "label": "2026 World Wrestling Championships - Men's freestyle 125 kg (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_freestyle_125_kg",
-          "readOn": "2026-10-30"
+          "readOn": "2026-10-31"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's freestyle 57 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_freestyle_57_kg",
+          "readOn": "2026-10-31"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's freestyle 74 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_freestyle_74_kg",
+          "readOn": "2026-10-31"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's freestyle 79 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_freestyle_79_kg",
+          "readOn": "2026-10-31"
+        },
+        {
+          "label": "2026 World Wrestling Championships - Men's freestyle 92 kg (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_World_Wrestling_Championships_%E2%80%93_Men%27s_freestyle_92_kg",
+          "readOn": "2026-10-31"
         }
       ],
-      "notes": "Dates come from each weight's infobox range (first day = early rounds and quarterfinals, second day = repechage, bronze bouts and the final), since no page gives a per-bout date. The 63, 67 and 87 kg finals are now decided; India's entries in those weights were already eliminated in the round of 32, since their round-of-32 opponents had already lost before reaching the final, so no further matches were added for them. No match carried the fall mark (F) for an Indian wrestler except where noted. Lalit Sehrawat (55 kg) had a bye into the round of 16; the bye itself is not recorded as a match, as with Neha Sangwan (62 kg) and Srishti Janghu's and Tanu Sharma's round-of-32 byes in 68 and 72 kg where the bracket shows no round-of-32 opponent for them. Neelam Sirohi (50 kg, IND) lost the final by fall and takes silver. Kajal Dhochak (76 kg, IND) lost the final on points and takes silver. Rajnita Jangra (65 kg, IND) lost her repechage match to Nana Ikehata (JPN), who went on to win bronze; her run is over. Nishu Bhanwala (53 kg, IND) and Neha Sangwan (62 kg, IND) are eliminated: both lost to opponents (Andreea Ana, Amina Tandelova) who themselves lost before the final, so neither qualifies for repechage. Srishti Janghu (68 kg, IND) and Tanu Sharma (72 kg, IND) lost directly to a finalist (Meerim Zhumanazarova, Wiktoria Chołuj) and are still in, scheduled for their one repechage round on 29 October (recorded as REP1, matching the one repechage round these two weights play before the bronze matches, as already done for Rajnita Jangra). The validator's IOC_CODES list has no code for Belarus; Natallia Varakina's and Iryna Kurachkina's opponentCountry is left null until that list adds one, rather than guessed. Women's freestyle 55 and 59 kg and all men's freestyle weights had not reached their qualification rounds on the page as read on 28 October. Women's freestyle 55 kg began on 29 October: Ahilya Shatrughn Shinde (IND) lost her quarterfinal to Tuba Demir (TUR), who did not reach the final, so she does not qualify for repechage and is eliminated. Women's freestyle 59 kg also began on 29 October: Manisha Bhanwala (IND) won through to the final, scheduled 30 October against Abigail Nette (USA). Srishti Janghu (68 kg, IND) lost her repechage match to Kennedy Blades (USA) on 29 October; her run is over. Tanu Sharma (72 kg, IND) won her repechage match against Zaineb Sghaier (TUN) and then the bronze match against Precious Wieser (USA), both on 29 October, and takes bronze. Manisha Bhanwala (59 kg, IND) won the final against Abigail Nette (USA) 8-6 and takes gold. Men's freestyle began on 29 October: Sujeet Kalkal (65 kg, IND) lost his quarterfinal 3-3 on criteria to Abdulmazhid Kudiev (TJK), who lost the semifinal and did not reach the final, so he does not qualify for repechage and is eliminated; Vicky Hooda (97 kg, IND) lost his quarterfinal to Arash Yoshida (JPN), who reached the final, so he went to repechage round 2 on 30 October and lost there to Hassan Yazdani (IRI), ending his run. On 30 October, Nikhil (61 kg, IND) lost his round of 16 to Ahmad Javan (IRI), who reached the final, so he goes to repechage round 2 against Marcus Blaze (USA), scheduled 31 October; Vishal Kaliraman (70 kg, IND) lost his round of 32 to Ferhat Kılıç (TUR), who did not reach the final, so he does not qualify for repechage and is eliminated; Pushpender Dalal (86 kg, IND) won his round of 64 match 10-8 (not recorded: wrestling's rounds in rules.json have no R64 code) then his round of 32, and lost his round of 16 to Arsenii Dzhioev (AZE), who reached the final, so he goes to repechage round 2 against Khidir Saipudinov, scheduled 31 October; Gary Chow (86 kg, SGP) lost his only match, a round of 64 bout to Cao Nan (CHN) who did not reach the final, so he is eliminated with no recordable match (wrestling's rounds have no R64 code) and is left out of entries; Jaspooran Singh (125 kg, IND) lost his round of 16 to Amir Hossein Zare (IRI), who reached the final, so he goes to repechage round 2 against Aaron Johnson (JAM), scheduled 31 October. The validator's IOC_CODES list has no code for Belarus, so Islam Guseinov's opponentCountry (Sujeet Kalkal's round of 16) is also left null. Men's freestyle 57, 74, 79 and 92 kg had not reached their qualification rounds on the page as read on 30 October.",
+      "notes": "Dates come from each weight's infobox range (first day = early rounds and quarterfinals, second day = repechage, bronze bouts and the final), since no page gives a per-bout date. The 63, 67 and 87 kg finals are now decided; India's entries in those weights were already eliminated in the round of 32, since their round-of-32 opponents had already lost before reaching the final, so no further matches were added for them. No match carried the fall mark (F) for an Indian wrestler except where noted. Lalit Sehrawat (55 kg) had a bye into the round of 16; the bye itself is not recorded as a match, as with Neha Sangwan (62 kg) and Srishti Janghu's and Tanu Sharma's round-of-32 byes in 68 and 72 kg where the bracket shows no round-of-32 opponent for them. Neelam Sirohi (50 kg, IND) lost the final by fall and takes silver. Kajal Dhochak (76 kg, IND) lost the final on points and takes silver. Rajnita Jangra (65 kg, IND) lost her repechage match to Nana Ikehata (JPN), who went on to win bronze; her run is over. Nishu Bhanwala (53 kg, IND) and Neha Sangwan (62 kg, IND) are eliminated: both lost to opponents (Andreea Ana, Amina Tandelova) who themselves lost before the final, so neither qualifies for repechage. Srishti Janghu (68 kg, IND) and Tanu Sharma (72 kg, IND) lost directly to a finalist (Meerim Zhumanazarova, Wiktoria Chołuj) and are still in, scheduled for their one repechage round on 29 October (recorded as REP1, matching the one repechage round these two weights play before the bronze matches, as already done for Rajnita Jangra). The validator's IOC_CODES list has no code for Belarus; Natallia Varakina's and Iryna Kurachkina's opponentCountry is left null until that list adds one, rather than guessed. Women's freestyle 55 and 59 kg and all men's freestyle weights had not reached their qualification rounds on the page as read on 28 October. Women's freestyle 55 kg began on 29 October: Ahilya Shatrughn Shinde (IND) lost her quarterfinal to Tuba Demir (TUR), who did not reach the final, so she does not qualify for repechage and is eliminated. Women's freestyle 59 kg also began on 29 October: Manisha Bhanwala (IND) won through to the final, scheduled 30 October against Abigail Nette (USA). Srishti Janghu (68 kg, IND) lost her repechage match to Kennedy Blades (USA) on 29 October; her run is over. Tanu Sharma (72 kg, IND) won her repechage match against Zaineb Sghaier (TUN) and then the bronze match against Precious Wieser (USA), both on 29 October, and takes bronze. Manisha Bhanwala (59 kg, IND) won the final against Abigail Nette (USA) 8-6 and takes gold. Men's freestyle began on 29 October: Sujeet Kalkal (65 kg, IND) lost his quarterfinal 3-3 on criteria to Abdulmazhid Kudiev (TJK), who lost the semifinal and did not reach the final, so he does not qualify for repechage and is eliminated; Vicky Hooda (97 kg, IND) lost his quarterfinal to Arash Yoshida (JPN), who reached the final, so he went to repechage round 2 on 30 October and lost there to Hassan Yazdani (IRI), ending his run. On 30 October, Nikhil (61 kg, IND) lost his round of 16 to Ahmad Javan (IRI), who reached the final, so he goes to repechage round 2 against Marcus Blaze (USA), scheduled 31 October; Vishal Kaliraman (70 kg, IND) lost his round of 32 to Ferhat Kılıç (TUR), who did not reach the final, so he does not qualify for repechage and is eliminated; Pushpender Dalal (86 kg, IND) won his round of 64 match 10-8 (not recorded: wrestling's rounds in rules.json have no R64 code) then his round of 32, and lost his round of 16 to Arsenii Dzhioev (AZE), who reached the final, so he goes to repechage round 2 against Khidir Saipudinov, scheduled 31 October; Gary Chow (86 kg, SGP) lost his only match, a round of 64 bout to Cao Nan (CHN) who did not reach the final, so he is eliminated with no recordable match (wrestling's rounds have no R64 code) and is left out of entries; Jaspooran Singh (125 kg, IND) lost his round of 16 to Amir Hossein Zare (IRI), who reached the final, so he goes to repechage round 2 against Aaron Johnson (JAM), scheduled 31 October. The validator's IOC_CODES list has no code for Belarus, so Islam Guseinov's opponentCountry (Sujeet Kalkal's round of 16) is also left null. Men's freestyle 57, 74, 79 and 92 kg had not reached their qualification rounds on the page as read on 30 October. On 31 October, Nikhil (61 kg, IND) lost his repechage round 2 bout 1-9 to Marcus Blaze (USA); his run is over. Pushpender Dalal (86 kg, IND) lost his repechage round 2 bout 0-11 to Khidir Saipudinov (BRN); his run is over. Jaspooran Singh (125 kg, IND) won his repechage round 2 bout 10-0 against Aaron Johnson (JAM), then lost the bronze bout 0-10 to Wyatt Hendrickson (USA); he finishes 5th. Men's freestyle 57, 74, 79 and 92 kg reached their qualification rounds on 31 October: Rahul Deswal (57 kg, IND) lost 0-10 to Islam Bazarganov (AZE); Sagar Jaglan (74 kg, IND) lost 1-3 to Magomedrasul Asluev (BRN); Saurabh Yadav (79 kg, IND) won his qualification round 12-0 against Mathayo Mahabila (KEN) then lost the round of 16 18-21 to Cesar Alvan (BRA); Sachin (92 kg, IND) lost 0-10 to Dauren Kurugliev (GRE). None of the four has a confirmed repechage fate yet; their rounds-of-32/16 conquerors need to reach the final (scheduled 1 November) before repechage eligibility is known.",
       "entries": [
         {
           "country": "IND",
@@ -58633,12 +58653,17 @@
             },
             {
               "round": "REP2",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Marcus Blaze"
               ],
               "opponentCountry": "USA",
-              "scores": [],
+              "scores": [
+                [
+                  1,
+                  9
+                ]
+              ],
               "date": "2026-10-31",
               "time": null
             }
@@ -58781,12 +58806,17 @@
             },
             {
               "round": "REP2",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Khidir Saipudinov"
               ],
               "opponentCountry": "BRN",
-              "scores": [],
+              "scores": [
+                [
+                  0,
+                  11
+                ]
+              ],
               "date": "2026-10-31",
               "time": null
             }
@@ -58915,12 +58945,165 @@
             },
             {
               "round": "REP2",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Aaron Johnson"
               ],
               "opponentCountry": "JAM",
-              "scores": [],
+              "scores": [
+                [
+                  10,
+                  0
+                ]
+              ],
+              "date": "2026-10-31",
+              "time": null
+            },
+            {
+              "round": "3P",
+              "outcome": "LOSS",
+              "opponent": [
+                "Wyatt Hendrickson"
+              ],
+              "opponentCountry": "USA",
+              "scores": [
+                [
+                  0,
+                  10
+                ]
+              ],
+              "date": "2026-10-31",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "FS57",
+          "disciplineName": "Men's freestyle 57 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Rahul Deswal"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Islam Bazarganov"
+              ],
+              "opponentCountry": "AZE",
+              "scores": [
+                [
+                  0,
+                  10
+                ]
+              ],
+              "date": "2026-10-31",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "FS74",
+          "disciplineName": "Men's freestyle 74 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Sagar Jaglan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Magomedrasul Asluev"
+              ],
+              "opponentCountry": "BRN",
+              "scores": [
+                [
+                  1,
+                  3
+                ]
+              ],
+              "date": "2026-10-31",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "FS79",
+          "disciplineName": "Men's freestyle 79 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Saurabh Yadav"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Mathayo Mahabila"
+              ],
+              "opponentCountry": "KEN",
+              "scores": [
+                [
+                  12,
+                  0
+                ]
+              ],
+              "date": "2026-10-31",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Cesar Alvan"
+              ],
+              "opponentCountry": "BRA",
+              "scores": [
+                [
+                  18,
+                  21
+                ]
+              ],
+              "date": "2026-10-31",
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "FS92",
+          "disciplineName": "Men's freestyle 92 kg",
+          "gender": "M",
+          "kind": "SINGLE",
+          "athletes": [
+            "Sachin"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Dauren Kurugliev"
+              ],
+              "opponentCountry": "GRE",
+              "scores": [
+                [
+                  0,
+                  10
+                ]
+              ],
               "date": "2026-10-31",
               "time": null
             }
