@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-31",
+  "updatedOn": "2026-11-01",
   "sport": "BADMINTON",
   "names": [
     {
@@ -61188,11 +61188,31 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Toma Junior Popov"
               ],
               "opponentCountry": "FRA",
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  21,
+                  13
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Jonatan Christie"
+              ],
+              "opponentCountry": "INA",
               "scores": [],
               "date": null,
               "time": null
@@ -61447,11 +61467,31 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Anmol Kharb"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "F",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Line Kjærsfeldt"
+              ],
+              "opponentCountry": "DEN",
               "scores": [],
               "date": null,
               "time": null
@@ -61614,12 +61654,21 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "P. V. Sindhu"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  16,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -61832,7 +61881,7 @@
         {
           "label": "2026 Hylo Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Hylo_Open",
-          "readOn": "2026-10-31"
+          "readOn": "2026-11-01"
         }
       ],
       "notes": "Exact per-match dates and times are not given on the draw page, only the event's 27 October to 1 November window. Ayush Shetty (seed 8) withdrew before the draw and has no recorded match. No IND or SGP pair appears in the doubles draws."
