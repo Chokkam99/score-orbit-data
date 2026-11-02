@@ -59134,7 +59134,7 @@
         {
           "label": "2026 Men's Asian Champions Trophy (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Men%27s_Asian_Champions_Trophy",
-          "readOn": "2026-10-31"
+          "readOn": "2026-11-02"
         }
       ],
       "notes": "Six teams in one group (BAN, CHN, IND as host, JPN, MAS, KOR); top 4 reach the semifinals, bottom 2 play the 5th place match. Pakistan withdrew over security concerns and was replaced by Bangladesh.",
@@ -59189,11 +59189,25 @@
             },
             {
               "round": "G4",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  4,
+                  2
+                ]
+              ],
               "date": "2026-11-01",
+              "time": "19:00"
+            },
+            {
+              "round": "G5",
+              "outcome": "SCHEDULED",
+              "opponent": [],
+              "opponentCountry": "KOR",
+              "scores": [],
+              "date": "2026-11-02",
               "time": "19:00"
             }
           ]

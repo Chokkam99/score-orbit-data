@@ -266,6 +266,35 @@
         }
       ],
       "notes": "Draw/entry list not yet published on the tour calendar page."
+    },
+    {
+      "id": "hockey-upcoming:asian-champions-trophy-2026-women",
+      "name": "2026 Women's Asian Champions Trophy",
+      "shortName": "Asian Champions Trophy",
+      "sport": "HOCKEY",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "Madhya Pradesh Women's Asian Champions Trophy 2026",
+      "location": "Bhopal, Madhya Pradesh, India",
+      "start": "2026-11-19",
+      "end": "2026-11-28",
+      "entriesPublished": true,
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "WT",
+          "athletes": [],
+          "seed": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026 Women's Asian Champions Trophy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Women%27s_Asian_Champions_Trophy",
+          "readOn": "2026-11-02"
+        }
+      ],
+      "notes": "Six teams in one group (CHN, IND as host, JPN, MAS, KOR, THA); top 4 reach the semifinals, bottom 2 play the 5th place match. India's group matches, all 19:00 IST at Barkheda Nathu International Sports Complex, Bhopal: MAS (19 Nov), KOR (21 Nov), THA (22 Nov, India second-named), CHN (24 Nov), JPN (25 Nov, India second-named). Semifinals, bronze and final on 27-28 Nov."
     }
   ]
 }
