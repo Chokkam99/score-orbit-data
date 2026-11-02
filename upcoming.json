@@ -1,143 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-30",
+  "updatedOn": "2026-11-02",
   "sport": "BADMINTON",
   "events": [
-    {
-      "id": "bwf-upcoming:hylo-open-2026",
-      "name": "Hylo Open 2026",
-      "shortName": "Hylo Open",
-      "sport": "BADMINTON",
-      "ageCategory": "SENIOR",
-      "level": "TOUR",
-      "officialTierName": "HSBC BWF World Tour Super 500",
-      "location": "Saarbrücken, Germany",
-      "start": "2026-10-27",
-      "end": "2026-11-01",
-      "entriesPublished": true,
-      "entries": [
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Ayush Shetty"
-          ],
-          "seed": 8
-        },
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Lakshya Sen"
-          ],
-          "seed": 7
-        },
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Prannoy H. S."
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Tharun Mannepalli"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "MS",
-          "athletes": [
-            "Kiran George"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "P. V. Sindhu"
-          ],
-          "seed": 2
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Unnati Hooda"
-          ],
-          "seed": 6
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Devika Sihag"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Aakarshi Kashyap"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Malvika Bansod"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Isharani Baruah"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Anmol Kharb"
-          ],
-          "seed": null
-        },
-        {
-          "country": "IND",
-          "discipline": "WS",
-          "athletes": [
-            "Ashmita Chaliha"
-          ],
-          "seed": null
-        },
-        {
-          "country": "SGP",
-          "discipline": "MS",
-          "athletes": [
-            "Jason Teh"
-          ],
-          "seed": null
-        }
-      ],
-      "sources": [
-        {
-          "label": "2026 Hylo Open (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_Hylo_Open",
-          "readOn": "2026-10-26"
-        }
-      ],
-      "notes": "Qualifier (Q) slots were blank on the draw page, so any IND/SGP qualifiers are not yet reflected. No IND or SGP doubles pairs appear in the draw."
-    },
     {
       "id": "bwf-upcoming:korea-open-2026",
       "name": "Korea Open 2026",
@@ -337,28 +202,6 @@
       "notes": "Hosted in Singapore, so Singaporean entries are expected, but the calendar page only shows administrative details (entry deadlines, prize money); no player entry list was published as of the read date."
     },
     {
-      "id": "wtt-upcoming:wtt-champions-montpellier-2026",
-      "name": "WTT Champions Montpellier 2026",
-      "shortName": "WTT Champions Montpellier",
-      "sport": "TABLE_TENNIS",
-      "ageCategory": "SENIOR",
-      "level": "TOUR",
-      "officialTierName": "WTT Champions",
-      "location": "Montpellier, France",
-      "start": "2026-10-27",
-      "end": "2026-11-01",
-      "entriesPublished": true,
-      "entries": [],
-      "sources": [
-        {
-          "label": "WTT Champions Montpellier 2026 (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/WTT_Champions_Montpellier_2026",
-          "readOn": "2026-10-30"
-        }
-      ],
-      "notes": "Draw published, no IND or SGP player in the singles draws."
-    },
-    {
       "id": "wtt-upcoming:wtt-champions-frankfurt-2026",
       "name": "WTT Champions Frankfurt 2026",
       "shortName": "WTT Champions Frankfurt",
@@ -379,6 +222,50 @@
         }
       ],
       "notes": "Draw not yet published on Wikipedia as of the read date; worldtabletennis.com cannot be read directly (JavaScript app with no content on a plain fetch)."
+    },
+    {
+      "id": "bwf-upcoming:malaysia-open-2027",
+      "name": "Malaysia Open 2027",
+      "shortName": "Malaysia Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "MAJOR",
+      "officialTierName": "HSBC BWF World Tour Super 1000",
+      "location": "Kuala Lumpur, Malaysia",
+      "start": "2027-01-21",
+      "end": "2027-01-31",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2027 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2027_BWF_World_Tour",
+          "readOn": "2026-11-02"
+        }
+      ],
+      "notes": "Draw/entry list not yet published on the tour calendar page."
+    },
+    {
+      "id": "bwf-upcoming:india-open-2027",
+      "name": "India Open 2027",
+      "shortName": "India Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 750",
+      "location": "New Delhi, India",
+      "start": "2027-02-02",
+      "end": "2027-02-07",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2027 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2027_BWF_World_Tour",
+          "readOn": "2026-11-02"
+        }
+      ],
+      "notes": "Draw/entry list not yet published on the tour calendar page."
     }
   ]
 }

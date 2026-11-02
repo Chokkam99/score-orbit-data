@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-01",
+  "updatedOn": "2026-11-02",
   "sport": "BADMINTON",
   "names": [
     {
@@ -61107,7 +61107,7 @@
       "timeZone": "Europe/Berlin",
       "start": "2026-10-27",
       "end": "2026-11-01",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India and Singapore main-draw matches",
       "entries": [
         {
@@ -61212,12 +61212,21 @@
             },
             {
               "round": "F",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Jonatan Christie"
               ],
               "opponentCountry": "INA",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  21,
+                  10
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -61491,12 +61500,21 @@
             },
             {
               "round": "F",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Line Kjærsfeldt"
               ],
               "opponentCountry": "DEN",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  12
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -61885,10 +61903,10 @@
         {
           "label": "2026 Hylo Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Hylo_Open",
-          "readOn": "2026-11-01"
+          "readOn": "2026-11-02"
         }
       ],
-      "notes": "Exact per-match dates and times are not given on the draw page, only the event's 27 October to 1 November window. Ayush Shetty (seed 8) withdrew before the draw and has no recorded match. No IND or SGP pair appears in the doubles draws."
+      "notes": "Exact per-match dates and times are not given on the draw page, only the event's 27 October to 1 November window. Ayush Shetty (seed 8) withdrew before the draw and has no recorded match. No IND or SGP pair appears in the doubles draws. Lakshya Sen won the men's singles final and P. V. Sindhu won the women's singles final; exact dates/times for the final are not given on the draw page."
     }
   ]
 }
