@@ -59134,10 +59134,10 @@
         {
           "label": "2026 Men's Asian Champions Trophy (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Men%27s_Asian_Champions_Trophy",
-          "readOn": "2026-11-02"
+          "readOn": "2026-11-03"
         }
       ],
-      "notes": "Six teams in one group (BAN, CHN, IND as host, JPN, MAS, KOR); top 4 reach the semifinals, bottom 2 play the 5th place match. Pakistan withdrew over security concerns and was replaced by Bangladesh.",
+      "notes": "Six teams in one group (BAN, CHN, IND as host, JPN, MAS, KOR); top 4 reach the semifinals, bottom 2 play the 5th place match. Pakistan withdrew over security concerns and was replaced by Bangladesh. India finished the group stage unbeaten (5 wins) and plays South Korea in semifinal 1 on 4 November; Japan plays Malaysia in semifinal 2. The final and bronze medal match are on 5 November.",
       "entries": [
         {
           "country": "IND",
@@ -59203,11 +59203,25 @@
             },
             {
               "round": "G5",
+              "outcome": "WIN",
+              "opponent": [],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  8,
+                  0
+                ]
+              ],
+              "date": "2026-11-02",
+              "time": "19:00"
+            },
+            {
+              "round": "SF",
               "outcome": "SCHEDULED",
               "opponent": [],
               "opponentCountry": "KOR",
               "scores": [],
-              "date": "2026-11-02",
+              "date": "2026-11-04",
               "time": "19:00"
             }
           ]
