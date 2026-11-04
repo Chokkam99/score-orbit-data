@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-03",
+  "updatedOn": "2026-11-04",
   "sport": "BADMINTON",
   "names": [
     {
@@ -61935,6 +61935,467 @@
         }
       ],
       "notes": "Exact per-match dates and times are not given on the draw page, only the event's 27 October to 1 November window. Ayush Shetty (seed 8) withdrew before the draw and has no recorded match. No IND or SGP pair appears in the doubles draws. Lakshya Sen won the men's singles final and P. V. Sindhu won the women's singles final; exact dates/times for the final are not given on the draw page."
+    },
+    {
+      "id": "wtt-results:wtt-star-contender-chennai-2026",
+      "name": "WTT Star Contender Chennai 2026",
+      "shortName": "WTT Star Contender Chennai",
+      "sport": "TABLE_TENNIS",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "WTT Star Contender",
+      "location": "Chennai, India",
+      "medals": false,
+      "timeZone": "Asia/Kolkata",
+      "start": "2026-02-10",
+      "end": "2026-02-15",
+      "status": "FINISHED",
+      "coverage": "Backfill. India's mixed doubles and men's singles runs from The Bridge's day-by-day coverage. No Singapore entries found.",
+      "sources": [
+        {
+          "label": "WTT Star Contender Chennai: Manush-Diya survive scare to reach quarterfinals (The Bridge)",
+          "url": "https://thebridge.in/table-tennis/wtt-star-contender-chennai-manush-diya-advance-quarterfinal-55930",
+          "readOn": "2026-11-04"
+        },
+        {
+          "label": "WTT Star Contender Chennai: Snehit, Nithya record big wins (The Bridge)",
+          "url": "https://thebridge.in/table-tennis/wtt-star-contender-chennai-snehit-nithya-big-wins-55941",
+          "readOn": "2026-11-04"
+        },
+        {
+          "label": "WTT Star Contender Chennai 2026: Desai-Ghorpade enter mixed doubles final (The Bridge)",
+          "url": "https://thebridge.in/table-tennis/wtt-star-contender-chennai-2026-desai-ghorpade-final-55944",
+          "readOn": "2026-11-04"
+        },
+        {
+          "label": "WTT Star Contender Chennai 2026: Desai-Ghorpade finish runners-up in mixed doubles (The Bridge)",
+          "url": "https://thebridge.in/table-tennis/wtt-star-contender-chennai-2026-desai-ghorpade-runner-up-55950",
+          "readOn": "2026-11-04"
+        }
+      ],
+      "notes": "No Wikipedia page exists for this event; sourced from The Bridge (thebridge.in), an allowed host with day-by-day Indian coverage. Three match scores were not reported by the available sources even though the outcome is clear from later-round context (Desai/Ghorpade's and Bhattacharjee/Ghosh's mixed doubles quarterfinal, and Sathiyan's round of 16 men's singles win over Eduard Ionescu); those matches are recorded with the known outcome and empty scores. Match dates/times are not given per round in the source and are left out. Manav Thakkar's, Nithya Mani's, Snehit Suravajjula's, Divyanshi Bhowmick's and Ayhika Mukherjee's runs are not fully captured (incomplete or conflicting secondary reporting) and are left out rather than guessed.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Harmeet Desai",
+            "Yashaswini Ghorpade"
+          ],
+          "seed": 4,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Darius Movileanu",
+                "Andreea Dragoman"
+              ],
+              "opponentCountry": "ROU",
+              "scores": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Ankur Bhattacharjee",
+                "Swastika Ghosh"
+              ],
+              "opponentCountry": "IND",
+              "scores": []
+            },
+            {
+              "round": "SF",
+              "outcome": "WIN",
+              "opponent": [
+                "Payas Jain",
+                "Syndrela Das"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            },
+            {
+              "round": "F",
+              "outcome": "LOSS",
+              "opponent": [
+                "Eduard Ionescu",
+                "Bernadette Szocs"
+              ],
+              "opponentCountry": "ROU",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  2,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Manush Shah",
+            "Diya Chitale"
+          ],
+          "seed": 1,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Oh Seunghwan",
+                "Kim Seongjin"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  12,
+                  10
+                ]
+              ]
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Payas Jain",
+                "Syndrela Das"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  9,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Payas Jain",
+            "Syndrela Das"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Iskender Kharki",
+                "Sarvinoz Mirkadirova"
+              ],
+              "opponentCountry": "KAZ",
+              "scores": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Manush Shah",
+                "Diya Chitale"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  12,
+                  10
+                ],
+                [
+                  13,
+                  11
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            },
+            {
+              "round": "SF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Harmeet Desai",
+                "Yashaswini Ghorpade"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  9,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Ankur Bhattacharjee",
+            "Swastika Ghosh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Park Gyuhyeon",
+                "Kim Nayeong"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  3,
+                  11
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Harmeet Desai",
+                "Yashaswini Ghorpade"
+              ],
+              "opponentCountry": "IND",
+              "scores": []
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Manush Shah"
+          ],
+          "seed": 15,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Park Gyuhyeon"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            },
+            {
+              "round": "R16",
+              "outcome": "LOSS",
+              "opponent": [
+                "Lubomir Jancarik"
+              ],
+              "opponentCountry": "CZE",
+              "scores": [
+                [
+                  4,
+                  11
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  13
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "G Sathiyan"
+          ],
+          "seed": 10,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Lim Jonghoon"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  13,
+                  11
+                ]
+              ]
+            },
+            {
+              "round": "R16",
+              "outcome": "WIN",
+              "opponent": [
+                "Eduard Ionescu"
+              ],
+              "opponentCountry": "ROU",
+              "scores": []
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Lubomir Jancarik"
+              ],
+              "opponentCountry": "CZE",
+              "scores": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  11,
+                  13
+                ]
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
