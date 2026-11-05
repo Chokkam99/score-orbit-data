@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-04",
+  "updatedOn": "2026-11-05",
   "sport": "BADMINTON",
   "names": [
     {
@@ -310,6 +310,15 @@
       "name": "Javen Choong",
       "aliases": [
         "Choong Javen"
+      ]
+    },
+    {
+      "sport": "TABLE_TENNIS",
+      "country": "IND",
+      "name": "Sathiyan Gnanasekaran",
+      "aliases": [
+        "G Sathiyan",
+        "G. Sathiyan"
       ]
     }
   ],
@@ -62396,6 +62405,303 @@
           ]
         }
       ]
+    },
+    {
+      "id": "bwf-results:korea-open-2026",
+      "name": "Korea Open 2026",
+      "shortName": "Korea Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 500",
+      "location": "Yeosu, South Korea",
+      "medals": false,
+      "timeZone": "Asia/Seoul",
+      "start": "2026-11-03",
+      "end": "2026-11-08",
+      "status": "IN_PROGRESS",
+      "coverage": "India and Singapore main-draw matches",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Prannoy H. S."
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Yoo Tae-bin"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [
+                [
+                  21,
+                  23
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Sharma"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Manami Suizu"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  12,
+                  21
+                ],
+                [
+                  21,
+                  17
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Hina Akechi"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Anmol Kharb"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Rachel Chan"
+              ],
+              "opponentCountry": "CAN",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Akane Yamaguchi"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Sonali Singh",
+            "Ritika Thaker"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WALKOVER_LOSS",
+              "opponent": [
+                "Laudya Chelsea Griselda",
+                "Nozomi Shimizu"
+              ],
+              "opponentCountry": "AUS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Dhruv Rawat",
+            "K. Maneesha"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Zhu Yijun",
+                "Li Qian"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [
+                [
+                  22,
+                  20
+                ],
+                [
+                  12,
+                  21
+                ],
+                [
+                  22,
+                  24
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MD",
+          "athletes": [
+            "Wesley Koh",
+            "Howin Wong"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "He Zhi-wei",
+                "Huang Jui-hsuan"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  16,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026 Korea Open (badminton) (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Korea_Open_(badminton)",
+          "readOn": "2026-11-05"
+        }
+      ],
+      "notes": "Lakshya Sen (seed 5, IND) withdrew before the draw and has no recorded match. The draw page does not show per-match dates or times, so both are null for the scheduled second-round matches."
+    },
+    {
+      "id": "squash-results:czech-open-2026",
+      "name": "Czech Open 2026",
+      "shortName": "Czech Open",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "PSA World Events Copper",
+      "location": "Brno, Czech Republic",
+      "medals": false,
+      "timeZone": "Europe/Prague",
+      "start": "2026-10-29",
+      "end": "2026-11-02",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Velavan Senthilkumar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "WIN",
+              "opponent": [
+                "Greg Lobban"
+              ],
+              "opponentCountry": "SCO",
+              "scores": [
+                [
+                  13,
+                  11
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026-27 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_PSA_Squash_Tour",
+          "readOn": "2026-11-05"
+        }
+      ],
+      "notes": "Tier on the page: World Events Copper; the page lists a men's draw only for this event. The final's date is not on the page, so date is null."
     }
   ]
 }
