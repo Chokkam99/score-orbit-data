@@ -59161,16 +59161,16 @@
       "timeZone": "Asia/Kolkata",
       "start": "2026-10-27",
       "end": "2026-11-05",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India's group matches at Surjit Hockey Stadium, Jalandhar, and the medal round at Mohali if India qualifies.",
       "sources": [
         {
           "label": "2026 Men's Asian Champions Trophy (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Men%27s_Asian_Champions_Trophy",
-          "readOn": "2026-11-05"
+          "readOn": "2026-11-06"
         }
       ],
-      "notes": "Six teams in one group (BAN, CHN, IND as host, JPN, MAS, KOR); top 4 reached the semifinals, bottom 2 played the 5th place match. Pakistan withdrew over security concerns and was replaced by Bangladesh. India finished the group stage unbeaten (5 wins), beat South Korea 8-1 in the semifinal, and plays Japan in the gold medal match on 5 November. South Korea plays Malaysia for bronze the same day.",
+      "notes": "Six teams in one group (BAN, CHN, IND as host, JPN, MAS, KOR); top 4 reached the semifinals, bottom 2 played the 5th place match. Pakistan withdrew over security concerns and was replaced by Bangladesh. India finished the group stage unbeaten (5 wins), beat South Korea 8-1 in the semifinal, and beat Japan 4-1 in the final to win the title, a record sixth and a hat-trick of titles after 2023 and 2024.",
       "entries": [
         {
           "country": "IND",
@@ -59264,10 +59264,15 @@
             },
             {
               "round": "F",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  4,
+                  1
+                ]
+              ],
               "date": "2026-11-05",
               "time": "19:00"
             }
