@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-05",
+  "updatedOn": "2026-11-06",
   "sport": "BADMINTON",
   "names": [
     {
@@ -319,6 +319,30 @@
       "aliases": [
         "G Sathiyan",
         "G. Sathiyan"
+      ]
+    },
+    {
+      "sport": "TABLE_TENNIS",
+      "country": "KOR",
+      "name": "Lim Jong-hoon",
+      "aliases": [
+        "Lim Jonghoon"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Aathish Sreenivas P V",
+      "aliases": [
+        "Aathish Sreenivas PV"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Ruthvika Gadde",
+      "aliases": [
+        "Gadde R."
       ]
     }
   ],
@@ -62500,12 +62524,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Hina Akechi"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -62541,12 +62574,21 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Akane Yamaguchi"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -62648,7 +62690,7 @@
         {
           "label": "2026 Korea Open (badminton) (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Korea_Open_(badminton)",
-          "readOn": "2026-11-05"
+          "readOn": "2026-11-06"
         }
       ],
       "notes": "Lakshya Sen (seed 5, IND) withdrew before the draw and has no recorded match. The draw page does not show per-match dates or times, so both are null for the scheduled second-round matches."
