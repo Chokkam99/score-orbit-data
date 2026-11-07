@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-02",
+  "updatedOn": "2026-11-07",
   "sport": "BADMINTON",
   "events": [
     {
@@ -212,16 +212,16 @@
       "location": "Frankfurt, Germany",
       "start": "2026-11-03",
       "end": "2026-11-08",
-      "entriesPublished": false,
+      "entriesPublished": true,
       "entries": [],
       "sources": [
         {
           "label": "WTT Champions Frankfurt 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/WTT_Champions_Frankfurt_2026",
-          "readOn": "2026-10-19"
+          "readOn": "2026-11-07"
         }
       ],
-      "notes": "Draw not yet published on Wikipedia as of the read date; worldtabletennis.com cannot be read directly (JavaScript app with no content on a plain fetch)."
+      "notes": "Draw published (men's and women's singles only, no doubles or mixed doubles). No IND or SGP player in either singles draw. worldtabletennis.com cannot be read directly (JavaScript app with no content on a plain fetch)."
     },
     {
       "id": "bwf-upcoming:malaysia-open-2027",
