@@ -1,30 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-07",
+  "updatedOn": "2026-11-09",
   "sport": "BADMINTON",
   "events": [
-    {
-      "id": "bwf-upcoming:korea-open-2026",
-      "name": "Korea Open 2026",
-      "shortName": "Korea Open",
-      "sport": "BADMINTON",
-      "ageCategory": "SENIOR",
-      "level": "TOUR",
-      "officialTierName": "HSBC BWF World Tour Super 500",
-      "location": "Yeosu, South Korea",
-      "start": "2026-11-03",
-      "end": "2026-11-08",
-      "entriesPublished": true,
-      "entries": [],
-      "sources": [
-        {
-          "label": "2026 Korea Open (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_Korea_Open",
-          "readOn": "2026-10-26"
-        }
-      ],
-      "notes": "Entry list published; no IND or SGP player or pair appears in it. Three entrants (Darya Astakhova, Alevtina Ibragimova, Anastasia Zakharova) have no country flag shown on the page, so they are not recorded either way."
-    },
     {
       "id": "bwf-upcoming:japan-masters-2026",
       "name": "Japan Masters 2026",
@@ -202,26 +180,26 @@
       "notes": "Hosted in Singapore, so Singaporean entries are expected, but the calendar page only shows administrative details (entry deadlines, prize money); no player entry list was published as of the read date."
     },
     {
-      "id": "wtt-upcoming:wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt 2026",
-      "shortName": "WTT Champions Frankfurt",
+      "id": "wtt-upcoming:wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul 2026",
+      "shortName": "WTT Contender Istanbul",
       "sport": "TABLE_TENNIS",
       "ageCategory": "SENIOR",
       "level": "TOUR",
-      "officialTierName": "WTT Champions",
-      "location": "Frankfurt, Germany",
-      "start": "2026-11-03",
-      "end": "2026-11-08",
-      "entriesPublished": true,
+      "officialTierName": "WTT Contender",
+      "location": "Istanbul, Turkey",
+      "start": "2026-11-10",
+      "end": "2026-11-15",
+      "entriesPublished": false,
       "entries": [],
       "sources": [
         {
-          "label": "WTT Champions Frankfurt 2026 (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/WTT_Champions_Frankfurt_2026",
-          "readOn": "2026-11-07"
+          "label": "WTT Contender Istanbul 2026 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/WTT_Contender_Istanbul_2026",
+          "readOn": "2026-11-09"
         }
       ],
-      "notes": "Draw published (men's and women's singles only, no doubles or mixed doubles). No IND or SGP player in either singles draw. worldtabletennis.com cannot be read directly (JavaScript app with no content on a plain fetch)."
+      "notes": "The draw bracket exists on the page but every seed and team slot is blank; no player names are published yet."
     },
     {
       "id": "bwf-upcoming:malaysia-open-2027",

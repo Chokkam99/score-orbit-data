@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-08",
+  "updatedOn": "2026-11-09",
   "sport": "BADMINTON",
   "names": [
     {
@@ -62462,7 +62462,7 @@
       "timeZone": "Asia/Seoul",
       "start": "2026-11-03",
       "end": "2026-11-08",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India and Singapore main-draw matches",
       "entries": [
         {
@@ -62695,10 +62695,10 @@
         {
           "label": "2026 Korea Open (badminton) (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Korea_Open_(badminton)",
-          "readOn": "2026-11-06"
+          "readOn": "2026-11-09"
         }
       ],
-      "notes": "Lakshya Sen (seed 5, IND) withdrew before the draw and has no recorded match. The draw page does not show per-match dates or times, so both are null for the scheduled second-round matches."
+      "notes": "Lakshya Sen (seed 5, IND) withdrew before the draw and has no recorded match. All IND and SGP entries were out by R16; the tournament concluded 2026-11-08 with no further matches for them."
     },
     {
       "id": "squash-results:czech-open-2026",
