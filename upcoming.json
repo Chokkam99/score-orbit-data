@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-09",
+  "updatedOn": "2026-11-10",
   "sport": "BADMINTON",
   "events": [
     {
@@ -14,16 +14,23 @@
       "location": "Kumamoto, Japan",
       "start": "2026-11-10",
       "end": "2026-11-15",
-      "entriesPublished": false,
-      "entries": [],
+      "entriesPublished": true,
+      "entries": [
+        {"country": "IND", "discipline": "MS", "athletes": ["Srikanth Kidambi"], "seed": null},
+        {"country": "IND", "discipline": "MS", "athletes": ["Lakshya Sen"], "seed": 8},
+        {"country": "IND", "discipline": "MD", "athletes": ["Hariharan Amsakarunan", "Arjun M. R."], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Treesa Jolly", "Gayatri Gopichand"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Hariharan Amsakarunan", "Tanisha Crasto"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Dhruv Rawat", "K. Maneesha"], "seed": null}
+      ],
       "sources": [
         {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
+          "label": "2026 Japan Masters (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Japan_Masters",
+          "readOn": "2026-11-10"
         }
       ],
-      "notes": "Access blocked, unverified: BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date. Singapore's Loh Kean Yew and Yeo Jia Min are active on tour this season but no entry for this specific event was confirmed."
+      "notes": "No Singaporean entries in the draw. India's Satwiksairaj Rankireddy and Chirag Shetty are listed in the mixed-doubles-adjacent men's doubles seeds but marked withdrawn, so not recorded as an entry. No match results yet; the draw gives no round dates or times."
     },
     {
       "id": "bwf-upcoming:kaohsiung-masters-2026",
@@ -36,16 +43,25 @@
       "location": "Kaohsiung, Taiwan",
       "start": "2026-11-10",
       "end": "2026-11-15",
-      "entriesPublished": false,
-      "entries": [],
+      "entriesPublished": true,
+      "entries": [
+        {"country": "IND", "discipline": "MS", "athletes": ["Kavin Thangam"], "seed": null},
+        {"country": "IND", "discipline": "MS", "athletes": ["Nicholas Raj"], "seed": null},
+        {"country": "IND", "discipline": "MS", "athletes": ["Meiraba Maisnam"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Tanya Hemanth"], "seed": 4},
+        {"country": "IND", "discipline": "WS", "athletes": ["Tara Shah"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Anwesha Gowda"], "seed": null},
+        {"country": "SGP", "discipline": "MS", "athletes": ["Joel Koh"], "seed": null},
+        {"country": "SGP", "discipline": "MD", "athletes": ["Wesley Koh", "Howin Wong"], "seed": 6}
+      ],
       "sources": [
         {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
+          "label": "2026 Kaohsiung Masters (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Kaohsiung_Masters",
+          "readOn": "2026-11-10"
         }
       ],
-      "notes": "Access blocked, unverified: dates and level confirmed from the Wikipedia schedule, but BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
+      "notes": "No match results yet; the draw gives no round dates or times."
     },
     {
       "id": "bwf-upcoming:hong-kong-open-2026",
@@ -196,7 +212,7 @@
         {
           "label": "WTT Contender Istanbul 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/WTT_Contender_Istanbul_2026",
-          "readOn": "2026-11-09"
+          "readOn": "2026-11-10"
         }
       ],
       "notes": "The draw bracket exists on the page but every seed and team slot is blank; no player names are published yet."
