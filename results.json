@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-12",
+  "updatedOn": "2026-11-13",
   "sport": "BADMINTON",
   "names": [
     {
@@ -62783,7 +62783,7 @@
         {
           "label": "2026 Japan Masters (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Japan_Masters",
-          "readOn": "2026-11-12"
+          "readOn": "2026-11-13"
         }
       ],
       "notes": "Match dates/times are not shown per round in the source and are left null.",
@@ -62822,9 +62822,33 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Kodai Naraoka"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  11,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Koki Watanabe"
               ],
               "opponentCountry": "JPN",
               "scores": [],
@@ -62863,11 +62887,31 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Dong Tianyao"
               ],
               "opponentCountry": "CHN",
+              "scores": [
+                [
+                  21,
+                  8
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Yushi Tanaka"
+              ],
+              "opponentCountry": "JPN",
               "scores": [],
               "date": null,
               "time": null
@@ -62902,13 +62946,22 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Takuro Hoki",
                 "Yugo Kobayashi"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -62946,13 +62999,22 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Rin Iwanaga",
                 "Kie Nakanishi"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -63047,7 +63109,7 @@
         {
           "label": "2026 Kaohsiung Masters (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Kaohsiung_Masters",
-          "readOn": "2026-11-12"
+          "readOn": "2026-11-13"
         }
       ],
       "notes": "Match dates/times are not shown per round in the source and are left null.",
@@ -63214,12 +63276,25 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Sakura Masuki"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  18
+                ],
+                [
+                  15,
+                  21
+                ],
+                [
+                  22,
+                  24
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -63325,12 +63400,139 @@
             },
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Tori Aizawa",
                 "Daisuke Sano"
               ],
               "opponentCountry": "JPN",
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  25,
+                  23
+                ],
+                [
+                  28,
+                  26
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Huang Kai-yi",
+                "Lin Sheng-ming"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wtt-results:wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul 2026",
+      "shortName": "WTT Contender Istanbul",
+      "sport": "TABLE_TENNIS",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "WTT Contender",
+      "location": "Istanbul, Turkey",
+      "medals": false,
+      "timeZone": "Europe/Istanbul",
+      "start": "2026-11-10",
+      "end": "2026-11-15",
+      "status": "IN_PROGRESS",
+      "coverage": "India and Singapore main-draw matches",
+      "sources": [
+        {
+          "label": "WTT Contender Istanbul 2026 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/WTT_Contender_Istanbul_2026",
+          "readOn": "2026-11-13"
+        }
+      ],
+      "notes": "Match dates/times are not shown per round in the source and are left null. Swastika Ghosh's women's doubles entry pairs her with Sarvinoz Mirkadirova of Kazakhstan; the pair entered as a wildcard (seed left null, not numeric).",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Manav Thakkar"
+          ],
+          "seed": 6,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Ibrahim Gündüz"
+              ],
+              "opponentCountry": "TUR",
+              "scores": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Borgar Haug"
+              ],
+              "opponentCountry": "NOR",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Swastika Ghosh",
+            "Sarvinoz Mirkadirova"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Jia Nan Yuan",
+                "Prithika Pavade"
+              ],
+              "opponentCountry": "FRA",
               "scores": [],
               "date": null,
               "time": null
