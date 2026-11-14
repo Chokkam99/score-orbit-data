@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-13",
+  "updatedOn": "2026-11-14",
   "sport": "BADMINTON",
   "names": [
     {
@@ -62783,7 +62783,7 @@
         {
           "label": "2026 Japan Masters (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Japan_Masters",
-          "readOn": "2026-11-13"
+          "readOn": "2026-11-14"
         }
       ],
       "notes": "Match dates/times are not shown per round in the source and are left null.",
@@ -62846,12 +62846,21 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Koki Watanabe"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  22,
+                  24
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -62907,11 +62916,31 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Yushi Tanaka"
               ],
               "opponentCountry": "JPN",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  15
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Alwi Farhan"
+              ],
+              "opponentCountry": "INA",
               "scores": [],
               "date": null,
               "time": null
@@ -63109,7 +63138,7 @@
         {
           "label": "2026 Kaohsiung Masters (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Kaohsiung_Masters",
-          "readOn": "2026-11-13"
+          "readOn": "2026-11-14"
         }
       ],
       "notes": "Match dates/times are not shown per round in the source and are left null.",
@@ -63425,10 +63454,31 @@
             },
             {
               "round": "QF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Huang Kai-yi",
                 "Lin Sheng-ming"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  21,
+                  18
+                ],
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Cheng Kai-wen",
+                "Liao Chao-pang"
               ],
               "opponentCountry": "TPE",
               "scores": [],
@@ -63458,7 +63508,7 @@
         {
           "label": "WTT Contender Istanbul 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/WTT_Contender_Istanbul_2026",
-          "readOn": "2026-11-13"
+          "readOn": "2026-11-14"
         }
       ],
       "notes": "Match dates/times are not shown per round in the source and are left null. Swastika Ghosh's women's doubles entry pairs her with Sarvinoz Mirkadirova of Kazakhstan; the pair entered as a wildcard (seed left null, not numeric).",
@@ -63527,13 +63577,26 @@
           "matches": [
             {
               "round": "R16",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Jia Nan Yuan",
                 "Prithika Pavade"
               ],
               "opponentCountry": "FRA",
-              "scores": [],
+              "scores": [
+                [
+                  7,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  10,
+                  12
+                ]
+              ],
               "date": null,
               "time": null
             }
