@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-15",
+  "updatedOn": "2026-11-16",
   "sport": "BADMINTON",
   "names": [
     {
@@ -343,6 +343,14 @@
       "name": "Ruthvika Gadde",
       "aliases": [
         "Gadde R."
+      ]
+    },
+    {
+      "sport": "TABLE_TENNIS",
+      "country": "PRK",
+      "name": "Pyon Song Gyong",
+      "aliases": [
+        "Pyon Song-gyong"
       ]
     }
   ],
@@ -62777,13 +62785,13 @@
       "timeZone": "Asia/Tokyo",
       "start": "2026-11-10",
       "end": "2026-11-15",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India and Singapore main-draw matches",
       "sources": [
         {
           "label": "2026 Japan Masters (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Japan_Masters",
-          "readOn": "2026-11-15"
+          "readOn": "2026-11-16"
         }
       ],
       "notes": "Match dates/times are not shown per round in the source and are left null.",
@@ -62960,12 +62968,25 @@
             },
             {
               "round": "F",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Koki Watanabe"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -63156,13 +63177,13 @@
       "timeZone": "Asia/Taipei",
       "start": "2026-11-10",
       "end": "2026-11-15",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India and Singapore main-draw matches",
       "sources": [
         {
           "label": "2026 Kaohsiung Masters (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Kaohsiung_Masters",
-          "readOn": "2026-11-15"
+          "readOn": "2026-11-16"
         }
       ],
       "notes": "Match dates/times are not shown per round in the source and are left null.",
@@ -63541,7 +63562,7 @@
         {
           "label": "WTT Contender Istanbul 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/WTT_Contender_Istanbul_2026",
-          "readOn": "2026-11-15"
+          "readOn": "2026-11-16"
         }
       ],
       "notes": "Match dates/times are not shown per round in the source and are left null. Swastika Ghosh's women's doubles entry pairs her with Sarvinoz Mirkadirova of Kazakhstan; the pair entered as a wildcard (seed left null, not numeric).",
