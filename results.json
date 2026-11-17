@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-16",
+  "updatedOn": "2026-11-17",
   "sport": "BADMINTON",
   "names": [
     {
@@ -63556,16 +63556,16 @@
       "timeZone": "Europe/Istanbul",
       "start": "2026-11-10",
       "end": "2026-11-15",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India and Singapore main-draw matches",
       "sources": [
         {
           "label": "WTT Contender Istanbul 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/WTT_Contender_Istanbul_2026",
-          "readOn": "2026-11-16"
+          "readOn": "2026-11-17"
         }
       ],
-      "notes": "Match dates/times are not shown per round in the source and are left null. Swastika Ghosh's women's doubles entry pairs her with Sarvinoz Mirkadirova of Kazakhstan; the pair entered as a wildcard (seed left null, not numeric).",
+      "notes": "Match dates/times are not shown per round in the source and are left null. Swastika Ghosh's women's doubles entry pairs her with Sarvinoz Mirkadirova of Kazakhstan; the pair entered as a wildcard (seed left null, not numeric). Event concluded 15 Nov 2026 with no further IND/SGP matches; no other IND/SGP entries found in the draw.",
       "entries": [
         {
           "country": "IND",

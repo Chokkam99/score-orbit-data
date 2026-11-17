@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-16",
+  "updatedOn": "2026-11-17",
   "sport": "BADMINTON",
   "events": [
     {
@@ -134,28 +134,6 @@
         }
       ],
       "notes": "Hosted in Singapore, so Singaporean entries are expected, but the calendar page only shows administrative details (entry deadlines, prize money); no player entry list was published as of the read date."
-    },
-    {
-      "id": "wtt-upcoming:wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul 2026",
-      "shortName": "WTT Contender Istanbul",
-      "sport": "TABLE_TENNIS",
-      "ageCategory": "SENIOR",
-      "level": "TOUR",
-      "officialTierName": "WTT Contender",
-      "location": "Istanbul, Turkey",
-      "start": "2026-11-10",
-      "end": "2026-11-15",
-      "entriesPublished": false,
-      "entries": [],
-      "sources": [
-        {
-          "label": "WTT Contender Istanbul 2026 (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/WTT_Contender_Istanbul_2026",
-          "readOn": "2026-11-10"
-        }
-      ],
-      "notes": "The draw bracket exists on the page but every seed and team slot is blank; no player names are published yet."
     },
     {
       "id": "bwf-upcoming:malaysia-open-2027",
