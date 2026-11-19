@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-18",
+  "updatedOn": "2026-11-19",
   "sport": "BADMINTON",
   "names": [
     {
@@ -63705,11 +63705,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Arnaud Merklé"
               ],
               "opponentCountry": "FRA",
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  21,
+                  16
+                ],
+                [
+                  25,
+                  23
+                ]
+              ],
+              "date": "2026-11-17",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Rasmus Gemke"
+              ],
+              "opponentCountry": "DEN",
               "scores": [],
               "date": null,
               "time": null
@@ -63726,11 +63750,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Koki Watanabe"
               ],
               "opponentCountry": "JPN",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  9
+                ]
+              ],
+              "date": "2026-11-17",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Yoo Tae-bin"
+              ],
+              "opponentCountry": "KOR",
               "scores": [],
               "date": null,
               "time": null
@@ -63747,11 +63795,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Chi Yu-jen"
               ],
               "opponentCountry": "TPE",
+              "scores": [
+                [
+                  21,
+                  23
+                ],
+                [
+                  21,
+                  12
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": "2026-11-17",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Kenta Nishimoto"
+              ],
+              "opponentCountry": "JPN",
               "scores": [],
               "date": null,
               "time": null
@@ -63768,13 +63840,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Ng Ka Long"
               ],
               "opponentCountry": "HKG",
-              "scores": [],
-              "date": null,
+              "scores": [
+                [
+                  19,
+                  21
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
+              "date": "2026-11-17",
               "time": null
             }
           ]
@@ -63789,13 +63870,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Tomoka Miyazaki"
               ],
               "opponentCountry": "JPN",
-              "scores": [],
-              "date": null,
+              "scores": [
+                [
+                  10,
+                  21
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
+              "date": "2026-11-17",
               "time": null
             }
           ]
@@ -63810,11 +63900,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Isharani Baruah"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  12,
+                  21
+                ],
+                [
+                  21,
+                  13
+                ],
+                [
+                  21,
+                  12
+                ]
+              ],
+              "date": "2026-11-17",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Hina Akechi"
+              ],
+              "opponentCountry": "JPN",
               "scores": [],
               "date": null,
               "time": null
@@ -63831,13 +63945,26 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Ashmita Chaliha"
               ],
               "opponentCountry": "IND",
-              "scores": [],
-              "date": null,
+              "scores": [
+                [
+                  21,
+                  12
+                ],
+                [
+                  13,
+                  21
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
+              "date": "2026-11-17",
               "time": null
             }
           ]
@@ -63852,13 +63979,26 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Han Yue"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
-              "date": null,
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  19,
+                  21
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
+              "date": "2026-11-17",
               "time": null
             }
           ]
@@ -63873,11 +64013,31 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Mia Blichfeldt"
               ],
               "opponentCountry": "DEN",
+              "scores": [
+                [
+                  21,
+                  18
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": "2026-11-17",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Pornpawee Chochuwong"
+              ],
+              "opponentCountry": "THA",
               "scores": [],
               "date": null,
               "time": null
@@ -63917,6 +64077,18 @@
               ],
               "date": "2026-11-17",
               "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Nur Mohd Azriyn Ayub",
+                "Tan Wee Kiong"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
             }
           ]
         },
@@ -63931,14 +64103,23 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "He Zhi-wei",
                 "Huang Jui-hsuan"
               ],
               "opponentCountry": "TPE",
-              "scores": [],
-              "date": null,
+              "scores": [
+                [
+                  20,
+                  22
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
+              "date": "2026-11-17",
               "time": null
             }
           ]
@@ -63954,12 +64135,33 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Fan Ka Yan",
                 "Leung Yuet Yee"
               ],
               "opponentCountry": "HKG",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  9
+                ]
+              ],
+              "date": "2026-11-17",
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Lauren Lam",
+                "Allison Lee"
+              ],
+              "opponentCountry": "USA",
               "scores": [],
               "date": null,
               "time": null
@@ -63977,14 +64179,23 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Wong Tien Ci",
                 "Lim Chiew Sien"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
-              "date": null,
+              "scores": [
+                [
+                  26,
+                  28
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
+              "date": "2026-11-17",
               "time": null
             }
           ]
@@ -64000,14 +64211,23 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Guo Xinwa",
                 "Chen Fanghui"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
-              "date": null,
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  10,
+                  21
+                ]
+              ],
+              "date": "2026-11-17",
               "time": null
             }
           ]
@@ -64023,14 +64243,23 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Jiang Zhenbang",
                 "Wei Yaxin"
               ],
               "opponentCountry": "CHN",
-              "scores": [],
-              "date": null,
+              "scores": [
+                [
+                  9,
+                  21
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
+              "date": "2026-11-17",
               "time": null
             }
           ]
@@ -64040,10 +64269,210 @@
         {
           "label": "2026 Hong Kong Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Hong_Kong_Open_(badminton)",
-          "readOn": "2026-11-18"
+          "readOn": "2026-11-19"
         }
       ],
-      "notes": "Match dates/times are not shown per round in the source and are left null, except the completed R32 match which the draw page dates to 17 November."
+      "notes": "Round 1 (R32) complete for all IND/SGP entries; round 2 (R16) pairings known from the bracket but not yet played. The source gives no match dates or times except the 17 November date already recorded for round 1."
+    },
+    {
+      "id": "wtt-results:muscat-star-contender-2026",
+      "name": "WTT Star Contender Muscat 2026",
+      "shortName": "Star Contender Muscat",
+      "sport": "TABLE_TENNIS",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "WTT Star Contender",
+      "location": "Muscat, Oman",
+      "medals": false,
+      "timeZone": "Asia/Muscat",
+      "start": "2026-11-16",
+      "end": "2026-11-21",
+      "status": "IN_PROGRESS",
+      "coverage": "India main-draw matches (no Singapore entries)",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Ankur Bhattacharjee"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Sun Yang"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Manush Shah"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ryuusei Kawakami"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Manav Thakkar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Kang Dong-soo"
+              ],
+              "opponentCountry": "KOR",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Manika Batra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wei Jingming"
+              ],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Sreeja Akula"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R64",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Sarah De Nutte"
+              ],
+              "opponentCountry": "LUX",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Manav Thakkar",
+            "Manush Shah"
+          ],
+          "seed": 2,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Lubomír Jančařík",
+                "Aditya Sareen"
+              ],
+              "opponentCountry": "CZE",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Swastika Ghosh",
+            "Manika Batra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Sofia Polcanova",
+                "Yangzi Liu"
+              ],
+              "opponentCountry": "AUT",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Ankur Bhattacharjee",
+            "Manika Batra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Álvaro Robles",
+                "María Xiao"
+              ],
+              "opponentCountry": "ESP",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "WTT Star Contender Muscat 2026 (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/WTT_Star_Contender_Muscat_2026",
+          "readOn": "2026-11-19"
+        }
+      ],
+      "notes": "The bracket's seed/opponent fields are filled but every score field is blank, so round 1 (R64 singles, R16 doubles) has not been played yet, or the page has not been updated; all listed matches are recorded as the next scheduled match, not a result."
     }
   ]
 }
