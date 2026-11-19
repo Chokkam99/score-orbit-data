@@ -64473,6 +64473,49 @@
         }
       ],
       "notes": "The bracket's seed/opponent fields are filled but every score field is blank, so round 1 (R64 singles, R16 doubles) has not been played yet, or the page has not been updated; all listed matches are recorded as the next scheduled match, not a result."
+    },
+    {
+      "id": "hockey-results:asian-champions-trophy-2026-women",
+      "name": "2026 Women's Asian Champions Trophy",
+      "shortName": "Asian Champions Trophy",
+      "sport": "HOCKEY",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "Madhya Pradesh Women's Asian Champions Trophy 2026",
+      "location": "Bhopal, Madhya Pradesh, India",
+      "medals": false,
+      "timeZone": "Asia/Kolkata",
+      "start": "2026-11-19",
+      "end": "2026-11-28",
+      "status": "IN_PROGRESS",
+      "coverage": "India's group and medal round matches at Barkheda Nathu International Sports Complex, Bhopal.",
+      "sources": [
+        {
+          "label": "2026 Women's Asian Champions Trophy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Women%27s_Asian_Champions_Trophy",
+          "readOn": "2026-11-19"
+        }
+      ],
+      "notes": "Six teams in one group (CHN, IND as host, JPN, MAS, KOR, THA); top 4 reach the semifinals, bottom 2 play the 5th place match. India's group matches, all local time at Barkheda Nathu International Sports Complex, Bhopal: MAS (19 Nov), KOR (21 Nov), THA (22 Nov), CHN (24 Nov), JPN (25 Nov). Semifinals, bronze and final on 27-28 Nov.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "WT",
+          "athletes": [],
+          "seed": null,
+          "matches": [
+            {
+              "round": "G1",
+              "outcome": "SCHEDULED",
+              "opponent": [],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": "2026-11-19",
+              "time": "16:35"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
