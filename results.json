@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-21",
+  "updatedOn": "2026-11-22",
   "sport": "BADMINTON",
   "names": [
     {
@@ -351,6 +351,14 @@
       "name": "Pyon Song Gyong",
       "aliases": [
         "Pyon Song-gyong"
+      ]
+    },
+    {
+      "sport": "TABLE_TENNIS",
+      "country": "KOR",
+      "name": "Park Gang-hyeon",
+      "aliases": [
+        "Park Ganghyeon"
       ]
     }
   ],
@@ -63773,12 +63781,21 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Anders Antonsen"
               ],
               "opponentCountry": "DEN",
-              "scores": [],
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -64278,13 +64295,22 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Man Wei Chong",
                 "Tee Kai Wun"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  19,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -64476,10 +64502,10 @@
         {
           "label": "2026 Hong Kong Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Hong_Kong_Open_(badminton)",
-          "readOn": "2026-11-21"
+          "readOn": "2026-11-22"
         }
       ],
-      "notes": "Quarter-finals complete. Lakshya Sen and Satwik/Chirag advance to semi-finals (Sen vs Anders Antonsen, DEN; Satwik/Chirag vs Man Wei Chong/Tee Kai Wun, MAS), both scheduled but not yet played. Srikanth Kidambi, Loh Kean Yew and Rakshitha Ramraj are out. The source gives no match dates or times beyond the 17 November date already recorded for round 1."
+      "notes": "Semi-finals complete. Lakshya Sen lost to Anders Antonsen (DEN); Satwiksairaj Rankireddy/Chirag Shetty lost to Man Wei Chong/Tee Kai Wun (MAS). No IND or SGP player reached the final. The source gives no match dates or times beyond the 17 November date already recorded for round 1."
     },
     {
       "id": "wtt-results:muscat-star-contender-2026",
@@ -64494,7 +64520,7 @@
       "timeZone": "Asia/Muscat",
       "start": "2026-11-16",
       "end": "2026-11-21",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India main-draw matches (no Singapore entries)",
       "entries": [
         {
@@ -64849,13 +64875,30 @@
             },
             {
               "round": "F",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Lim Jong-hoon",
                 "Oh Jun-sung"
               ],
               "opponentCountry": "KOR",
-              "scores": [],
+              "scores": [
+                [
+                  12,
+                  10
+                ],
+                [
+                  2,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -64971,10 +65014,10 @@
         {
           "label": "WTT Star Contender Muscat 2026 (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/WTT_Star_Contender_Muscat_2026",
-          "readOn": "2026-11-21"
+          "readOn": "2026-11-22"
         }
       ],
-      "notes": "Quarter-finals and, for men's doubles, the semi-final complete. Manav Thakkar/Manush Shah reached the final (vs Lim Jong-hoon/Oh Jun-sung, KOR), scheduled but not yet played. Sreeja Akula and Swastika Ghosh/Manika Batra are out. Two IND doubles pairs' first-round opponents were themselves mixed-nationality pairings (Manav Thakkar/Manush Shah faced a Czech/Australian pair; Swastika Ghosh/Manika Batra faced an Austrian/Australian pair), so opponentCountry is left null for those two matches since the schema holds one country per match. The source gives no match dates or times."
+      "notes": "Tournament complete. Manav Thakkar/Manush Shah lost the men's doubles final to Lim Jong-hoon/Oh Jun-sung (KOR). Sreeja Akula and Swastika Ghosh/Manika Batra were out earlier. Two IND doubles pairs' first-round opponents were themselves mixed-nationality pairings (Manav Thakkar/Manush Shah faced a Czech/Australian pair; Swastika Ghosh/Manika Batra faced an Austrian/Australian pair), so opponentCountry is left null for those two matches since the schema holds one country per match. The source gives no match dates or times."
     },
     {
       "id": "hockey-results:asian-champions-trophy-2026-women",
