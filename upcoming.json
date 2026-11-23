@@ -257,15 +257,49 @@
       "notes": "Six teams in one group (CHN, IND as host, JPN, MAS, KOR, THA); top 4 reach the semifinals, bottom 2 play the 5th place match. India's group matches, all 19:00 IST at Barkheda Nathu International Sports Complex, Bhopal: MAS (19 Nov), KOR (21 Nov), THA (22 Nov, India second-named), CHN (24 Nov), JPN (25 Nov, India second-named). Semifinals, bronze and final on 27-28 Nov."
     },
     {
-      "id": "hockey-upcoming:pro-league-2026-27-men-india",
-      "name": "2026-27 Men's FIH Pro League - India",
-      "shortName": "Pro League India",
+      "id": "hockey-upcoming:pro-league-2026-27-men-rajgir",
+      "name": "2026-27 Men's FIH Pro League - Rajgir",
+      "shortName": "Pro League Rajgir",
       "sport": "HOCKEY",
       "ageCategory": "SENIOR",
       "level": "TOUR",
       "officialTierName": "FIH Pro League",
-      "location": "India",
+      "location": "Rajgir, Bihar, India",
       "start": "2027-02-13",
+      "end": "2027-02-18",
+      "entriesPublished": true,
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MT",
+          "athletes": [],
+          "seed": null
+        }
+      ],
+      "tournament": {
+        "id": "fih-pro-league-2026-27-men",
+        "name": "FIH Pro League 2026-27",
+        "shortName": "Pro League"
+      },
+      "sources": [
+        {
+          "label": "2026-27 Men's FIH Pro League (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Men%27s_FIH_Pro_League",
+          "readOn": "2026-11-23"
+        }
+      ],
+      "notes": "India hosts this leg at Rajgir Sports Complex, playing Argentina and Germany, two matches each, 13-18 Feb 2027."
+    },
+    {
+      "id": "hockey-upcoming:pro-league-2026-27-men-rourkela",
+      "name": "2026-27 Men's FIH Pro League - Rourkela",
+      "shortName": "Pro League Rourkela",
+      "sport": "HOCKEY",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "FIH Pro League",
+      "location": "Rourkela, Odisha, India",
+      "start": "2027-02-23",
       "end": "2027-02-28",
       "entriesPublished": true,
       "entries": [
@@ -285,10 +319,10 @@
         {
           "label": "2026-27 Men's FIH Pro League (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Men%27s_FIH_Pro_League",
-          "readOn": "2026-11-09"
+          "readOn": "2026-11-23"
         }
       ],
-      "notes": "India hosts this leg, playing Argentina, Germany, Great Britain and Spain, two matches each, 13-28 Feb 2027. Venue not yet announced; Wikipedia lists the stadium as TBD."
+      "notes": "India hosts this leg at Birsa Munda International Hockey Stadium, playing Great Britain and Spain, two matches each, 23-28 Feb 2027."
     },
     {
       "id": "hockey-upcoming:pro-league-2026-27-women-rosario",
@@ -319,7 +353,7 @@
         {
           "label": "2026-27 Women's FIH Pro League (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Women%27s_FIH_Pro_League",
-          "readOn": "2026-11-09"
+          "readOn": "2026-11-23"
         }
       ],
       "notes": "India plays Argentina (host) and Germany, two matches each, 9-13 Feb 2027 at Estadio Mundialista Luciana Aymar, Rosario."
@@ -332,7 +366,7 @@
       "ageCategory": "SENIOR",
       "level": "TOUR",
       "officialTierName": "FIH Pro League",
-      "location": "India",
+      "location": "Rourkela, Odisha, India",
       "start": "2027-02-23",
       "end": "2027-02-28",
       "entriesPublished": true,
@@ -353,10 +387,10 @@
         {
           "label": "2026-27 Women's FIH Pro League (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Women%27s_FIH_Pro_League",
-          "readOn": "2026-11-09"
+          "readOn": "2026-11-23"
         }
       ],
-      "notes": "India hosts this leg, playing Great Britain and Spain, two matches each, 23-28 Feb 2027. Venue not yet announced; Wikipedia lists the stadium as TBD."
+      "notes": "India hosts this leg at Birsa Munda International Hockey Stadium, playing Great Britain and Spain, two matches each, 23-28 Feb 2027."
     },
     {
       "id": "bwf-upcoming:indonesia-masters-2027",
