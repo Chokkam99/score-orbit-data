@@ -1,30 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-17",
+  "updatedOn": "2026-11-23",
   "sport": "BADMINTON",
   "events": [
-    {
-      "id": "bwf-upcoming:hong-kong-open-2026",
-      "name": "Hong Kong Open 2026",
-      "shortName": "Hong Kong Open",
-      "sport": "BADMINTON",
-      "ageCategory": "SENIOR",
-      "level": "TOUR",
-      "officialTierName": "HSBC BWF World Tour Super 500",
-      "location": "Hong Kong",
-      "start": "2026-11-17",
-      "end": "2026-11-22",
-      "entriesPublished": false,
-      "entries": [],
-      "sources": [
-        {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
-        }
-      ],
-      "notes": "Access blocked, unverified: BWF's own tournament pages returned HTTP 403 to automated fetches, so entries could not be confirmed either way as of the read date."
-    },
     {
       "id": "bwf-upcoming:syed-modi-international-2026",
       "name": "Syed Modi India International 2026",
@@ -36,16 +14,83 @@
       "location": "Lucknow, India",
       "start": "2026-11-24",
       "end": "2026-11-29",
-      "entriesPublished": false,
-      "entries": [],
+      "entriesPublished": true,
+      "entries": [
+        {"country": "SGP", "discipline": "MS", "athletes": ["Jason Teh"], "seed": 1},
+        {"country": "SGP", "discipline": "MD", "athletes": ["Wesley Koh", "Howin Wong"], "seed": null},
+        {"country": "IND", "discipline": "MS", "athletes": ["Prannoy H. S."], "seed": 4},
+        {"country": "IND", "discipline": "MS", "athletes": ["Tharun Mannepalli"], "seed": 8},
+        {"country": "IND", "discipline": "MS", "athletes": ["Tushar Suveer"], "seed": null},
+        {"country": "IND", "discipline": "MS", "athletes": ["Kiran George"], "seed": null},
+        {"country": "IND", "discipline": "MS", "athletes": ["Mithun Manjunath"], "seed": null},
+        {"country": "IND", "discipline": "MS", "athletes": ["Ginpaul Sonna"], "seed": null},
+        {"country": "IND", "discipline": "MS", "athletes": ["Rounak Chouhan"], "seed": null},
+        {"country": "IND", "discipline": "MS", "athletes": ["Saneeth Dayanand"], "seed": null},
+        {"country": "IND", "discipline": "MS", "athletes": ["Sankar Subramanian"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Tanvi Sharma"], "seed": 2},
+        {"country": "IND", "discipline": "WS", "athletes": ["Unnati Hooda"], "seed": 3},
+        {"country": "IND", "discipline": "WS", "athletes": ["Ashmita Chaliha"], "seed": 5},
+        {"country": "IND", "discipline": "WS", "athletes": ["Devika Sihag"], "seed": 7},
+        {"country": "IND", "discipline": "WS", "athletes": ["Isharani Baruah"], "seed": 8},
+        {"country": "IND", "discipline": "WS", "athletes": ["Rakshitha Ramraj"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Malvika Bansod"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Tasnim Mir"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Mansi Singh"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Anupama Upadhyaya"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Tanya Hemanth"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Aakarshi Kashyap"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Shriyanshi Valishetty"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["Anmol Kharb"], "seed": null},
+        {"country": "IND", "discipline": "MD", "athletes": ["Hariharan Amsakarunan", "Arjun M. R."], "seed": 3},
+        {"country": "IND", "discipline": "MD", "athletes": ["Sai Pratheek K.", "Ruban Kumar"], "seed": null},
+        {"country": "IND", "discipline": "MD", "athletes": ["Bhargav Arigela", "Viswatej Gobburu"], "seed": null},
+        {"country": "IND", "discipline": "MD", "athletes": ["Abinash Mohanty", "Ayush Pattanayak"], "seed": null},
+        {"country": "IND", "discipline": "MD", "athletes": ["Krishna Prasad Garaga", "Pruthvi Roy"], "seed": null},
+        {"country": "IND", "discipline": "MD", "athletes": ["Viplav Kuvale", "Viraj Kuvale"], "seed": null},
+        {"country": "IND", "discipline": "MD", "athletes": ["Abhyuday Choudhary", "Ayush Makhija"], "seed": null},
+        {"country": "IND", "discipline": "MD", "athletes": ["Achutaditya Doddavarapu", "Arjun Pochana"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Treesa Jolly", "Gayatri Gopichand"], "seed": 1},
+        {"country": "IND", "discipline": "WD", "athletes": ["Ashwini Bhat K.", "Shikha Gautam"], "seed": 8},
+        {"country": "IND", "discipline": "WD", "athletes": ["Hrissha Dubey", "Mehreen Riza"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Shreya Balaji", "Pranavi Natarajan"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Samriddhi Singh", "Amolika Singh Sisodiya"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Nayana S Oasis", "Varshini Viswanath Sri"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Rutaparna Panda", "Swetaparna Panda"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Manya Ralhan", "Reshika Uthayasooriyan"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Gayatri Rawat", "Mansa Rawat"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Nishu Malik", "Tanu Malik"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Ananya Arun", "Anjana Manikandan"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Zenith Abbigail", "Taarini Suri"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Aditi Bhatt", "Shravani Walekar"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Sonali Singh", "Ritika Thaker"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Reeva Evangelin", "V R Nardhana"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Priya Konjengbam", "Shruti Mishra"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Sakshi Gahlawat", "Divya Balasubramanian"], "seed": null},
+        {"country": "IND", "discipline": "WD", "athletes": ["Anagha Aravinda Pai", "Nandita Thomas"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Dhruv Kapila", "Tanisha Crasto"], "seed": 1},
+        {"country": "IND", "discipline": "XD", "athletes": ["Rohan Kapoor", "Ruthvika Gadde"], "seed": 4},
+        {"country": "IND", "discipline": "XD", "athletes": ["Dhruv Rawat", "K. Maneesha"], "seed": 7},
+        {"country": "IND", "discipline": "XD", "athletes": ["Aaryan Sapiah", "Amrutha Pramuthesh"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Mohit Jaglan", "Lakshita Jaglan"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Farogh Sanjay Aman", "Zenith Abbigail"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Viraj Kuvale", "Rutaparna Panda"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Sathwik Reddy Kanapuram", "Reshika Uthayasooriyan"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Hariharan Amsakarunan", "Radhika Sharma"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Ayush Makhija", "Anagha Aravinda Pai"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Ashith Surya", "Anagha Karandikar"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Vimalraj Annadurai", "Shreya Balaji"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Harshvardhan Kothari", "Aradhana Balachandra"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["Bhavya Chhabra", "Aditi Bhatt"], "seed": null},
+        {"country": "IND", "discipline": "XD", "athletes": ["C. Lalramsanga", "Keerthy Manchala"], "seed": null}
+      ],
       "sources": [
         {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
+          "label": "2026 Syed Modi International (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Syed_Modi_International",
+          "readOn": "2026-11-23"
         }
       ],
-      "notes": "Access blocked, unverified: India's home tournament, so entries are expected to include a large Indian contingent, but BWF's tournament pages returned HTTP 403 and no BAI squad announcement for the 2026 edition was found, so entries could not be confirmed as of the read date."
+      "notes": "Draw from the Wikipedia event page. Several India slots are unnamed qualifier placeholders (Q1-Q4) and are left out; the list above is main-draw entries named on the page only."
     },
     {
       "id": "bwf-upcoming:guwahati-masters-2026",
@@ -102,16 +147,19 @@
       "location": "Hangzhou, China",
       "start": "2026-12-09",
       "end": "2026-12-13",
-      "entriesPublished": false,
-      "entries": [],
+      "entriesPublished": true,
+      "entries": [
+        {"country": "IND", "discipline": "MS", "athletes": ["Lakshya Sen"], "seed": null},
+        {"country": "IND", "discipline": "WS", "athletes": ["P. V. Sindhu"], "seed": null}
+      ],
       "sources": [
         {
-          "label": "2026 BWF World Tour (Wikipedia)",
-          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour",
-          "readOn": "2026-09-26"
+          "label": "2026 BWF World Tour Finals (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_BWF_World_Tour_Finals",
+          "readOn": "2026-11-23"
         }
       ],
-      "notes": "Qualification is by season ranking points and is not finalised until late in the season (the 2025 edition's field was confirmed in the weeks before that December event). India's Satwiksairaj Rankireddy and Chirag Shetty qualified for the 2025 edition, but no 2026 qualification has been confirmed as of the read date, so no entries are recorded."
+      "notes": "The page lists the field by current BWF World Ranking (top 8 per discipline are eligible), not as a separately confirmed qualifier list; Lakshya Sen (rank 6, MS) and P. V. Sindhu (rank 5, WS) are the only IND or SGP players shown. This can still change before the field is finalised, so treat the two names as provisional."
     },
     {
       "id": "bwf-upcoming:singapore-junior-international-series-2026",
@@ -328,6 +376,50 @@
           "label": "2027 BWF World Tour (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2027_BWF_World_Tour",
           "readOn": "2026-11-16"
+        }
+      ],
+      "notes": "Draw/entry list not yet published on the tour calendar page."
+    },
+    {
+      "id": "bwf-upcoming:thailand-masters-2027",
+      "name": "Thailand Masters 2027",
+      "shortName": "Thailand Masters",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 300",
+      "location": "Bangkok, Thailand",
+      "start": "2027-02-16",
+      "end": "2027-02-21",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2027 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2027_BWF_World_Tour",
+          "readOn": "2026-11-23"
+        }
+      ],
+      "notes": "Draw/entry list not yet published on the tour calendar page."
+    },
+    {
+      "id": "bwf-upcoming:german-open-2027",
+      "name": "German Open 2027",
+      "shortName": "German Open",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 500",
+      "location": "Mülheim, Germany",
+      "start": "2027-02-23",
+      "end": "2027-02-28",
+      "entriesPublished": false,
+      "entries": [],
+      "sources": [
+        {
+          "label": "2027 BWF World Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2027_BWF_World_Tour",
+          "readOn": "2026-11-23"
         }
       ],
       "notes": "Draw/entry list not yet published on the tour calendar page."

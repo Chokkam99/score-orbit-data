@@ -1,8 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-22",
+  "updatedOn": "2026-11-23",
   "sport": "BADMINTON",
   "names": [
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Nayana Sunil Oasis",
+      "aliases": [
+        "Nayana S Oasis"
+      ]
+    },
     {
       "sport": "BADMINTON",
       "country": "IND",
@@ -63700,7 +63708,7 @@
       "timeZone": "Asia/Hong_Kong",
       "start": "2026-11-17",
       "end": "2026-11-22",
-      "status": "IN_PROGRESS",
+      "status": "FINISHED",
       "coverage": "India and Singapore main-draw matches",
       "entries": [
         {
@@ -64502,10 +64510,10 @@
         {
           "label": "2026 Hong Kong Open (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Hong_Kong_Open_(badminton)",
-          "readOn": "2026-11-22"
+          "readOn": "2026-11-23"
         }
       ],
-      "notes": "Semi-finals complete. Lakshya Sen lost to Anders Antonsen (DEN); Satwiksairaj Rankireddy/Chirag Shetty lost to Man Wei Chong/Tee Kai Wun (MAS). No IND or SGP player reached the final. The source gives no match dates or times beyond the 17 November date already recorded for round 1."
+      "notes": "Tournament finished. Lakshya Sen lost his semi-final to Anders Antonsen (DEN), who went on to win the men's singles title (walkover in the final). Satwiksairaj Rankireddy/Chirag Shetty lost their semi-final to Man Wei Chong/Tee Kai Wun (MAS), who won the men's doubles title. No IND or SGP player reached a final. The source gives no match dates or times beyond the 17 November date already recorded for round 1."
     },
     {
       "id": "wtt-results:muscat-star-contender-2026",
