@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-23",
+  "updatedOn": "2026-11-24",
   "sport": "BADMINTON",
   "names": [
     {
@@ -62784,6 +62784,74 @@
           "label": "2026-27 PSA Squash Tour (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_PSA_Squash_Tour",
           "readOn": "2026-11-05"
+        }
+      ],
+      "notes": "Tier on the page: World Events Copper; the page lists a men's draw only for this event. The final's date is not on the page, so date is null."
+    },
+    {
+      "id": "squash-results:qsf-no-3-psa-copper-2026",
+      "name": "QSF No.3 PSA Copper 2026",
+      "shortName": "QSF No.3 PSA Copper",
+      "sport": "SQUASH",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "PSA World Events Copper",
+      "location": "Doha, Qatar",
+      "medals": false,
+      "timeZone": "Asia/Qatar",
+      "start": "2026-11-15",
+      "end": "2026-11-19",
+      "status": "FINISHED",
+      "coverage": "Final only, from the Wikipedia season summary. Earlier rounds are not captured.",
+      "entries": [
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Velavan Senthilkumar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "F",
+              "outcome": "WIN",
+              "opponent": [
+                "Dimitri Steinmann"
+              ],
+              "opponentCountry": "SUI",
+              "scores": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  9
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026-27 PSA Squash Tour (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_PSA_Squash_Tour",
+          "readOn": "2026-11-24"
         }
       ],
       "notes": "Tier on the page: World Events Copper; the page lists a men's draw only for this event. The final's date is not on the page, so date is null."
