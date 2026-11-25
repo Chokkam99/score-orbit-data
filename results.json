@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-24",
+  "updatedOn": "2026-11-25",
   "sport": "BADMINTON",
   "names": [
     {
@@ -65179,6 +65179,2064 @@
           ]
         }
       ]
+    },
+    {
+      "id": "bwf-results:syed-modi-international-2026",
+      "name": "Syed Modi India International 2026",
+      "shortName": "Syed Modi International",
+      "sport": "BADMINTON",
+      "ageCategory": "SENIOR",
+      "level": "TOUR",
+      "officialTierName": "HSBC BWF World Tour Super 300",
+      "location": "Lucknow, India",
+      "medals": false,
+      "timeZone": "Asia/Kolkata",
+      "start": "2026-11-24",
+      "end": "2026-11-29",
+      "status": "IN_PROGRESS",
+      "coverage": "Wikipedia draw page. First round under way; qualifying-round results and per-match dates/times are not shown on the page, so some first-round opponents are recorded as scheduled without a date, and a few qualifiers who replaced originally entered players are not yet confirmed beyond the draw.",
+      "entries": [
+        {
+          "country": "SGP",
+          "discipline": "MS",
+          "athletes": [
+            "Jason Teh"
+          ],
+          "seed": 1,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Enogat Roy"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Tushar Suveer"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Justin Hoh"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Shashwat Dalal"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Mark Shelley Alcala"
+              ],
+              "opponentCountry": "USA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Kiran George"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Richie Duta Richardo"
+              ],
+              "opponentCountry": "INA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Tharun Mannepalli"
+          ],
+          "seed": 8,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Harry Huang"
+              ],
+              "opponentCountry": "ENG",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Prannoy H. S."
+          ],
+          "seed": 3,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wu Zhe-ying"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Ginpaul Sonna"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Rounak Chouhan"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Rounak Chouhan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ginpaul Sonna"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Pranay Shettigar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Saneeth Dayanand"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Saneeth Dayanand"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Pranay Shettigar"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MS",
+          "athletes": [
+            "Sankar Subramanian"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Lee Zii Jia"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Surya Charisma Tamiri"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Rakshitha Ramraj"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Rakshitha Ramraj"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Surya Charisma Tamiri"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Malvika Bansod"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Tasnim Mir"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tasnim Mir"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Malvika Bansod"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Mansi Singh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Supanida Katethong"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Anupama Upadhyaya"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Yataweemin Ketklieng"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Devika Sihag"
+          ],
+          "seed": 7,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Tanya Hemanth"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanya Hemanth"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Devika Sihag"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Aakarshi Kashyap"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wong Ling Ching"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Shriyanshi Valishetty"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Anmol Kharb"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Anmol Kharb"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Shriyanshi Valishetty"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Ashmita Chaliha"
+          ],
+          "seed": 5,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Polina Buhrova"
+              ],
+              "opponentCountry": "UKR",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Unnati Hooda"
+          ],
+          "seed": 3,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Yevheniia Kantemyr"
+              ],
+              "opponentCountry": "UKR",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Patri"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ni Kadek Dhinda Amartya Pratiwi"
+              ],
+              "opponentCountry": "INA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Isharani Baruah"
+          ],
+          "seed": 8,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Thalita Ramadhani Wiryawan"
+              ],
+              "opponentCountry": "INA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WS",
+          "athletes": [
+            "Tanvi Sharma"
+          ],
+          "seed": 2,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Goh Jin Wei"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Sai Pratheek K.",
+            "Ruban Kumar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Alex Green (badminton)",
+                "Zach Russ"
+              ],
+              "opponentCountry": "ENG",
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  22,
+                  20
+                ],
+                [
+                  21,
+                  19
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Bhargav Arigela",
+            "Viswatej Gobburu"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Arya Thakore",
+                "Dhruv Thakore"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Arya Thakore",
+            "Dhruv Thakore"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Bhargav Arigela",
+                "Viswatej Gobburu"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Hariharan Amsakarunan",
+            "Arjun M. R."
+          ],
+          "seed": 3,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Abinash Mohanty",
+                "Ayush Pattanayak"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  21,
+                  9
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Maël Cattoen",
+                "Lucas Renoir"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Abinash Mohanty",
+            "Ayush Pattanayak"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Hariharan Amsakarunan",
+                "Arjun M. R."
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  23,
+                  21
+                ],
+                [
+                  9,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Krishna Prasad Garaga",
+            "Pruthvi Roy"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Maël Cattoen",
+                "Lucas Renoir"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [
+                [
+                  21,
+                  23
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Viplav Kuvale",
+            "Viraj Kuvale"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Chaloempon Charoenkitamorn",
+                "Worrapol Thongsa-nga"
+              ],
+              "opponentCountry": "THA",
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Abhyuday Choudhary",
+            "Ayush Makhija"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Lau Yi Sheng",
+                "Lee Yi Bo"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Ashith Surya",
+            "Ganesh Vittalji"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Thanawin Madee",
+                "Pongsakorn Thongkham"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Achutaditya Doddavarapu",
+            "Arjun Pochana"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Chen Cheng-kuan",
+                "Liu Kuang-heng"
+              ],
+              "opponentCountry": "TPE",
+              "scores": [
+                [
+                  7,
+                  21
+                ],
+                [
+                  10,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "SGP",
+          "discipline": "MD",
+          "athletes": [
+            "Wesley Koh",
+            "Howin Wong"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Suraj Goala",
+                "Nicholas Raj"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "MD",
+          "athletes": [
+            "Suraj Goala",
+            "Nicholas Raj"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wesley Koh",
+                "Howin Wong"
+              ],
+              "opponentCountry": "SGP",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Treesa Jolly",
+            "Gayatri Gopichand"
+          ],
+          "seed": 1,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Rashmi Ganesh",
+                "Amrutha Pramuthesh"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Rashmi Ganesh",
+            "Amrutha Pramuthesh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Treesa Jolly",
+                "Gayatri Gopichand"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Hrissha Dubey",
+            "Mehreen Riza"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Shreya Balaji",
+                "Pranavi Natarajan"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  12,
+                  21
+                ],
+                [
+                  11,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Shreya Balaji",
+            "Pranavi Natarajan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Hrissha Dubey",
+                "Mehreen Riza"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  12
+                ],
+                [
+                  21,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Margot Lambert",
+                "Camille Pognante"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Samriddhi Singh",
+            "Amolika Singh Sisodiya"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Nayana S Oasis",
+                "Varshini Viswanath Sri"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  21,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Nayana S Oasis",
+            "Varshini Viswanath Sri"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Samriddhi Singh",
+                "Amolika Singh Sisodiya"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  11,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Akshita Manral",
+            "Ishita Negi"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Sian Kelly",
+                "Lizzie Tolman"
+              ],
+              "opponentCountry": "ENG",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Ashwini Bhat K.",
+            "Shikha Gautam"
+          ],
+          "seed": 8,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Diya Bheemaiah",
+                "Baruni Parshwal"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Diya Bheemaiah",
+            "Baruni Parshwal"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ashwini Bhat K.",
+                "Shikha Gautam"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Manya Ralhan",
+            "Reshika Uthayasooriyan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Gayatri Rawat",
+                "Mansa Rawat"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  21,
+                  19
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Gayatri Rawat",
+            "Mansa Rawat"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Manya Ralhan",
+                "Reshika Uthayasooriyan"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  23,
+                  21
+                ],
+                [
+                  19,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Nishu Malik",
+            "Tanu Malik"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Abbygael Harris",
+                "Estelle van Leeuwen"
+              ],
+              "opponentCountry": "ENG",
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  10,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Neysa Cariappa",
+            "Pravandhika Raghavan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Rutaparna Panda",
+                "Swetaparna Panda"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Rutaparna Panda",
+            "Swetaparna Panda"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Neysa Cariappa",
+                "Pravandhika Raghavan"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Ruchi Chahal",
+            "Lakshita Jaglan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ananya Arun",
+                "Anjana Manikandan"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Ananya Arun",
+            "Anjana Manikandan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ruchi Chahal",
+                "Lakshita Jaglan"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Zenith Abbigail",
+            "Taarini Suri"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Low Zi Yu",
+                "Noraqilah Maisarah"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  11,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Aditi Bhatt",
+            "Shravani Walekar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Sonali Singh",
+                "Ritika Thaker"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  18,
+                  21
+                ],
+                [
+                  21,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Hathaithip Mijad",
+                "Napapakorn Tungkasatan"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Sonali Singh",
+            "Ritika Thaker"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Aditi Bhatt",
+                "Shravani Walekar"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  11,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Reeva Evangelin",
+            "V R Nardhana"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Hathaithip Mijad",
+                "Napapakorn Tungkasatan"
+              ],
+              "opponentCountry": "THA",
+              "scores": [
+                [
+                  9,
+                  21
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Priya Konjengbam",
+            "Shruti Mishra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "WIN",
+              "opponent": [
+                "Sakshi Gahlawat",
+                "Divya Balasubramanian"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  10
+                ],
+                [
+                  21,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Isyana Syahira Meida",
+                "Rinjani Kwinnara Nastine"
+              ],
+              "opponentCountry": "INA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Sakshi Gahlawat",
+            "Divya Balasubramanian"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Priya Konjengbam",
+                "Shruti Mishra"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  10,
+                  21
+                ],
+                [
+                  7,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "WD",
+          "athletes": [
+            "Anagha Aravinda Pai",
+            "Nandita Thomas"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "LOSS",
+              "opponent": [
+                "Isyana Syahira Meida",
+                "Rinjani Kwinnara Nastine"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  8,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Dhruv Kapila",
+            "Tanisha Crasto"
+          ],
+          "seed": 1,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Divyam Arora",
+                "Shravani Walekar"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Divyam Arora",
+            "Shravani Walekar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Dhruv Kapila",
+                "Tanisha Crasto"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Aaryan Sapiah",
+            "Amrutha Pramuthesh"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wee Yee Hern",
+                "Vannee Gobi"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Dhruv Rawat",
+            "K. Maneesha"
+          ],
+          "seed": 7,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Mohit Jaglan",
+                "Lakshita Jaglan"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Mohit Jaglan",
+            "Lakshita Jaglan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Dhruv Rawat",
+                "K. Maneesha"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Farogh Sanjay Aman",
+            "Zenith Abbigail"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "M. Nawaf Khoiriyansyah",
+                "Indah Cahya Sari Jamil"
+              ],
+              "opponentCountry": "INA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Rohan Kapoor (badminton)",
+            "Ruthvika Gadde"
+          ],
+          "seed": 4,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Grégoire Deschamp",
+                "Iben Bergstein"
+              ],
+              "opponentCountry": null,
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Viraj Kuvale",
+            "Rutaparna Panda"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Par Tien Ann",
+                "Juliana Zefanya Gabriela"
+              ],
+              "opponentCountry": null,
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Sathwik Reddy Kanapuram",
+            "Reshika Uthayasooriyan"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wong Tien Ci",
+                "Lim Chiew Sien"
+              ],
+              "opponentCountry": "MAS",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Hariharan Amsakarunan",
+            "Radhika Sharma"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ayush Makhija",
+                "Anagha Aravinda Pai"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Ayush Makhija",
+            "Anagha Aravinda Pai"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Hariharan Amsakarunan",
+                "Radhika Sharma"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Mithileish P Krishnan",
+            "Varna Prabu Anand"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Rehan Naufal Kusharjanto",
+                "Melati Daeva Oktavianti"
+              ],
+              "opponentCountry": "INA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Ashith Surya",
+            "Anagha Karandikar"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ruttanapak Oupthong",
+                "Jitaphat Thanaphudit"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Vimalraj Annadurai",
+            "Shreya Balaji"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Alexander Dunn (badminton)",
+                "Julie MacPherson"
+              ],
+              "opponentCountry": "SCO",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Harshvardhan Kothari",
+            "Aradhana Balachandra"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Supak Jomkoh",
+                "Jhenicha Sudjaipraparat"
+              ],
+              "opponentCountry": "THA",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "Bhavya Chhabra",
+            "Aditi Bhatt"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "C Lalramsanga",
+                "Keerthy Manchala"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        },
+        {
+          "country": "IND",
+          "discipline": "XD",
+          "athletes": [
+            "C Lalramsanga",
+            "Keerthy Manchala"
+          ],
+          "seed": null,
+          "matches": [
+            {
+              "round": "R32",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Bhavya Chhabra",
+                "Aditi Bhatt"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026 Syed Modi International (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/2026_Syed_Modi_International",
+          "readOn": "2026-11-25"
+        }
+      ],
+      "notes": "Men's and women's singles and mixed doubles first round not yet played as of this read; men's and women's doubles first round partly played. Two mixed-doubles opponent pairs are shown on the draw with players from two different countries (FRA/DEN and MAS/VEN); opponentCountry is left null for those rather than guessed."
     }
   ]
 }
