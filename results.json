@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-25",
+  "updatedOn": "2026-11-26",
   "sport": "BADMINTON",
   "names": [
     {
@@ -65220,11 +65220,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Enogat Roy"
               ],
               "opponentCountry": "FRA",
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  21,
+                  15
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Prahdiska Bagas Shujiwo"
+              ],
+              "opponentCountry": "INA",
               "scores": [],
               "date": null,
               "time": null
@@ -65241,11 +65265,31 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Justin Hoh"
               ],
               "opponentCountry": "MAS",
+              "scores": [
+                [
+                  21,
+                  11
+                ],
+                [
+                  21,
+                  17
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Shashwat Dalal"
+              ],
+              "opponentCountry": "IND",
               "scores": [],
               "date": null,
               "time": null
@@ -65262,11 +65306,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Mark Shelley Alcala"
               ],
               "opponentCountry": "USA",
+              "scores": [
+                [
+                  21,
+                  14
+                ],
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Tushar Suveer"
+              ],
+              "opponentCountry": "IND",
               "scores": [],
               "date": null,
               "time": null
@@ -65283,12 +65351,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Richie Duta Richardo"
               ],
               "opponentCountry": "INA",
-              "scores": [],
+              "scores": [
+                [
+                  4,
+                  21
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65304,12 +65381,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Harry Huang"
               ],
               "opponentCountry": "ENG",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  23
+                ],
+                [
+                  11,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65325,12 +65411,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Wu Zhe-ying"
               ],
               "opponentCountry": "TPE",
-              "scores": [],
+              "scores": [
+                [
+                  19,
+                  21
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65346,11 +65441,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Rounak Chouhan"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  21,
+                  10
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Arnaud Merklé"
+              ],
+              "opponentCountry": "FRA",
               "scores": [],
               "date": null,
               "time": null
@@ -65367,12 +65486,25 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Ginpaul Sonna"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  10,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65388,11 +65520,31 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Saneeth Dayanand"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  21,
+                  15
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Lee Zii Jia"
+              ],
+              "opponentCountry": "MAS",
               "scores": [],
               "date": null,
               "time": null
@@ -65409,12 +65561,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Pranay Shettigar"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  19,
+                  21
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65430,12 +65591,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Lee Zii Jia"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65451,12 +65621,25 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Rakshitha Ramraj"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  21,
+                  19
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65472,11 +65655,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Surya Charisma Tamiri"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  19,
+                  21
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Riko Gunji"
+              ],
+              "opponentCountry": "JPN",
               "scores": [],
               "date": null,
               "time": null
@@ -65493,12 +65700,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Tasnim Mir"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65514,11 +65730,31 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Malvika Bansod"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  21,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Kirsty Gilmour"
+              ],
+              "opponentCountry": "SCO",
               "scores": [],
               "date": null,
               "time": null
@@ -65535,12 +65771,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Supanida Katethong"
               ],
               "opponentCountry": "THA",
-              "scores": [],
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65556,12 +65801,17 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "RETIRED_LOSS",
               "opponent": [
                 "Yataweemin Ketklieng"
               ],
               "opponentCountry": "THA",
-              "scores": [],
+              "scores": [
+                [
+                  0,
+                  3
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65577,12 +65827,25 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Tanya Hemanth"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  16,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65598,11 +65861,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Devika Sihag"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  14
+                ],
+                [
+                  18,
+                  21
+                ],
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wong Ling Ching"
+              ],
+              "opponentCountry": "MAS",
               "scores": [],
               "date": null,
               "time": null
@@ -65619,12 +65906,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Wong Ling Ching"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  11,
+                  21
+                ],
+                [
+                  10,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65640,12 +65936,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Anmol Kharb"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  14,
+                  21
+                ],
+                [
+                  11,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65661,9 +65966,29 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Shriyanshi Valishetty"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  14
+                ],
+                [
+                  21,
+                  11
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ashmita Chaliha"
               ],
               "opponentCountry": "IND",
               "scores": [],
@@ -65682,11 +66007,31 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Polina Buhrova"
               ],
               "opponentCountry": "UKR",
+              "scores": [
+                [
+                  21,
+                  14
+                ],
+                [
+                  21,
+                  16
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Anmol Kharb"
+              ],
+              "opponentCountry": "IND",
               "scores": [],
               "date": null,
               "time": null
@@ -65703,11 +66048,31 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Yevheniia Kantemyr"
               ],
               "opponentCountry": "UKR",
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  21,
+                  19
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ishika Jaiswal"
+              ],
+              "opponentCountry": "USA",
               "scores": [],
               "date": null,
               "time": null
@@ -65724,12 +66089,21 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "RETIRED_LOSS",
               "opponent": [
                 "Ni Kadek Dhinda Amartya Pratiwi"
               ],
               "opponentCountry": "INA",
-              "scores": [],
+              "scores": [
+                [
+                  12,
+                  21
+                ],
+                [
+                  11,
+                  15
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65745,9 +66119,29 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Thalita Ramadhani Wiryawan"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  21,
+                  12
+                ],
+                [
+                  25,
+                  23
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ni Kadek Dhinda Amartya Pratiwi"
               ],
               "opponentCountry": "INA",
               "scores": [],
@@ -65766,11 +66160,27 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "RETIRED_WIN",
               "opponent": [
                 "Goh Jin Wei"
               ],
               "opponentCountry": "MAS",
+              "scores": [
+                [
+                  1,
+                  2
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Mutiara Ayu Puspitasari"
+              ],
+              "opponentCountry": "INA",
               "scores": [],
               "date": null,
               "time": null
@@ -65810,6 +66220,18 @@
               ],
               "date": null,
               "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Bhargav Arigela",
+                "Viswatej Gobburu"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
             }
           ]
         },
@@ -65824,10 +66246,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Arya Thakore",
                 "Dhruv Thakore"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  12
+                ],
+                [
+                  21,
+                  15
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Sai Pratheek K.",
+                "Ruban Kumar"
               ],
               "opponentCountry": "IND",
               "scores": [],
@@ -65847,13 +66294,26 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Bhargav Arigela",
                 "Viswatej Gobburu"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  12,
+                  21
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66022,13 +66482,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Lau Yi Sheng",
                 "Lee Yi Bo"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  16,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66045,13 +66514,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Thanawin Madee",
                 "Pongsakorn Thongkham"
               ],
               "opponentCountry": "THA",
-              "scores": [],
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  15,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66100,12 +66578,33 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Suraj Goala",
                 "Nicholas Raj"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  22,
+                  20
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Peeratchai Sukphun",
+                "Pakkapon Teeraratsakul"
+              ],
+              "opponentCountry": "THA",
               "scores": [],
               "date": null,
               "time": null
@@ -66123,13 +66622,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Wesley Koh",
                 "Howin Wong"
               ],
               "opponentCountry": "SGP",
-              "scores": [],
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  20,
+                  22
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66146,10 +66654,31 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Rashmi Ganesh",
                 "Amrutha Pramuthesh"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  8
+                ],
+                [
+                  21,
+                  7
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Shreya Balaji",
+                "Pranavi Natarajan"
               ],
               "opponentCountry": "IND",
               "scores": [],
@@ -66169,13 +66698,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Treesa Jolly",
                 "Gayatri Gopichand"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  8,
+                  21
+                ],
+                [
+                  7,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66247,10 +66785,10 @@
               "round": "R16",
               "outcome": "SCHEDULED",
               "opponent": [
-                "Margot Lambert",
-                "Camille Pognante"
+                "Treesa Jolly",
+                "Gayatri Gopichand"
               ],
-              "opponentCountry": "FRA",
+              "opponentCountry": "IND",
               "scores": [],
               "date": null,
               "time": null
@@ -66284,6 +66822,18 @@
                   11
                 ]
               ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Margot Lambert",
+                "Camille Pognante"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [],
               "date": null,
               "time": null
             }
@@ -66364,10 +66914,31 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Diya Bheemaiah",
                 "Baruni Parshwal"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  23,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Manya Ralhan",
+                "Reshika Uthayasooriyan"
               ],
               "opponentCountry": "IND",
               "scores": [],
@@ -66387,13 +66958,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Ashwini Bhat K.",
                 "Shikha Gautam"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  23
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66430,6 +67010,18 @@
                   19
                 ]
               ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ashwini Bhat K.",
+                "Shikha Gautam"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
               "date": null,
               "time": null
             }
@@ -66514,12 +67106,33 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Rutaparna Panda",
                 "Swetaparna Panda"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  17
+                ],
+                [
+                  23,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Abbygael Harris",
+                "Estelle van Leeuwen"
+              ],
+              "opponentCountry": "ENG",
               "scores": [],
               "date": null,
               "time": null
@@ -66537,13 +67150,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Neysa Cariappa",
                 "Pravandhika Raghavan"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  17,
+                  21
+                ],
+                [
+                  21,
+                  23
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66560,13 +67182,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Ananya Arun",
                 "Anjana Manikandan"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  8,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66583,12 +67214,33 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Ruchi Chahal",
                 "Lakshita Jaglan"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  8
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Low Zi Yu",
+                "Noraqilah Maisarah"
+              ],
+              "opponentCountry": "MAS",
               "scores": [],
               "date": null,
               "time": null
@@ -66862,12 +67514,37 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Divyam Arora",
                 "Shravani Walekar"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wee Yee Hern",
+                "Vannee Gobi"
+              ],
+              "opponentCountry": "MAS",
               "scores": [],
               "date": null,
               "time": null
@@ -66885,13 +67562,26 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Dhruv Kapila",
                 "Tanisha Crasto"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  16,
+                  21
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66908,13 +67598,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Wee Yee Hern",
                 "Vannee Gobi"
               ],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  19,
+                  21
+                ],
+                [
+                  17,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66931,12 +67630,33 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Mohit Jaglan",
                 "Lakshita Jaglan"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  16
+                ],
+                [
+                  21,
+                  13
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "M. Nawaf Khoiriyansyah",
+                "Indah Cahya Sari Jamil"
+              ],
+              "opponentCountry": "INA",
               "scores": [],
               "date": null,
               "time": null
@@ -66954,13 +67674,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Dhruv Rawat",
                 "K. Maneesha"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66977,13 +67706,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "M. Nawaf Khoiriyansyah",
                 "Indah Cahya Sari Jamil"
               ],
               "opponentCountry": "INA",
-              "scores": [],
+              "scores": [
+                [
+                  8,
+                  21
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -67000,13 +67738,18 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "RETIRED_LOSS",
               "opponent": [
                 "Grégoire Deschamp",
                 "Iben Bergstein"
               ],
               "opponentCountry": null,
-              "scores": [],
+              "scores": [
+                [
+                  2,
+                  8
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -67023,10 +67766,31 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Par Tien Ann",
                 "Juliana Zefanya Gabriela"
+              ],
+              "opponentCountry": null,
+              "scores": [
+                [
+                  22,
+                  20
+                ],
+                [
+                  21,
+                  13
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Grégoire Deschamp",
+                "Iben Bergstein"
               ],
               "opponentCountry": null,
               "scores": [],
@@ -67046,12 +67810,37 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Wong Tien Ci",
                 "Lim Chiew Sien"
               ],
               "opponentCountry": "MAS",
+              "scores": [
+                [
+                  24,
+                  22
+                ],
+                [
+                  14,
+                  21
+                ],
+                [
+                  21,
+                  15
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Ayush Makhija",
+                "Anagha Aravinda Pai"
+              ],
+              "opponentCountry": "IND",
               "scores": [],
               "date": null,
               "time": null
@@ -67069,13 +67858,26 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Ayush Makhija",
                 "Anagha Aravinda Pai"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  21,
+                  15
+                ],
+                [
+                  20,
+                  22
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -67092,10 +67894,35 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "Hariharan Amsakarunan",
                 "Radhika Sharma"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  15,
+                  21
+                ],
+                [
+                  22,
+                  20
+                ],
+                [
+                  21,
+                  12
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Sathwik Reddy Kanapuram",
+                "Reshika Uthayasooriyan"
               ],
               "opponentCountry": "IND",
               "scores": [],
@@ -67115,13 +67942,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Rehan Naufal Kusharjanto",
                 "Melati Daeva Oktavianti"
               ],
               "opponentCountry": "INA",
-              "scores": [],
+              "scores": [
+                [
+                  16,
+                  21
+                ],
+                [
+                  9,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -67138,13 +67974,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Ruttanapak Oupthong",
                 "Jitaphat Thanaphudit"
               ],
               "opponentCountry": "THA",
-              "scores": [],
+              "scores": [
+                [
+                  11,
+                  21
+                ],
+                [
+                  10,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -67161,13 +68006,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Alexander Dunn (badminton)",
                 "Julie MacPherson"
               ],
               "opponentCountry": "SCO",
-              "scores": [],
+              "scores": [
+                [
+                  13,
+                  21
+                ],
+                [
+                  12,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -67184,13 +68038,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Supak Jomkoh",
                 "Jhenicha Sudjaipraparat"
               ],
               "opponentCountry": "THA",
-              "scores": [],
+              "scores": [
+                [
+                  7,
+                  21
+                ],
+                [
+                  7,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -67207,12 +68070,33 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [
                 "C Lalramsanga",
                 "Keerthy Manchala"
               ],
               "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "R16",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Callum Hemming",
+                "Estelle van Leeuwen"
+              ],
+              "opponentCountry": "ENG",
               "scores": [],
               "date": null,
               "time": null
@@ -67230,13 +68114,22 @@
           "matches": [
             {
               "round": "R32",
-              "outcome": "SCHEDULED",
+              "outcome": "LOSS",
               "opponent": [
                 "Bhavya Chhabra",
                 "Aditi Bhatt"
               ],
               "opponentCountry": "IND",
-              "scores": [],
+              "scores": [
+                [
+                  19,
+                  21
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -67247,10 +68140,10 @@
         {
           "label": "2026 Syed Modi International (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Syed_Modi_International",
-          "readOn": "2026-11-25"
+          "readOn": "2026-11-26"
         }
       ],
-      "notes": "Men's and women's singles and mixed doubles first round not yet played as of this read; men's and women's doubles first round partly played. Two mixed-doubles opponent pairs are shown on the draw with players from two different countries (FRA/DEN and MAS/VEN); opponentCountry is left null for those rather than guessed."
+      "notes": "Day 2 (26 Nov): men's and women's singles and all doubles events have completed their first round; second round pairings shown as scheduled, dates/times not yet published. Two mixed-doubles opponent pairs are shown on the draw with players from two different countries (FRA/DEN and MAS/VEN); opponentCountry is left null for those rather than guessed."
     }
   ]
 }
