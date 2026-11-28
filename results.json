@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-27",
+  "updatedOn": "2026-11-28",
   "sport": "BADMINTON",
   "names": [
     {
@@ -367,6 +367,30 @@
       "name": "Park Gang-hyeon",
       "aliases": [
         "Park Ganghyeon"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Akhil Reddy Bobba",
+      "aliases": [
+        "A. Bobba"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Baruni Parshwal",
+      "aliases": [
+        "B. Parshwal"
+      ]
+    },
+    {
+      "sport": "BADMINTON",
+      "country": "IND",
+      "name": "Shaina Manimuthu",
+      "aliases": [
+        "S. Manimuthu"
       ]
     }
   ],
@@ -65222,7 +65246,7 @@
       "start": "2026-11-24",
       "end": "2026-11-29",
       "status": "IN_PROGRESS",
-      "coverage": "Wikipedia draw page. First round under way; qualifying-round results and per-match dates/times are not shown on the page, so some first-round opponents are recorded as scheduled without a date, and a few qualifiers who replaced originally entered players are not yet confirmed beyond the draw.",
+      "coverage": "Wikipedia draw page. Quarterfinals complete, semifinals scheduled; per-match dates/times are not shown on the page, so all matches are recorded without a date or time, and a few qualifiers who replaced originally entered players are not confirmed beyond the draw.",
       "entries": [
         {
           "country": "SGP",
@@ -65338,6 +65362,30 @@
               ],
               "opponentCountry": "INA",
               "scores": [],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Prahdiska Bagas Shujiwo"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  19,
+                  21
+                ],
+                [
+                  9,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -65865,6 +65913,26 @@
               "scores": [],
               "date": null,
               "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Riko Gunji"
+              ],
+              "opponentCountry": "JPN",
+              "scores": [
+                [
+                  11,
+                  21
+                ],
+                [
+                  11,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
             }
           ]
         },
@@ -66134,6 +66202,30 @@
               "scores": [],
               "date": null,
               "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Unnati Hooda"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  19,
+                  21
+                ],
+                [
+                  21,
+                  15
+                ],
+                [
+                  18,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
             }
           ]
         },
@@ -66240,6 +66332,41 @@
               "outcome": "SCHEDULED",
               "opponent": [
                 "Anmol Kharb"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Anmol Kharb"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  19
+                ],
+                [
+                  15,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Tanvi Sharma"
               ],
               "opponentCountry": "IND",
               "scores": [],
@@ -66390,6 +66517,41 @@
               "scores": [],
               "date": null,
               "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Mutiara Ayu Puspitasari"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  18,
+                  21
+                ],
+                [
+                  21,
+                  18
+                ],
+                [
+                  21,
+                  18
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Unnati Hooda"
+              ],
+              "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
             }
           ]
         },
@@ -66457,6 +66619,31 @@
               ],
               "opponentCountry": "INA",
               "scores": [],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Raymond Indra",
+                "Nikolaus Joaquin"
+              ],
+              "opponentCountry": "INA",
+              "scores": [
+                [
+                  22,
+                  20
+                ],
+                [
+                  13,
+                  21
+                ],
+                [
+                  9,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66619,6 +66806,31 @@
               ],
               "opponentCountry": "THA",
               "scores": [],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Chaloempon Charoenkitamorn",
+                "Worrapol Thongsa-nga"
+              ],
+              "opponentCountry": "THA",
+              "scores": [
+                [
+                  21,
+                  10
+                ],
+                [
+                  12,
+                  21
+                ],
+                [
+                  13,
+                  21
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -66971,6 +67183,30 @@
               "scores": [],
               "date": null,
               "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WALKOVER_WIN",
+              "opponent": [
+                "Margot Lambert",
+                "Camille Pognante"
+              ],
+              "opponentCountry": "FRA",
+              "scores": [],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Polina Buhrova",
+                "Yevheniia Kantemyr"
+              ],
+              "opponentCountry": "UKR",
+              "scores": [],
+              "date": null,
+              "time": null
             }
           ]
         },
@@ -67272,6 +67508,31 @@
               ],
               "opponentCountry": "UKR",
               "scores": [],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Polina Buhrova",
+                "Yevheniia Kantemyr"
+              ],
+              "opponentCountry": "UKR",
+              "scores": [
+                [
+                  21,
+                  13
+                ],
+                [
+                  12,
+                  21
+                ],
+                [
+                  20,
+                  22
+                ]
+              ],
               "date": null,
               "time": null
             }
@@ -68218,6 +68479,27 @@
               "scores": [],
               "date": null,
               "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "LOSS",
+              "opponent": [
+                "Sathwik Reddy Kanapuram",
+                "Reshika Uthayasooriyan"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  8,
+                  21
+                ],
+                [
+                  14,
+                  21
+                ]
+              ],
+              "date": null,
+              "time": null
             }
           ]
         },
@@ -68288,6 +68570,39 @@
                 "Rutaparna Panda"
               ],
               "opponentCountry": "IND",
+              "scores": [],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "QF",
+              "outcome": "WIN",
+              "opponent": [
+                "Viraj Kuvale",
+                "Rutaparna Panda"
+              ],
+              "opponentCountry": "IND",
+              "scores": [
+                [
+                  21,
+                  8
+                ],
+                [
+                  21,
+                  14
+                ]
+              ],
+              "date": null,
+              "time": null
+            },
+            {
+              "round": "SF",
+              "outcome": "SCHEDULED",
+              "opponent": [
+                "Wee Yee Hern",
+                "Vannee Gobi"
+              ],
+              "opponentCountry": "MAS",
               "scores": [],
               "date": null,
               "time": null
@@ -68609,7 +68924,7 @@
         {
           "label": "2026 Syed Modi International (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Syed_Modi_International",
-          "readOn": "2026-11-27"
+          "readOn": "2026-11-28"
         }
       ],
       "notes": "Day 3 (27 Nov): second round complete in all five events; quarter-final pairings set, not yet played. Dates/times for individual matches are not shown on the draw page. One mixed-doubles opponent pair in the second round (FRA/DEN) has players from two different countries; opponentCountry is left null rather than guessed."
