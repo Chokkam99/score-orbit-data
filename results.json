@@ -65138,10 +65138,10 @@
         {
           "label": "2026 Women's Asian Champions Trophy (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/2026_Women%27s_Asian_Champions_Trophy",
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-28"
         }
       ],
-      "notes": "Six teams in one group (CHN, IND as host, JPN, MAS, KOR, THA); top 4 reach the semifinals, bottom 2 play the 5th place match. India won all 5 group matches (W5 D0 L0, GF 23 GA 4) to finish first and face Malaysia in the semifinal on 27 Nov; Japan faces China in the other semifinal. Final and bronze medal match on 28 Nov.",
+      "notes": "Six teams in one group (CHN, IND as host, JPN, MAS, KOR, THA); top 4 reach the semifinals, bottom 2 play the 5th place match. India won all 5 group matches (W5 D0 L0, GF 23 GA 4) to finish first, then beat Malaysia 6-2 in the semifinal on 27 Nov. China beat Japan 1-0 in the other semifinal. India plays China in the gold medal match on 28 Nov.",
       "entries": [
         {
           "country": "IND",
@@ -65221,11 +65221,25 @@
             },
             {
               "round": "SF",
-              "outcome": "SCHEDULED",
+              "outcome": "WIN",
               "opponent": [],
               "opponentCountry": "MAS",
-              "scores": [],
+              "scores": [
+                [
+                  6,
+                  2
+                ]
+              ],
               "date": "2026-11-27",
+              "time": "19:00"
+            },
+            {
+              "round": "F",
+              "outcome": "SCHEDULED",
+              "opponent": [],
+              "opponentCountry": "CHN",
+              "scores": [],
+              "date": "2026-11-28",
               "time": "19:00"
             }
           ]
